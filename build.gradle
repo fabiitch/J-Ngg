@@ -1,20 +1,54 @@
 plugins {
-    id 'java'
+    id 'java-library'
 }
 
-group = 'com.nz.lol.callfire'
+group = 'com.nz.jngg'
 version = '1.0-SNAPSHOT'
+
+sourceSets {
+    main {
+        java {
+            srcDir("src/generated")
+        }
+    }
+}
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+    withSourcesJar()
+}
+
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
+    implementation("org.slf4j:slf4j-api:$slf4jVersion")
+
+    testRuntimeOnly "org.apache.logging.log4j:log4j-api:$log4j2Version"
+    testRuntimeOnly "org.apache.logging.log4j:log4j-core:$log4j2Version"
+    testRuntimeOnly "org.apache.logging.log4j:log4j-slf4j2-impl:$log4j2Version"
+
+
     testImplementation platform('org.junit:junit-bom:6.0.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+    compileOnly "org.projectlombok:lombok:$lombokVersion"
+    testCompileOnly "org.projectlombok:lombok:$lombokVersion"
+    annotationProcessor "org.projectlombok:lombok:$lombokVersion"
+    testAnnotationProcessor "org.projectlombok:lombok:$lombokVersion"
+}
+
+compileTestJava {
+    source += sourceSets.main.allJava
+    classpath += sourceSets.main.output
 }
 
 test {
     useJUnitPlatform()
+    classpath += sourceSets.main.output
+    jvmArgs '--enable-native-access=ALL-UNNAMED'
 }
