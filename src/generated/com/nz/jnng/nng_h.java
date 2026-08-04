@@ -185,181 +185,19 @@ public class nng_h extends nng_h$shared {
     public static int WINT_MAX() {
         return WINT_MAX;
     }
-    private static final int _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE = (int)1L;
+    private static final int NNG_MAJOR_VERSION = (int)1L;
     /**
      * {@snippet lang=c :
-     * #define _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE 1
-     * }
-     */
-    public static int _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE() {
-        return _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE;
-    }
-    private static final int _CRT_BUILD_DESKTOP_APP = (int)1L;
-    /**
-     * {@snippet lang=c :
-     * #define _CRT_BUILD_DESKTOP_APP 1
-     * }
-     */
-    public static int _CRT_BUILD_DESKTOP_APP() {
-        return _CRT_BUILD_DESKTOP_APP;
-    }
-    private static final int _ARGMAX = (int)100L;
-    /**
-     * {@snippet lang=c :
-     * #define _ARGMAX 100
-     * }
-     */
-    public static int _ARGMAX() {
-        return _ARGMAX;
-    }
-    private static final int _CRT_INT_MAX = (int)2147483647L;
-    /**
-     * {@snippet lang=c :
-     * #define _CRT_INT_MAX 2147483647
-     * }
-     */
-    public static int _CRT_INT_MAX() {
-        return _CRT_INT_MAX;
-    }
-    private static final int _CRT_FUNCTIONS_REQUIRED = (int)1L;
-    /**
-     * {@snippet lang=c :
-     * #define _CRT_FUNCTIONS_REQUIRED 1
-     * }
-     */
-    public static int _CRT_FUNCTIONS_REQUIRED() {
-        return _CRT_FUNCTIONS_REQUIRED;
-    }
-    private static final int _CRT_HAS_CXX17 = (int)0L;
-    /**
-     * {@snippet lang=c :
-     * #define _CRT_HAS_CXX17 0
-     * }
-     */
-    public static int _CRT_HAS_CXX17() {
-        return _CRT_HAS_CXX17;
-    }
-    private static final int _CRT_HAS_C11 = (int)1L;
-    /**
-     * {@snippet lang=c :
-     * #define _CRT_HAS_C11 1
-     * }
-     */
-    public static int _CRT_HAS_C11() {
-        return _CRT_HAS_C11;
-    }
-    private static final int _CRT_INTERNAL_NONSTDC_NAMES = (int)1L;
-    /**
-     * {@snippet lang=c :
-     * #define _CRT_INTERNAL_NONSTDC_NAMES 1
-     * }
-     */
-    public static int _CRT_INTERNAL_NONSTDC_NAMES() {
-        return _CRT_INTERNAL_NONSTDC_NAMES;
-    }
-    private static final int __STDC_WANT_SECURE_LIB__ = (int)1L;
-    /**
-     * {@snippet lang=c :
-     * #define __STDC_WANT_SECURE_LIB__ 1
-     * }
-     */
-    public static int __STDC_WANT_SECURE_LIB__() {
-        return __STDC_WANT_SECURE_LIB__;
-    }
-    private static final int _SECURECRT_FILL_BUFFER_PATTERN = (int)254L;
-    /**
-     * {@snippet lang=c :
-     * #define _SECURECRT_FILL_BUFFER_PATTERN 254
-     * }
-     */
-    public static int _SECURECRT_FILL_BUFFER_PATTERN() {
-        return _SECURECRT_FILL_BUFFER_PATTERN;
-    }
-    private static final int _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES = (int)0L;
-    /**
-     * {@snippet lang=c :
-     * #define _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES 0
-     * }
-     */
-    public static int _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES() {
-        return _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;
-    }
-    private static final int _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT = (int)0L;
-    /**
-     * {@snippet lang=c :
-     * #define _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT 0
-     * }
-     */
-    public static int _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT() {
-        return _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT;
-    }
-    private static final int _CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES = (int)1L;
-    /**
-     * {@snippet lang=c :
-     * #define _CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES 1
-     * }
-     */
-    public static int _CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES() {
-        return _CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES;
-    }
-    private static final int _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_MEMORY = (int)0L;
-    /**
-     * {@snippet lang=c :
-     * #define _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_MEMORY 0
-     * }
-     */
-    public static int _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_MEMORY() {
-        return _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_MEMORY;
-    }
-    private static final int _CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES_MEMORY = (int)0L;
-    /**
-     * {@snippet lang=c :
-     * #define _CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES_MEMORY 0
-     * }
-     */
-    public static int _CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES_MEMORY() {
-        return _CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES_MEMORY;
-    }
-    private static final int _STATIC_INLINE_UCRT_FUNCTIONS = (int)0L;
-    /**
-     * {@snippet lang=c :
-     * #define _STATIC_INLINE_UCRT_FUNCTIONS 0
-     * }
-     */
-    public static int _STATIC_INLINE_UCRT_FUNCTIONS() {
-        return _STATIC_INLINE_UCRT_FUNCTIONS;
-    }
-    private static final int _CRT_USE_CONFORMING_ANNEX_K_TIME = (int)0L;
-    /**
-     * {@snippet lang=c :
-     * #define _CRT_USE_CONFORMING_ANNEX_K_TIME 0
-     * }
-     */
-    public static int _CRT_USE_CONFORMING_ANNEX_K_TIME() {
-        return _CRT_USE_CONFORMING_ANNEX_K_TIME;
-    }
-    private static final int TIME_UTC = (int)1L;
-    /**
-     * {@snippet lang=c :
-     * #define TIME_UTC 1
-     * }
-     */
-    public static int TIME_UTC() {
-        return TIME_UTC;
-    }
-    private static final int NNG_MAJOR_VERSION = (int)2L;
-    /**
-     * {@snippet lang=c :
-     * #define NNG_MAJOR_VERSION 2
+     * #define NNG_MAJOR_VERSION 1
      * }
      */
     public static int NNG_MAJOR_VERSION() {
         return NNG_MAJOR_VERSION;
     }
-    private static final int NNG_MINOR_VERSION = (int)0L;
+    private static final int NNG_MINOR_VERSION = (int)11L;
     /**
      * {@snippet lang=c :
-     * #define NNG_MINOR_VERSION 0
+     * #define NNG_MINOR_VERSION 11
      * }
      */
     public static int NNG_MINOR_VERSION() {
@@ -374,14 +212,59 @@ public class nng_h extends nng_h$shared {
     public static int NNG_PATCH_VERSION() {
         return NNG_PATCH_VERSION;
     }
-    private static final int NNG_MAP_RANDOM = (int)1L;
+    private static final int NNG_PAIR1_SELF = (int)17L;
     /**
      * {@snippet lang=c :
-     * #define NNG_MAP_RANDOM 1
+     * #define NNG_PAIR1_SELF 17
      * }
      */
-    public static int NNG_MAP_RANDOM() {
-        return NNG_MAP_RANDOM;
+    public static int NNG_PAIR1_SELF() {
+        return NNG_PAIR1_SELF;
+    }
+    private static final int NNG_PAIR1_PEER = (int)17L;
+    /**
+     * {@snippet lang=c :
+     * #define NNG_PAIR1_PEER 17
+     * }
+     */
+    public static int NNG_PAIR1_PEER() {
+        return NNG_PAIR1_PEER;
+    }
+    private static final int NNG_REQ0_SELF = (int)48L;
+    /**
+     * {@snippet lang=c :
+     * #define NNG_REQ0_SELF 48
+     * }
+     */
+    public static int NNG_REQ0_SELF() {
+        return NNG_REQ0_SELF;
+    }
+    private static final int NNG_REQ0_PEER = (int)49L;
+    /**
+     * {@snippet lang=c :
+     * #define NNG_REQ0_PEER 49
+     * }
+     */
+    public static int NNG_REQ0_PEER() {
+        return NNG_REQ0_PEER;
+    }
+    private static final int NNG_REP0_SELF = (int)49L;
+    /**
+     * {@snippet lang=c :
+     * #define NNG_REP0_SELF 49
+     * }
+     */
+    public static int NNG_REP0_SELF() {
+        return NNG_REP0_SELF;
+    }
+    private static final int NNG_REP0_PEER = (int)48L;
+    /**
+     * {@snippet lang=c :
+     * #define NNG_REP0_PEER 48
+     * }
+     */
+    public static int NNG_REP0_PEER() {
+        return NNG_REP0_PEER;
     }
     /**
      * {@snippet lang=c :
@@ -880,3569 +763,6 @@ public class nng_h extends nng_h$shared {
     public static final OfLong uintmax_t = nng_h.C_LONG_LONG;
     /**
      * {@snippet lang=c :
-     * typedef _Bool __crt_bool
-     * }
-     */
-    public static final OfBoolean __crt_bool = nng_h.C_BOOL;
-
-    private static class _invalid_parameter_noinfo {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(    );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_invalid_parameter_noinfo");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * void _invalid_parameter_noinfo()
-     * }
-     */
-    public static FunctionDescriptor _invalid_parameter_noinfo$descriptor() {
-        return _invalid_parameter_noinfo.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * void _invalid_parameter_noinfo()
-     * }
-     */
-    public static MethodHandle _invalid_parameter_noinfo$handle() {
-        return _invalid_parameter_noinfo.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * void _invalid_parameter_noinfo()
-     * }
-     */
-    public static MemorySegment _invalid_parameter_noinfo$address() {
-        return _invalid_parameter_noinfo.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * void _invalid_parameter_noinfo()
-     * }
-     */
-    public static void _invalid_parameter_noinfo() {
-        var mh$ = _invalid_parameter_noinfo.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_invalid_parameter_noinfo");
-            }
-            mh$.invokeExact();
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _invalid_parameter_noinfo_noreturn {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(    );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_invalid_parameter_noinfo_noreturn");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * void _invalid_parameter_noinfo_noreturn()
-     * }
-     */
-    public static FunctionDescriptor _invalid_parameter_noinfo_noreturn$descriptor() {
-        return _invalid_parameter_noinfo_noreturn.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * void _invalid_parameter_noinfo_noreturn()
-     * }
-     */
-    public static MethodHandle _invalid_parameter_noinfo_noreturn$handle() {
-        return _invalid_parameter_noinfo_noreturn.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * void _invalid_parameter_noinfo_noreturn()
-     * }
-     */
-    public static MemorySegment _invalid_parameter_noinfo_noreturn$address() {
-        return _invalid_parameter_noinfo_noreturn.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * void _invalid_parameter_noinfo_noreturn()
-     * }
-     */
-    public static void _invalid_parameter_noinfo_noreturn() {
-        var mh$ = _invalid_parameter_noinfo_noreturn.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_invalid_parameter_noinfo_noreturn");
-            }
-            mh$.invokeExact();
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _invoke_watson {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
-            nng_h.C_POINTER,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER,
-            nng_h.C_INT,
-            nng_h.C_LONG_LONG
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_invoke_watson");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * void _invoke_watson(const wchar_t *_Expression, const wchar_t *_FunctionName, const wchar_t *_FileName, unsigned int _LineNo, uintptr_t _Reserved)
-     * }
-     */
-    public static FunctionDescriptor _invoke_watson$descriptor() {
-        return _invoke_watson.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * void _invoke_watson(const wchar_t *_Expression, const wchar_t *_FunctionName, const wchar_t *_FileName, unsigned int _LineNo, uintptr_t _Reserved)
-     * }
-     */
-    public static MethodHandle _invoke_watson$handle() {
-        return _invoke_watson.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * void _invoke_watson(const wchar_t *_Expression, const wchar_t *_FunctionName, const wchar_t *_FileName, unsigned int _LineNo, uintptr_t _Reserved)
-     * }
-     */
-    public static MemorySegment _invoke_watson$address() {
-        return _invoke_watson.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * void _invoke_watson(const wchar_t *_Expression, const wchar_t *_FunctionName, const wchar_t *_FileName, unsigned int _LineNo, uintptr_t _Reserved)
-     * }
-     */
-    public static void _invoke_watson(MemorySegment _Expression, MemorySegment _FunctionName, MemorySegment _FileName, int _LineNo, long _Reserved) {
-        var mh$ = _invoke_watson.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_invoke_watson", _Expression, _FunctionName, _FileName, _LineNo, _Reserved);
-            }
-            mh$.invokeExact(_Expression, _FunctionName, _FileName, _LineNo, _Reserved);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    /**
-     * {@snippet lang=c :
-     * typedef int errno_t
-     * }
-     */
-    public static final OfInt errno_t = nng_h.C_INT;
-    /**
-     * {@snippet lang=c :
-     * typedef unsigned short wint_t
-     * }
-     */
-    public static final OfShort wint_t = nng_h.C_SHORT;
-    /**
-     * {@snippet lang=c :
-     * typedef unsigned short wctype_t
-     * }
-     */
-    public static final OfShort wctype_t = nng_h.C_SHORT;
-    /**
-     * {@snippet lang=c :
-     * typedef long __time32_t
-     * }
-     */
-    public static final OfInt __time32_t = nng_h.C_LONG;
-    /**
-     * {@snippet lang=c :
-     * typedef long long __time64_t
-     * }
-     */
-    public static final OfLong __time64_t = nng_h.C_LONG_LONG;
-    /**
-     * {@snippet lang=c :
-     * typedef __crt_locale_pointers *_locale_t
-     * }
-     */
-    public static final AddressLayout _locale_t = nng_h.C_POINTER;
-    /**
-     * {@snippet lang=c :
-     * typedef __time64_t time_t
-     * }
-     */
-    public static final OfLong time_t = nng_h.C_LONG_LONG;
-    /**
-     * {@snippet lang=c :
-     * typedef size_t rsize_t
-     * }
-     */
-    public static final OfLong rsize_t = nng_h.C_LONG_LONG;
-
-    private static class _wasctime {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_wasctime");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * wchar_t *_wasctime(const struct tm *_Tm)
-     * }
-     */
-    public static FunctionDescriptor _wasctime$descriptor() {
-        return _wasctime.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * wchar_t *_wasctime(const struct tm *_Tm)
-     * }
-     */
-    public static MethodHandle _wasctime$handle() {
-        return _wasctime.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * wchar_t *_wasctime(const struct tm *_Tm)
-     * }
-     */
-    public static MemorySegment _wasctime$address() {
-        return _wasctime.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * wchar_t *_wasctime(const struct tm *_Tm)
-     * }
-     */
-    public static MemorySegment _wasctime(MemorySegment _Tm) {
-        var mh$ = _wasctime.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_wasctime", _Tm);
-            }
-            return (MemorySegment)mh$.invokeExact(_Tm);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _wasctime_s {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_LONG_LONG,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_wasctime_s");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * errno_t _wasctime_s(wchar_t *_Buffer, size_t _SizeInWords, const struct tm *_Tm)
-     * }
-     */
-    public static FunctionDescriptor _wasctime_s$descriptor() {
-        return _wasctime_s.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * errno_t _wasctime_s(wchar_t *_Buffer, size_t _SizeInWords, const struct tm *_Tm)
-     * }
-     */
-    public static MethodHandle _wasctime_s$handle() {
-        return _wasctime_s.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * errno_t _wasctime_s(wchar_t *_Buffer, size_t _SizeInWords, const struct tm *_Tm)
-     * }
-     */
-    public static MemorySegment _wasctime_s$address() {
-        return _wasctime_s.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * errno_t _wasctime_s(wchar_t *_Buffer, size_t _SizeInWords, const struct tm *_Tm)
-     * }
-     */
-    public static int _wasctime_s(MemorySegment _Buffer, long _SizeInWords, MemorySegment _Tm) {
-        var mh$ = _wasctime_s.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_wasctime_s", _Buffer, _SizeInWords, _Tm);
-            }
-            return (int)mh$.invokeExact(_Buffer, _SizeInWords, _Tm);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class wcsftime {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_LONG_LONG,
-            nng_h.C_POINTER,
-            nng_h.C_LONG_LONG,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("wcsftime");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * size_t wcsftime(wchar_t *_Buffer, size_t _SizeInWords, const wchar_t *_Format, const struct tm *_Tm)
-     * }
-     */
-    public static FunctionDescriptor wcsftime$descriptor() {
-        return wcsftime.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * size_t wcsftime(wchar_t *_Buffer, size_t _SizeInWords, const wchar_t *_Format, const struct tm *_Tm)
-     * }
-     */
-    public static MethodHandle wcsftime$handle() {
-        return wcsftime.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * size_t wcsftime(wchar_t *_Buffer, size_t _SizeInWords, const wchar_t *_Format, const struct tm *_Tm)
-     * }
-     */
-    public static MemorySegment wcsftime$address() {
-        return wcsftime.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * size_t wcsftime(wchar_t *_Buffer, size_t _SizeInWords, const wchar_t *_Format, const struct tm *_Tm)
-     * }
-     */
-    public static long wcsftime(MemorySegment _Buffer, long _SizeInWords, MemorySegment _Format, MemorySegment _Tm) {
-        var mh$ = wcsftime.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("wcsftime", _Buffer, _SizeInWords, _Format, _Tm);
-            }
-            return (long)mh$.invokeExact(_Buffer, _SizeInWords, _Format, _Tm);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _wcsftime_l {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_LONG_LONG,
-            nng_h.C_POINTER,
-            nng_h.C_LONG_LONG,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_wcsftime_l");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * size_t _wcsftime_l(wchar_t *_Buffer, size_t _SizeInWords, const wchar_t *_Format, const struct tm *_Tm, _locale_t _Locale)
-     * }
-     */
-    public static FunctionDescriptor _wcsftime_l$descriptor() {
-        return _wcsftime_l.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * size_t _wcsftime_l(wchar_t *_Buffer, size_t _SizeInWords, const wchar_t *_Format, const struct tm *_Tm, _locale_t _Locale)
-     * }
-     */
-    public static MethodHandle _wcsftime_l$handle() {
-        return _wcsftime_l.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * size_t _wcsftime_l(wchar_t *_Buffer, size_t _SizeInWords, const wchar_t *_Format, const struct tm *_Tm, _locale_t _Locale)
-     * }
-     */
-    public static MemorySegment _wcsftime_l$address() {
-        return _wcsftime_l.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * size_t _wcsftime_l(wchar_t *_Buffer, size_t _SizeInWords, const wchar_t *_Format, const struct tm *_Tm, _locale_t _Locale)
-     * }
-     */
-    public static long _wcsftime_l(MemorySegment _Buffer, long _SizeInWords, MemorySegment _Format, MemorySegment _Tm, MemorySegment _Locale) {
-        var mh$ = _wcsftime_l.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_wcsftime_l", _Buffer, _SizeInWords, _Format, _Tm, _Locale);
-            }
-            return (long)mh$.invokeExact(_Buffer, _SizeInWords, _Format, _Tm, _Locale);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _wctime32 {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_wctime32");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * wchar_t *_wctime32(const __time32_t *_Time)
-     * }
-     */
-    public static FunctionDescriptor _wctime32$descriptor() {
-        return _wctime32.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * wchar_t *_wctime32(const __time32_t *_Time)
-     * }
-     */
-    public static MethodHandle _wctime32$handle() {
-        return _wctime32.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * wchar_t *_wctime32(const __time32_t *_Time)
-     * }
-     */
-    public static MemorySegment _wctime32$address() {
-        return _wctime32.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * wchar_t *_wctime32(const __time32_t *_Time)
-     * }
-     */
-    public static MemorySegment _wctime32(MemorySegment _Time) {
-        var mh$ = _wctime32.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_wctime32", _Time);
-            }
-            return (MemorySegment)mh$.invokeExact(_Time);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _wctime32_s {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_LONG_LONG,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_wctime32_s");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * errno_t _wctime32_s(wchar_t *_Buffer, size_t _SizeInWords, const __time32_t *_Time)
-     * }
-     */
-    public static FunctionDescriptor _wctime32_s$descriptor() {
-        return _wctime32_s.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * errno_t _wctime32_s(wchar_t *_Buffer, size_t _SizeInWords, const __time32_t *_Time)
-     * }
-     */
-    public static MethodHandle _wctime32_s$handle() {
-        return _wctime32_s.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * errno_t _wctime32_s(wchar_t *_Buffer, size_t _SizeInWords, const __time32_t *_Time)
-     * }
-     */
-    public static MemorySegment _wctime32_s$address() {
-        return _wctime32_s.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * errno_t _wctime32_s(wchar_t *_Buffer, size_t _SizeInWords, const __time32_t *_Time)
-     * }
-     */
-    public static int _wctime32_s(MemorySegment _Buffer, long _SizeInWords, MemorySegment _Time) {
-        var mh$ = _wctime32_s.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_wctime32_s", _Buffer, _SizeInWords, _Time);
-            }
-            return (int)mh$.invokeExact(_Buffer, _SizeInWords, _Time);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _wctime64 {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_wctime64");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * wchar_t *_wctime64(const __time64_t *_Time)
-     * }
-     */
-    public static FunctionDescriptor _wctime64$descriptor() {
-        return _wctime64.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * wchar_t *_wctime64(const __time64_t *_Time)
-     * }
-     */
-    public static MethodHandle _wctime64$handle() {
-        return _wctime64.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * wchar_t *_wctime64(const __time64_t *_Time)
-     * }
-     */
-    public static MemorySegment _wctime64$address() {
-        return _wctime64.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * wchar_t *_wctime64(const __time64_t *_Time)
-     * }
-     */
-    public static MemorySegment _wctime64(MemorySegment _Time) {
-        var mh$ = _wctime64.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_wctime64", _Time);
-            }
-            return (MemorySegment)mh$.invokeExact(_Time);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _wctime64_s {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_LONG_LONG,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_wctime64_s");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * errno_t _wctime64_s(wchar_t *_Buffer, size_t _SizeInWords, const __time64_t *_Time)
-     * }
-     */
-    public static FunctionDescriptor _wctime64_s$descriptor() {
-        return _wctime64_s.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * errno_t _wctime64_s(wchar_t *_Buffer, size_t _SizeInWords, const __time64_t *_Time)
-     * }
-     */
-    public static MethodHandle _wctime64_s$handle() {
-        return _wctime64_s.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * errno_t _wctime64_s(wchar_t *_Buffer, size_t _SizeInWords, const __time64_t *_Time)
-     * }
-     */
-    public static MemorySegment _wctime64_s$address() {
-        return _wctime64_s.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * errno_t _wctime64_s(wchar_t *_Buffer, size_t _SizeInWords, const __time64_t *_Time)
-     * }
-     */
-    public static int _wctime64_s(MemorySegment _Buffer, long _SizeInWords, MemorySegment _Time) {
-        var mh$ = _wctime64_s.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_wctime64_s", _Buffer, _SizeInWords, _Time);
-            }
-            return (int)mh$.invokeExact(_Buffer, _SizeInWords, _Time);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _wstrdate_s {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_LONG_LONG
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_wstrdate_s");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * errno_t _wstrdate_s(wchar_t *_Buffer, size_t _SizeInWords)
-     * }
-     */
-    public static FunctionDescriptor _wstrdate_s$descriptor() {
-        return _wstrdate_s.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * errno_t _wstrdate_s(wchar_t *_Buffer, size_t _SizeInWords)
-     * }
-     */
-    public static MethodHandle _wstrdate_s$handle() {
-        return _wstrdate_s.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * errno_t _wstrdate_s(wchar_t *_Buffer, size_t _SizeInWords)
-     * }
-     */
-    public static MemorySegment _wstrdate_s$address() {
-        return _wstrdate_s.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * errno_t _wstrdate_s(wchar_t *_Buffer, size_t _SizeInWords)
-     * }
-     */
-    public static int _wstrdate_s(MemorySegment _Buffer, long _SizeInWords) {
-        var mh$ = _wstrdate_s.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_wstrdate_s", _Buffer, _SizeInWords);
-            }
-            return (int)mh$.invokeExact(_Buffer, _SizeInWords);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _wstrdate {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_wstrdate");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * wchar_t *_wstrdate(wchar_t *_Buffer)
-     * }
-     */
-    public static FunctionDescriptor _wstrdate$descriptor() {
-        return _wstrdate.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * wchar_t *_wstrdate(wchar_t *_Buffer)
-     * }
-     */
-    public static MethodHandle _wstrdate$handle() {
-        return _wstrdate.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * wchar_t *_wstrdate(wchar_t *_Buffer)
-     * }
-     */
-    public static MemorySegment _wstrdate$address() {
-        return _wstrdate.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * wchar_t *_wstrdate(wchar_t *_Buffer)
-     * }
-     */
-    public static MemorySegment _wstrdate(MemorySegment _Buffer) {
-        var mh$ = _wstrdate.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_wstrdate", _Buffer);
-            }
-            return (MemorySegment)mh$.invokeExact(_Buffer);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _wstrtime_s {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_LONG_LONG
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_wstrtime_s");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * errno_t _wstrtime_s(wchar_t *_Buffer, size_t _SizeInWords)
-     * }
-     */
-    public static FunctionDescriptor _wstrtime_s$descriptor() {
-        return _wstrtime_s.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * errno_t _wstrtime_s(wchar_t *_Buffer, size_t _SizeInWords)
-     * }
-     */
-    public static MethodHandle _wstrtime_s$handle() {
-        return _wstrtime_s.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * errno_t _wstrtime_s(wchar_t *_Buffer, size_t _SizeInWords)
-     * }
-     */
-    public static MemorySegment _wstrtime_s$address() {
-        return _wstrtime_s.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * errno_t _wstrtime_s(wchar_t *_Buffer, size_t _SizeInWords)
-     * }
-     */
-    public static int _wstrtime_s(MemorySegment _Buffer, long _SizeInWords) {
-        var mh$ = _wstrtime_s.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_wstrtime_s", _Buffer, _SizeInWords);
-            }
-            return (int)mh$.invokeExact(_Buffer, _SizeInWords);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _wstrtime {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_wstrtime");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * wchar_t *_wstrtime(wchar_t *_Buffer)
-     * }
-     */
-    public static FunctionDescriptor _wstrtime$descriptor() {
-        return _wstrtime.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * wchar_t *_wstrtime(wchar_t *_Buffer)
-     * }
-     */
-    public static MethodHandle _wstrtime$handle() {
-        return _wstrtime.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * wchar_t *_wstrtime(wchar_t *_Buffer)
-     * }
-     */
-    public static MemorySegment _wstrtime$address() {
-        return _wstrtime.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * wchar_t *_wstrtime(wchar_t *_Buffer)
-     * }
-     */
-    public static MemorySegment _wstrtime(MemorySegment _Buffer) {
-        var mh$ = _wstrtime.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_wstrtime", _Buffer);
-            }
-            return (MemorySegment)mh$.invokeExact(_Buffer);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    /**
-     * {@snippet lang=c :
-     * typedef long clock_t
-     * }
-     */
-    public static final OfInt clock_t = nng_h.C_LONG;
-
-    private static class __daylight {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_POINTER    );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("__daylight");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int *__daylight()
-     * }
-     */
-    public static FunctionDescriptor __daylight$descriptor() {
-        return __daylight.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int *__daylight()
-     * }
-     */
-    public static MethodHandle __daylight$handle() {
-        return __daylight.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int *__daylight()
-     * }
-     */
-    public static MemorySegment __daylight$address() {
-        return __daylight.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int *__daylight()
-     * }
-     */
-    public static MemorySegment __daylight() {
-        var mh$ = __daylight.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("__daylight");
-            }
-            return (MemorySegment)mh$.invokeExact();
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class __dstbias {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_POINTER    );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("__dstbias");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * long *__dstbias()
-     * }
-     */
-    public static FunctionDescriptor __dstbias$descriptor() {
-        return __dstbias.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * long *__dstbias()
-     * }
-     */
-    public static MethodHandle __dstbias$handle() {
-        return __dstbias.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * long *__dstbias()
-     * }
-     */
-    public static MemorySegment __dstbias$address() {
-        return __dstbias.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * long *__dstbias()
-     * }
-     */
-    public static MemorySegment __dstbias() {
-        var mh$ = __dstbias.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("__dstbias");
-            }
-            return (MemorySegment)mh$.invokeExact();
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class __timezone {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_POINTER    );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("__timezone");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * long *__timezone()
-     * }
-     */
-    public static FunctionDescriptor __timezone$descriptor() {
-        return __timezone.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * long *__timezone()
-     * }
-     */
-    public static MethodHandle __timezone$handle() {
-        return __timezone.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * long *__timezone()
-     * }
-     */
-    public static MemorySegment __timezone$address() {
-        return __timezone.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * long *__timezone()
-     * }
-     */
-    public static MemorySegment __timezone() {
-        var mh$ = __timezone.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("__timezone");
-            }
-            return (MemorySegment)mh$.invokeExact();
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class __tzname {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_POINTER    );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("__tzname");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * char **__tzname()
-     * }
-     */
-    public static FunctionDescriptor __tzname$descriptor() {
-        return __tzname.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * char **__tzname()
-     * }
-     */
-    public static MethodHandle __tzname$handle() {
-        return __tzname.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * char **__tzname()
-     * }
-     */
-    public static MemorySegment __tzname$address() {
-        return __tzname.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * char **__tzname()
-     * }
-     */
-    public static MemorySegment __tzname() {
-        var mh$ = __tzname.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("__tzname");
-            }
-            return (MemorySegment)mh$.invokeExact();
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _get_daylight {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_get_daylight");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * errno_t _get_daylight(int *_Daylight)
-     * }
-     */
-    public static FunctionDescriptor _get_daylight$descriptor() {
-        return _get_daylight.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * errno_t _get_daylight(int *_Daylight)
-     * }
-     */
-    public static MethodHandle _get_daylight$handle() {
-        return _get_daylight.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * errno_t _get_daylight(int *_Daylight)
-     * }
-     */
-    public static MemorySegment _get_daylight$address() {
-        return _get_daylight.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * errno_t _get_daylight(int *_Daylight)
-     * }
-     */
-    public static int _get_daylight(MemorySegment _Daylight) {
-        var mh$ = _get_daylight.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_get_daylight", _Daylight);
-            }
-            return (int)mh$.invokeExact(_Daylight);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _get_dstbias {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_get_dstbias");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * errno_t _get_dstbias(long *_DaylightSavingsBias)
-     * }
-     */
-    public static FunctionDescriptor _get_dstbias$descriptor() {
-        return _get_dstbias.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * errno_t _get_dstbias(long *_DaylightSavingsBias)
-     * }
-     */
-    public static MethodHandle _get_dstbias$handle() {
-        return _get_dstbias.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * errno_t _get_dstbias(long *_DaylightSavingsBias)
-     * }
-     */
-    public static MemorySegment _get_dstbias$address() {
-        return _get_dstbias.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * errno_t _get_dstbias(long *_DaylightSavingsBias)
-     * }
-     */
-    public static int _get_dstbias(MemorySegment _DaylightSavingsBias) {
-        var mh$ = _get_dstbias.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_get_dstbias", _DaylightSavingsBias);
-            }
-            return (int)mh$.invokeExact(_DaylightSavingsBias);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _get_timezone {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_get_timezone");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * errno_t _get_timezone(long *_TimeZone)
-     * }
-     */
-    public static FunctionDescriptor _get_timezone$descriptor() {
-        return _get_timezone.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * errno_t _get_timezone(long *_TimeZone)
-     * }
-     */
-    public static MethodHandle _get_timezone$handle() {
-        return _get_timezone.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * errno_t _get_timezone(long *_TimeZone)
-     * }
-     */
-    public static MemorySegment _get_timezone$address() {
-        return _get_timezone.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * errno_t _get_timezone(long *_TimeZone)
-     * }
-     */
-    public static int _get_timezone(MemorySegment _TimeZone) {
-        var mh$ = _get_timezone.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_get_timezone", _TimeZone);
-            }
-            return (int)mh$.invokeExact(_TimeZone);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _get_tzname {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER,
-            nng_h.C_LONG_LONG,
-            nng_h.C_INT
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_get_tzname");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * errno_t _get_tzname(size_t *_ReturnValue, char *_Buffer, size_t _SizeInBytes, int _Index)
-     * }
-     */
-    public static FunctionDescriptor _get_tzname$descriptor() {
-        return _get_tzname.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * errno_t _get_tzname(size_t *_ReturnValue, char *_Buffer, size_t _SizeInBytes, int _Index)
-     * }
-     */
-    public static MethodHandle _get_tzname$handle() {
-        return _get_tzname.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * errno_t _get_tzname(size_t *_ReturnValue, char *_Buffer, size_t _SizeInBytes, int _Index)
-     * }
-     */
-    public static MemorySegment _get_tzname$address() {
-        return _get_tzname.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * errno_t _get_tzname(size_t *_ReturnValue, char *_Buffer, size_t _SizeInBytes, int _Index)
-     * }
-     */
-    public static int _get_tzname(MemorySegment _ReturnValue, MemorySegment _Buffer, long _SizeInBytes, int _Index) {
-        var mh$ = _get_tzname.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_get_tzname", _ReturnValue, _Buffer, _SizeInBytes, _Index);
-            }
-            return (int)mh$.invokeExact(_ReturnValue, _Buffer, _SizeInBytes, _Index);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class asctime {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("asctime");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * char *asctime(const struct tm *_Tm)
-     * }
-     */
-    public static FunctionDescriptor asctime$descriptor() {
-        return asctime.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * char *asctime(const struct tm *_Tm)
-     * }
-     */
-    public static MethodHandle asctime$handle() {
-        return asctime.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * char *asctime(const struct tm *_Tm)
-     * }
-     */
-    public static MemorySegment asctime$address() {
-        return asctime.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * char *asctime(const struct tm *_Tm)
-     * }
-     */
-    public static MemorySegment asctime(MemorySegment _Tm) {
-        var mh$ = asctime.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("asctime", _Tm);
-            }
-            return (MemorySegment)mh$.invokeExact(_Tm);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class asctime_s {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_LONG_LONG,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("asctime_s");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * errno_t asctime_s(char *_Buffer, size_t _SizeInBytes, const struct tm *_Tm)
-     * }
-     */
-    public static FunctionDescriptor asctime_s$descriptor() {
-        return asctime_s.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * errno_t asctime_s(char *_Buffer, size_t _SizeInBytes, const struct tm *_Tm)
-     * }
-     */
-    public static MethodHandle asctime_s$handle() {
-        return asctime_s.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * errno_t asctime_s(char *_Buffer, size_t _SizeInBytes, const struct tm *_Tm)
-     * }
-     */
-    public static MemorySegment asctime_s$address() {
-        return asctime_s.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * errno_t asctime_s(char *_Buffer, size_t _SizeInBytes, const struct tm *_Tm)
-     * }
-     */
-    public static int asctime_s(MemorySegment _Buffer, long _SizeInBytes, MemorySegment _Tm) {
-        var mh$ = asctime_s.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("asctime_s", _Buffer, _SizeInBytes, _Tm);
-            }
-            return (int)mh$.invokeExact(_Buffer, _SizeInBytes, _Tm);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class clock {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_LONG    );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("clock");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * clock_t clock()
-     * }
-     */
-    public static FunctionDescriptor clock$descriptor() {
-        return clock.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * clock_t clock()
-     * }
-     */
-    public static MethodHandle clock$handle() {
-        return clock.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * clock_t clock()
-     * }
-     */
-    public static MemorySegment clock$address() {
-        return clock.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * clock_t clock()
-     * }
-     */
-    public static int clock() {
-        var mh$ = clock.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("clock");
-            }
-            return (int)mh$.invokeExact();
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _ctime32 {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_ctime32");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * char *_ctime32(const __time32_t *_Time)
-     * }
-     */
-    public static FunctionDescriptor _ctime32$descriptor() {
-        return _ctime32.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * char *_ctime32(const __time32_t *_Time)
-     * }
-     */
-    public static MethodHandle _ctime32$handle() {
-        return _ctime32.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * char *_ctime32(const __time32_t *_Time)
-     * }
-     */
-    public static MemorySegment _ctime32$address() {
-        return _ctime32.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * char *_ctime32(const __time32_t *_Time)
-     * }
-     */
-    public static MemorySegment _ctime32(MemorySegment _Time) {
-        var mh$ = _ctime32.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_ctime32", _Time);
-            }
-            return (MemorySegment)mh$.invokeExact(_Time);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _ctime32_s {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_LONG_LONG,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_ctime32_s");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * errno_t _ctime32_s(char *_Buffer, size_t _SizeInBytes, const __time32_t *_Time)
-     * }
-     */
-    public static FunctionDescriptor _ctime32_s$descriptor() {
-        return _ctime32_s.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * errno_t _ctime32_s(char *_Buffer, size_t _SizeInBytes, const __time32_t *_Time)
-     * }
-     */
-    public static MethodHandle _ctime32_s$handle() {
-        return _ctime32_s.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * errno_t _ctime32_s(char *_Buffer, size_t _SizeInBytes, const __time32_t *_Time)
-     * }
-     */
-    public static MemorySegment _ctime32_s$address() {
-        return _ctime32_s.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * errno_t _ctime32_s(char *_Buffer, size_t _SizeInBytes, const __time32_t *_Time)
-     * }
-     */
-    public static int _ctime32_s(MemorySegment _Buffer, long _SizeInBytes, MemorySegment _Time) {
-        var mh$ = _ctime32_s.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_ctime32_s", _Buffer, _SizeInBytes, _Time);
-            }
-            return (int)mh$.invokeExact(_Buffer, _SizeInBytes, _Time);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _ctime64 {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_ctime64");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * char *_ctime64(const __time64_t *_Time)
-     * }
-     */
-    public static FunctionDescriptor _ctime64$descriptor() {
-        return _ctime64.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * char *_ctime64(const __time64_t *_Time)
-     * }
-     */
-    public static MethodHandle _ctime64$handle() {
-        return _ctime64.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * char *_ctime64(const __time64_t *_Time)
-     * }
-     */
-    public static MemorySegment _ctime64$address() {
-        return _ctime64.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * char *_ctime64(const __time64_t *_Time)
-     * }
-     */
-    public static MemorySegment _ctime64(MemorySegment _Time) {
-        var mh$ = _ctime64.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_ctime64", _Time);
-            }
-            return (MemorySegment)mh$.invokeExact(_Time);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _ctime64_s {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_LONG_LONG,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_ctime64_s");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * errno_t _ctime64_s(char *_Buffer, size_t _SizeInBytes, const __time64_t *_Time)
-     * }
-     */
-    public static FunctionDescriptor _ctime64_s$descriptor() {
-        return _ctime64_s.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * errno_t _ctime64_s(char *_Buffer, size_t _SizeInBytes, const __time64_t *_Time)
-     * }
-     */
-    public static MethodHandle _ctime64_s$handle() {
-        return _ctime64_s.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * errno_t _ctime64_s(char *_Buffer, size_t _SizeInBytes, const __time64_t *_Time)
-     * }
-     */
-    public static MemorySegment _ctime64_s$address() {
-        return _ctime64_s.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * errno_t _ctime64_s(char *_Buffer, size_t _SizeInBytes, const __time64_t *_Time)
-     * }
-     */
-    public static int _ctime64_s(MemorySegment _Buffer, long _SizeInBytes, MemorySegment _Time) {
-        var mh$ = _ctime64_s.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_ctime64_s", _Buffer, _SizeInBytes, _Time);
-            }
-            return (int)mh$.invokeExact(_Buffer, _SizeInBytes, _Time);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _difftime32 {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_DOUBLE,
-            nng_h.C_LONG,
-            nng_h.C_LONG
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_difftime32");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * double _difftime32(__time32_t _Time1, __time32_t _Time2)
-     * }
-     */
-    public static FunctionDescriptor _difftime32$descriptor() {
-        return _difftime32.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * double _difftime32(__time32_t _Time1, __time32_t _Time2)
-     * }
-     */
-    public static MethodHandle _difftime32$handle() {
-        return _difftime32.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * double _difftime32(__time32_t _Time1, __time32_t _Time2)
-     * }
-     */
-    public static MemorySegment _difftime32$address() {
-        return _difftime32.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * double _difftime32(__time32_t _Time1, __time32_t _Time2)
-     * }
-     */
-    public static double _difftime32(int _Time1, int _Time2) {
-        var mh$ = _difftime32.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_difftime32", _Time1, _Time2);
-            }
-            return (double)mh$.invokeExact(_Time1, _Time2);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _difftime64 {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_DOUBLE,
-            nng_h.C_LONG_LONG,
-            nng_h.C_LONG_LONG
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_difftime64");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * double _difftime64(__time64_t _Time1, __time64_t _Time2)
-     * }
-     */
-    public static FunctionDescriptor _difftime64$descriptor() {
-        return _difftime64.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * double _difftime64(__time64_t _Time1, __time64_t _Time2)
-     * }
-     */
-    public static MethodHandle _difftime64$handle() {
-        return _difftime64.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * double _difftime64(__time64_t _Time1, __time64_t _Time2)
-     * }
-     */
-    public static MemorySegment _difftime64$address() {
-        return _difftime64.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * double _difftime64(__time64_t _Time1, __time64_t _Time2)
-     * }
-     */
-    public static double _difftime64(long _Time1, long _Time2) {
-        var mh$ = _difftime64.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_difftime64", _Time1, _Time2);
-            }
-            return (double)mh$.invokeExact(_Time1, _Time2);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _gmtime32 {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_gmtime32");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * struct tm *_gmtime32(const __time32_t *_Time)
-     * }
-     */
-    public static FunctionDescriptor _gmtime32$descriptor() {
-        return _gmtime32.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * struct tm *_gmtime32(const __time32_t *_Time)
-     * }
-     */
-    public static MethodHandle _gmtime32$handle() {
-        return _gmtime32.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * struct tm *_gmtime32(const __time32_t *_Time)
-     * }
-     */
-    public static MemorySegment _gmtime32$address() {
-        return _gmtime32.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * struct tm *_gmtime32(const __time32_t *_Time)
-     * }
-     */
-    public static MemorySegment _gmtime32(MemorySegment _Time) {
-        var mh$ = _gmtime32.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_gmtime32", _Time);
-            }
-            return (MemorySegment)mh$.invokeExact(_Time);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _gmtime32_s {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_gmtime32_s");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * errno_t _gmtime32_s(struct tm *_Tm, const __time32_t *_Time)
-     * }
-     */
-    public static FunctionDescriptor _gmtime32_s$descriptor() {
-        return _gmtime32_s.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * errno_t _gmtime32_s(struct tm *_Tm, const __time32_t *_Time)
-     * }
-     */
-    public static MethodHandle _gmtime32_s$handle() {
-        return _gmtime32_s.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * errno_t _gmtime32_s(struct tm *_Tm, const __time32_t *_Time)
-     * }
-     */
-    public static MemorySegment _gmtime32_s$address() {
-        return _gmtime32_s.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * errno_t _gmtime32_s(struct tm *_Tm, const __time32_t *_Time)
-     * }
-     */
-    public static int _gmtime32_s(MemorySegment _Tm, MemorySegment _Time) {
-        var mh$ = _gmtime32_s.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_gmtime32_s", _Tm, _Time);
-            }
-            return (int)mh$.invokeExact(_Tm, _Time);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _gmtime64 {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_gmtime64");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * struct tm *_gmtime64(const __time64_t *_Time)
-     * }
-     */
-    public static FunctionDescriptor _gmtime64$descriptor() {
-        return _gmtime64.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * struct tm *_gmtime64(const __time64_t *_Time)
-     * }
-     */
-    public static MethodHandle _gmtime64$handle() {
-        return _gmtime64.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * struct tm *_gmtime64(const __time64_t *_Time)
-     * }
-     */
-    public static MemorySegment _gmtime64$address() {
-        return _gmtime64.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * struct tm *_gmtime64(const __time64_t *_Time)
-     * }
-     */
-    public static MemorySegment _gmtime64(MemorySegment _Time) {
-        var mh$ = _gmtime64.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_gmtime64", _Time);
-            }
-            return (MemorySegment)mh$.invokeExact(_Time);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _gmtime64_s {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_gmtime64_s");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * errno_t _gmtime64_s(struct tm *_Tm, const __time64_t *_Time)
-     * }
-     */
-    public static FunctionDescriptor _gmtime64_s$descriptor() {
-        return _gmtime64_s.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * errno_t _gmtime64_s(struct tm *_Tm, const __time64_t *_Time)
-     * }
-     */
-    public static MethodHandle _gmtime64_s$handle() {
-        return _gmtime64_s.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * errno_t _gmtime64_s(struct tm *_Tm, const __time64_t *_Time)
-     * }
-     */
-    public static MemorySegment _gmtime64_s$address() {
-        return _gmtime64_s.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * errno_t _gmtime64_s(struct tm *_Tm, const __time64_t *_Time)
-     * }
-     */
-    public static int _gmtime64_s(MemorySegment _Tm, MemorySegment _Time) {
-        var mh$ = _gmtime64_s.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_gmtime64_s", _Tm, _Time);
-            }
-            return (int)mh$.invokeExact(_Tm, _Time);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _localtime32 {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_localtime32");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * struct tm *_localtime32(const __time32_t *_Time)
-     * }
-     */
-    public static FunctionDescriptor _localtime32$descriptor() {
-        return _localtime32.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * struct tm *_localtime32(const __time32_t *_Time)
-     * }
-     */
-    public static MethodHandle _localtime32$handle() {
-        return _localtime32.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * struct tm *_localtime32(const __time32_t *_Time)
-     * }
-     */
-    public static MemorySegment _localtime32$address() {
-        return _localtime32.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * struct tm *_localtime32(const __time32_t *_Time)
-     * }
-     */
-    public static MemorySegment _localtime32(MemorySegment _Time) {
-        var mh$ = _localtime32.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_localtime32", _Time);
-            }
-            return (MemorySegment)mh$.invokeExact(_Time);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _localtime32_s {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_localtime32_s");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * errno_t _localtime32_s(struct tm *_Tm, const __time32_t *_Time)
-     * }
-     */
-    public static FunctionDescriptor _localtime32_s$descriptor() {
-        return _localtime32_s.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * errno_t _localtime32_s(struct tm *_Tm, const __time32_t *_Time)
-     * }
-     */
-    public static MethodHandle _localtime32_s$handle() {
-        return _localtime32_s.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * errno_t _localtime32_s(struct tm *_Tm, const __time32_t *_Time)
-     * }
-     */
-    public static MemorySegment _localtime32_s$address() {
-        return _localtime32_s.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * errno_t _localtime32_s(struct tm *_Tm, const __time32_t *_Time)
-     * }
-     */
-    public static int _localtime32_s(MemorySegment _Tm, MemorySegment _Time) {
-        var mh$ = _localtime32_s.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_localtime32_s", _Tm, _Time);
-            }
-            return (int)mh$.invokeExact(_Tm, _Time);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _localtime64 {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_localtime64");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * struct tm *_localtime64(const __time64_t *_Time)
-     * }
-     */
-    public static FunctionDescriptor _localtime64$descriptor() {
-        return _localtime64.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * struct tm *_localtime64(const __time64_t *_Time)
-     * }
-     */
-    public static MethodHandle _localtime64$handle() {
-        return _localtime64.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * struct tm *_localtime64(const __time64_t *_Time)
-     * }
-     */
-    public static MemorySegment _localtime64$address() {
-        return _localtime64.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * struct tm *_localtime64(const __time64_t *_Time)
-     * }
-     */
-    public static MemorySegment _localtime64(MemorySegment _Time) {
-        var mh$ = _localtime64.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_localtime64", _Time);
-            }
-            return (MemorySegment)mh$.invokeExact(_Time);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _localtime64_s {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_localtime64_s");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * errno_t _localtime64_s(struct tm *_Tm, const __time64_t *_Time)
-     * }
-     */
-    public static FunctionDescriptor _localtime64_s$descriptor() {
-        return _localtime64_s.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * errno_t _localtime64_s(struct tm *_Tm, const __time64_t *_Time)
-     * }
-     */
-    public static MethodHandle _localtime64_s$handle() {
-        return _localtime64_s.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * errno_t _localtime64_s(struct tm *_Tm, const __time64_t *_Time)
-     * }
-     */
-    public static MemorySegment _localtime64_s$address() {
-        return _localtime64_s.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * errno_t _localtime64_s(struct tm *_Tm, const __time64_t *_Time)
-     * }
-     */
-    public static int _localtime64_s(MemorySegment _Tm, MemorySegment _Time) {
-        var mh$ = _localtime64_s.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_localtime64_s", _Tm, _Time);
-            }
-            return (int)mh$.invokeExact(_Tm, _Time);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _mkgmtime32 {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_LONG,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_mkgmtime32");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * __time32_t _mkgmtime32(struct tm *_Tm)
-     * }
-     */
-    public static FunctionDescriptor _mkgmtime32$descriptor() {
-        return _mkgmtime32.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * __time32_t _mkgmtime32(struct tm *_Tm)
-     * }
-     */
-    public static MethodHandle _mkgmtime32$handle() {
-        return _mkgmtime32.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * __time32_t _mkgmtime32(struct tm *_Tm)
-     * }
-     */
-    public static MemorySegment _mkgmtime32$address() {
-        return _mkgmtime32.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * __time32_t _mkgmtime32(struct tm *_Tm)
-     * }
-     */
-    public static int _mkgmtime32(MemorySegment _Tm) {
-        var mh$ = _mkgmtime32.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_mkgmtime32", _Tm);
-            }
-            return (int)mh$.invokeExact(_Tm);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _mkgmtime64 {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_LONG_LONG,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_mkgmtime64");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * __time64_t _mkgmtime64(struct tm *_Tm)
-     * }
-     */
-    public static FunctionDescriptor _mkgmtime64$descriptor() {
-        return _mkgmtime64.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * __time64_t _mkgmtime64(struct tm *_Tm)
-     * }
-     */
-    public static MethodHandle _mkgmtime64$handle() {
-        return _mkgmtime64.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * __time64_t _mkgmtime64(struct tm *_Tm)
-     * }
-     */
-    public static MemorySegment _mkgmtime64$address() {
-        return _mkgmtime64.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * __time64_t _mkgmtime64(struct tm *_Tm)
-     * }
-     */
-    public static long _mkgmtime64(MemorySegment _Tm) {
-        var mh$ = _mkgmtime64.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_mkgmtime64", _Tm);
-            }
-            return (long)mh$.invokeExact(_Tm);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _mktime32 {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_LONG,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_mktime32");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * __time32_t _mktime32(struct tm *_Tm)
-     * }
-     */
-    public static FunctionDescriptor _mktime32$descriptor() {
-        return _mktime32.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * __time32_t _mktime32(struct tm *_Tm)
-     * }
-     */
-    public static MethodHandle _mktime32$handle() {
-        return _mktime32.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * __time32_t _mktime32(struct tm *_Tm)
-     * }
-     */
-    public static MemorySegment _mktime32$address() {
-        return _mktime32.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * __time32_t _mktime32(struct tm *_Tm)
-     * }
-     */
-    public static int _mktime32(MemorySegment _Tm) {
-        var mh$ = _mktime32.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_mktime32", _Tm);
-            }
-            return (int)mh$.invokeExact(_Tm);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _mktime64 {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_LONG_LONG,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_mktime64");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * __time64_t _mktime64(struct tm *_Tm)
-     * }
-     */
-    public static FunctionDescriptor _mktime64$descriptor() {
-        return _mktime64.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * __time64_t _mktime64(struct tm *_Tm)
-     * }
-     */
-    public static MethodHandle _mktime64$handle() {
-        return _mktime64.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * __time64_t _mktime64(struct tm *_Tm)
-     * }
-     */
-    public static MemorySegment _mktime64$address() {
-        return _mktime64.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * __time64_t _mktime64(struct tm *_Tm)
-     * }
-     */
-    public static long _mktime64(MemorySegment _Tm) {
-        var mh$ = _mktime64.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_mktime64", _Tm);
-            }
-            return (long)mh$.invokeExact(_Tm);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class strftime {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_LONG_LONG,
-            nng_h.C_POINTER,
-            nng_h.C_LONG_LONG,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("strftime");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * size_t strftime(char *_Buffer, size_t _SizeInBytes, const char *_Format, const struct tm *_Tm)
-     * }
-     */
-    public static FunctionDescriptor strftime$descriptor() {
-        return strftime.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * size_t strftime(char *_Buffer, size_t _SizeInBytes, const char *_Format, const struct tm *_Tm)
-     * }
-     */
-    public static MethodHandle strftime$handle() {
-        return strftime.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * size_t strftime(char *_Buffer, size_t _SizeInBytes, const char *_Format, const struct tm *_Tm)
-     * }
-     */
-    public static MemorySegment strftime$address() {
-        return strftime.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * size_t strftime(char *_Buffer, size_t _SizeInBytes, const char *_Format, const struct tm *_Tm)
-     * }
-     */
-    public static long strftime(MemorySegment _Buffer, long _SizeInBytes, MemorySegment _Format, MemorySegment _Tm) {
-        var mh$ = strftime.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("strftime", _Buffer, _SizeInBytes, _Format, _Tm);
-            }
-            return (long)mh$.invokeExact(_Buffer, _SizeInBytes, _Format, _Tm);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _strftime_l {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_LONG_LONG,
-            nng_h.C_POINTER,
-            nng_h.C_LONG_LONG,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_strftime_l");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * size_t _strftime_l(char *_Buffer, size_t _MaxSize, const char *_Format, const struct tm *_Tm, _locale_t _Locale)
-     * }
-     */
-    public static FunctionDescriptor _strftime_l$descriptor() {
-        return _strftime_l.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * size_t _strftime_l(char *_Buffer, size_t _MaxSize, const char *_Format, const struct tm *_Tm, _locale_t _Locale)
-     * }
-     */
-    public static MethodHandle _strftime_l$handle() {
-        return _strftime_l.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * size_t _strftime_l(char *_Buffer, size_t _MaxSize, const char *_Format, const struct tm *_Tm, _locale_t _Locale)
-     * }
-     */
-    public static MemorySegment _strftime_l$address() {
-        return _strftime_l.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * size_t _strftime_l(char *_Buffer, size_t _MaxSize, const char *_Format, const struct tm *_Tm, _locale_t _Locale)
-     * }
-     */
-    public static long _strftime_l(MemorySegment _Buffer, long _MaxSize, MemorySegment _Format, MemorySegment _Tm, MemorySegment _Locale) {
-        var mh$ = _strftime_l.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_strftime_l", _Buffer, _MaxSize, _Format, _Tm, _Locale);
-            }
-            return (long)mh$.invokeExact(_Buffer, _MaxSize, _Format, _Tm, _Locale);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _strdate_s {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_LONG_LONG
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_strdate_s");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * errno_t _strdate_s(char *_Buffer, size_t _SizeInBytes)
-     * }
-     */
-    public static FunctionDescriptor _strdate_s$descriptor() {
-        return _strdate_s.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * errno_t _strdate_s(char *_Buffer, size_t _SizeInBytes)
-     * }
-     */
-    public static MethodHandle _strdate_s$handle() {
-        return _strdate_s.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * errno_t _strdate_s(char *_Buffer, size_t _SizeInBytes)
-     * }
-     */
-    public static MemorySegment _strdate_s$address() {
-        return _strdate_s.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * errno_t _strdate_s(char *_Buffer, size_t _SizeInBytes)
-     * }
-     */
-    public static int _strdate_s(MemorySegment _Buffer, long _SizeInBytes) {
-        var mh$ = _strdate_s.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_strdate_s", _Buffer, _SizeInBytes);
-            }
-            return (int)mh$.invokeExact(_Buffer, _SizeInBytes);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _strdate {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_strdate");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * char *_strdate(char *_Buffer)
-     * }
-     */
-    public static FunctionDescriptor _strdate$descriptor() {
-        return _strdate.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * char *_strdate(char *_Buffer)
-     * }
-     */
-    public static MethodHandle _strdate$handle() {
-        return _strdate.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * char *_strdate(char *_Buffer)
-     * }
-     */
-    public static MemorySegment _strdate$address() {
-        return _strdate.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * char *_strdate(char *_Buffer)
-     * }
-     */
-    public static MemorySegment _strdate(MemorySegment _Buffer) {
-        var mh$ = _strdate.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_strdate", _Buffer);
-            }
-            return (MemorySegment)mh$.invokeExact(_Buffer);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _strtime_s {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_LONG_LONG
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_strtime_s");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * errno_t _strtime_s(char *_Buffer, size_t _SizeInBytes)
-     * }
-     */
-    public static FunctionDescriptor _strtime_s$descriptor() {
-        return _strtime_s.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * errno_t _strtime_s(char *_Buffer, size_t _SizeInBytes)
-     * }
-     */
-    public static MethodHandle _strtime_s$handle() {
-        return _strtime_s.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * errno_t _strtime_s(char *_Buffer, size_t _SizeInBytes)
-     * }
-     */
-    public static MemorySegment _strtime_s$address() {
-        return _strtime_s.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * errno_t _strtime_s(char *_Buffer, size_t _SizeInBytes)
-     * }
-     */
-    public static int _strtime_s(MemorySegment _Buffer, long _SizeInBytes) {
-        var mh$ = _strtime_s.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_strtime_s", _Buffer, _SizeInBytes);
-            }
-            return (int)mh$.invokeExact(_Buffer, _SizeInBytes);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _strtime {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_strtime");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * char *_strtime(char *_Buffer)
-     * }
-     */
-    public static FunctionDescriptor _strtime$descriptor() {
-        return _strtime.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * char *_strtime(char *_Buffer)
-     * }
-     */
-    public static MethodHandle _strtime$handle() {
-        return _strtime.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * char *_strtime(char *_Buffer)
-     * }
-     */
-    public static MemorySegment _strtime$address() {
-        return _strtime.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * char *_strtime(char *_Buffer)
-     * }
-     */
-    public static MemorySegment _strtime(MemorySegment _Buffer) {
-        var mh$ = _strtime.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_strtime", _Buffer);
-            }
-            return (MemorySegment)mh$.invokeExact(_Buffer);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _time32 {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_LONG,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_time32");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * __time32_t _time32(__time32_t *_Time)
-     * }
-     */
-    public static FunctionDescriptor _time32$descriptor() {
-        return _time32.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * __time32_t _time32(__time32_t *_Time)
-     * }
-     */
-    public static MethodHandle _time32$handle() {
-        return _time32.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * __time32_t _time32(__time32_t *_Time)
-     * }
-     */
-    public static MemorySegment _time32$address() {
-        return _time32.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * __time32_t _time32(__time32_t *_Time)
-     * }
-     */
-    public static int _time32(MemorySegment _Time) {
-        var mh$ = _time32.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_time32", _Time);
-            }
-            return (int)mh$.invokeExact(_Time);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _time64 {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_LONG_LONG,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_time64");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * __time64_t _time64(__time64_t *_Time)
-     * }
-     */
-    public static FunctionDescriptor _time64$descriptor() {
-        return _time64.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * __time64_t _time64(__time64_t *_Time)
-     * }
-     */
-    public static MethodHandle _time64$handle() {
-        return _time64.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * __time64_t _time64(__time64_t *_Time)
-     * }
-     */
-    public static MemorySegment _time64$address() {
-        return _time64.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * __time64_t _time64(__time64_t *_Time)
-     * }
-     */
-    public static long _time64(MemorySegment _Time) {
-        var mh$ = _time64.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_time64", _Time);
-            }
-            return (long)mh$.invokeExact(_Time);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _timespec32_get {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_INT
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_timespec32_get");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int _timespec32_get(struct _timespec32 *_Ts, int _Base)
-     * }
-     */
-    public static FunctionDescriptor _timespec32_get$descriptor() {
-        return _timespec32_get.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int _timespec32_get(struct _timespec32 *_Ts, int _Base)
-     * }
-     */
-    public static MethodHandle _timespec32_get$handle() {
-        return _timespec32_get.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int _timespec32_get(struct _timespec32 *_Ts, int _Base)
-     * }
-     */
-    public static MemorySegment _timespec32_get$address() {
-        return _timespec32_get.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int _timespec32_get(struct _timespec32 *_Ts, int _Base)
-     * }
-     */
-    public static int _timespec32_get(MemorySegment _Ts, int _Base) {
-        var mh$ = _timespec32_get.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_timespec32_get", _Ts, _Base);
-            }
-            return (int)mh$.invokeExact(_Ts, _Base);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _timespec64_get {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_INT
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_timespec64_get");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int _timespec64_get(struct _timespec64 *_Ts, int _Base)
-     * }
-     */
-    public static FunctionDescriptor _timespec64_get$descriptor() {
-        return _timespec64_get.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int _timespec64_get(struct _timespec64 *_Ts, int _Base)
-     * }
-     */
-    public static MethodHandle _timespec64_get$handle() {
-        return _timespec64_get.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int _timespec64_get(struct _timespec64 *_Ts, int _Base)
-     * }
-     */
-    public static MemorySegment _timespec64_get$address() {
-        return _timespec64_get.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int _timespec64_get(struct _timespec64 *_Ts, int _Base)
-     * }
-     */
-    public static int _timespec64_get(MemorySegment _Ts, int _Base) {
-        var mh$ = _timespec64_get.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_timespec64_get", _Ts, _Base);
-            }
-            return (int)mh$.invokeExact(_Ts, _Base);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _tzset {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(    );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_tzset");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * void _tzset()
-     * }
-     */
-    public static FunctionDescriptor _tzset$descriptor() {
-        return _tzset.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * void _tzset()
-     * }
-     */
-    public static MethodHandle _tzset$handle() {
-        return _tzset.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * void _tzset()
-     * }
-     */
-    public static MemorySegment _tzset$address() {
-        return _tzset.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * void _tzset()
-     * }
-     */
-    public static void _tzset() {
-        var mh$ = _tzset.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_tzset");
-            }
-            mh$.invokeExact();
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _getsystime {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_getsystime");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * unsigned int _getsystime(struct tm *_Tm)
-     * }
-     */
-    public static FunctionDescriptor _getsystime$descriptor() {
-        return _getsystime.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * unsigned int _getsystime(struct tm *_Tm)
-     * }
-     */
-    public static MethodHandle _getsystime$handle() {
-        return _getsystime.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * unsigned int _getsystime(struct tm *_Tm)
-     * }
-     */
-    public static MemorySegment _getsystime$address() {
-        return _getsystime.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * unsigned int _getsystime(struct tm *_Tm)
-     * }
-     */
-    public static int _getsystime(MemorySegment _Tm) {
-        var mh$ = _getsystime.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_getsystime", _Tm);
-            }
-            return (int)mh$.invokeExact(_Tm);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class _setsystime {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_INT
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("_setsystime");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * unsigned int _setsystime(struct tm *_Tm, unsigned int _Milliseconds)
-     * }
-     */
-    public static FunctionDescriptor _setsystime$descriptor() {
-        return _setsystime.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * unsigned int _setsystime(struct tm *_Tm, unsigned int _Milliseconds)
-     * }
-     */
-    public static MethodHandle _setsystime$handle() {
-        return _setsystime.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * unsigned int _setsystime(struct tm *_Tm, unsigned int _Milliseconds)
-     * }
-     */
-    public static MemorySegment _setsystime$address() {
-        return _setsystime.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * unsigned int _setsystime(struct tm *_Tm, unsigned int _Milliseconds)
-     * }
-     */
-    public static int _setsystime(MemorySegment _Tm, int _Milliseconds) {
-        var mh$ = _setsystime.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("_setsystime", _Tm, _Milliseconds);
-            }
-            return (int)mh$.invokeExact(_Tm, _Milliseconds);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class tzset {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(    );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("tzset");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * void tzset()
-     * }
-     */
-    public static FunctionDescriptor tzset$descriptor() {
-        return tzset.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * void tzset()
-     * }
-     */
-    public static MethodHandle tzset$handle() {
-        return tzset.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * void tzset()
-     * }
-     */
-    public static MemorySegment tzset$address() {
-        return tzset.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * void tzset()
-     * }
-     */
-    public static void tzset() {
-        var mh$ = tzset.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("tzset");
-            }
-            mh$.invokeExact();
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    /**
-     * {@snippet lang=c :
      * typedef int32_t nng_duration
      * }
      */
@@ -4453,312 +773,6 @@ public class nng_h extends nng_h$shared {
      * }
      */
     public static final OfLong nng_time = nng_h.C_LONG_LONG;
-    private static final int NNG_OK = (int)0L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_OK = 0
-     * }
-     */
-    public static int NNG_OK() {
-        return NNG_OK;
-    }
-    private static final int NNG_EINTR = (int)1L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_EINTR = 1
-     * }
-     */
-    public static int NNG_EINTR() {
-        return NNG_EINTR;
-    }
-    private static final int NNG_ENOMEM = (int)2L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_ENOMEM = 2
-     * }
-     */
-    public static int NNG_ENOMEM() {
-        return NNG_ENOMEM;
-    }
-    private static final int NNG_EINVAL = (int)3L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_EINVAL = 3
-     * }
-     */
-    public static int NNG_EINVAL() {
-        return NNG_EINVAL;
-    }
-    private static final int NNG_EBUSY = (int)4L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_EBUSY = 4
-     * }
-     */
-    public static int NNG_EBUSY() {
-        return NNG_EBUSY;
-    }
-    private static final int NNG_ETIMEDOUT = (int)5L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_ETIMEDOUT = 5
-     * }
-     */
-    public static int NNG_ETIMEDOUT() {
-        return NNG_ETIMEDOUT;
-    }
-    private static final int NNG_ECONNREFUSED = (int)6L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_ECONNREFUSED = 6
-     * }
-     */
-    public static int NNG_ECONNREFUSED() {
-        return NNG_ECONNREFUSED;
-    }
-    private static final int NNG_ECLOSED = (int)7L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_ECLOSED = 7
-     * }
-     */
-    public static int NNG_ECLOSED() {
-        return NNG_ECLOSED;
-    }
-    private static final int NNG_EAGAIN = (int)8L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_EAGAIN = 8
-     * }
-     */
-    public static int NNG_EAGAIN() {
-        return NNG_EAGAIN;
-    }
-    private static final int NNG_ENOTSUP = (int)9L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_ENOTSUP = 9
-     * }
-     */
-    public static int NNG_ENOTSUP() {
-        return NNG_ENOTSUP;
-    }
-    private static final int NNG_EADDRINUSE = (int)10L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_EADDRINUSE = 10
-     * }
-     */
-    public static int NNG_EADDRINUSE() {
-        return NNG_EADDRINUSE;
-    }
-    private static final int NNG_ESTATE = (int)11L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_ESTATE = 11
-     * }
-     */
-    public static int NNG_ESTATE() {
-        return NNG_ESTATE;
-    }
-    private static final int NNG_ENOENT = (int)12L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_ENOENT = 12
-     * }
-     */
-    public static int NNG_ENOENT() {
-        return NNG_ENOENT;
-    }
-    private static final int NNG_EPROTO = (int)13L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_EPROTO = 13
-     * }
-     */
-    public static int NNG_EPROTO() {
-        return NNG_EPROTO;
-    }
-    private static final int NNG_EUNREACHABLE = (int)14L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_EUNREACHABLE = 14
-     * }
-     */
-    public static int NNG_EUNREACHABLE() {
-        return NNG_EUNREACHABLE;
-    }
-    private static final int NNG_EADDRINVAL = (int)15L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_EADDRINVAL = 15
-     * }
-     */
-    public static int NNG_EADDRINVAL() {
-        return NNG_EADDRINVAL;
-    }
-    private static final int NNG_EPERM = (int)16L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_EPERM = 16
-     * }
-     */
-    public static int NNG_EPERM() {
-        return NNG_EPERM;
-    }
-    private static final int NNG_EMSGSIZE = (int)17L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_EMSGSIZE = 17
-     * }
-     */
-    public static int NNG_EMSGSIZE() {
-        return NNG_EMSGSIZE;
-    }
-    private static final int NNG_ECONNABORTED = (int)18L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_ECONNABORTED = 18
-     * }
-     */
-    public static int NNG_ECONNABORTED() {
-        return NNG_ECONNABORTED;
-    }
-    private static final int NNG_ECONNRESET = (int)19L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_ECONNRESET = 19
-     * }
-     */
-    public static int NNG_ECONNRESET() {
-        return NNG_ECONNRESET;
-    }
-    private static final int NNG_ECANCELED = (int)20L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_ECANCELED = 20
-     * }
-     */
-    public static int NNG_ECANCELED() {
-        return NNG_ECANCELED;
-    }
-    private static final int NNG_ENOFILES = (int)21L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_ENOFILES = 21
-     * }
-     */
-    public static int NNG_ENOFILES() {
-        return NNG_ENOFILES;
-    }
-    private static final int NNG_ENOSPC = (int)22L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_ENOSPC = 22
-     * }
-     */
-    public static int NNG_ENOSPC() {
-        return NNG_ENOSPC;
-    }
-    private static final int NNG_EEXIST = (int)23L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_EEXIST = 23
-     * }
-     */
-    public static int NNG_EEXIST() {
-        return NNG_EEXIST;
-    }
-    private static final int NNG_EREADONLY = (int)24L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_EREADONLY = 24
-     * }
-     */
-    public static int NNG_EREADONLY() {
-        return NNG_EREADONLY;
-    }
-    private static final int NNG_EWRITEONLY = (int)25L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_EWRITEONLY = 25
-     * }
-     */
-    public static int NNG_EWRITEONLY() {
-        return NNG_EWRITEONLY;
-    }
-    private static final int NNG_ECRYPTO = (int)26L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_ECRYPTO = 26
-     * }
-     */
-    public static int NNG_ECRYPTO() {
-        return NNG_ECRYPTO;
-    }
-    private static final int NNG_EPEERAUTH = (int)27L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_EPEERAUTH = 27
-     * }
-     */
-    public static int NNG_EPEERAUTH() {
-        return NNG_EPEERAUTH;
-    }
-    private static final int NNG_EBADTYPE = (int)30L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_EBADTYPE = 30
-     * }
-     */
-    public static int NNG_EBADTYPE() {
-        return NNG_EBADTYPE;
-    }
-    private static final int NNG_ECONNSHUT = (int)31L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_ECONNSHUT = 31
-     * }
-     */
-    public static int NNG_ECONNSHUT() {
-        return NNG_ECONNSHUT;
-    }
-    private static final int NNG_ESTOPPED = (int)999L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_ESTOPPED = 999
-     * }
-     */
-    public static int NNG_ESTOPPED() {
-        return NNG_ESTOPPED;
-    }
-    private static final int NNG_EINTERNAL = (int)1000L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_EINTERNAL = 1000
-     * }
-     */
-    public static int NNG_EINTERNAL() {
-        return NNG_EINTERNAL;
-    }
-    private static final int NNG_ESYSERR = (int)268435456L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_ESYSERR = 268435456
-     * }
-     */
-    public static int NNG_ESYSERR() {
-        return NNG_ESYSERR;
-    }
-    private static final int NNG_ETRANERR = (int)536870912L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_ETRANERR = 536870912
-     * }
-     */
-    public static int NNG_ETRANERR() {
-        return NNG_ETRANERR;
-    }
     private static final int NNG_AF_UNSPEC = (int)0L;
     /**
      * {@snippet lang=c :
@@ -4804,14 +818,140 @@ public class nng_h extends nng_h$shared {
     public static int NNG_AF_INET6() {
         return NNG_AF_INET6;
     }
-    private static final int NNG_AF_ABSTRACT = (int)5L;
+    private static final int NNG_AF_ZT = (int)5L;
     /**
      * {@snippet lang=c :
-     * enum nng_sockaddr_family.NNG_AF_ABSTRACT = 5
+     * enum nng_sockaddr_family.NNG_AF_ZT = 5
+     * }
+     */
+    public static int NNG_AF_ZT() {
+        return NNG_AF_ZT;
+    }
+    private static final int NNG_AF_ABSTRACT = (int)6L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_sockaddr_family.NNG_AF_ABSTRACT = 6
      * }
      */
     public static int NNG_AF_ABSTRACT() {
         return NNG_AF_ABSTRACT;
+    }
+
+    private static class nng_fini {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(    );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_fini");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * void nng_fini()
+     * }
+     */
+    public static FunctionDescriptor nng_fini$descriptor() {
+        return nng_fini.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * void nng_fini()
+     * }
+     */
+    public static MethodHandle nng_fini$handle() {
+        return nng_fini.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * void nng_fini()
+     * }
+     */
+    public static MemorySegment nng_fini$address() {
+        return nng_fini.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * void nng_fini()
+     * }
+     */
+    public static void nng_fini() {
+        var mh$ = nng_fini.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_fini");
+            }
+            mh$.invokeExact();
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_close {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_socket_s.layout()
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_close");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_close(nng_socket)
+     * }
+     */
+    public static FunctionDescriptor nng_close$descriptor() {
+        return nng_close.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_close(nng_socket)
+     * }
+     */
+    public static MethodHandle nng_close$handle() {
+        return nng_close.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_close(nng_socket)
+     * }
+     */
+    public static MemorySegment nng_close$address() {
+        return nng_close.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_close(nng_socket)
+     * }
+     */
+    public static int nng_close(MemorySegment x0) {
+        var mh$ = nng_close.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_close", x0);
+            }
+            return (int)mh$.invokeExact(x0);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
     }
 
     private static class nng_socket_close {
@@ -4927,6 +1067,69 @@ public class nng_h extends nng_h$shared {
                 traceDowncall("nng_socket_id", x0);
             }
             return (int)mh$.invokeExact(x0);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_socket_set {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_socket_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_LONG_LONG
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_socket_set");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_socket_set(nng_socket, const char *, const void *, size_t)
+     * }
+     */
+    public static FunctionDescriptor nng_socket_set$descriptor() {
+        return nng_socket_set.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_socket_set(nng_socket, const char *, const void *, size_t)
+     * }
+     */
+    public static MethodHandle nng_socket_set$handle() {
+        return nng_socket_set.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_socket_set(nng_socket, const char *, const void *, size_t)
+     * }
+     */
+    public static MemorySegment nng_socket_set$address() {
+        return nng_socket_set.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_socket_set(nng_socket, const char *, const void *, size_t)
+     * }
+     */
+    public static int nng_socket_set(MemorySegment x0, MemorySegment x1, MemorySegment x2, long x3) {
+        var mh$ = nng_socket_set.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_socket_set", x0, x1, x2, x3);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2, x3);
         } catch (Error | RuntimeException ex) {
            throw ex;
         } catch (Throwable ex$) {
@@ -5120,6 +1323,192 @@ public class nng_h extends nng_h$shared {
         }
     }
 
+    private static class nng_socket_set_uint64 {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_socket_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_LONG_LONG
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_socket_set_uint64");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_socket_set_uint64(nng_socket, const char *, uint64_t)
+     * }
+     */
+    public static FunctionDescriptor nng_socket_set_uint64$descriptor() {
+        return nng_socket_set_uint64.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_socket_set_uint64(nng_socket, const char *, uint64_t)
+     * }
+     */
+    public static MethodHandle nng_socket_set_uint64$handle() {
+        return nng_socket_set_uint64.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_socket_set_uint64(nng_socket, const char *, uint64_t)
+     * }
+     */
+    public static MemorySegment nng_socket_set_uint64$address() {
+        return nng_socket_set_uint64.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_socket_set_uint64(nng_socket, const char *, uint64_t)
+     * }
+     */
+    public static int nng_socket_set_uint64(MemorySegment x0, MemorySegment x1, long x2) {
+        var mh$ = nng_socket_set_uint64.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_socket_set_uint64", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_socket_set_string {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_socket_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_socket_set_string");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_socket_set_string(nng_socket, const char *, const char *)
+     * }
+     */
+    public static FunctionDescriptor nng_socket_set_string$descriptor() {
+        return nng_socket_set_string.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_socket_set_string(nng_socket, const char *, const char *)
+     * }
+     */
+    public static MethodHandle nng_socket_set_string$handle() {
+        return nng_socket_set_string.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_socket_set_string(nng_socket, const char *, const char *)
+     * }
+     */
+    public static MemorySegment nng_socket_set_string$address() {
+        return nng_socket_set_string.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_socket_set_string(nng_socket, const char *, const char *)
+     * }
+     */
+    public static int nng_socket_set_string(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_socket_set_string.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_socket_set_string", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_socket_set_ptr {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_socket_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_socket_set_ptr");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_socket_set_ptr(nng_socket, const char *, void *)
+     * }
+     */
+    public static FunctionDescriptor nng_socket_set_ptr$descriptor() {
+        return nng_socket_set_ptr.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_socket_set_ptr(nng_socket, const char *, void *)
+     * }
+     */
+    public static MethodHandle nng_socket_set_ptr$handle() {
+        return nng_socket_set_ptr.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_socket_set_ptr(nng_socket, const char *, void *)
+     * }
+     */
+    public static MemorySegment nng_socket_set_ptr$address() {
+        return nng_socket_set_ptr.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_socket_set_ptr(nng_socket, const char *, void *)
+     * }
+     */
+    public static int nng_socket_set_ptr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_socket_set_ptr.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_socket_set_ptr", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
     private static class nng_socket_set_ms {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
             nng_h.C_INT,
@@ -5175,6 +1564,131 @@ public class nng_h extends nng_h$shared {
                 traceDowncall("nng_socket_set_ms", x0, x1, x2);
             }
             return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_socket_set_addr {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_socket_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_socket_set_addr");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_socket_set_addr(nng_socket, const char *, const nng_sockaddr *)
+     * }
+     */
+    public static FunctionDescriptor nng_socket_set_addr$descriptor() {
+        return nng_socket_set_addr.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_socket_set_addr(nng_socket, const char *, const nng_sockaddr *)
+     * }
+     */
+    public static MethodHandle nng_socket_set_addr$handle() {
+        return nng_socket_set_addr.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_socket_set_addr(nng_socket, const char *, const nng_sockaddr *)
+     * }
+     */
+    public static MemorySegment nng_socket_set_addr$address() {
+        return nng_socket_set_addr.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_socket_set_addr(nng_socket, const char *, const nng_sockaddr *)
+     * }
+     */
+    public static int nng_socket_set_addr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_socket_set_addr.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_socket_set_addr", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_socket_get {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_socket_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_socket_get");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_socket_get(nng_socket, const char *, void *, size_t *)
+     * }
+     */
+    public static FunctionDescriptor nng_socket_get$descriptor() {
+        return nng_socket_get.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_socket_get(nng_socket, const char *, void *, size_t *)
+     * }
+     */
+    public static MethodHandle nng_socket_get$handle() {
+        return nng_socket_get.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_socket_get(nng_socket, const char *, void *, size_t *)
+     * }
+     */
+    public static MemorySegment nng_socket_get$address() {
+        return nng_socket_get.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_socket_get(nng_socket, const char *, void *, size_t *)
+     * }
+     */
+    public static int nng_socket_get(MemorySegment x0, MemorySegment x1, MemorySegment x2, MemorySegment x3) {
+        var mh$ = nng_socket_get.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_socket_get", x0, x1, x2, x3);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2, x3);
         } catch (Error | RuntimeException ex) {
            throw ex;
         } catch (Throwable ex$) {
@@ -5368,6 +1882,192 @@ public class nng_h extends nng_h$shared {
         }
     }
 
+    private static class nng_socket_get_uint64 {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_socket_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_socket_get_uint64");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_socket_get_uint64(nng_socket, const char *, uint64_t *)
+     * }
+     */
+    public static FunctionDescriptor nng_socket_get_uint64$descriptor() {
+        return nng_socket_get_uint64.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_socket_get_uint64(nng_socket, const char *, uint64_t *)
+     * }
+     */
+    public static MethodHandle nng_socket_get_uint64$handle() {
+        return nng_socket_get_uint64.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_socket_get_uint64(nng_socket, const char *, uint64_t *)
+     * }
+     */
+    public static MemorySegment nng_socket_get_uint64$address() {
+        return nng_socket_get_uint64.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_socket_get_uint64(nng_socket, const char *, uint64_t *)
+     * }
+     */
+    public static int nng_socket_get_uint64(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_socket_get_uint64.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_socket_get_uint64", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_socket_get_string {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_socket_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_socket_get_string");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_socket_get_string(nng_socket, const char *, char **)
+     * }
+     */
+    public static FunctionDescriptor nng_socket_get_string$descriptor() {
+        return nng_socket_get_string.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_socket_get_string(nng_socket, const char *, char **)
+     * }
+     */
+    public static MethodHandle nng_socket_get_string$handle() {
+        return nng_socket_get_string.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_socket_get_string(nng_socket, const char *, char **)
+     * }
+     */
+    public static MemorySegment nng_socket_get_string$address() {
+        return nng_socket_get_string.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_socket_get_string(nng_socket, const char *, char **)
+     * }
+     */
+    public static int nng_socket_get_string(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_socket_get_string.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_socket_get_string", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_socket_get_ptr {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_socket_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_socket_get_ptr");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_socket_get_ptr(nng_socket, const char *, void **)
+     * }
+     */
+    public static FunctionDescriptor nng_socket_get_ptr$descriptor() {
+        return nng_socket_get_ptr.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_socket_get_ptr(nng_socket, const char *, void **)
+     * }
+     */
+    public static MethodHandle nng_socket_get_ptr$handle() {
+        return nng_socket_get_ptr.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_socket_get_ptr(nng_socket, const char *, void **)
+     * }
+     */
+    public static MemorySegment nng_socket_get_ptr$address() {
+        return nng_socket_get_ptr.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_socket_get_ptr(nng_socket, const char *, void **)
+     * }
+     */
+    public static int nng_socket_get_ptr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_socket_get_ptr.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_socket_get_ptr", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
     private static class nng_socket_get_ms {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
             nng_h.C_INT,
@@ -5430,14 +2130,15 @@ public class nng_h extends nng_h$shared {
         }
     }
 
-    private static class nng_socket_get_recv_poll_fd {
+    private static class nng_socket_get_addr {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
             nng_h.C_INT,
             nng_socket_s.layout(),
+            nng_h.C_POINTER,
             nng_h.C_POINTER
         );
 
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_socket_get_recv_poll_fd");
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_socket_get_addr");
 
         public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
     }
@@ -5445,106 +2146,45 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * int nng_socket_get_recv_poll_fd(nng_socket id, int *fdp)
+     * int nng_socket_get_addr(nng_socket, const char *, nng_sockaddr *)
      * }
      */
-    public static FunctionDescriptor nng_socket_get_recv_poll_fd$descriptor() {
-        return nng_socket_get_recv_poll_fd.DESC;
+    public static FunctionDescriptor nng_socket_get_addr$descriptor() {
+        return nng_socket_get_addr.DESC;
     }
 
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * int nng_socket_get_recv_poll_fd(nng_socket id, int *fdp)
+     * int nng_socket_get_addr(nng_socket, const char *, nng_sockaddr *)
      * }
      */
-    public static MethodHandle nng_socket_get_recv_poll_fd$handle() {
-        return nng_socket_get_recv_poll_fd.HANDLE;
+    public static MethodHandle nng_socket_get_addr$handle() {
+        return nng_socket_get_addr.HANDLE;
     }
 
     /**
      * Address for:
      * {@snippet lang=c :
-     * int nng_socket_get_recv_poll_fd(nng_socket id, int *fdp)
+     * int nng_socket_get_addr(nng_socket, const char *, nng_sockaddr *)
      * }
      */
-    public static MemorySegment nng_socket_get_recv_poll_fd$address() {
-        return nng_socket_get_recv_poll_fd.ADDR;
+    public static MemorySegment nng_socket_get_addr$address() {
+        return nng_socket_get_addr.ADDR;
     }
 
     /**
      * {@snippet lang=c :
-     * int nng_socket_get_recv_poll_fd(nng_socket id, int *fdp)
+     * int nng_socket_get_addr(nng_socket, const char *, nng_sockaddr *)
      * }
      */
-    public static int nng_socket_get_recv_poll_fd(MemorySegment id, MemorySegment fdp) {
-        var mh$ = nng_socket_get_recv_poll_fd.HANDLE;
+    public static int nng_socket_get_addr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_socket_get_addr.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_socket_get_recv_poll_fd", id, fdp);
+                traceDowncall("nng_socket_get_addr", x0, x1, x2);
             }
-            return (int)mh$.invokeExact(id, fdp);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_socket_get_send_poll_fd {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_socket_s.layout(),
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_socket_get_send_poll_fd");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int nng_socket_get_send_poll_fd(nng_socket id, int *fdp)
-     * }
-     */
-    public static FunctionDescriptor nng_socket_get_send_poll_fd$descriptor() {
-        return nng_socket_get_send_poll_fd.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int nng_socket_get_send_poll_fd(nng_socket id, int *fdp)
-     * }
-     */
-    public static MethodHandle nng_socket_get_send_poll_fd$handle() {
-        return nng_socket_get_send_poll_fd.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int nng_socket_get_send_poll_fd(nng_socket id, int *fdp)
-     * }
-     */
-    public static MemorySegment nng_socket_get_send_poll_fd$address() {
-        return nng_socket_get_send_poll_fd.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int nng_socket_get_send_poll_fd(nng_socket id, int *fdp)
-     * }
-     */
-    public static int nng_socket_get_send_poll_fd(MemorySegment id, MemorySegment fdp) {
-        var mh$ = nng_socket_get_send_poll_fd.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_socket_get_send_poll_fd", id, fdp);
-            }
-            return (int)mh$.invokeExact(id, fdp);
+            return (int)mh$.invokeExact(x0, x1, x2);
         } catch (Error | RuntimeException ex) {
            throw ex;
         } catch (Throwable ex$) {
@@ -5567,7 +2207,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * int nng_socket_proto_id(nng_socket id, uint16_t *idp)
+     * int nng_socket_proto_id(nng_socket id, uint16_t *)
      * }
      */
     public static FunctionDescriptor nng_socket_proto_id$descriptor() {
@@ -5577,7 +2217,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * int nng_socket_proto_id(nng_socket id, uint16_t *idp)
+     * int nng_socket_proto_id(nng_socket id, uint16_t *)
      * }
      */
     public static MethodHandle nng_socket_proto_id$handle() {
@@ -5587,7 +2227,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * int nng_socket_proto_id(nng_socket id, uint16_t *idp)
+     * int nng_socket_proto_id(nng_socket id, uint16_t *)
      * }
      */
     public static MemorySegment nng_socket_proto_id$address() {
@@ -5596,16 +2236,16 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * int nng_socket_proto_id(nng_socket id, uint16_t *idp)
+     * int nng_socket_proto_id(nng_socket id, uint16_t *)
      * }
      */
-    public static int nng_socket_proto_id(MemorySegment id, MemorySegment idp) {
+    public static int nng_socket_proto_id(MemorySegment id, MemorySegment x1) {
         var mh$ = nng_socket_proto_id.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_socket_proto_id", id, idp);
+                traceDowncall("nng_socket_proto_id", id, x1);
             }
-            return (int)mh$.invokeExact(id, idp);
+            return (int)mh$.invokeExact(id, x1);
         } catch (Error | RuntimeException ex) {
            throw ex;
         } catch (Throwable ex$) {
@@ -5628,7 +2268,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * int nng_socket_peer_id(nng_socket id, uint16_t *idp)
+     * int nng_socket_peer_id(nng_socket id, uint16_t *)
      * }
      */
     public static FunctionDescriptor nng_socket_peer_id$descriptor() {
@@ -5638,7 +2278,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * int nng_socket_peer_id(nng_socket id, uint16_t *idp)
+     * int nng_socket_peer_id(nng_socket id, uint16_t *)
      * }
      */
     public static MethodHandle nng_socket_peer_id$handle() {
@@ -5648,7 +2288,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * int nng_socket_peer_id(nng_socket id, uint16_t *idp)
+     * int nng_socket_peer_id(nng_socket id, uint16_t *)
      * }
      */
     public static MemorySegment nng_socket_peer_id$address() {
@@ -5657,16 +2297,16 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * int nng_socket_peer_id(nng_socket id, uint16_t *idp)
+     * int nng_socket_peer_id(nng_socket id, uint16_t *)
      * }
      */
-    public static int nng_socket_peer_id(MemorySegment id, MemorySegment idp) {
+    public static int nng_socket_peer_id(MemorySegment id, MemorySegment x1) {
         var mh$ = nng_socket_peer_id.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_socket_peer_id", id, idp);
+                traceDowncall("nng_socket_peer_id", id, x1);
             }
-            return (int)mh$.invokeExact(id, idp);
+            return (int)mh$.invokeExact(id, x1);
         } catch (Error | RuntimeException ex) {
            throw ex;
         } catch (Throwable ex$) {
@@ -5689,7 +2329,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * int nng_socket_proto_name(nng_socket id, const char **namep)
+     * int nng_socket_proto_name(nng_socket id, const char **)
      * }
      */
     public static FunctionDescriptor nng_socket_proto_name$descriptor() {
@@ -5699,7 +2339,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * int nng_socket_proto_name(nng_socket id, const char **namep)
+     * int nng_socket_proto_name(nng_socket id, const char **)
      * }
      */
     public static MethodHandle nng_socket_proto_name$handle() {
@@ -5709,7 +2349,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * int nng_socket_proto_name(nng_socket id, const char **namep)
+     * int nng_socket_proto_name(nng_socket id, const char **)
      * }
      */
     public static MemorySegment nng_socket_proto_name$address() {
@@ -5718,16 +2358,16 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * int nng_socket_proto_name(nng_socket id, const char **namep)
+     * int nng_socket_proto_name(nng_socket id, const char **)
      * }
      */
-    public static int nng_socket_proto_name(MemorySegment id, MemorySegment namep) {
+    public static int nng_socket_proto_name(MemorySegment id, MemorySegment x1) {
         var mh$ = nng_socket_proto_name.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_socket_proto_name", id, namep);
+                traceDowncall("nng_socket_proto_name", id, x1);
             }
-            return (int)mh$.invokeExact(id, namep);
+            return (int)mh$.invokeExact(id, x1);
         } catch (Error | RuntimeException ex) {
            throw ex;
         } catch (Throwable ex$) {
@@ -5750,7 +2390,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * int nng_socket_peer_name(nng_socket id, const char **namep)
+     * int nng_socket_peer_name(nng_socket id, const char **)
      * }
      */
     public static FunctionDescriptor nng_socket_peer_name$descriptor() {
@@ -5760,7 +2400,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * int nng_socket_peer_name(nng_socket id, const char **namep)
+     * int nng_socket_peer_name(nng_socket id, const char **)
      * }
      */
     public static MethodHandle nng_socket_peer_name$handle() {
@@ -5770,7 +2410,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * int nng_socket_peer_name(nng_socket id, const char **namep)
+     * int nng_socket_peer_name(nng_socket id, const char **)
      * }
      */
     public static MemorySegment nng_socket_peer_name$address() {
@@ -5779,16 +2419,16 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * int nng_socket_peer_name(nng_socket id, const char **namep)
+     * int nng_socket_peer_name(nng_socket id, const char **)
      * }
      */
-    public static int nng_socket_peer_name(MemorySegment id, MemorySegment namep) {
+    public static int nng_socket_peer_name(MemorySegment id, MemorySegment x1) {
         var mh$ = nng_socket_peer_name.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_socket_peer_name", id, namep);
+                traceDowncall("nng_socket_peer_name", id, x1);
             }
-            return (int)mh$.invokeExact(id, namep);
+            return (int)mh$.invokeExact(id, x1);
         } catch (Error | RuntimeException ex) {
            throw ex;
         } catch (Throwable ex$) {
@@ -5811,7 +2451,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * int nng_socket_raw(nng_socket id, _Bool *rawp)
+     * int nng_socket_raw(nng_socket, _Bool *)
      * }
      */
     public static FunctionDescriptor nng_socket_raw$descriptor() {
@@ -5821,7 +2461,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * int nng_socket_raw(nng_socket id, _Bool *rawp)
+     * int nng_socket_raw(nng_socket, _Bool *)
      * }
      */
     public static MethodHandle nng_socket_raw$handle() {
@@ -5831,7 +2471,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * int nng_socket_raw(nng_socket id, _Bool *rawp)
+     * int nng_socket_raw(nng_socket, _Bool *)
      * }
      */
     public static MemorySegment nng_socket_raw$address() {
@@ -5840,16 +2480,16 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * int nng_socket_raw(nng_socket id, _Bool *rawp)
+     * int nng_socket_raw(nng_socket, _Bool *)
      * }
      */
-    public static int nng_socket_raw(MemorySegment id, MemorySegment rawp) {
+    public static int nng_socket_raw(MemorySegment x0, MemorySegment x1) {
         var mh$ = nng_socket_raw.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_socket_raw", id, rawp);
+                traceDowncall("nng_socket_raw", x0, x1);
             }
-            return (int)mh$.invokeExact(id, rawp);
+            return (int)mh$.invokeExact(x0, x1);
         } catch (Error | RuntimeException ex) {
            throw ex;
         } catch (Throwable ex$) {
@@ -5918,227 +2558,37 @@ public class nng_h extends nng_h$shared {
            throw new AssertionError("should not reach here", ex$);
         }
     }
-
-    private static class nng_sockaddr_port {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_sockaddr_port");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * uint32_t nng_sockaddr_port(const nng_sockaddr *sa)
-     * }
-     */
-    public static FunctionDescriptor nng_sockaddr_port$descriptor() {
-        return nng_sockaddr_port.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * uint32_t nng_sockaddr_port(const nng_sockaddr *sa)
-     * }
-     */
-    public static MethodHandle nng_sockaddr_port$handle() {
-        return nng_sockaddr_port.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * uint32_t nng_sockaddr_port(const nng_sockaddr *sa)
-     * }
-     */
-    public static MemorySegment nng_sockaddr_port$address() {
-        return nng_sockaddr_port.ADDR;
-    }
-
+    private static final int NNG_PIPE_EV_ADD_PRE = (int)0L;
     /**
      * {@snippet lang=c :
-     * uint32_t nng_sockaddr_port(const nng_sockaddr *sa)
-     * }
-     */
-    public static int nng_sockaddr_port(MemorySegment sa) {
-        var mh$ = nng_sockaddr_port.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_sockaddr_port", sa);
-            }
-            return (int)mh$.invokeExact(sa);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_sockaddr_equal {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_BOOL,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_sockaddr_equal");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * _Bool nng_sockaddr_equal(const nng_sockaddr *sa1, const nng_sockaddr *sa2)
-     * }
-     */
-    public static FunctionDescriptor nng_sockaddr_equal$descriptor() {
-        return nng_sockaddr_equal.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * _Bool nng_sockaddr_equal(const nng_sockaddr *sa1, const nng_sockaddr *sa2)
-     * }
-     */
-    public static MethodHandle nng_sockaddr_equal$handle() {
-        return nng_sockaddr_equal.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * _Bool nng_sockaddr_equal(const nng_sockaddr *sa1, const nng_sockaddr *sa2)
-     * }
-     */
-    public static MemorySegment nng_sockaddr_equal$address() {
-        return nng_sockaddr_equal.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * _Bool nng_sockaddr_equal(const nng_sockaddr *sa1, const nng_sockaddr *sa2)
-     * }
-     */
-    public static boolean nng_sockaddr_equal(MemorySegment sa1, MemorySegment sa2) {
-        var mh$ = nng_sockaddr_equal.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_sockaddr_equal", sa1, sa2);
-            }
-            return (boolean)mh$.invokeExact(sa1, sa2);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_sockaddr_hash {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_LONG_LONG,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_sockaddr_hash");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * uint64_t nng_sockaddr_hash(const nng_sockaddr *sa)
-     * }
-     */
-    public static FunctionDescriptor nng_sockaddr_hash$descriptor() {
-        return nng_sockaddr_hash.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * uint64_t nng_sockaddr_hash(const nng_sockaddr *sa)
-     * }
-     */
-    public static MethodHandle nng_sockaddr_hash$handle() {
-        return nng_sockaddr_hash.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * uint64_t nng_sockaddr_hash(const nng_sockaddr *sa)
-     * }
-     */
-    public static MemorySegment nng_sockaddr_hash$address() {
-        return nng_sockaddr_hash.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * uint64_t nng_sockaddr_hash(const nng_sockaddr *sa)
-     * }
-     */
-    public static long nng_sockaddr_hash(MemorySegment sa) {
-        var mh$ = nng_sockaddr_hash.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_sockaddr_hash", sa);
-            }
-            return (long)mh$.invokeExact(sa);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    private static final int NNG_PIPE_EV_NONE = (int)0L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_PIPE_EV_NONE = 0
-     * }
-     */
-    public static int NNG_PIPE_EV_NONE() {
-        return NNG_PIPE_EV_NONE;
-    }
-    private static final int NNG_PIPE_EV_ADD_PRE = (int)1L;
-    /**
-     * {@snippet lang=c :
-     * enum <anonymous>.NNG_PIPE_EV_ADD_PRE = 1
+     * enum <anonymous>.NNG_PIPE_EV_ADD_PRE = 0
      * }
      */
     public static int NNG_PIPE_EV_ADD_PRE() {
         return NNG_PIPE_EV_ADD_PRE;
     }
-    private static final int NNG_PIPE_EV_ADD_POST = (int)2L;
+    private static final int NNG_PIPE_EV_ADD_POST = (int)1L;
     /**
      * {@snippet lang=c :
-     * enum <anonymous>.NNG_PIPE_EV_ADD_POST = 2
+     * enum <anonymous>.NNG_PIPE_EV_ADD_POST = 1
      * }
      */
     public static int NNG_PIPE_EV_ADD_POST() {
         return NNG_PIPE_EV_ADD_POST;
     }
-    private static final int NNG_PIPE_EV_REM_POST = (int)3L;
+    private static final int NNG_PIPE_EV_REM_POST = (int)2L;
     /**
      * {@snippet lang=c :
-     * enum <anonymous>.NNG_PIPE_EV_REM_POST = 3
+     * enum <anonymous>.NNG_PIPE_EV_REM_POST = 2
      * }
      */
     public static int NNG_PIPE_EV_REM_POST() {
         return NNG_PIPE_EV_REM_POST;
     }
-    private static final int NNG_PIPE_EV_NUM = (int)4L;
+    private static final int NNG_PIPE_EV_NUM = (int)3L;
     /**
      * {@snippet lang=c :
-     * enum <anonymous>.NNG_PIPE_EV_NUM = 4
+     * enum <anonymous>.NNG_PIPE_EV_NUM = 3
      * }
      */
     public static int NNG_PIPE_EV_NUM() {
@@ -6162,7 +2612,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_pipe_notify(nng_socket, nng_pipe_ev, nng_pipe_cb, void *)
+     * int nng_pipe_notify(nng_socket, nng_pipe_ev, nng_pipe_cb, void *)
      * }
      */
     public static FunctionDescriptor nng_pipe_notify$descriptor() {
@@ -6172,7 +2622,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_pipe_notify(nng_socket, nng_pipe_ev, nng_pipe_cb, void *)
+     * int nng_pipe_notify(nng_socket, nng_pipe_ev, nng_pipe_cb, void *)
      * }
      */
     public static MethodHandle nng_pipe_notify$handle() {
@@ -6182,7 +2632,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_pipe_notify(nng_socket, nng_pipe_ev, nng_pipe_cb, void *)
+     * int nng_pipe_notify(nng_socket, nng_pipe_ev, nng_pipe_cb, void *)
      * }
      */
     public static MemorySegment nng_pipe_notify$address() {
@@ -6191,7 +2641,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_pipe_notify(nng_socket, nng_pipe_ev, nng_pipe_cb, void *)
+     * int nng_pipe_notify(nng_socket, nng_pipe_ev, nng_pipe_cb, void *)
      * }
      */
     public static int nng_pipe_notify(MemorySegment x0, int x1, MemorySegment x2, MemorySegment x3) {
@@ -6271,69 +2721,6 @@ public class nng_h extends nng_h$shared {
         }
     }
 
-    private static class nng_listen_url {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_socket_s.layout(),
-            nng_h.C_POINTER,
-            nng_h.C_POINTER,
-            nng_h.C_INT
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_listen_url");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int nng_listen_url(nng_socket, const nng_url *, nng_listener *, int)
-     * }
-     */
-    public static FunctionDescriptor nng_listen_url$descriptor() {
-        return nng_listen_url.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int nng_listen_url(nng_socket, const nng_url *, nng_listener *, int)
-     * }
-     */
-    public static MethodHandle nng_listen_url$handle() {
-        return nng_listen_url.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int nng_listen_url(nng_socket, const nng_url *, nng_listener *, int)
-     * }
-     */
-    public static MemorySegment nng_listen_url$address() {
-        return nng_listen_url.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int nng_listen_url(nng_socket, const nng_url *, nng_listener *, int)
-     * }
-     */
-    public static int nng_listen_url(MemorySegment x0, MemorySegment x1, MemorySegment x2, int x3) {
-        var mh$ = nng_listen_url.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_listen_url", x0, x1, x2, x3);
-            }
-            return (int)mh$.invokeExact(x0, x1, x2, x3);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
     private static class nng_dial {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
             nng_h.C_INT,
@@ -6397,69 +2784,6 @@ public class nng_h extends nng_h$shared {
         }
     }
 
-    private static class nng_dial_url {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_socket_s.layout(),
-            nng_h.C_POINTER,
-            nng_h.C_POINTER,
-            nng_h.C_INT
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_dial_url");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int nng_dial_url(nng_socket, const nng_url *url, nng_dialer *, int)
-     * }
-     */
-    public static FunctionDescriptor nng_dial_url$descriptor() {
-        return nng_dial_url.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int nng_dial_url(nng_socket, const nng_url *url, nng_dialer *, int)
-     * }
-     */
-    public static MethodHandle nng_dial_url$handle() {
-        return nng_dial_url.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int nng_dial_url(nng_socket, const nng_url *url, nng_dialer *, int)
-     * }
-     */
-    public static MemorySegment nng_dial_url$address() {
-        return nng_dial_url.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int nng_dial_url(nng_socket, const nng_url *url, nng_dialer *, int)
-     * }
-     */
-    public static int nng_dial_url(MemorySegment x0, MemorySegment url, MemorySegment x2, int x3) {
-        var mh$ = nng_dial_url.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_dial_url", x0, url, x2, x3);
-            }
-            return (int)mh$.invokeExact(x0, url, x2, x3);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
     private static class nng_dialer_create {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
             nng_h.C_INT,
@@ -6513,68 +2837,6 @@ public class nng_h extends nng_h$shared {
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("nng_dialer_create", x0, x1, x2);
-            }
-            return (int)mh$.invokeExact(x0, x1, x2);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_dialer_create_url {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_socket_s.layout(),
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_dialer_create_url");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int nng_dialer_create_url(nng_dialer *, nng_socket, const nng_url *)
-     * }
-     */
-    public static FunctionDescriptor nng_dialer_create_url$descriptor() {
-        return nng_dialer_create_url.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int nng_dialer_create_url(nng_dialer *, nng_socket, const nng_url *)
-     * }
-     */
-    public static MethodHandle nng_dialer_create_url$handle() {
-        return nng_dialer_create_url.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int nng_dialer_create_url(nng_dialer *, nng_socket, const nng_url *)
-     * }
-     */
-    public static MemorySegment nng_dialer_create_url$address() {
-        return nng_dialer_create_url.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int nng_dialer_create_url(nng_dialer *, nng_socket, const nng_url *)
-     * }
-     */
-    public static int nng_dialer_create_url(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
-        var mh$ = nng_dialer_create_url.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_dialer_create_url", x0, x1, x2);
             }
             return (int)mh$.invokeExact(x0, x1, x2);
         } catch (Error | RuntimeException ex) {
@@ -6646,68 +2908,6 @@ public class nng_h extends nng_h$shared {
         }
     }
 
-    private static class nng_listener_create_url {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_socket_s.layout(),
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_listener_create_url");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int nng_listener_create_url(nng_listener *, nng_socket, const nng_url *)
-     * }
-     */
-    public static FunctionDescriptor nng_listener_create_url$descriptor() {
-        return nng_listener_create_url.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int nng_listener_create_url(nng_listener *, nng_socket, const nng_url *)
-     * }
-     */
-    public static MethodHandle nng_listener_create_url$handle() {
-        return nng_listener_create_url.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int nng_listener_create_url(nng_listener *, nng_socket, const nng_url *)
-     * }
-     */
-    public static MemorySegment nng_listener_create_url$address() {
-        return nng_listener_create_url.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int nng_listener_create_url(nng_listener *, nng_socket, const nng_url *)
-     * }
-     */
-    public static int nng_listener_create_url(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
-        var mh$ = nng_listener_create_url.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_listener_create_url", x0, x1, x2);
-            }
-            return (int)mh$.invokeExact(x0, x1, x2);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
     private static class nng_dialer_start {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
             nng_h.C_INT,
@@ -6762,67 +2962,6 @@ public class nng_h extends nng_h$shared {
                 traceDowncall("nng_dialer_start", x0, x1);
             }
             return (int)mh$.invokeExact(x0, x1);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_dialer_start_aio {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
-            nng_dialer_s.layout(),
-            nng_h.C_INT,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_dialer_start_aio");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * void nng_dialer_start_aio(nng_dialer, int, nng_aio *)
-     * }
-     */
-    public static FunctionDescriptor nng_dialer_start_aio$descriptor() {
-        return nng_dialer_start_aio.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * void nng_dialer_start_aio(nng_dialer, int, nng_aio *)
-     * }
-     */
-    public static MethodHandle nng_dialer_start_aio$handle() {
-        return nng_dialer_start_aio.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * void nng_dialer_start_aio(nng_dialer, int, nng_aio *)
-     * }
-     */
-    public static MemorySegment nng_dialer_start_aio$address() {
-        return nng_dialer_start_aio.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * void nng_dialer_start_aio(nng_dialer, int, nng_aio *)
-     * }
-     */
-    public static void nng_dialer_start_aio(MemorySegment x0, int x1, MemorySegment x2) {
-        var mh$ = nng_dialer_start_aio.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_dialer_start_aio", x0, x1, x2);
-            }
-            mh$.invokeExact(x0, x1, x2);
         } catch (Error | RuntimeException ex) {
            throw ex;
         } catch (Throwable ex$) {
@@ -7124,6 +3263,69 @@ public class nng_h extends nng_h$shared {
                 traceDowncall("nng_listener_id", x0);
             }
             return (int)mh$.invokeExact(x0);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_dialer_set {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_dialer_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_LONG_LONG
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_dialer_set");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_dialer_set(nng_dialer, const char *, const void *, size_t)
+     * }
+     */
+    public static FunctionDescriptor nng_dialer_set$descriptor() {
+        return nng_dialer_set.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_dialer_set(nng_dialer, const char *, const void *, size_t)
+     * }
+     */
+    public static MethodHandle nng_dialer_set$handle() {
+        return nng_dialer_set.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_dialer_set(nng_dialer, const char *, const void *, size_t)
+     * }
+     */
+    public static MemorySegment nng_dialer_set$address() {
+        return nng_dialer_set.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_dialer_set(nng_dialer, const char *, const void *, size_t)
+     * }
+     */
+    public static int nng_dialer_set(MemorySegment x0, MemorySegment x1, MemorySegment x2, long x3) {
+        var mh$ = nng_dialer_set.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_dialer_set", x0, x1, x2, x3);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2, x3);
         } catch (Error | RuntimeException ex) {
            throw ex;
         } catch (Throwable ex$) {
@@ -7441,6 +3643,68 @@ public class nng_h extends nng_h$shared {
         }
     }
 
+    private static class nng_dialer_set_ptr {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_dialer_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_dialer_set_ptr");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_dialer_set_ptr(nng_dialer, const char *, void *)
+     * }
+     */
+    public static FunctionDescriptor nng_dialer_set_ptr$descriptor() {
+        return nng_dialer_set_ptr.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_dialer_set_ptr(nng_dialer, const char *, void *)
+     * }
+     */
+    public static MethodHandle nng_dialer_set_ptr$handle() {
+        return nng_dialer_set_ptr.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_dialer_set_ptr(nng_dialer, const char *, void *)
+     * }
+     */
+    public static MemorySegment nng_dialer_set_ptr$address() {
+        return nng_dialer_set_ptr.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_dialer_set_ptr(nng_dialer, const char *, void *)
+     * }
+     */
+    public static int nng_dialer_set_ptr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_dialer_set_ptr.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_dialer_set_ptr", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
     private static class nng_dialer_set_ms {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
             nng_h.C_INT,
@@ -7565,14 +3829,16 @@ public class nng_h extends nng_h$shared {
         }
     }
 
-    private static class nng_dialer_set_tls {
+    private static class nng_dialer_get {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
             nng_h.C_INT,
             nng_dialer_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
             nng_h.C_POINTER
         );
 
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_dialer_set_tls");
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_dialer_get");
 
         public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
     }
@@ -7580,45 +3846,45 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * int nng_dialer_set_tls(nng_dialer, nng_tls_config *)
+     * int nng_dialer_get(nng_dialer, const char *, void *, size_t *)
      * }
      */
-    public static FunctionDescriptor nng_dialer_set_tls$descriptor() {
-        return nng_dialer_set_tls.DESC;
+    public static FunctionDescriptor nng_dialer_get$descriptor() {
+        return nng_dialer_get.DESC;
     }
 
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * int nng_dialer_set_tls(nng_dialer, nng_tls_config *)
+     * int nng_dialer_get(nng_dialer, const char *, void *, size_t *)
      * }
      */
-    public static MethodHandle nng_dialer_set_tls$handle() {
-        return nng_dialer_set_tls.HANDLE;
+    public static MethodHandle nng_dialer_get$handle() {
+        return nng_dialer_get.HANDLE;
     }
 
     /**
      * Address for:
      * {@snippet lang=c :
-     * int nng_dialer_set_tls(nng_dialer, nng_tls_config *)
+     * int nng_dialer_get(nng_dialer, const char *, void *, size_t *)
      * }
      */
-    public static MemorySegment nng_dialer_set_tls$address() {
-        return nng_dialer_set_tls.ADDR;
+    public static MemorySegment nng_dialer_get$address() {
+        return nng_dialer_get.ADDR;
     }
 
     /**
      * {@snippet lang=c :
-     * int nng_dialer_set_tls(nng_dialer, nng_tls_config *)
+     * int nng_dialer_get(nng_dialer, const char *, void *, size_t *)
      * }
      */
-    public static int nng_dialer_set_tls(MemorySegment x0, MemorySegment x1) {
-        var mh$ = nng_dialer_set_tls.HANDLE;
+    public static int nng_dialer_get(MemorySegment x0, MemorySegment x1, MemorySegment x2, MemorySegment x3) {
+        var mh$ = nng_dialer_get.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_dialer_set_tls", x0, x1);
+                traceDowncall("nng_dialer_get", x0, x1, x2, x3);
             }
-            return (int)mh$.invokeExact(x0, x1);
+            return (int)mh$.invokeExact(x0, x1, x2, x3);
         } catch (Error | RuntimeException ex) {
            throw ex;
         } catch (Throwable ex$) {
@@ -7890,7 +4156,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * int nng_dialer_get_string(nng_dialer, const char *, const char **)
+     * int nng_dialer_get_string(nng_dialer, const char *, char **)
      * }
      */
     public static FunctionDescriptor nng_dialer_get_string$descriptor() {
@@ -7900,7 +4166,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * int nng_dialer_get_string(nng_dialer, const char *, const char **)
+     * int nng_dialer_get_string(nng_dialer, const char *, char **)
      * }
      */
     public static MethodHandle nng_dialer_get_string$handle() {
@@ -7910,7 +4176,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * int nng_dialer_get_string(nng_dialer, const char *, const char **)
+     * int nng_dialer_get_string(nng_dialer, const char *, char **)
      * }
      */
     public static MemorySegment nng_dialer_get_string$address() {
@@ -7919,7 +4185,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * int nng_dialer_get_string(nng_dialer, const char *, const char **)
+     * int nng_dialer_get_string(nng_dialer, const char *, char **)
      * }
      */
     public static int nng_dialer_get_string(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
@@ -7927,6 +4193,68 @@ public class nng_h extends nng_h$shared {
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("nng_dialer_get_string", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_dialer_get_ptr {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_dialer_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_dialer_get_ptr");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_dialer_get_ptr(nng_dialer, const char *, void **)
+     * }
+     */
+    public static FunctionDescriptor nng_dialer_get_ptr$descriptor() {
+        return nng_dialer_get_ptr.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_dialer_get_ptr(nng_dialer, const char *, void **)
+     * }
+     */
+    public static MethodHandle nng_dialer_get_ptr$handle() {
+        return nng_dialer_get_ptr.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_dialer_get_ptr(nng_dialer, const char *, void **)
+     * }
+     */
+    public static MemorySegment nng_dialer_get_ptr$address() {
+        return nng_dialer_get_ptr.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_dialer_get_ptr(nng_dialer, const char *, void **)
+     * }
+     */
+    public static int nng_dialer_get_ptr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_dialer_get_ptr.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_dialer_get_ptr", x0, x1, x2);
             }
             return (int)mh$.invokeExact(x0, x1, x2);
         } catch (Error | RuntimeException ex) {
@@ -8060,14 +4388,16 @@ public class nng_h extends nng_h$shared {
         }
     }
 
-    private static class nng_dialer_get_tls {
+    private static class nng_listener_set {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
             nng_h.C_INT,
-            nng_dialer_s.layout(),
-            nng_h.C_POINTER
+            nng_listener_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_LONG_LONG
         );
 
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_dialer_get_tls");
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_listener_set");
 
         public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
     }
@@ -8075,106 +4405,45 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * int nng_dialer_get_tls(nng_dialer, nng_tls_config **)
+     * int nng_listener_set(nng_listener, const char *, const void *, size_t)
      * }
      */
-    public static FunctionDescriptor nng_dialer_get_tls$descriptor() {
-        return nng_dialer_get_tls.DESC;
+    public static FunctionDescriptor nng_listener_set$descriptor() {
+        return nng_listener_set.DESC;
     }
 
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * int nng_dialer_get_tls(nng_dialer, nng_tls_config **)
+     * int nng_listener_set(nng_listener, const char *, const void *, size_t)
      * }
      */
-    public static MethodHandle nng_dialer_get_tls$handle() {
-        return nng_dialer_get_tls.HANDLE;
+    public static MethodHandle nng_listener_set$handle() {
+        return nng_listener_set.HANDLE;
     }
 
     /**
      * Address for:
      * {@snippet lang=c :
-     * int nng_dialer_get_tls(nng_dialer, nng_tls_config **)
+     * int nng_listener_set(nng_listener, const char *, const void *, size_t)
      * }
      */
-    public static MemorySegment nng_dialer_get_tls$address() {
-        return nng_dialer_get_tls.ADDR;
+    public static MemorySegment nng_listener_set$address() {
+        return nng_listener_set.ADDR;
     }
 
     /**
      * {@snippet lang=c :
-     * int nng_dialer_get_tls(nng_dialer, nng_tls_config **)
+     * int nng_listener_set(nng_listener, const char *, const void *, size_t)
      * }
      */
-    public static int nng_dialer_get_tls(MemorySegment x0, MemorySegment x1) {
-        var mh$ = nng_dialer_get_tls.HANDLE;
+    public static int nng_listener_set(MemorySegment x0, MemorySegment x1, MemorySegment x2, long x3) {
+        var mh$ = nng_listener_set.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_dialer_get_tls", x0, x1);
+                traceDowncall("nng_listener_set", x0, x1, x2, x3);
             }
-            return (int)mh$.invokeExact(x0, x1);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_dialer_get_url {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_dialer_s.layout(),
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_dialer_get_url");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int nng_dialer_get_url(nng_dialer id, const nng_url **urlp)
-     * }
-     */
-    public static FunctionDescriptor nng_dialer_get_url$descriptor() {
-        return nng_dialer_get_url.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int nng_dialer_get_url(nng_dialer id, const nng_url **urlp)
-     * }
-     */
-    public static MethodHandle nng_dialer_get_url$handle() {
-        return nng_dialer_get_url.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int nng_dialer_get_url(nng_dialer id, const nng_url **urlp)
-     * }
-     */
-    public static MemorySegment nng_dialer_get_url$address() {
-        return nng_dialer_get_url.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int nng_dialer_get_url(nng_dialer id, const nng_url **urlp)
-     * }
-     */
-    public static int nng_dialer_get_url(MemorySegment id, MemorySegment urlp) {
-        var mh$ = nng_dialer_get_url.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_dialer_get_url", id, urlp);
-            }
-            return (int)mh$.invokeExact(id, urlp);
+            return (int)mh$.invokeExact(x0, x1, x2, x3);
         } catch (Error | RuntimeException ex) {
            throw ex;
         } catch (Throwable ex$) {
@@ -8492,6 +4761,68 @@ public class nng_h extends nng_h$shared {
         }
     }
 
+    private static class nng_listener_set_ptr {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_listener_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_listener_set_ptr");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_listener_set_ptr(nng_listener, const char *, void *)
+     * }
+     */
+    public static FunctionDescriptor nng_listener_set_ptr$descriptor() {
+        return nng_listener_set_ptr.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_listener_set_ptr(nng_listener, const char *, void *)
+     * }
+     */
+    public static MethodHandle nng_listener_set_ptr$handle() {
+        return nng_listener_set_ptr.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_listener_set_ptr(nng_listener, const char *, void *)
+     * }
+     */
+    public static MemorySegment nng_listener_set_ptr$address() {
+        return nng_listener_set_ptr.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_listener_set_ptr(nng_listener, const char *, void *)
+     * }
+     */
+    public static int nng_listener_set_ptr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_listener_set_ptr.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_listener_set_ptr", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
     private static class nng_listener_set_ms {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
             nng_h.C_INT,
@@ -8554,14 +4885,15 @@ public class nng_h extends nng_h$shared {
         }
     }
 
-    private static class nng_listener_set_tls {
+    private static class nng_listener_set_addr {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
             nng_h.C_INT,
             nng_listener_s.layout(),
+            nng_h.C_POINTER,
             nng_h.C_POINTER
         );
 
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_listener_set_tls");
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_listener_set_addr");
 
         public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
     }
@@ -8569,45 +4901,45 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * int nng_listener_set_tls(nng_listener, nng_tls_config *)
+     * int nng_listener_set_addr(nng_listener, const char *, const nng_sockaddr *)
      * }
      */
-    public static FunctionDescriptor nng_listener_set_tls$descriptor() {
-        return nng_listener_set_tls.DESC;
+    public static FunctionDescriptor nng_listener_set_addr$descriptor() {
+        return nng_listener_set_addr.DESC;
     }
 
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * int nng_listener_set_tls(nng_listener, nng_tls_config *)
+     * int nng_listener_set_addr(nng_listener, const char *, const nng_sockaddr *)
      * }
      */
-    public static MethodHandle nng_listener_set_tls$handle() {
-        return nng_listener_set_tls.HANDLE;
+    public static MethodHandle nng_listener_set_addr$handle() {
+        return nng_listener_set_addr.HANDLE;
     }
 
     /**
      * Address for:
      * {@snippet lang=c :
-     * int nng_listener_set_tls(nng_listener, nng_tls_config *)
+     * int nng_listener_set_addr(nng_listener, const char *, const nng_sockaddr *)
      * }
      */
-    public static MemorySegment nng_listener_set_tls$address() {
-        return nng_listener_set_tls.ADDR;
+    public static MemorySegment nng_listener_set_addr$address() {
+        return nng_listener_set_addr.ADDR;
     }
 
     /**
      * {@snippet lang=c :
-     * int nng_listener_set_tls(nng_listener, nng_tls_config *)
+     * int nng_listener_set_addr(nng_listener, const char *, const nng_sockaddr *)
      * }
      */
-    public static int nng_listener_set_tls(MemorySegment x0, MemorySegment x1) {
-        var mh$ = nng_listener_set_tls.HANDLE;
+    public static int nng_listener_set_addr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_listener_set_addr.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_listener_set_tls", x0, x1);
+                traceDowncall("nng_listener_set_addr", x0, x1, x2);
             }
-            return (int)mh$.invokeExact(x0, x1);
+            return (int)mh$.invokeExact(x0, x1, x2);
         } catch (Error | RuntimeException ex) {
            throw ex;
         } catch (Throwable ex$) {
@@ -8615,14 +4947,16 @@ public class nng_h extends nng_h$shared {
         }
     }
 
-    private static class nng_listener_set_security_descriptor {
+    private static class nng_listener_get {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
             nng_h.C_INT,
             nng_listener_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
             nng_h.C_POINTER
         );
 
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_listener_set_security_descriptor");
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_listener_get");
 
         public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
     }
@@ -8630,106 +4964,45 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * int nng_listener_set_security_descriptor(nng_listener, void *)
+     * int nng_listener_get(nng_listener, const char *, void *, size_t *)
      * }
      */
-    public static FunctionDescriptor nng_listener_set_security_descriptor$descriptor() {
-        return nng_listener_set_security_descriptor.DESC;
+    public static FunctionDescriptor nng_listener_get$descriptor() {
+        return nng_listener_get.DESC;
     }
 
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * int nng_listener_set_security_descriptor(nng_listener, void *)
+     * int nng_listener_get(nng_listener, const char *, void *, size_t *)
      * }
      */
-    public static MethodHandle nng_listener_set_security_descriptor$handle() {
-        return nng_listener_set_security_descriptor.HANDLE;
+    public static MethodHandle nng_listener_get$handle() {
+        return nng_listener_get.HANDLE;
     }
 
     /**
      * Address for:
      * {@snippet lang=c :
-     * int nng_listener_set_security_descriptor(nng_listener, void *)
+     * int nng_listener_get(nng_listener, const char *, void *, size_t *)
      * }
      */
-    public static MemorySegment nng_listener_set_security_descriptor$address() {
-        return nng_listener_set_security_descriptor.ADDR;
+    public static MemorySegment nng_listener_get$address() {
+        return nng_listener_get.ADDR;
     }
 
     /**
      * {@snippet lang=c :
-     * int nng_listener_set_security_descriptor(nng_listener, void *)
+     * int nng_listener_get(nng_listener, const char *, void *, size_t *)
      * }
      */
-    public static int nng_listener_set_security_descriptor(MemorySegment x0, MemorySegment x1) {
-        var mh$ = nng_listener_set_security_descriptor.HANDLE;
+    public static int nng_listener_get(MemorySegment x0, MemorySegment x1, MemorySegment x2, MemorySegment x3) {
+        var mh$ = nng_listener_get.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_listener_set_security_descriptor", x0, x1);
+                traceDowncall("nng_listener_get", x0, x1, x2, x3);
             }
-            return (int)mh$.invokeExact(x0, x1);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_listener_get_url {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_listener_s.layout(),
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_listener_get_url");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int nng_listener_get_url(nng_listener id, const nng_url **urlp)
-     * }
-     */
-    public static FunctionDescriptor nng_listener_get_url$descriptor() {
-        return nng_listener_get_url.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int nng_listener_get_url(nng_listener id, const nng_url **urlp)
-     * }
-     */
-    public static MethodHandle nng_listener_get_url$handle() {
-        return nng_listener_get_url.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int nng_listener_get_url(nng_listener id, const nng_url **urlp)
-     * }
-     */
-    public static MemorySegment nng_listener_get_url$address() {
-        return nng_listener_get_url.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int nng_listener_get_url(nng_listener id, const nng_url **urlp)
-     * }
-     */
-    public static int nng_listener_get_url(MemorySegment id, MemorySegment urlp) {
-        var mh$ = nng_listener_get_url.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_listener_get_url", id, urlp);
-            }
-            return (int)mh$.invokeExact(id, urlp);
+            return (int)mh$.invokeExact(x0, x1, x2, x3);
         } catch (Error | RuntimeException ex) {
            throw ex;
         } catch (Throwable ex$) {
@@ -9001,7 +5274,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * int nng_listener_get_string(nng_listener, const char *, const char **)
+     * int nng_listener_get_string(nng_listener, const char *, char **)
      * }
      */
     public static FunctionDescriptor nng_listener_get_string$descriptor() {
@@ -9011,7 +5284,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * int nng_listener_get_string(nng_listener, const char *, const char **)
+     * int nng_listener_get_string(nng_listener, const char *, char **)
      * }
      */
     public static MethodHandle nng_listener_get_string$handle() {
@@ -9021,7 +5294,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * int nng_listener_get_string(nng_listener, const char *, const char **)
+     * int nng_listener_get_string(nng_listener, const char *, char **)
      * }
      */
     public static MemorySegment nng_listener_get_string$address() {
@@ -9030,7 +5303,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * int nng_listener_get_string(nng_listener, const char *, const char **)
+     * int nng_listener_get_string(nng_listener, const char *, char **)
      * }
      */
     public static int nng_listener_get_string(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
@@ -9038,6 +5311,68 @@ public class nng_h extends nng_h$shared {
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("nng_listener_get_string", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_listener_get_ptr {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_listener_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_listener_get_ptr");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_listener_get_ptr(nng_listener, const char *, void **)
+     * }
+     */
+    public static FunctionDescriptor nng_listener_get_ptr$descriptor() {
+        return nng_listener_get_ptr.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_listener_get_ptr(nng_listener, const char *, void **)
+     * }
+     */
+    public static MethodHandle nng_listener_get_ptr$handle() {
+        return nng_listener_get_ptr.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_listener_get_ptr(nng_listener, const char *, void **)
+     * }
+     */
+    public static MemorySegment nng_listener_get_ptr$address() {
+        return nng_listener_get_ptr.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_listener_get_ptr(nng_listener, const char *, void **)
+     * }
+     */
+    public static int nng_listener_get_ptr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_listener_get_ptr.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_listener_get_ptr", x0, x1, x2);
             }
             return (int)mh$.invokeExact(x0, x1, x2);
         } catch (Error | RuntimeException ex) {
@@ -9109,14 +5444,15 @@ public class nng_h extends nng_h$shared {
         }
     }
 
-    private static class nng_listener_get_tls {
+    private static class nng_listener_get_addr {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
             nng_h.C_INT,
             nng_listener_s.layout(),
+            nng_h.C_POINTER,
             nng_h.C_POINTER
         );
 
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_listener_get_tls");
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_listener_get_addr");
 
         public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
     }
@@ -9124,45 +5460,45 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * int nng_listener_get_tls(nng_listener, nng_tls_config **)
+     * int nng_listener_get_addr(nng_listener, const char *, nng_sockaddr *)
      * }
      */
-    public static FunctionDescriptor nng_listener_get_tls$descriptor() {
-        return nng_listener_get_tls.DESC;
+    public static FunctionDescriptor nng_listener_get_addr$descriptor() {
+        return nng_listener_get_addr.DESC;
     }
 
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * int nng_listener_get_tls(nng_listener, nng_tls_config **)
+     * int nng_listener_get_addr(nng_listener, const char *, nng_sockaddr *)
      * }
      */
-    public static MethodHandle nng_listener_get_tls$handle() {
-        return nng_listener_get_tls.HANDLE;
+    public static MethodHandle nng_listener_get_addr$handle() {
+        return nng_listener_get_addr.HANDLE;
     }
 
     /**
      * Address for:
      * {@snippet lang=c :
-     * int nng_listener_get_tls(nng_listener, nng_tls_config **)
+     * int nng_listener_get_addr(nng_listener, const char *, nng_sockaddr *)
      * }
      */
-    public static MemorySegment nng_listener_get_tls$address() {
-        return nng_listener_get_tls.ADDR;
+    public static MemorySegment nng_listener_get_addr$address() {
+        return nng_listener_get_addr.ADDR;
     }
 
     /**
      * {@snippet lang=c :
-     * int nng_listener_get_tls(nng_listener, nng_tls_config **)
+     * int nng_listener_get_addr(nng_listener, const char *, nng_sockaddr *)
      * }
      */
-    public static int nng_listener_get_tls(MemorySegment x0, MemorySegment x1) {
-        var mh$ = nng_listener_get_tls.HANDLE;
+    public static int nng_listener_get_addr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_listener_get_addr.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_listener_get_tls", x0, x1);
+                traceDowncall("nng_listener_get_addr", x0, x1, x2);
             }
-            return (int)mh$.invokeExact(x0, x1);
+            return (int)mh$.invokeExact(x0, x1, x2);
         } catch (Error | RuntimeException ex) {
            throw ex;
         } catch (Throwable ex$) {
@@ -9184,7 +5520,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * const char *nng_strerror(nng_err)
+     * const char *nng_strerror(int)
      * }
      */
     public static FunctionDescriptor nng_strerror$descriptor() {
@@ -9194,7 +5530,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * const char *nng_strerror(nng_err)
+     * const char *nng_strerror(int)
      * }
      */
     public static MethodHandle nng_strerror$handle() {
@@ -9204,7 +5540,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * const char *nng_strerror(nng_err)
+     * const char *nng_strerror(int)
      * }
      */
     public static MemorySegment nng_strerror$address() {
@@ -9213,7 +5549,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * const char *nng_strerror(nng_err)
+     * const char *nng_strerror(int)
      * }
      */
     public static MemorySegment nng_strerror(int x0) {
@@ -9247,7 +5583,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * int nng_send(nng_socket, const void *, size_t, int)
+     * int nng_send(nng_socket, void *, size_t, int)
      * }
      */
     public static FunctionDescriptor nng_send$descriptor() {
@@ -9257,7 +5593,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * int nng_send(nng_socket, const void *, size_t, int)
+     * int nng_send(nng_socket, void *, size_t, int)
      * }
      */
     public static MethodHandle nng_send$handle() {
@@ -9267,7 +5603,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * int nng_send(nng_socket, const void *, size_t, int)
+     * int nng_send(nng_socket, void *, size_t, int)
      * }
      */
     public static MemorySegment nng_send$address() {
@@ -9276,7 +5612,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * int nng_send(nng_socket, const void *, size_t, int)
+     * int nng_send(nng_socket, void *, size_t, int)
      * }
      */
     public static int nng_send(MemorySegment x0, MemorySegment x1, long x2, int x3) {
@@ -9480,13 +5816,13 @@ public class nng_h extends nng_h$shared {
         }
     }
 
-    private static class nng_socket_send {
+    private static class nng_sock_send {
         public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
             nng_socket_s.layout(),
             nng_h.C_POINTER
         );
 
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_socket_send");
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_sock_send");
 
         public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
     }
@@ -9494,43 +5830,43 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * void nng_socket_send(nng_socket, nng_aio *)
+     * void nng_sock_send(nng_socket, nng_aio *)
      * }
      */
-    public static FunctionDescriptor nng_socket_send$descriptor() {
-        return nng_socket_send.DESC;
+    public static FunctionDescriptor nng_sock_send$descriptor() {
+        return nng_sock_send.DESC;
     }
 
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * void nng_socket_send(nng_socket, nng_aio *)
+     * void nng_sock_send(nng_socket, nng_aio *)
      * }
      */
-    public static MethodHandle nng_socket_send$handle() {
-        return nng_socket_send.HANDLE;
+    public static MethodHandle nng_sock_send$handle() {
+        return nng_sock_send.HANDLE;
     }
 
     /**
      * Address for:
      * {@snippet lang=c :
-     * void nng_socket_send(nng_socket, nng_aio *)
+     * void nng_sock_send(nng_socket, nng_aio *)
      * }
      */
-    public static MemorySegment nng_socket_send$address() {
-        return nng_socket_send.ADDR;
+    public static MemorySegment nng_sock_send$address() {
+        return nng_sock_send.ADDR;
     }
 
     /**
      * {@snippet lang=c :
-     * void nng_socket_send(nng_socket, nng_aio *)
+     * void nng_sock_send(nng_socket, nng_aio *)
      * }
      */
-    public static void nng_socket_send(MemorySegment x0, MemorySegment x1) {
-        var mh$ = nng_socket_send.HANDLE;
+    public static void nng_sock_send(MemorySegment x0, MemorySegment x1) {
+        var mh$ = nng_sock_send.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_socket_send", x0, x1);
+                traceDowncall("nng_sock_send", x0, x1);
             }
             mh$.invokeExact(x0, x1);
         } catch (Error | RuntimeException ex) {
@@ -9540,13 +5876,13 @@ public class nng_h extends nng_h$shared {
         }
     }
 
-    private static class nng_socket_recv {
+    private static class nng_send_aio {
         public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
             nng_socket_s.layout(),
             nng_h.C_POINTER
         );
 
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_socket_recv");
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_send_aio");
 
         public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
     }
@@ -9554,43 +5890,163 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * void nng_socket_recv(nng_socket, nng_aio *)
+     * void nng_send_aio(nng_socket, nng_aio *)
      * }
      */
-    public static FunctionDescriptor nng_socket_recv$descriptor() {
-        return nng_socket_recv.DESC;
+    public static FunctionDescriptor nng_send_aio$descriptor() {
+        return nng_send_aio.DESC;
     }
 
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * void nng_socket_recv(nng_socket, nng_aio *)
+     * void nng_send_aio(nng_socket, nng_aio *)
      * }
      */
-    public static MethodHandle nng_socket_recv$handle() {
-        return nng_socket_recv.HANDLE;
+    public static MethodHandle nng_send_aio$handle() {
+        return nng_send_aio.HANDLE;
     }
 
     /**
      * Address for:
      * {@snippet lang=c :
-     * void nng_socket_recv(nng_socket, nng_aio *)
+     * void nng_send_aio(nng_socket, nng_aio *)
      * }
      */
-    public static MemorySegment nng_socket_recv$address() {
-        return nng_socket_recv.ADDR;
+    public static MemorySegment nng_send_aio$address() {
+        return nng_send_aio.ADDR;
     }
 
     /**
      * {@snippet lang=c :
-     * void nng_socket_recv(nng_socket, nng_aio *)
+     * void nng_send_aio(nng_socket, nng_aio *)
      * }
      */
-    public static void nng_socket_recv(MemorySegment x0, MemorySegment x1) {
-        var mh$ = nng_socket_recv.HANDLE;
+    public static void nng_send_aio(MemorySegment x0, MemorySegment x1) {
+        var mh$ = nng_send_aio.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_socket_recv", x0, x1);
+                traceDowncall("nng_send_aio", x0, x1);
+            }
+            mh$.invokeExact(x0, x1);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_sock_recv {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
+            nng_socket_s.layout(),
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_sock_recv");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * void nng_sock_recv(nng_socket, nng_aio *)
+     * }
+     */
+    public static FunctionDescriptor nng_sock_recv$descriptor() {
+        return nng_sock_recv.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * void nng_sock_recv(nng_socket, nng_aio *)
+     * }
+     */
+    public static MethodHandle nng_sock_recv$handle() {
+        return nng_sock_recv.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * void nng_sock_recv(nng_socket, nng_aio *)
+     * }
+     */
+    public static MemorySegment nng_sock_recv$address() {
+        return nng_sock_recv.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * void nng_sock_recv(nng_socket, nng_aio *)
+     * }
+     */
+    public static void nng_sock_recv(MemorySegment x0, MemorySegment x1) {
+        var mh$ = nng_sock_recv.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_sock_recv", x0, x1);
+            }
+            mh$.invokeExact(x0, x1);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_recv_aio {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
+            nng_socket_s.layout(),
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_recv_aio");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * void nng_recv_aio(nng_socket, nng_aio *)
+     * }
+     */
+    public static FunctionDescriptor nng_recv_aio$descriptor() {
+        return nng_recv_aio.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * void nng_recv_aio(nng_socket, nng_aio *)
+     * }
+     */
+    public static MethodHandle nng_recv_aio$handle() {
+        return nng_recv_aio.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * void nng_recv_aio(nng_socket, nng_aio *)
+     * }
+     */
+    public static MemorySegment nng_recv_aio$address() {
+        return nng_recv_aio.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * void nng_recv_aio(nng_socket, nng_aio *)
+     * }
+     */
+    public static void nng_recv_aio(MemorySegment x0, MemorySegment x1) {
+        var mh$ = nng_recv_aio.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_recv_aio", x0, x1);
             }
             mh$.invokeExact(x0, x1);
         } catch (Error | RuntimeException ex) {
@@ -10025,6 +6481,69 @@ public class nng_h extends nng_h$shared {
         }
     }
 
+    private static class nng_ctx_get {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_ctx_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_ctx_get");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_ctx_get(nng_ctx, const char *, void *, size_t *)
+     * }
+     */
+    public static FunctionDescriptor nng_ctx_get$descriptor() {
+        return nng_ctx_get.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_ctx_get(nng_ctx, const char *, void *, size_t *)
+     * }
+     */
+    public static MethodHandle nng_ctx_get$handle() {
+        return nng_ctx_get.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_ctx_get(nng_ctx, const char *, void *, size_t *)
+     * }
+     */
+    public static MemorySegment nng_ctx_get$address() {
+        return nng_ctx_get.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_ctx_get(nng_ctx, const char *, void *, size_t *)
+     * }
+     */
+    public static int nng_ctx_get(MemorySegment x0, MemorySegment x1, MemorySegment x2, MemorySegment x3) {
+        var mh$ = nng_ctx_get.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_ctx_get", x0, x1, x2, x3);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2, x3);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
     private static class nng_ctx_get_bool {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
             nng_h.C_INT,
@@ -10202,6 +6721,192 @@ public class nng_h extends nng_h$shared {
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("nng_ctx_get_size", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_ctx_get_uint64 {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_ctx_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_ctx_get_uint64");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_ctx_get_uint64(nng_ctx, const char *, uint64_t *)
+     * }
+     */
+    public static FunctionDescriptor nng_ctx_get_uint64$descriptor() {
+        return nng_ctx_get_uint64.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_ctx_get_uint64(nng_ctx, const char *, uint64_t *)
+     * }
+     */
+    public static MethodHandle nng_ctx_get_uint64$handle() {
+        return nng_ctx_get_uint64.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_ctx_get_uint64(nng_ctx, const char *, uint64_t *)
+     * }
+     */
+    public static MemorySegment nng_ctx_get_uint64$address() {
+        return nng_ctx_get_uint64.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_ctx_get_uint64(nng_ctx, const char *, uint64_t *)
+     * }
+     */
+    public static int nng_ctx_get_uint64(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_ctx_get_uint64.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_ctx_get_uint64", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_ctx_get_string {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_ctx_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_ctx_get_string");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_ctx_get_string(nng_ctx, const char *, char **)
+     * }
+     */
+    public static FunctionDescriptor nng_ctx_get_string$descriptor() {
+        return nng_ctx_get_string.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_ctx_get_string(nng_ctx, const char *, char **)
+     * }
+     */
+    public static MethodHandle nng_ctx_get_string$handle() {
+        return nng_ctx_get_string.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_ctx_get_string(nng_ctx, const char *, char **)
+     * }
+     */
+    public static MemorySegment nng_ctx_get_string$address() {
+        return nng_ctx_get_string.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_ctx_get_string(nng_ctx, const char *, char **)
+     * }
+     */
+    public static int nng_ctx_get_string(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_ctx_get_string.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_ctx_get_string", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_ctx_get_ptr {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_ctx_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_ctx_get_ptr");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_ctx_get_ptr(nng_ctx, const char *, void **)
+     * }
+     */
+    public static FunctionDescriptor nng_ctx_get_ptr$descriptor() {
+        return nng_ctx_get_ptr.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_ctx_get_ptr(nng_ctx, const char *, void **)
+     * }
+     */
+    public static MethodHandle nng_ctx_get_ptr$handle() {
+        return nng_ctx_get_ptr.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_ctx_get_ptr(nng_ctx, const char *, void **)
+     * }
+     */
+    public static MemorySegment nng_ctx_get_ptr$address() {
+        return nng_ctx_get_ptr.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_ctx_get_ptr(nng_ctx, const char *, void **)
+     * }
+     */
+    public static int nng_ctx_get_ptr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_ctx_get_ptr.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_ctx_get_ptr", x0, x1, x2);
             }
             return (int)mh$.invokeExact(x0, x1, x2);
         } catch (Error | RuntimeException ex) {
@@ -10513,6 +7218,192 @@ public class nng_h extends nng_h$shared {
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("nng_ctx_set_size", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_ctx_set_uint64 {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_ctx_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_LONG_LONG
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_ctx_set_uint64");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_ctx_set_uint64(nng_ctx, const char *, uint64_t)
+     * }
+     */
+    public static FunctionDescriptor nng_ctx_set_uint64$descriptor() {
+        return nng_ctx_set_uint64.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_ctx_set_uint64(nng_ctx, const char *, uint64_t)
+     * }
+     */
+    public static MethodHandle nng_ctx_set_uint64$handle() {
+        return nng_ctx_set_uint64.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_ctx_set_uint64(nng_ctx, const char *, uint64_t)
+     * }
+     */
+    public static MemorySegment nng_ctx_set_uint64$address() {
+        return nng_ctx_set_uint64.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_ctx_set_uint64(nng_ctx, const char *, uint64_t)
+     * }
+     */
+    public static int nng_ctx_set_uint64(MemorySegment x0, MemorySegment x1, long x2) {
+        var mh$ = nng_ctx_set_uint64.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_ctx_set_uint64", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_ctx_set_string {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_ctx_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_ctx_set_string");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_ctx_set_string(nng_ctx, const char *, const char *)
+     * }
+     */
+    public static FunctionDescriptor nng_ctx_set_string$descriptor() {
+        return nng_ctx_set_string.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_ctx_set_string(nng_ctx, const char *, const char *)
+     * }
+     */
+    public static MethodHandle nng_ctx_set_string$handle() {
+        return nng_ctx_set_string.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_ctx_set_string(nng_ctx, const char *, const char *)
+     * }
+     */
+    public static MemorySegment nng_ctx_set_string$address() {
+        return nng_ctx_set_string.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_ctx_set_string(nng_ctx, const char *, const char *)
+     * }
+     */
+    public static int nng_ctx_set_string(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_ctx_set_string.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_ctx_set_string", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_ctx_set_ptr {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_ctx_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_ctx_set_ptr");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_ctx_set_ptr(nng_ctx, const char *, void *)
+     * }
+     */
+    public static FunctionDescriptor nng_ctx_set_ptr$descriptor() {
+        return nng_ctx_set_ptr.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_ctx_set_ptr(nng_ctx, const char *, void *)
+     * }
+     */
+    public static MethodHandle nng_ctx_set_ptr$handle() {
+        return nng_ctx_set_ptr.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_ctx_set_ptr(nng_ctx, const char *, void *)
+     * }
+     */
+    public static MemorySegment nng_ctx_set_ptr$address() {
+        return nng_ctx_set_ptr.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_ctx_set_ptr(nng_ctx, const char *, void *)
+     * }
+     */
+    public static int nng_ctx_set_ptr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_ctx_set_ptr.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_ctx_set_ptr", x0, x1, x2);
             }
             return (int)mh$.invokeExact(x0, x1, x2);
         } catch (Error | RuntimeException ex) {
@@ -10839,7 +7730,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_aio_alloc(nng_aio **, void (*)(void *), void *)
+     * int nng_aio_alloc(nng_aio **, void (*)(void *), void *)
      * }
      */
     public static FunctionDescriptor nng_aio_alloc$descriptor() {
@@ -10849,7 +7740,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_aio_alloc(nng_aio **, void (*)(void *), void *)
+     * int nng_aio_alloc(nng_aio **, void (*)(void *), void *)
      * }
      */
     public static MethodHandle nng_aio_alloc$handle() {
@@ -10859,7 +7750,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_aio_alloc(nng_aio **, void (*)(void *), void *)
+     * int nng_aio_alloc(nng_aio **, void (*)(void *), void *)
      * }
      */
     public static MemorySegment nng_aio_alloc$address() {
@@ -10868,7 +7759,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_aio_alloc(nng_aio **, void (*)(void *), void *)
+     * int nng_aio_alloc(nng_aio **, void (*)(void *), void *)
      * }
      */
     public static int nng_aio_alloc(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
@@ -11076,7 +7967,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_aio_result(nng_aio *)
+     * int nng_aio_result(nng_aio *)
      * }
      */
     public static FunctionDescriptor nng_aio_result$descriptor() {
@@ -11086,7 +7977,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_aio_result(nng_aio *)
+     * int nng_aio_result(nng_aio *)
      * }
      */
     public static MethodHandle nng_aio_result$handle() {
@@ -11096,7 +7987,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_aio_result(nng_aio *)
+     * int nng_aio_result(nng_aio *)
      * }
      */
     public static MemorySegment nng_aio_result$address() {
@@ -11105,7 +7996,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_aio_result(nng_aio *)
+     * int nng_aio_result(nng_aio *)
      * }
      */
     public static int nng_aio_result(MemorySegment x0) {
@@ -11255,7 +8146,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * void nng_aio_abort(nng_aio *, nng_err)
+     * void nng_aio_abort(nng_aio *, int)
      * }
      */
     public static FunctionDescriptor nng_aio_abort$descriptor() {
@@ -11265,7 +8156,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * void nng_aio_abort(nng_aio *, nng_err)
+     * void nng_aio_abort(nng_aio *, int)
      * }
      */
     public static MethodHandle nng_aio_abort$handle() {
@@ -11275,7 +8166,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * void nng_aio_abort(nng_aio *, nng_err)
+     * void nng_aio_abort(nng_aio *, int)
      * }
      */
     public static MemorySegment nng_aio_abort$address() {
@@ -11284,7 +8175,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * void nng_aio_abort(nng_aio *, nng_err)
+     * void nng_aio_abort(nng_aio *, int)
      * }
      */
     public static void nng_aio_abort(MemorySegment x0, int x1) {
@@ -11556,7 +8447,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_aio_set_input(nng_aio *, unsigned int, void *)
+     * int nng_aio_set_input(nng_aio *, unsigned int, void *)
      * }
      */
     public static FunctionDescriptor nng_aio_set_input$descriptor() {
@@ -11566,7 +8457,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_aio_set_input(nng_aio *, unsigned int, void *)
+     * int nng_aio_set_input(nng_aio *, unsigned int, void *)
      * }
      */
     public static MethodHandle nng_aio_set_input$handle() {
@@ -11576,7 +8467,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_aio_set_input(nng_aio *, unsigned int, void *)
+     * int nng_aio_set_input(nng_aio *, unsigned int, void *)
      * }
      */
     public static MemorySegment nng_aio_set_input$address() {
@@ -11585,7 +8476,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_aio_set_input(nng_aio *, unsigned int, void *)
+     * int nng_aio_set_input(nng_aio *, unsigned int, void *)
      * }
      */
     public static int nng_aio_set_input(MemorySegment x0, int x1, MemorySegment x2) {
@@ -11679,7 +8570,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_aio_set_output(nng_aio *, unsigned int, void *)
+     * int nng_aio_set_output(nng_aio *, unsigned int, void *)
      * }
      */
     public static FunctionDescriptor nng_aio_set_output$descriptor() {
@@ -11689,7 +8580,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_aio_set_output(nng_aio *, unsigned int, void *)
+     * int nng_aio_set_output(nng_aio *, unsigned int, void *)
      * }
      */
     public static MethodHandle nng_aio_set_output$handle() {
@@ -11699,7 +8590,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_aio_set_output(nng_aio *, unsigned int, void *)
+     * int nng_aio_set_output(nng_aio *, unsigned int, void *)
      * }
      */
     public static MemorySegment nng_aio_set_output$address() {
@@ -11708,7 +8599,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_aio_set_output(nng_aio *, unsigned int, void *)
+     * int nng_aio_set_output(nng_aio *, unsigned int, void *)
      * }
      */
     public static int nng_aio_set_output(MemorySegment x0, int x1, MemorySegment x2) {
@@ -11922,7 +8813,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_aio_set_iov(nng_aio *, unsigned int, const nng_iov *)
+     * int nng_aio_set_iov(nng_aio *, unsigned int, const nng_iov *)
      * }
      */
     public static FunctionDescriptor nng_aio_set_iov$descriptor() {
@@ -11932,7 +8823,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_aio_set_iov(nng_aio *, unsigned int, const nng_iov *)
+     * int nng_aio_set_iov(nng_aio *, unsigned int, const nng_iov *)
      * }
      */
     public static MethodHandle nng_aio_set_iov$handle() {
@@ -11942,7 +8833,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_aio_set_iov(nng_aio *, unsigned int, const nng_iov *)
+     * int nng_aio_set_iov(nng_aio *, unsigned int, const nng_iov *)
      * }
      */
     public static MemorySegment nng_aio_set_iov$address() {
@@ -11951,7 +8842,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_aio_set_iov(nng_aio *, unsigned int, const nng_iov *)
+     * int nng_aio_set_iov(nng_aio *, unsigned int, const nng_iov *)
      * }
      */
     public static int nng_aio_set_iov(MemorySegment x0, int x1, MemorySegment x2) {
@@ -11968,12 +8859,13 @@ public class nng_h extends nng_h$shared {
         }
     }
 
-    private static class nng_aio_reset {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
+    private static class nng_aio_begin {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_BOOL,
             nng_h.C_POINTER
         );
 
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_aio_reset");
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_aio_begin");
 
         public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
     }
@@ -11981,45 +8873,45 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * void nng_aio_reset(nng_aio *)
+     * _Bool nng_aio_begin(nng_aio *)
      * }
      */
-    public static FunctionDescriptor nng_aio_reset$descriptor() {
-        return nng_aio_reset.DESC;
+    public static FunctionDescriptor nng_aio_begin$descriptor() {
+        return nng_aio_begin.DESC;
     }
 
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * void nng_aio_reset(nng_aio *)
+     * _Bool nng_aio_begin(nng_aio *)
      * }
      */
-    public static MethodHandle nng_aio_reset$handle() {
-        return nng_aio_reset.HANDLE;
+    public static MethodHandle nng_aio_begin$handle() {
+        return nng_aio_begin.HANDLE;
     }
 
     /**
      * Address for:
      * {@snippet lang=c :
-     * void nng_aio_reset(nng_aio *)
+     * _Bool nng_aio_begin(nng_aio *)
      * }
      */
-    public static MemorySegment nng_aio_reset$address() {
-        return nng_aio_reset.ADDR;
+    public static MemorySegment nng_aio_begin$address() {
+        return nng_aio_begin.ADDR;
     }
 
     /**
      * {@snippet lang=c :
-     * void nng_aio_reset(nng_aio *)
+     * _Bool nng_aio_begin(nng_aio *)
      * }
      */
-    public static void nng_aio_reset(MemorySegment x0) {
-        var mh$ = nng_aio_reset.HANDLE;
+    public static boolean nng_aio_begin(MemorySegment x0) {
+        var mh$ = nng_aio_begin.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_aio_reset", x0);
+                traceDowncall("nng_aio_begin", x0);
             }
-            mh$.invokeExact(x0);
+            return (boolean)mh$.invokeExact(x0);
         } catch (Error | RuntimeException ex) {
            throw ex;
         } catch (Throwable ex$) {
@@ -12041,7 +8933,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * void nng_aio_finish(nng_aio *, nng_err)
+     * void nng_aio_finish(nng_aio *, int)
      * }
      */
     public static FunctionDescriptor nng_aio_finish$descriptor() {
@@ -12051,7 +8943,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * void nng_aio_finish(nng_aio *, nng_err)
+     * void nng_aio_finish(nng_aio *, int)
      * }
      */
     public static MethodHandle nng_aio_finish$handle() {
@@ -12061,7 +8953,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * void nng_aio_finish(nng_aio *, nng_err)
+     * void nng_aio_finish(nng_aio *, int)
      * }
      */
     public static MemorySegment nng_aio_finish$address() {
@@ -12070,7 +8962,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * void nng_aio_finish(nng_aio *, nng_err)
+     * void nng_aio_finish(nng_aio *, int)
      * }
      */
     public static void nng_aio_finish(MemorySegment x0, int x1) {
@@ -12087,75 +8979,14 @@ public class nng_h extends nng_h$shared {
         }
     }
 
-    private static class nng_aio_start {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_BOOL,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_aio_start");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * _Bool nng_aio_start(nng_aio *, nng_aio_cancelfn, void *)
-     * }
-     */
-    public static FunctionDescriptor nng_aio_start$descriptor() {
-        return nng_aio_start.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * _Bool nng_aio_start(nng_aio *, nng_aio_cancelfn, void *)
-     * }
-     */
-    public static MethodHandle nng_aio_start$handle() {
-        return nng_aio_start.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * _Bool nng_aio_start(nng_aio *, nng_aio_cancelfn, void *)
-     * }
-     */
-    public static MemorySegment nng_aio_start$address() {
-        return nng_aio_start.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * _Bool nng_aio_start(nng_aio *, nng_aio_cancelfn, void *)
-     * }
-     */
-    public static boolean nng_aio_start(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
-        var mh$ = nng_aio_start.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_aio_start", x0, x1, x2);
-            }
-            return (boolean)mh$.invokeExact(x0, x1, x2);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_aio_skip_callback {
+    private static class nng_aio_defer {
         public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
             nng_h.C_POINTER,
+            nng_h.C_POINTER,
             nng_h.C_POINTER
         );
 
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_aio_skip_callback");
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_aio_defer");
 
         public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
     }
@@ -12163,45 +8994,45 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * void nng_aio_skip_callback(nng_aio *, _Bool *)
+     * void nng_aio_defer(nng_aio *, nng_aio_cancelfn, void *)
      * }
      */
-    public static FunctionDescriptor nng_aio_skip_callback$descriptor() {
-        return nng_aio_skip_callback.DESC;
+    public static FunctionDescriptor nng_aio_defer$descriptor() {
+        return nng_aio_defer.DESC;
     }
 
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * void nng_aio_skip_callback(nng_aio *, _Bool *)
+     * void nng_aio_defer(nng_aio *, nng_aio_cancelfn, void *)
      * }
      */
-    public static MethodHandle nng_aio_skip_callback$handle() {
-        return nng_aio_skip_callback.HANDLE;
+    public static MethodHandle nng_aio_defer$handle() {
+        return nng_aio_defer.HANDLE;
     }
 
     /**
      * Address for:
      * {@snippet lang=c :
-     * void nng_aio_skip_callback(nng_aio *, _Bool *)
+     * void nng_aio_defer(nng_aio *, nng_aio_cancelfn, void *)
      * }
      */
-    public static MemorySegment nng_aio_skip_callback$address() {
-        return nng_aio_skip_callback.ADDR;
+    public static MemorySegment nng_aio_defer$address() {
+        return nng_aio_defer.ADDR;
     }
 
     /**
      * {@snippet lang=c :
-     * void nng_aio_skip_callback(nng_aio *, _Bool *)
+     * void nng_aio_defer(nng_aio *, nng_aio_cancelfn, void *)
      * }
      */
-    public static void nng_aio_skip_callback(MemorySegment x0, MemorySegment x1) {
-        var mh$ = nng_aio_skip_callback.HANDLE;
+    public static void nng_aio_defer(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_aio_defer.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_aio_skip_callback", x0, x1);
+                traceDowncall("nng_aio_defer", x0, x1, x2);
             }
-            mh$.invokeExact(x0, x1);
+            mh$.invokeExact(x0, x1, x2);
         } catch (Error | RuntimeException ex) {
            throw ex;
         } catch (Throwable ex$) {
@@ -15066,6 +11897,69 @@ public class nng_h extends nng_h$shared {
         }
     }
 
+    private static class nng_pipe_get {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_pipe_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_pipe_get");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_pipe_get(nng_pipe, const char *, void *, size_t *)
+     * }
+     */
+    public static FunctionDescriptor nng_pipe_get$descriptor() {
+        return nng_pipe_get.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_pipe_get(nng_pipe, const char *, void *, size_t *)
+     * }
+     */
+    public static MethodHandle nng_pipe_get$handle() {
+        return nng_pipe_get.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_pipe_get(nng_pipe, const char *, void *, size_t *)
+     * }
+     */
+    public static MemorySegment nng_pipe_get$address() {
+        return nng_pipe_get.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_pipe_get(nng_pipe, const char *, void *, size_t *)
+     * }
+     */
+    public static int nng_pipe_get(MemorySegment x0, MemorySegment x1, MemorySegment x2, MemorySegment x3) {
+        var mh$ = nng_pipe_get.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_pipe_get", x0, x1, x2, x3);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2, x3);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
     private static class nng_pipe_get_bool {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
             nng_h.C_INT,
@@ -15082,7 +11976,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_pipe_get_bool(nng_pipe, const char *, _Bool *)
+     * int nng_pipe_get_bool(nng_pipe, const char *, _Bool *)
      * }
      */
     public static FunctionDescriptor nng_pipe_get_bool$descriptor() {
@@ -15092,7 +11986,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_pipe_get_bool(nng_pipe, const char *, _Bool *)
+     * int nng_pipe_get_bool(nng_pipe, const char *, _Bool *)
      * }
      */
     public static MethodHandle nng_pipe_get_bool$handle() {
@@ -15102,7 +11996,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_pipe_get_bool(nng_pipe, const char *, _Bool *)
+     * int nng_pipe_get_bool(nng_pipe, const char *, _Bool *)
      * }
      */
     public static MemorySegment nng_pipe_get_bool$address() {
@@ -15111,7 +12005,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_pipe_get_bool(nng_pipe, const char *, _Bool *)
+     * int nng_pipe_get_bool(nng_pipe, const char *, _Bool *)
      * }
      */
     public static int nng_pipe_get_bool(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
@@ -15144,7 +12038,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_pipe_get_int(nng_pipe, const char *, int *)
+     * int nng_pipe_get_int(nng_pipe, const char *, int *)
      * }
      */
     public static FunctionDescriptor nng_pipe_get_int$descriptor() {
@@ -15154,7 +12048,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_pipe_get_int(nng_pipe, const char *, int *)
+     * int nng_pipe_get_int(nng_pipe, const char *, int *)
      * }
      */
     public static MethodHandle nng_pipe_get_int$handle() {
@@ -15164,7 +12058,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_pipe_get_int(nng_pipe, const char *, int *)
+     * int nng_pipe_get_int(nng_pipe, const char *, int *)
      * }
      */
     public static MemorySegment nng_pipe_get_int$address() {
@@ -15173,7 +12067,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_pipe_get_int(nng_pipe, const char *, int *)
+     * int nng_pipe_get_int(nng_pipe, const char *, int *)
      * }
      */
     public static int nng_pipe_get_int(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
@@ -15206,7 +12100,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_pipe_get_ms(nng_pipe, const char *, nng_duration *)
+     * int nng_pipe_get_ms(nng_pipe, const char *, nng_duration *)
      * }
      */
     public static FunctionDescriptor nng_pipe_get_ms$descriptor() {
@@ -15216,7 +12110,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_pipe_get_ms(nng_pipe, const char *, nng_duration *)
+     * int nng_pipe_get_ms(nng_pipe, const char *, nng_duration *)
      * }
      */
     public static MethodHandle nng_pipe_get_ms$handle() {
@@ -15226,7 +12120,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_pipe_get_ms(nng_pipe, const char *, nng_duration *)
+     * int nng_pipe_get_ms(nng_pipe, const char *, nng_duration *)
      * }
      */
     public static MemorySegment nng_pipe_get_ms$address() {
@@ -15235,7 +12129,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_pipe_get_ms(nng_pipe, const char *, nng_duration *)
+     * int nng_pipe_get_ms(nng_pipe, const char *, nng_duration *)
      * }
      */
     public static int nng_pipe_get_ms(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
@@ -15268,7 +12162,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_pipe_get_size(nng_pipe, const char *, size_t *)
+     * int nng_pipe_get_size(nng_pipe, const char *, size_t *)
      * }
      */
     public static FunctionDescriptor nng_pipe_get_size$descriptor() {
@@ -15278,7 +12172,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_pipe_get_size(nng_pipe, const char *, size_t *)
+     * int nng_pipe_get_size(nng_pipe, const char *, size_t *)
      * }
      */
     public static MethodHandle nng_pipe_get_size$handle() {
@@ -15288,7 +12182,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_pipe_get_size(nng_pipe, const char *, size_t *)
+     * int nng_pipe_get_size(nng_pipe, const char *, size_t *)
      * }
      */
     public static MemorySegment nng_pipe_get_size$address() {
@@ -15297,7 +12191,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_pipe_get_size(nng_pipe, const char *, size_t *)
+     * int nng_pipe_get_size(nng_pipe, const char *, size_t *)
      * }
      */
     public static int nng_pipe_get_size(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
@@ -15305,6 +12199,68 @@ public class nng_h extends nng_h$shared {
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("nng_pipe_get_size", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_pipe_get_uint64 {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_pipe_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_pipe_get_uint64");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_pipe_get_uint64(nng_pipe, const char *, uint64_t *)
+     * }
+     */
+    public static FunctionDescriptor nng_pipe_get_uint64$descriptor() {
+        return nng_pipe_get_uint64.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_pipe_get_uint64(nng_pipe, const char *, uint64_t *)
+     * }
+     */
+    public static MethodHandle nng_pipe_get_uint64$handle() {
+        return nng_pipe_get_uint64.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_pipe_get_uint64(nng_pipe, const char *, uint64_t *)
+     * }
+     */
+    public static MemorySegment nng_pipe_get_uint64$address() {
+        return nng_pipe_get_uint64.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_pipe_get_uint64(nng_pipe, const char *, uint64_t *)
+     * }
+     */
+    public static int nng_pipe_get_uint64(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_pipe_get_uint64.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_pipe_get_uint64", x0, x1, x2);
             }
             return (int)mh$.invokeExact(x0, x1, x2);
         } catch (Error | RuntimeException ex) {
@@ -15330,7 +12286,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_pipe_get_string(nng_pipe, const char *, const char **)
+     * int nng_pipe_get_string(nng_pipe, const char *, char **)
      * }
      */
     public static FunctionDescriptor nng_pipe_get_string$descriptor() {
@@ -15340,7 +12296,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_pipe_get_string(nng_pipe, const char *, const char **)
+     * int nng_pipe_get_string(nng_pipe, const char *, char **)
      * }
      */
     public static MethodHandle nng_pipe_get_string$handle() {
@@ -15350,7 +12306,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_pipe_get_string(nng_pipe, const char *, const char **)
+     * int nng_pipe_get_string(nng_pipe, const char *, char **)
      * }
      */
     public static MemorySegment nng_pipe_get_string$address() {
@@ -15359,7 +12315,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_pipe_get_string(nng_pipe, const char *, const char **)
+     * int nng_pipe_get_string(nng_pipe, const char *, char **)
      * }
      */
     public static int nng_pipe_get_string(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
@@ -15376,7 +12332,7 @@ public class nng_h extends nng_h$shared {
         }
     }
 
-    private static class nng_pipe_get_strdup {
+    private static class nng_pipe_get_ptr {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
             nng_h.C_INT,
             nng_pipe_s.layout(),
@@ -15384,7 +12340,7 @@ public class nng_h extends nng_h$shared {
             nng_h.C_POINTER
         );
 
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_pipe_get_strdup");
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_pipe_get_ptr");
 
         public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
     }
@@ -15392,43 +12348,43 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_pipe_get_strdup(nng_pipe, const char *, char **)
+     * int nng_pipe_get_ptr(nng_pipe, const char *, void **)
      * }
      */
-    public static FunctionDescriptor nng_pipe_get_strdup$descriptor() {
-        return nng_pipe_get_strdup.DESC;
+    public static FunctionDescriptor nng_pipe_get_ptr$descriptor() {
+        return nng_pipe_get_ptr.DESC;
     }
 
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_pipe_get_strdup(nng_pipe, const char *, char **)
+     * int nng_pipe_get_ptr(nng_pipe, const char *, void **)
      * }
      */
-    public static MethodHandle nng_pipe_get_strdup$handle() {
-        return nng_pipe_get_strdup.HANDLE;
+    public static MethodHandle nng_pipe_get_ptr$handle() {
+        return nng_pipe_get_ptr.HANDLE;
     }
 
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_pipe_get_strdup(nng_pipe, const char *, char **)
+     * int nng_pipe_get_ptr(nng_pipe, const char *, void **)
      * }
      */
-    public static MemorySegment nng_pipe_get_strdup$address() {
-        return nng_pipe_get_strdup.ADDR;
+    public static MemorySegment nng_pipe_get_ptr$address() {
+        return nng_pipe_get_ptr.ADDR;
     }
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_pipe_get_strdup(nng_pipe, const char *, char **)
+     * int nng_pipe_get_ptr(nng_pipe, const char *, void **)
      * }
      */
-    public static int nng_pipe_get_strdup(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
-        var mh$ = nng_pipe_get_strdup.HANDLE;
+    public static int nng_pipe_get_ptr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_pipe_get_ptr.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_pipe_get_strdup", x0, x1, x2);
+                traceDowncall("nng_pipe_get_ptr", x0, x1, x2);
             }
             return (int)mh$.invokeExact(x0, x1, x2);
         } catch (Error | RuntimeException ex) {
@@ -15438,70 +12394,7 @@ public class nng_h extends nng_h$shared {
         }
     }
 
-    private static class nng_pipe_get_strcpy {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_pipe_s.layout(),
-            nng_h.C_POINTER,
-            nng_h.C_POINTER,
-            nng_h.C_LONG_LONG
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_pipe_get_strcpy");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * nng_err nng_pipe_get_strcpy(nng_pipe, const char *, char *, size_t)
-     * }
-     */
-    public static FunctionDescriptor nng_pipe_get_strcpy$descriptor() {
-        return nng_pipe_get_strcpy.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * nng_err nng_pipe_get_strcpy(nng_pipe, const char *, char *, size_t)
-     * }
-     */
-    public static MethodHandle nng_pipe_get_strcpy$handle() {
-        return nng_pipe_get_strcpy.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * nng_err nng_pipe_get_strcpy(nng_pipe, const char *, char *, size_t)
-     * }
-     */
-    public static MemorySegment nng_pipe_get_strcpy$address() {
-        return nng_pipe_get_strcpy.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * nng_err nng_pipe_get_strcpy(nng_pipe, const char *, char *, size_t)
-     * }
-     */
-    public static int nng_pipe_get_strcpy(MemorySegment x0, MemorySegment x1, MemorySegment x2, long x3) {
-        var mh$ = nng_pipe_get_strcpy.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_pipe_get_strcpy", x0, x1, x2, x3);
-            }
-            return (int)mh$.invokeExact(x0, x1, x2, x3);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_pipe_get_strlen {
+    private static class nng_pipe_get_addr {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
             nng_h.C_INT,
             nng_pipe_s.layout(),
@@ -15509,7 +12402,7 @@ public class nng_h extends nng_h$shared {
             nng_h.C_POINTER
         );
 
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_pipe_get_strlen");
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_pipe_get_addr");
 
         public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
     }
@@ -15517,289 +12410,45 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_pipe_get_strlen(nng_pipe, const char *, size_t *)
+     * int nng_pipe_get_addr(nng_pipe, const char *, nng_sockaddr *)
      * }
      */
-    public static FunctionDescriptor nng_pipe_get_strlen$descriptor() {
-        return nng_pipe_get_strlen.DESC;
+    public static FunctionDescriptor nng_pipe_get_addr$descriptor() {
+        return nng_pipe_get_addr.DESC;
     }
 
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_pipe_get_strlen(nng_pipe, const char *, size_t *)
+     * int nng_pipe_get_addr(nng_pipe, const char *, nng_sockaddr *)
      * }
      */
-    public static MethodHandle nng_pipe_get_strlen$handle() {
-        return nng_pipe_get_strlen.HANDLE;
+    public static MethodHandle nng_pipe_get_addr$handle() {
+        return nng_pipe_get_addr.HANDLE;
     }
 
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_pipe_get_strlen(nng_pipe, const char *, size_t *)
+     * int nng_pipe_get_addr(nng_pipe, const char *, nng_sockaddr *)
      * }
      */
-    public static MemorySegment nng_pipe_get_strlen$address() {
-        return nng_pipe_get_strlen.ADDR;
+    public static MemorySegment nng_pipe_get_addr$address() {
+        return nng_pipe_get_addr.ADDR;
     }
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_pipe_get_strlen(nng_pipe, const char *, size_t *)
+     * int nng_pipe_get_addr(nng_pipe, const char *, nng_sockaddr *)
      * }
      */
-    public static int nng_pipe_get_strlen(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
-        var mh$ = nng_pipe_get_strlen.HANDLE;
+    public static int nng_pipe_get_addr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_pipe_get_addr.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_pipe_get_strlen", x0, x1, x2);
+                traceDowncall("nng_pipe_get_addr", x0, x1, x2);
             }
             return (int)mh$.invokeExact(x0, x1, x2);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_pipe_get_scheme {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_pipe_s.layout(),
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_pipe_get_scheme");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * nng_err nng_pipe_get_scheme(nng_pipe, const char **)
-     * }
-     */
-    public static FunctionDescriptor nng_pipe_get_scheme$descriptor() {
-        return nng_pipe_get_scheme.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * nng_err nng_pipe_get_scheme(nng_pipe, const char **)
-     * }
-     */
-    public static MethodHandle nng_pipe_get_scheme$handle() {
-        return nng_pipe_get_scheme.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * nng_err nng_pipe_get_scheme(nng_pipe, const char **)
-     * }
-     */
-    public static MemorySegment nng_pipe_get_scheme$address() {
-        return nng_pipe_get_scheme.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * nng_err nng_pipe_get_scheme(nng_pipe, const char **)
-     * }
-     */
-    public static int nng_pipe_get_scheme(MemorySegment x0, MemorySegment x1) {
-        var mh$ = nng_pipe_get_scheme.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_pipe_get_scheme", x0, x1);
-            }
-            return (int)mh$.invokeExact(x0, x1);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_pipe_peer_addr {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_pipe_s.layout(),
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_pipe_peer_addr");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * nng_err nng_pipe_peer_addr(nng_pipe, nng_sockaddr *)
-     * }
-     */
-    public static FunctionDescriptor nng_pipe_peer_addr$descriptor() {
-        return nng_pipe_peer_addr.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * nng_err nng_pipe_peer_addr(nng_pipe, nng_sockaddr *)
-     * }
-     */
-    public static MethodHandle nng_pipe_peer_addr$handle() {
-        return nng_pipe_peer_addr.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * nng_err nng_pipe_peer_addr(nng_pipe, nng_sockaddr *)
-     * }
-     */
-    public static MemorySegment nng_pipe_peer_addr$address() {
-        return nng_pipe_peer_addr.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * nng_err nng_pipe_peer_addr(nng_pipe, nng_sockaddr *)
-     * }
-     */
-    public static int nng_pipe_peer_addr(MemorySegment x0, MemorySegment x1) {
-        var mh$ = nng_pipe_peer_addr.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_pipe_peer_addr", x0, x1);
-            }
-            return (int)mh$.invokeExact(x0, x1);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_pipe_self_addr {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_pipe_s.layout(),
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_pipe_self_addr");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * nng_err nng_pipe_self_addr(nng_pipe, nng_sockaddr *)
-     * }
-     */
-    public static FunctionDescriptor nng_pipe_self_addr$descriptor() {
-        return nng_pipe_self_addr.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * nng_err nng_pipe_self_addr(nng_pipe, nng_sockaddr *)
-     * }
-     */
-    public static MethodHandle nng_pipe_self_addr$handle() {
-        return nng_pipe_self_addr.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * nng_err nng_pipe_self_addr(nng_pipe, nng_sockaddr *)
-     * }
-     */
-    public static MemorySegment nng_pipe_self_addr$address() {
-        return nng_pipe_self_addr.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * nng_err nng_pipe_self_addr(nng_pipe, nng_sockaddr *)
-     * }
-     */
-    public static int nng_pipe_self_addr(MemorySegment x0, MemorySegment x1) {
-        var mh$ = nng_pipe_self_addr.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_pipe_self_addr", x0, x1);
-            }
-            return (int)mh$.invokeExact(x0, x1);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_pipe_peer_cert {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_pipe_s.layout(),
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_pipe_peer_cert");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * nng_err nng_pipe_peer_cert(nng_pipe, nng_tls_cert **)
-     * }
-     */
-    public static FunctionDescriptor nng_pipe_peer_cert$descriptor() {
-        return nng_pipe_peer_cert.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * nng_err nng_pipe_peer_cert(nng_pipe, nng_tls_cert **)
-     * }
-     */
-    public static MethodHandle nng_pipe_peer_cert$handle() {
-        return nng_pipe_peer_cert.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * nng_err nng_pipe_peer_cert(nng_pipe, nng_tls_cert **)
-     * }
-     */
-    public static MemorySegment nng_pipe_peer_cert$address() {
-        return nng_pipe_peer_cert.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * nng_err nng_pipe_peer_cert(nng_pipe, nng_tls_cert **)
-     * }
-     */
-    public static int nng_pipe_peer_cert(MemorySegment x0, MemorySegment x1) {
-        var mh$ = nng_pipe_peer_cert.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_pipe_peer_cert", x0, x1);
-            }
-            return (int)mh$.invokeExact(x0, x1);
         } catch (Error | RuntimeException ex) {
            throw ex;
         } catch (Throwable ex$) {
@@ -15821,7 +12470,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_pipe_close(nng_pipe)
+     * int nng_pipe_close(nng_pipe)
      * }
      */
     public static FunctionDescriptor nng_pipe_close$descriptor() {
@@ -15831,7 +12480,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_pipe_close(nng_pipe)
+     * int nng_pipe_close(nng_pipe)
      * }
      */
     public static MethodHandle nng_pipe_close$handle() {
@@ -15841,7 +12490,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_pipe_close(nng_pipe)
+     * int nng_pipe_close(nng_pipe)
      * }
      */
     public static MemorySegment nng_pipe_close$address() {
@@ -15850,7 +12499,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_pipe_close(nng_pipe)
+     * int nng_pipe_close(nng_pipe)
      * }
      */
     public static int nng_pipe_close(MemorySegment x0) {
@@ -16239,7 +12888,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * void nng_stats_dump(const nng_stat *)
+     * void nng_stats_dump(nng_stat *)
      * }
      */
     public static FunctionDescriptor nng_stats_dump$descriptor() {
@@ -16249,7 +12898,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * void nng_stats_dump(const nng_stat *)
+     * void nng_stats_dump(nng_stat *)
      * }
      */
     public static MethodHandle nng_stats_dump$handle() {
@@ -16259,7 +12908,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * void nng_stats_dump(const nng_stat *)
+     * void nng_stats_dump(nng_stat *)
      * }
      */
     public static MemorySegment nng_stats_dump$address() {
@@ -16268,7 +12917,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * void nng_stats_dump(const nng_stat *)
+     * void nng_stats_dump(nng_stat *)
      * }
      */
     public static void nng_stats_dump(MemorySegment x0) {
@@ -16299,7 +12948,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * const nng_stat *nng_stat_next(const nng_stat *)
+     * nng_stat *nng_stat_next(nng_stat *)
      * }
      */
     public static FunctionDescriptor nng_stat_next$descriptor() {
@@ -16309,7 +12958,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * const nng_stat *nng_stat_next(const nng_stat *)
+     * nng_stat *nng_stat_next(nng_stat *)
      * }
      */
     public static MethodHandle nng_stat_next$handle() {
@@ -16319,7 +12968,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * const nng_stat *nng_stat_next(const nng_stat *)
+     * nng_stat *nng_stat_next(nng_stat *)
      * }
      */
     public static MemorySegment nng_stat_next$address() {
@@ -16328,7 +12977,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * const nng_stat *nng_stat_next(const nng_stat *)
+     * nng_stat *nng_stat_next(nng_stat *)
      * }
      */
     public static MemorySegment nng_stat_next(MemorySegment x0) {
@@ -16359,7 +13008,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * const nng_stat *nng_stat_child(const nng_stat *)
+     * nng_stat *nng_stat_child(nng_stat *)
      * }
      */
     public static FunctionDescriptor nng_stat_child$descriptor() {
@@ -16369,7 +13018,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * const nng_stat *nng_stat_child(const nng_stat *)
+     * nng_stat *nng_stat_child(nng_stat *)
      * }
      */
     public static MethodHandle nng_stat_child$handle() {
@@ -16379,7 +13028,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * const nng_stat *nng_stat_child(const nng_stat *)
+     * nng_stat *nng_stat_child(nng_stat *)
      * }
      */
     public static MemorySegment nng_stat_child$address() {
@@ -16388,7 +13037,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * const nng_stat *nng_stat_child(const nng_stat *)
+     * nng_stat *nng_stat_child(nng_stat *)
      * }
      */
     public static MemorySegment nng_stat_child(MemorySegment x0) {
@@ -16419,7 +13068,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * const char *nng_stat_name(const nng_stat *)
+     * const char *nng_stat_name(nng_stat *)
      * }
      */
     public static FunctionDescriptor nng_stat_name$descriptor() {
@@ -16429,7 +13078,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * const char *nng_stat_name(const nng_stat *)
+     * const char *nng_stat_name(nng_stat *)
      * }
      */
     public static MethodHandle nng_stat_name$handle() {
@@ -16439,7 +13088,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * const char *nng_stat_name(const nng_stat *)
+     * const char *nng_stat_name(nng_stat *)
      * }
      */
     public static MemorySegment nng_stat_name$address() {
@@ -16448,7 +13097,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * const char *nng_stat_name(const nng_stat *)
+     * const char *nng_stat_name(nng_stat *)
      * }
      */
     public static MemorySegment nng_stat_name(MemorySegment x0) {
@@ -16479,7 +13128,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * int nng_stat_type(const nng_stat *)
+     * int nng_stat_type(nng_stat *)
      * }
      */
     public static FunctionDescriptor nng_stat_type$descriptor() {
@@ -16489,7 +13138,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * int nng_stat_type(const nng_stat *)
+     * int nng_stat_type(nng_stat *)
      * }
      */
     public static MethodHandle nng_stat_type$handle() {
@@ -16499,7 +13148,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * int nng_stat_type(const nng_stat *)
+     * int nng_stat_type(nng_stat *)
      * }
      */
     public static MemorySegment nng_stat_type$address() {
@@ -16508,7 +13157,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * int nng_stat_type(const nng_stat *)
+     * int nng_stat_type(nng_stat *)
      * }
      */
     public static int nng_stat_type(MemorySegment x0) {
@@ -16540,7 +13189,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * const nng_stat *nng_stat_find(const nng_stat *, const char *)
+     * nng_stat *nng_stat_find(nng_stat *, const char *)
      * }
      */
     public static FunctionDescriptor nng_stat_find$descriptor() {
@@ -16550,7 +13199,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * const nng_stat *nng_stat_find(const nng_stat *, const char *)
+     * nng_stat *nng_stat_find(nng_stat *, const char *)
      * }
      */
     public static MethodHandle nng_stat_find$handle() {
@@ -16560,7 +13209,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * const nng_stat *nng_stat_find(const nng_stat *, const char *)
+     * nng_stat *nng_stat_find(nng_stat *, const char *)
      * }
      */
     public static MemorySegment nng_stat_find$address() {
@@ -16569,7 +13218,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * const nng_stat *nng_stat_find(const nng_stat *, const char *)
+     * nng_stat *nng_stat_find(nng_stat *, const char *)
      * }
      */
     public static MemorySegment nng_stat_find(MemorySegment x0, MemorySegment x1) {
@@ -16601,7 +13250,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * const nng_stat *nng_stat_find_socket(const nng_stat *, nng_socket)
+     * nng_stat *nng_stat_find_socket(nng_stat *, nng_socket)
      * }
      */
     public static FunctionDescriptor nng_stat_find_socket$descriptor() {
@@ -16611,7 +13260,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * const nng_stat *nng_stat_find_socket(const nng_stat *, nng_socket)
+     * nng_stat *nng_stat_find_socket(nng_stat *, nng_socket)
      * }
      */
     public static MethodHandle nng_stat_find_socket$handle() {
@@ -16621,7 +13270,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * const nng_stat *nng_stat_find_socket(const nng_stat *, nng_socket)
+     * nng_stat *nng_stat_find_socket(nng_stat *, nng_socket)
      * }
      */
     public static MemorySegment nng_stat_find_socket$address() {
@@ -16630,7 +13279,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * const nng_stat *nng_stat_find_socket(const nng_stat *, nng_socket)
+     * nng_stat *nng_stat_find_socket(nng_stat *, nng_socket)
      * }
      */
     public static MemorySegment nng_stat_find_socket(MemorySegment x0, MemorySegment x1) {
@@ -16662,7 +13311,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * const nng_stat *nng_stat_find_dialer(const nng_stat *, nng_dialer)
+     * nng_stat *nng_stat_find_dialer(nng_stat *, nng_dialer)
      * }
      */
     public static FunctionDescriptor nng_stat_find_dialer$descriptor() {
@@ -16672,7 +13321,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * const nng_stat *nng_stat_find_dialer(const nng_stat *, nng_dialer)
+     * nng_stat *nng_stat_find_dialer(nng_stat *, nng_dialer)
      * }
      */
     public static MethodHandle nng_stat_find_dialer$handle() {
@@ -16682,7 +13331,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * const nng_stat *nng_stat_find_dialer(const nng_stat *, nng_dialer)
+     * nng_stat *nng_stat_find_dialer(nng_stat *, nng_dialer)
      * }
      */
     public static MemorySegment nng_stat_find_dialer$address() {
@@ -16691,7 +13340,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * const nng_stat *nng_stat_find_dialer(const nng_stat *, nng_dialer)
+     * nng_stat *nng_stat_find_dialer(nng_stat *, nng_dialer)
      * }
      */
     public static MemorySegment nng_stat_find_dialer(MemorySegment x0, MemorySegment x1) {
@@ -16723,7 +13372,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * const nng_stat *nng_stat_find_listener(const nng_stat *, nng_listener)
+     * nng_stat *nng_stat_find_listener(nng_stat *, nng_listener)
      * }
      */
     public static FunctionDescriptor nng_stat_find_listener$descriptor() {
@@ -16733,7 +13382,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * const nng_stat *nng_stat_find_listener(const nng_stat *, nng_listener)
+     * nng_stat *nng_stat_find_listener(nng_stat *, nng_listener)
      * }
      */
     public static MethodHandle nng_stat_find_listener$handle() {
@@ -16743,7 +13392,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * const nng_stat *nng_stat_find_listener(const nng_stat *, nng_listener)
+     * nng_stat *nng_stat_find_listener(nng_stat *, nng_listener)
      * }
      */
     public static MemorySegment nng_stat_find_listener$address() {
@@ -16752,7 +13401,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * const nng_stat *nng_stat_find_listener(const nng_stat *, nng_listener)
+     * nng_stat *nng_stat_find_listener(nng_stat *, nng_listener)
      * }
      */
     public static MemorySegment nng_stat_find_listener(MemorySegment x0, MemorySegment x1) {
@@ -16837,7 +13486,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * int nng_stat_unit(const nng_stat *)
+     * int nng_stat_unit(nng_stat *)
      * }
      */
     public static FunctionDescriptor nng_stat_unit$descriptor() {
@@ -16847,7 +13496,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * int nng_stat_unit(const nng_stat *)
+     * int nng_stat_unit(nng_stat *)
      * }
      */
     public static MethodHandle nng_stat_unit$handle() {
@@ -16857,7 +13506,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * int nng_stat_unit(const nng_stat *)
+     * int nng_stat_unit(nng_stat *)
      * }
      */
     public static MemorySegment nng_stat_unit$address() {
@@ -16866,7 +13515,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * int nng_stat_unit(const nng_stat *)
+     * int nng_stat_unit(nng_stat *)
      * }
      */
     public static int nng_stat_unit(MemorySegment x0) {
@@ -16942,7 +13591,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * uint64_t nng_stat_value(const nng_stat *)
+     * uint64_t nng_stat_value(nng_stat *)
      * }
      */
     public static FunctionDescriptor nng_stat_value$descriptor() {
@@ -16952,7 +13601,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * uint64_t nng_stat_value(const nng_stat *)
+     * uint64_t nng_stat_value(nng_stat *)
      * }
      */
     public static MethodHandle nng_stat_value$handle() {
@@ -16962,7 +13611,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * uint64_t nng_stat_value(const nng_stat *)
+     * uint64_t nng_stat_value(nng_stat *)
      * }
      */
     public static MemorySegment nng_stat_value$address() {
@@ -16971,7 +13620,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * uint64_t nng_stat_value(const nng_stat *)
+     * uint64_t nng_stat_value(nng_stat *)
      * }
      */
     public static long nng_stat_value(MemorySegment x0) {
@@ -17002,7 +13651,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * _Bool nng_stat_bool(const nng_stat *)
+     * _Bool nng_stat_bool(nng_stat *)
      * }
      */
     public static FunctionDescriptor nng_stat_bool$descriptor() {
@@ -17012,7 +13661,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * _Bool nng_stat_bool(const nng_stat *)
+     * _Bool nng_stat_bool(nng_stat *)
      * }
      */
     public static MethodHandle nng_stat_bool$handle() {
@@ -17022,7 +13671,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * _Bool nng_stat_bool(const nng_stat *)
+     * _Bool nng_stat_bool(nng_stat *)
      * }
      */
     public static MemorySegment nng_stat_bool$address() {
@@ -17031,7 +13680,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * _Bool nng_stat_bool(const nng_stat *)
+     * _Bool nng_stat_bool(nng_stat *)
      * }
      */
     public static boolean nng_stat_bool(MemorySegment x0) {
@@ -17062,7 +13711,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * const char *nng_stat_string(const nng_stat *)
+     * const char *nng_stat_string(nng_stat *)
      * }
      */
     public static FunctionDescriptor nng_stat_string$descriptor() {
@@ -17072,7 +13721,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * const char *nng_stat_string(const nng_stat *)
+     * const char *nng_stat_string(nng_stat *)
      * }
      */
     public static MethodHandle nng_stat_string$handle() {
@@ -17082,7 +13731,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * const char *nng_stat_string(const nng_stat *)
+     * const char *nng_stat_string(nng_stat *)
      * }
      */
     public static MemorySegment nng_stat_string$address() {
@@ -17091,7 +13740,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * const char *nng_stat_string(const nng_stat *)
+     * const char *nng_stat_string(nng_stat *)
      * }
      */
     public static MemorySegment nng_stat_string(MemorySegment x0) {
@@ -17122,7 +13771,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * const char *nng_stat_desc(const nng_stat *)
+     * const char *nng_stat_desc(nng_stat *)
      * }
      */
     public static FunctionDescriptor nng_stat_desc$descriptor() {
@@ -17132,7 +13781,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * const char *nng_stat_desc(const nng_stat *)
+     * const char *nng_stat_desc(nng_stat *)
      * }
      */
     public static MethodHandle nng_stat_desc$handle() {
@@ -17142,7 +13791,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * const char *nng_stat_desc(const nng_stat *)
+     * const char *nng_stat_desc(nng_stat *)
      * }
      */
     public static MemorySegment nng_stat_desc$address() {
@@ -17151,7 +13800,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * const char *nng_stat_desc(const nng_stat *)
+     * const char *nng_stat_desc(nng_stat *)
      * }
      */
     public static MemorySegment nng_stat_desc(MemorySegment x0) {
@@ -17182,7 +13831,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * uint64_t nng_stat_timestamp(const nng_stat *)
+     * uint64_t nng_stat_timestamp(nng_stat *)
      * }
      */
     public static FunctionDescriptor nng_stat_timestamp$descriptor() {
@@ -17192,7 +13841,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * uint64_t nng_stat_timestamp(const nng_stat *)
+     * uint64_t nng_stat_timestamp(nng_stat *)
      * }
      */
     public static MethodHandle nng_stat_timestamp$handle() {
@@ -17202,7 +13851,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * uint64_t nng_stat_timestamp(const nng_stat *)
+     * uint64_t nng_stat_timestamp(nng_stat *)
      * }
      */
     public static MemorySegment nng_stat_timestamp$address() {
@@ -17211,7 +13860,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * uint64_t nng_stat_timestamp(const nng_stat *)
+     * uint64_t nng_stat_timestamp(nng_stat *)
      * }
      */
     public static long nng_stat_timestamp(MemorySegment x0) {
@@ -17243,7 +13892,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_device(nng_socket, nng_socket)
+     * int nng_device(nng_socket, nng_socket)
      * }
      */
     public static FunctionDescriptor nng_device$descriptor() {
@@ -17253,7 +13902,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_device(nng_socket, nng_socket)
+     * int nng_device(nng_socket, nng_socket)
      * }
      */
     public static MethodHandle nng_device$handle() {
@@ -17263,7 +13912,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_device(nng_socket, nng_socket)
+     * int nng_device(nng_socket, nng_socket)
      * }
      */
     public static MemorySegment nng_device$address() {
@@ -17272,7 +13921,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_device(nng_socket, nng_socket)
+     * int nng_device(nng_socket, nng_socket)
      * }
      */
     public static int nng_device(MemorySegment x0, MemorySegment x1) {
@@ -17349,6 +13998,312 @@ public class nng_h extends nng_h$shared {
            throw new AssertionError("should not reach here", ex$);
         }
     }
+    private static final int NNG_EINTR = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_EINTR = 1
+     * }
+     */
+    public static int NNG_EINTR() {
+        return NNG_EINTR;
+    }
+    private static final int NNG_ENOMEM = (int)2L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_ENOMEM = 2
+     * }
+     */
+    public static int NNG_ENOMEM() {
+        return NNG_ENOMEM;
+    }
+    private static final int NNG_EINVAL = (int)3L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_EINVAL = 3
+     * }
+     */
+    public static int NNG_EINVAL() {
+        return NNG_EINVAL;
+    }
+    private static final int NNG_EBUSY = (int)4L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_EBUSY = 4
+     * }
+     */
+    public static int NNG_EBUSY() {
+        return NNG_EBUSY;
+    }
+    private static final int NNG_ETIMEDOUT = (int)5L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_ETIMEDOUT = 5
+     * }
+     */
+    public static int NNG_ETIMEDOUT() {
+        return NNG_ETIMEDOUT;
+    }
+    private static final int NNG_ECONNREFUSED = (int)6L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_ECONNREFUSED = 6
+     * }
+     */
+    public static int NNG_ECONNREFUSED() {
+        return NNG_ECONNREFUSED;
+    }
+    private static final int NNG_ECLOSED = (int)7L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_ECLOSED = 7
+     * }
+     */
+    public static int NNG_ECLOSED() {
+        return NNG_ECLOSED;
+    }
+    private static final int NNG_EAGAIN = (int)8L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_EAGAIN = 8
+     * }
+     */
+    public static int NNG_EAGAIN() {
+        return NNG_EAGAIN;
+    }
+    private static final int NNG_ENOTSUP = (int)9L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_ENOTSUP = 9
+     * }
+     */
+    public static int NNG_ENOTSUP() {
+        return NNG_ENOTSUP;
+    }
+    private static final int NNG_EADDRINUSE = (int)10L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_EADDRINUSE = 10
+     * }
+     */
+    public static int NNG_EADDRINUSE() {
+        return NNG_EADDRINUSE;
+    }
+    private static final int NNG_ESTATE = (int)11L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_ESTATE = 11
+     * }
+     */
+    public static int NNG_ESTATE() {
+        return NNG_ESTATE;
+    }
+    private static final int NNG_ENOENT = (int)12L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_ENOENT = 12
+     * }
+     */
+    public static int NNG_ENOENT() {
+        return NNG_ENOENT;
+    }
+    private static final int NNG_EPROTO = (int)13L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_EPROTO = 13
+     * }
+     */
+    public static int NNG_EPROTO() {
+        return NNG_EPROTO;
+    }
+    private static final int NNG_EUNREACHABLE = (int)14L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_EUNREACHABLE = 14
+     * }
+     */
+    public static int NNG_EUNREACHABLE() {
+        return NNG_EUNREACHABLE;
+    }
+    private static final int NNG_EADDRINVAL = (int)15L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_EADDRINVAL = 15
+     * }
+     */
+    public static int NNG_EADDRINVAL() {
+        return NNG_EADDRINVAL;
+    }
+    private static final int NNG_EPERM = (int)16L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_EPERM = 16
+     * }
+     */
+    public static int NNG_EPERM() {
+        return NNG_EPERM;
+    }
+    private static final int NNG_EMSGSIZE = (int)17L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_EMSGSIZE = 17
+     * }
+     */
+    public static int NNG_EMSGSIZE() {
+        return NNG_EMSGSIZE;
+    }
+    private static final int NNG_ECONNABORTED = (int)18L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_ECONNABORTED = 18
+     * }
+     */
+    public static int NNG_ECONNABORTED() {
+        return NNG_ECONNABORTED;
+    }
+    private static final int NNG_ECONNRESET = (int)19L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_ECONNRESET = 19
+     * }
+     */
+    public static int NNG_ECONNRESET() {
+        return NNG_ECONNRESET;
+    }
+    private static final int NNG_ECANCELED = (int)20L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_ECANCELED = 20
+     * }
+     */
+    public static int NNG_ECANCELED() {
+        return NNG_ECANCELED;
+    }
+    private static final int NNG_ENOFILES = (int)21L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_ENOFILES = 21
+     * }
+     */
+    public static int NNG_ENOFILES() {
+        return NNG_ENOFILES;
+    }
+    private static final int NNG_ENOSPC = (int)22L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_ENOSPC = 22
+     * }
+     */
+    public static int NNG_ENOSPC() {
+        return NNG_ENOSPC;
+    }
+    private static final int NNG_EEXIST = (int)23L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_EEXIST = 23
+     * }
+     */
+    public static int NNG_EEXIST() {
+        return NNG_EEXIST;
+    }
+    private static final int NNG_EREADONLY = (int)24L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_EREADONLY = 24
+     * }
+     */
+    public static int NNG_EREADONLY() {
+        return NNG_EREADONLY;
+    }
+    private static final int NNG_EWRITEONLY = (int)25L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_EWRITEONLY = 25
+     * }
+     */
+    public static int NNG_EWRITEONLY() {
+        return NNG_EWRITEONLY;
+    }
+    private static final int NNG_ECRYPTO = (int)26L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_ECRYPTO = 26
+     * }
+     */
+    public static int NNG_ECRYPTO() {
+        return NNG_ECRYPTO;
+    }
+    private static final int NNG_EPEERAUTH = (int)27L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_EPEERAUTH = 27
+     * }
+     */
+    public static int NNG_EPEERAUTH() {
+        return NNG_EPEERAUTH;
+    }
+    private static final int NNG_ENOARG = (int)28L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_ENOARG = 28
+     * }
+     */
+    public static int NNG_ENOARG() {
+        return NNG_ENOARG;
+    }
+    private static final int NNG_EAMBIGUOUS = (int)29L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_EAMBIGUOUS = 29
+     * }
+     */
+    public static int NNG_EAMBIGUOUS() {
+        return NNG_EAMBIGUOUS;
+    }
+    private static final int NNG_EBADTYPE = (int)30L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_EBADTYPE = 30
+     * }
+     */
+    public static int NNG_EBADTYPE() {
+        return NNG_EBADTYPE;
+    }
+    private static final int NNG_ECONNSHUT = (int)31L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_ECONNSHUT = 31
+     * }
+     */
+    public static int NNG_ECONNSHUT() {
+        return NNG_ECONNSHUT;
+    }
+    private static final int NNG_EINTERNAL = (int)1000L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_EINTERNAL = 1000
+     * }
+     */
+    public static int NNG_EINTERNAL() {
+        return NNG_EINTERNAL;
+    }
+    private static final int NNG_ESYSERR = (int)268435456L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_ESYSERR = 268435456
+     * }
+     */
+    public static int NNG_ESYSERR() {
+        return NNG_ESYSERR;
+    }
+    private static final int NNG_ETRANERR = (int)536870912L;
+    /**
+     * {@snippet lang=c :
+     * enum nng_errno_enum.NNG_ETRANERR = 536870912
+     * }
+     */
+    public static int NNG_ETRANERR() {
+        return NNG_ETRANERR;
+    }
 
     private static class nng_url_parse {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
@@ -17365,7 +14320,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_url_parse(nng_url **, const char *)
+     * int nng_url_parse(nng_url **, const char *)
      * }
      */
     public static FunctionDescriptor nng_url_parse$descriptor() {
@@ -17375,7 +14330,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_url_parse(nng_url **, const char *)
+     * int nng_url_parse(nng_url **, const char *)
      * }
      */
     public static MethodHandle nng_url_parse$handle() {
@@ -17385,7 +14340,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_url_parse(nng_url **, const char *)
+     * int nng_url_parse(nng_url **, const char *)
      * }
      */
     public static MemorySegment nng_url_parse$address() {
@@ -17394,7 +14349,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_url_parse(nng_url **, const char *)
+     * int nng_url_parse(nng_url **, const char *)
      * }
      */
     public static int nng_url_parse(MemorySegment x0, MemorySegment x1) {
@@ -17485,7 +14440,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_url_clone(nng_url **, const nng_url *)
+     * int nng_url_clone(nng_url **, const nng_url *)
      * }
      */
     public static FunctionDescriptor nng_url_clone$descriptor() {
@@ -17495,7 +14450,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_url_clone(nng_url **, const nng_url *)
+     * int nng_url_clone(nng_url **, const nng_url *)
      * }
      */
     public static MethodHandle nng_url_clone$handle() {
@@ -17505,7 +14460,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_url_clone(nng_url **, const nng_url *)
+     * int nng_url_clone(nng_url **, const nng_url *)
      * }
      */
     public static MemorySegment nng_url_clone$address() {
@@ -17514,7 +14469,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_url_clone(nng_url **, const nng_url *)
+     * int nng_url_clone(nng_url **, const nng_url *)
      * }
      */
     public static int nng_url_clone(MemorySegment x0, MemorySegment x1) {
@@ -17524,548 +14479,6 @@ public class nng_h extends nng_h$shared {
                 traceDowncall("nng_url_clone", x0, x1);
             }
             return (int)mh$.invokeExact(x0, x1);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_url_sprintf {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_LONG_LONG,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_url_sprintf");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int nng_url_sprintf(char *, size_t, const nng_url *)
-     * }
-     */
-    public static FunctionDescriptor nng_url_sprintf$descriptor() {
-        return nng_url_sprintf.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int nng_url_sprintf(char *, size_t, const nng_url *)
-     * }
-     */
-    public static MethodHandle nng_url_sprintf$handle() {
-        return nng_url_sprintf.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int nng_url_sprintf(char *, size_t, const nng_url *)
-     * }
-     */
-    public static MemorySegment nng_url_sprintf$address() {
-        return nng_url_sprintf.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int nng_url_sprintf(char *, size_t, const nng_url *)
-     * }
-     */
-    public static int nng_url_sprintf(MemorySegment x0, long x1, MemorySegment x2) {
-        var mh$ = nng_url_sprintf.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_url_sprintf", x0, x1, x2);
-            }
-            return (int)mh$.invokeExact(x0, x1, x2);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_url_scheme {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_url_scheme");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * const char *nng_url_scheme(const nng_url *)
-     * }
-     */
-    public static FunctionDescriptor nng_url_scheme$descriptor() {
-        return nng_url_scheme.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * const char *nng_url_scheme(const nng_url *)
-     * }
-     */
-    public static MethodHandle nng_url_scheme$handle() {
-        return nng_url_scheme.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * const char *nng_url_scheme(const nng_url *)
-     * }
-     */
-    public static MemorySegment nng_url_scheme$address() {
-        return nng_url_scheme.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * const char *nng_url_scheme(const nng_url *)
-     * }
-     */
-    public static MemorySegment nng_url_scheme(MemorySegment x0) {
-        var mh$ = nng_url_scheme.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_url_scheme", x0);
-            }
-            return (MemorySegment)mh$.invokeExact(x0);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_url_port {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_url_port");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * uint32_t nng_url_port(const nng_url *)
-     * }
-     */
-    public static FunctionDescriptor nng_url_port$descriptor() {
-        return nng_url_port.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * uint32_t nng_url_port(const nng_url *)
-     * }
-     */
-    public static MethodHandle nng_url_port$handle() {
-        return nng_url_port.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * uint32_t nng_url_port(const nng_url *)
-     * }
-     */
-    public static MemorySegment nng_url_port$address() {
-        return nng_url_port.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * uint32_t nng_url_port(const nng_url *)
-     * }
-     */
-    public static int nng_url_port(MemorySegment x0) {
-        var mh$ = nng_url_port.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_url_port", x0);
-            }
-            return (int)mh$.invokeExact(x0);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_url_resolve_port {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
-            nng_h.C_POINTER,
-            nng_h.C_INT
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_url_resolve_port");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * void nng_url_resolve_port(nng_url *url, uint32_t port)
-     * }
-     */
-    public static FunctionDescriptor nng_url_resolve_port$descriptor() {
-        return nng_url_resolve_port.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * void nng_url_resolve_port(nng_url *url, uint32_t port)
-     * }
-     */
-    public static MethodHandle nng_url_resolve_port$handle() {
-        return nng_url_resolve_port.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * void nng_url_resolve_port(nng_url *url, uint32_t port)
-     * }
-     */
-    public static MemorySegment nng_url_resolve_port$address() {
-        return nng_url_resolve_port.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * void nng_url_resolve_port(nng_url *url, uint32_t port)
-     * }
-     */
-    public static void nng_url_resolve_port(MemorySegment url, int port) {
-        var mh$ = nng_url_resolve_port.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_url_resolve_port", url, port);
-            }
-            mh$.invokeExact(url, port);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_url_hostname {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_url_hostname");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * const char *nng_url_hostname(const nng_url *)
-     * }
-     */
-    public static FunctionDescriptor nng_url_hostname$descriptor() {
-        return nng_url_hostname.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * const char *nng_url_hostname(const nng_url *)
-     * }
-     */
-    public static MethodHandle nng_url_hostname$handle() {
-        return nng_url_hostname.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * const char *nng_url_hostname(const nng_url *)
-     * }
-     */
-    public static MemorySegment nng_url_hostname$address() {
-        return nng_url_hostname.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * const char *nng_url_hostname(const nng_url *)
-     * }
-     */
-    public static MemorySegment nng_url_hostname(MemorySegment x0) {
-        var mh$ = nng_url_hostname.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_url_hostname", x0);
-            }
-            return (MemorySegment)mh$.invokeExact(x0);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_url_userinfo {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_url_userinfo");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * const char *nng_url_userinfo(const nng_url *)
-     * }
-     */
-    public static FunctionDescriptor nng_url_userinfo$descriptor() {
-        return nng_url_userinfo.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * const char *nng_url_userinfo(const nng_url *)
-     * }
-     */
-    public static MethodHandle nng_url_userinfo$handle() {
-        return nng_url_userinfo.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * const char *nng_url_userinfo(const nng_url *)
-     * }
-     */
-    public static MemorySegment nng_url_userinfo$address() {
-        return nng_url_userinfo.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * const char *nng_url_userinfo(const nng_url *)
-     * }
-     */
-    public static MemorySegment nng_url_userinfo(MemorySegment x0) {
-        var mh$ = nng_url_userinfo.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_url_userinfo", x0);
-            }
-            return (MemorySegment)mh$.invokeExact(x0);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_url_path {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_url_path");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * const char *nng_url_path(const nng_url *)
-     * }
-     */
-    public static FunctionDescriptor nng_url_path$descriptor() {
-        return nng_url_path.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * const char *nng_url_path(const nng_url *)
-     * }
-     */
-    public static MethodHandle nng_url_path$handle() {
-        return nng_url_path.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * const char *nng_url_path(const nng_url *)
-     * }
-     */
-    public static MemorySegment nng_url_path$address() {
-        return nng_url_path.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * const char *nng_url_path(const nng_url *)
-     * }
-     */
-    public static MemorySegment nng_url_path(MemorySegment x0) {
-        var mh$ = nng_url_path.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_url_path", x0);
-            }
-            return (MemorySegment)mh$.invokeExact(x0);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_url_query {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_url_query");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * const char *nng_url_query(const nng_url *)
-     * }
-     */
-    public static FunctionDescriptor nng_url_query$descriptor() {
-        return nng_url_query.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * const char *nng_url_query(const nng_url *)
-     * }
-     */
-    public static MethodHandle nng_url_query$handle() {
-        return nng_url_query.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * const char *nng_url_query(const nng_url *)
-     * }
-     */
-    public static MemorySegment nng_url_query$address() {
-        return nng_url_query.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * const char *nng_url_query(const nng_url *)
-     * }
-     */
-    public static MemorySegment nng_url_query(MemorySegment x0) {
-        var mh$ = nng_url_query.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_url_query", x0);
-            }
-            return (MemorySegment)mh$.invokeExact(x0);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_url_fragment {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_url_fragment");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * const char *nng_url_fragment(const nng_url *)
-     * }
-     */
-    public static FunctionDescriptor nng_url_fragment$descriptor() {
-        return nng_url_fragment.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * const char *nng_url_fragment(const nng_url *)
-     * }
-     */
-    public static MethodHandle nng_url_fragment$handle() {
-        return nng_url_fragment.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * const char *nng_url_fragment(const nng_url *)
-     * }
-     */
-    public static MemorySegment nng_url_fragment$address() {
-        return nng_url_fragment.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * const char *nng_url_fragment(const nng_url *)
-     * }
-     */
-    public static MemorySegment nng_url_fragment(MemorySegment x0) {
-        var mh$ = nng_url_fragment.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_url_fragment", x0);
-            }
-            return (MemorySegment)mh$.invokeExact(x0);
         } catch (Error | RuntimeException ex) {
            throw ex;
         } catch (Throwable ex$) {
@@ -18249,65 +14662,6 @@ public class nng_h extends nng_h$shared {
         }
     }
 
-    private static class nng_stream_stop {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_stop");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * void nng_stream_stop(nng_stream *)
-     * }
-     */
-    public static FunctionDescriptor nng_stream_stop$descriptor() {
-        return nng_stream_stop.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * void nng_stream_stop(nng_stream *)
-     * }
-     */
-    public static MethodHandle nng_stream_stop$handle() {
-        return nng_stream_stop.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * void nng_stream_stop(nng_stream *)
-     * }
-     */
-    public static MemorySegment nng_stream_stop$address() {
-        return nng_stream_stop.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * void nng_stream_stop(nng_stream *)
-     * }
-     */
-    public static void nng_stream_stop(MemorySegment x0) {
-        var mh$ = nng_stream_stop.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_stream_stop", x0);
-            }
-            mh$.invokeExact(x0);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
     private static class nng_stream_send {
         public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
             nng_h.C_POINTER,
@@ -18428,6 +14782,69 @@ public class nng_h extends nng_h$shared {
         }
     }
 
+    private static class nng_stream_get {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_get");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_stream_get(nng_stream *, const char *, void *, size_t *)
+     * }
+     */
+    public static FunctionDescriptor nng_stream_get$descriptor() {
+        return nng_stream_get.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_stream_get(nng_stream *, const char *, void *, size_t *)
+     * }
+     */
+    public static MethodHandle nng_stream_get$handle() {
+        return nng_stream_get.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_stream_get(nng_stream *, const char *, void *, size_t *)
+     * }
+     */
+    public static MemorySegment nng_stream_get$address() {
+        return nng_stream_get.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_stream_get(nng_stream *, const char *, void *, size_t *)
+     * }
+     */
+    public static int nng_stream_get(MemorySegment x0, MemorySegment x1, MemorySegment x2, MemorySegment x3) {
+        var mh$ = nng_stream_get.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_stream_get", x0, x1, x2, x3);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2, x3);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
     private static class nng_stream_get_bool {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
             nng_h.C_INT,
@@ -18444,7 +14861,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_get_bool(nng_stream *, const char *, _Bool *)
+     * int nng_stream_get_bool(nng_stream *, const char *, _Bool *)
      * }
      */
     public static FunctionDescriptor nng_stream_get_bool$descriptor() {
@@ -18454,7 +14871,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_get_bool(nng_stream *, const char *, _Bool *)
+     * int nng_stream_get_bool(nng_stream *, const char *, _Bool *)
      * }
      */
     public static MethodHandle nng_stream_get_bool$handle() {
@@ -18464,7 +14881,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_get_bool(nng_stream *, const char *, _Bool *)
+     * int nng_stream_get_bool(nng_stream *, const char *, _Bool *)
      * }
      */
     public static MemorySegment nng_stream_get_bool$address() {
@@ -18473,7 +14890,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_get_bool(nng_stream *, const char *, _Bool *)
+     * int nng_stream_get_bool(nng_stream *, const char *, _Bool *)
      * }
      */
     public static int nng_stream_get_bool(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
@@ -18506,7 +14923,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_get_int(nng_stream *, const char *, int *)
+     * int nng_stream_get_int(nng_stream *, const char *, int *)
      * }
      */
     public static FunctionDescriptor nng_stream_get_int$descriptor() {
@@ -18516,7 +14933,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_get_int(nng_stream *, const char *, int *)
+     * int nng_stream_get_int(nng_stream *, const char *, int *)
      * }
      */
     public static MethodHandle nng_stream_get_int$handle() {
@@ -18526,7 +14943,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_get_int(nng_stream *, const char *, int *)
+     * int nng_stream_get_int(nng_stream *, const char *, int *)
      * }
      */
     public static MemorySegment nng_stream_get_int$address() {
@@ -18535,7 +14952,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_get_int(nng_stream *, const char *, int *)
+     * int nng_stream_get_int(nng_stream *, const char *, int *)
      * }
      */
     public static int nng_stream_get_int(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
@@ -18568,7 +14985,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_get_ms(nng_stream *, const char *, nng_duration *)
+     * int nng_stream_get_ms(nng_stream *, const char *, nng_duration *)
      * }
      */
     public static FunctionDescriptor nng_stream_get_ms$descriptor() {
@@ -18578,7 +14995,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_get_ms(nng_stream *, const char *, nng_duration *)
+     * int nng_stream_get_ms(nng_stream *, const char *, nng_duration *)
      * }
      */
     public static MethodHandle nng_stream_get_ms$handle() {
@@ -18588,7 +15005,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_get_ms(nng_stream *, const char *, nng_duration *)
+     * int nng_stream_get_ms(nng_stream *, const char *, nng_duration *)
      * }
      */
     public static MemorySegment nng_stream_get_ms$address() {
@@ -18597,7 +15014,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_get_ms(nng_stream *, const char *, nng_duration *)
+     * int nng_stream_get_ms(nng_stream *, const char *, nng_duration *)
      * }
      */
     public static int nng_stream_get_ms(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
@@ -18630,7 +15047,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_get_size(nng_stream *, const char *, size_t *)
+     * int nng_stream_get_size(nng_stream *, const char *, size_t *)
      * }
      */
     public static FunctionDescriptor nng_stream_get_size$descriptor() {
@@ -18640,7 +15057,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_get_size(nng_stream *, const char *, size_t *)
+     * int nng_stream_get_size(nng_stream *, const char *, size_t *)
      * }
      */
     public static MethodHandle nng_stream_get_size$handle() {
@@ -18650,7 +15067,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_get_size(nng_stream *, const char *, size_t *)
+     * int nng_stream_get_size(nng_stream *, const char *, size_t *)
      * }
      */
     public static MemorySegment nng_stream_get_size$address() {
@@ -18659,7 +15076,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_get_size(nng_stream *, const char *, size_t *)
+     * int nng_stream_get_size(nng_stream *, const char *, size_t *)
      * }
      */
     public static int nng_stream_get_size(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
@@ -18692,7 +15109,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_get_uint64(nng_stream *, const char *, uint64_t *)
+     * int nng_stream_get_uint64(nng_stream *, const char *, uint64_t *)
      * }
      */
     public static FunctionDescriptor nng_stream_get_uint64$descriptor() {
@@ -18702,7 +15119,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_get_uint64(nng_stream *, const char *, uint64_t *)
+     * int nng_stream_get_uint64(nng_stream *, const char *, uint64_t *)
      * }
      */
     public static MethodHandle nng_stream_get_uint64$handle() {
@@ -18712,7 +15129,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_get_uint64(nng_stream *, const char *, uint64_t *)
+     * int nng_stream_get_uint64(nng_stream *, const char *, uint64_t *)
      * }
      */
     public static MemorySegment nng_stream_get_uint64$address() {
@@ -18721,7 +15138,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_get_uint64(nng_stream *, const char *, uint64_t *)
+     * int nng_stream_get_uint64(nng_stream *, const char *, uint64_t *)
      * }
      */
     public static int nng_stream_get_uint64(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
@@ -18754,7 +15171,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_get_string(nng_stream *, const char *, const char **)
+     * int nng_stream_get_string(nng_stream *, const char *, char **)
      * }
      */
     public static FunctionDescriptor nng_stream_get_string$descriptor() {
@@ -18764,7 +15181,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_get_string(nng_stream *, const char *, const char **)
+     * int nng_stream_get_string(nng_stream *, const char *, char **)
      * }
      */
     public static MethodHandle nng_stream_get_string$handle() {
@@ -18774,7 +15191,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_get_string(nng_stream *, const char *, const char **)
+     * int nng_stream_get_string(nng_stream *, const char *, char **)
      * }
      */
     public static MemorySegment nng_stream_get_string$address() {
@@ -18783,7 +15200,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_get_string(nng_stream *, const char *, const char **)
+     * int nng_stream_get_string(nng_stream *, const char *, char **)
      * }
      */
     public static int nng_stream_get_string(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
@@ -18800,134 +15217,15 @@ public class nng_h extends nng_h$shared {
         }
     }
 
-    private static class nng_stream_peer_addr {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_peer_addr");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * const nng_sockaddr *nng_stream_peer_addr(nng_stream *)
-     * }
-     */
-    public static FunctionDescriptor nng_stream_peer_addr$descriptor() {
-        return nng_stream_peer_addr.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * const nng_sockaddr *nng_stream_peer_addr(nng_stream *)
-     * }
-     */
-    public static MethodHandle nng_stream_peer_addr$handle() {
-        return nng_stream_peer_addr.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * const nng_sockaddr *nng_stream_peer_addr(nng_stream *)
-     * }
-     */
-    public static MemorySegment nng_stream_peer_addr$address() {
-        return nng_stream_peer_addr.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * const nng_sockaddr *nng_stream_peer_addr(nng_stream *)
-     * }
-     */
-    public static MemorySegment nng_stream_peer_addr(MemorySegment x0) {
-        var mh$ = nng_stream_peer_addr.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_stream_peer_addr", x0);
-            }
-            return (MemorySegment)mh$.invokeExact(x0);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_stream_self_addr {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_self_addr");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * const nng_sockaddr *nng_stream_self_addr(nng_stream *)
-     * }
-     */
-    public static FunctionDescriptor nng_stream_self_addr$descriptor() {
-        return nng_stream_self_addr.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * const nng_sockaddr *nng_stream_self_addr(nng_stream *)
-     * }
-     */
-    public static MethodHandle nng_stream_self_addr$handle() {
-        return nng_stream_self_addr.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * const nng_sockaddr *nng_stream_self_addr(nng_stream *)
-     * }
-     */
-    public static MemorySegment nng_stream_self_addr$address() {
-        return nng_stream_self_addr.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * const nng_sockaddr *nng_stream_self_addr(nng_stream *)
-     * }
-     */
-    public static MemorySegment nng_stream_self_addr(MemorySegment x0) {
-        var mh$ = nng_stream_self_addr.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_stream_self_addr", x0);
-            }
-            return (MemorySegment)mh$.invokeExact(x0);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_stream_peer_cert {
+    private static class nng_stream_get_ptr {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
             nng_h.C_INT,
             nng_h.C_POINTER,
+            nng_h.C_POINTER,
             nng_h.C_POINTER
         );
 
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_peer_cert");
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_get_ptr");
 
         public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
     }
@@ -18935,45 +15233,604 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_peer_cert(nng_stream *, nng_tls_cert **)
+     * int nng_stream_get_ptr(nng_stream *, const char *, void **)
      * }
      */
-    public static FunctionDescriptor nng_stream_peer_cert$descriptor() {
-        return nng_stream_peer_cert.DESC;
+    public static FunctionDescriptor nng_stream_get_ptr$descriptor() {
+        return nng_stream_get_ptr.DESC;
     }
 
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_peer_cert(nng_stream *, nng_tls_cert **)
+     * int nng_stream_get_ptr(nng_stream *, const char *, void **)
      * }
      */
-    public static MethodHandle nng_stream_peer_cert$handle() {
-        return nng_stream_peer_cert.HANDLE;
+    public static MethodHandle nng_stream_get_ptr$handle() {
+        return nng_stream_get_ptr.HANDLE;
     }
 
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_peer_cert(nng_stream *, nng_tls_cert **)
+     * int nng_stream_get_ptr(nng_stream *, const char *, void **)
      * }
      */
-    public static MemorySegment nng_stream_peer_cert$address() {
-        return nng_stream_peer_cert.ADDR;
+    public static MemorySegment nng_stream_get_ptr$address() {
+        return nng_stream_get_ptr.ADDR;
     }
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_peer_cert(nng_stream *, nng_tls_cert **)
+     * int nng_stream_get_ptr(nng_stream *, const char *, void **)
      * }
      */
-    public static int nng_stream_peer_cert(MemorySegment x0, MemorySegment x1) {
-        var mh$ = nng_stream_peer_cert.HANDLE;
+    public static int nng_stream_get_ptr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_stream_get_ptr.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_stream_peer_cert", x0, x1);
+                traceDowncall("nng_stream_get_ptr", x0, x1, x2);
             }
-            return (int)mh$.invokeExact(x0, x1);
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_stream_get_addr {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_get_addr");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_stream_get_addr(nng_stream *, const char *, nng_sockaddr *)
+     * }
+     */
+    public static FunctionDescriptor nng_stream_get_addr$descriptor() {
+        return nng_stream_get_addr.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_stream_get_addr(nng_stream *, const char *, nng_sockaddr *)
+     * }
+     */
+    public static MethodHandle nng_stream_get_addr$handle() {
+        return nng_stream_get_addr.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_stream_get_addr(nng_stream *, const char *, nng_sockaddr *)
+     * }
+     */
+    public static MemorySegment nng_stream_get_addr$address() {
+        return nng_stream_get_addr.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_stream_get_addr(nng_stream *, const char *, nng_sockaddr *)
+     * }
+     */
+    public static int nng_stream_get_addr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_stream_get_addr.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_stream_get_addr", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_stream_set {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_LONG_LONG
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_set");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_stream_set(nng_stream *, const char *, const void *, size_t)
+     * }
+     */
+    public static FunctionDescriptor nng_stream_set$descriptor() {
+        return nng_stream_set.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_stream_set(nng_stream *, const char *, const void *, size_t)
+     * }
+     */
+    public static MethodHandle nng_stream_set$handle() {
+        return nng_stream_set.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_stream_set(nng_stream *, const char *, const void *, size_t)
+     * }
+     */
+    public static MemorySegment nng_stream_set$address() {
+        return nng_stream_set.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_stream_set(nng_stream *, const char *, const void *, size_t)
+     * }
+     */
+    public static int nng_stream_set(MemorySegment x0, MemorySegment x1, MemorySegment x2, long x3) {
+        var mh$ = nng_stream_set.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_stream_set", x0, x1, x2, x3);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2, x3);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_stream_set_bool {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_BOOL
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_set_bool");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_stream_set_bool(nng_stream *, const char *, _Bool)
+     * }
+     */
+    public static FunctionDescriptor nng_stream_set_bool$descriptor() {
+        return nng_stream_set_bool.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_stream_set_bool(nng_stream *, const char *, _Bool)
+     * }
+     */
+    public static MethodHandle nng_stream_set_bool$handle() {
+        return nng_stream_set_bool.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_stream_set_bool(nng_stream *, const char *, _Bool)
+     * }
+     */
+    public static MemorySegment nng_stream_set_bool$address() {
+        return nng_stream_set_bool.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_stream_set_bool(nng_stream *, const char *, _Bool)
+     * }
+     */
+    public static int nng_stream_set_bool(MemorySegment x0, MemorySegment x1, boolean x2) {
+        var mh$ = nng_stream_set_bool.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_stream_set_bool", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_stream_set_int {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_INT
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_set_int");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_stream_set_int(nng_stream *, const char *, int)
+     * }
+     */
+    public static FunctionDescriptor nng_stream_set_int$descriptor() {
+        return nng_stream_set_int.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_stream_set_int(nng_stream *, const char *, int)
+     * }
+     */
+    public static MethodHandle nng_stream_set_int$handle() {
+        return nng_stream_set_int.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_stream_set_int(nng_stream *, const char *, int)
+     * }
+     */
+    public static MemorySegment nng_stream_set_int$address() {
+        return nng_stream_set_int.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_stream_set_int(nng_stream *, const char *, int)
+     * }
+     */
+    public static int nng_stream_set_int(MemorySegment x0, MemorySegment x1, int x2) {
+        var mh$ = nng_stream_set_int.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_stream_set_int", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_stream_set_ms {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_INT
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_set_ms");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_stream_set_ms(nng_stream *, const char *, nng_duration)
+     * }
+     */
+    public static FunctionDescriptor nng_stream_set_ms$descriptor() {
+        return nng_stream_set_ms.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_stream_set_ms(nng_stream *, const char *, nng_duration)
+     * }
+     */
+    public static MethodHandle nng_stream_set_ms$handle() {
+        return nng_stream_set_ms.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_stream_set_ms(nng_stream *, const char *, nng_duration)
+     * }
+     */
+    public static MemorySegment nng_stream_set_ms$address() {
+        return nng_stream_set_ms.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_stream_set_ms(nng_stream *, const char *, nng_duration)
+     * }
+     */
+    public static int nng_stream_set_ms(MemorySegment x0, MemorySegment x1, int x2) {
+        var mh$ = nng_stream_set_ms.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_stream_set_ms", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_stream_set_size {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_LONG_LONG
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_set_size");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_stream_set_size(nng_stream *, const char *, size_t)
+     * }
+     */
+    public static FunctionDescriptor nng_stream_set_size$descriptor() {
+        return nng_stream_set_size.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_stream_set_size(nng_stream *, const char *, size_t)
+     * }
+     */
+    public static MethodHandle nng_stream_set_size$handle() {
+        return nng_stream_set_size.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_stream_set_size(nng_stream *, const char *, size_t)
+     * }
+     */
+    public static MemorySegment nng_stream_set_size$address() {
+        return nng_stream_set_size.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_stream_set_size(nng_stream *, const char *, size_t)
+     * }
+     */
+    public static int nng_stream_set_size(MemorySegment x0, MemorySegment x1, long x2) {
+        var mh$ = nng_stream_set_size.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_stream_set_size", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_stream_set_uint64 {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_LONG_LONG
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_set_uint64");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_stream_set_uint64(nng_stream *, const char *, uint64_t)
+     * }
+     */
+    public static FunctionDescriptor nng_stream_set_uint64$descriptor() {
+        return nng_stream_set_uint64.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_stream_set_uint64(nng_stream *, const char *, uint64_t)
+     * }
+     */
+    public static MethodHandle nng_stream_set_uint64$handle() {
+        return nng_stream_set_uint64.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_stream_set_uint64(nng_stream *, const char *, uint64_t)
+     * }
+     */
+    public static MemorySegment nng_stream_set_uint64$address() {
+        return nng_stream_set_uint64.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_stream_set_uint64(nng_stream *, const char *, uint64_t)
+     * }
+     */
+    public static int nng_stream_set_uint64(MemorySegment x0, MemorySegment x1, long x2) {
+        var mh$ = nng_stream_set_uint64.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_stream_set_uint64", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_stream_set_string {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_set_string");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_stream_set_string(nng_stream *, const char *, const char *)
+     * }
+     */
+    public static FunctionDescriptor nng_stream_set_string$descriptor() {
+        return nng_stream_set_string.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_stream_set_string(nng_stream *, const char *, const char *)
+     * }
+     */
+    public static MethodHandle nng_stream_set_string$handle() {
+        return nng_stream_set_string.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_stream_set_string(nng_stream *, const char *, const char *)
+     * }
+     */
+    public static MemorySegment nng_stream_set_string$address() {
+        return nng_stream_set_string.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_stream_set_string(nng_stream *, const char *, const char *)
+     * }
+     */
+    public static int nng_stream_set_string(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_stream_set_string.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_stream_set_string", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_stream_set_ptr {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_set_ptr");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_stream_set_ptr(nng_stream *, const char *, void *)
+     * }
+     */
+    public static FunctionDescriptor nng_stream_set_ptr$descriptor() {
+        return nng_stream_set_ptr.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_stream_set_ptr(nng_stream *, const char *, void *)
+     * }
+     */
+    public static MethodHandle nng_stream_set_ptr$handle() {
+        return nng_stream_set_ptr.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_stream_set_ptr(nng_stream *, const char *, void *)
+     * }
+     */
+    public static MemorySegment nng_stream_set_ptr$address() {
+        return nng_stream_set_ptr.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_stream_set_ptr(nng_stream *, const char *, void *)
+     * }
+     */
+    public static int nng_stream_set_ptr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_stream_set_ptr.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_stream_set_ptr", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
         } catch (Error | RuntimeException ex) {
            throw ex;
         } catch (Throwable ex$) {
@@ -18996,7 +15853,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_alloc(nng_stream_dialer **, const char *)
+     * int nng_stream_dialer_alloc(nng_stream_dialer **, const char *)
      * }
      */
     public static FunctionDescriptor nng_stream_dialer_alloc$descriptor() {
@@ -19006,7 +15863,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_alloc(nng_stream_dialer **, const char *)
+     * int nng_stream_dialer_alloc(nng_stream_dialer **, const char *)
      * }
      */
     public static MethodHandle nng_stream_dialer_alloc$handle() {
@@ -19016,7 +15873,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_alloc(nng_stream_dialer **, const char *)
+     * int nng_stream_dialer_alloc(nng_stream_dialer **, const char *)
      * }
      */
     public static MemorySegment nng_stream_dialer_alloc$address() {
@@ -19025,7 +15882,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_alloc(nng_stream_dialer **, const char *)
+     * int nng_stream_dialer_alloc(nng_stream_dialer **, const char *)
      * }
      */
     public static int nng_stream_dialer_alloc(MemorySegment x0, MemorySegment x1) {
@@ -19057,7 +15914,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_alloc_url(nng_stream_dialer **, const nng_url *)
+     * int nng_stream_dialer_alloc_url(nng_stream_dialer **, const nng_url *)
      * }
      */
     public static FunctionDescriptor nng_stream_dialer_alloc_url$descriptor() {
@@ -19067,7 +15924,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_alloc_url(nng_stream_dialer **, const nng_url *)
+     * int nng_stream_dialer_alloc_url(nng_stream_dialer **, const nng_url *)
      * }
      */
     public static MethodHandle nng_stream_dialer_alloc_url$handle() {
@@ -19077,7 +15934,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_alloc_url(nng_stream_dialer **, const nng_url *)
+     * int nng_stream_dialer_alloc_url(nng_stream_dialer **, const nng_url *)
      * }
      */
     public static MemorySegment nng_stream_dialer_alloc_url$address() {
@@ -19086,7 +15943,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_alloc_url(nng_stream_dialer **, const nng_url *)
+     * int nng_stream_dialer_alloc_url(nng_stream_dialer **, const nng_url *)
      * }
      */
     public static int nng_stream_dialer_alloc_url(MemorySegment x0, MemorySegment x1) {
@@ -19221,65 +16078,6 @@ public class nng_h extends nng_h$shared {
         }
     }
 
-    private static class nng_stream_dialer_stop {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_dialer_stop");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * void nng_stream_dialer_stop(nng_stream_dialer *)
-     * }
-     */
-    public static FunctionDescriptor nng_stream_dialer_stop$descriptor() {
-        return nng_stream_dialer_stop.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * void nng_stream_dialer_stop(nng_stream_dialer *)
-     * }
-     */
-    public static MethodHandle nng_stream_dialer_stop$handle() {
-        return nng_stream_dialer_stop.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * void nng_stream_dialer_stop(nng_stream_dialer *)
-     * }
-     */
-    public static MemorySegment nng_stream_dialer_stop$address() {
-        return nng_stream_dialer_stop.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * void nng_stream_dialer_stop(nng_stream_dialer *)
-     * }
-     */
-    public static void nng_stream_dialer_stop(MemorySegment x0) {
-        var mh$ = nng_stream_dialer_stop.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_stream_dialer_stop", x0);
-            }
-            mh$.invokeExact(x0);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
     private static class nng_stream_dialer_dial {
         public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
             nng_h.C_POINTER,
@@ -19340,6 +16138,132 @@ public class nng_h extends nng_h$shared {
         }
     }
 
+    private static class nng_stream_dialer_set {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_LONG_LONG
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_dialer_set");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_stream_dialer_set(nng_stream_dialer *, const char *, const void *, size_t)
+     * }
+     */
+    public static FunctionDescriptor nng_stream_dialer_set$descriptor() {
+        return nng_stream_dialer_set.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_stream_dialer_set(nng_stream_dialer *, const char *, const void *, size_t)
+     * }
+     */
+    public static MethodHandle nng_stream_dialer_set$handle() {
+        return nng_stream_dialer_set.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_stream_dialer_set(nng_stream_dialer *, const char *, const void *, size_t)
+     * }
+     */
+    public static MemorySegment nng_stream_dialer_set$address() {
+        return nng_stream_dialer_set.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_stream_dialer_set(nng_stream_dialer *, const char *, const void *, size_t)
+     * }
+     */
+    public static int nng_stream_dialer_set(MemorySegment x0, MemorySegment x1, MemorySegment x2, long x3) {
+        var mh$ = nng_stream_dialer_set.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_stream_dialer_set", x0, x1, x2, x3);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2, x3);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_stream_dialer_get {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_dialer_get");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_stream_dialer_get(nng_stream_dialer *, const char *, void *, size_t *)
+     * }
+     */
+    public static FunctionDescriptor nng_stream_dialer_get$descriptor() {
+        return nng_stream_dialer_get.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_stream_dialer_get(nng_stream_dialer *, const char *, void *, size_t *)
+     * }
+     */
+    public static MethodHandle nng_stream_dialer_get$handle() {
+        return nng_stream_dialer_get.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_stream_dialer_get(nng_stream_dialer *, const char *, void *, size_t *)
+     * }
+     */
+    public static MemorySegment nng_stream_dialer_get$address() {
+        return nng_stream_dialer_get.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_stream_dialer_get(nng_stream_dialer *, const char *, void *, size_t *)
+     * }
+     */
+    public static int nng_stream_dialer_get(MemorySegment x0, MemorySegment x1, MemorySegment x2, MemorySegment x3) {
+        var mh$ = nng_stream_dialer_get.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_stream_dialer_get", x0, x1, x2, x3);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2, x3);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
     private static class nng_stream_dialer_get_bool {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
             nng_h.C_INT,
@@ -19356,7 +16280,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_get_bool(nng_stream_dialer *, const char *, _Bool *)
+     * int nng_stream_dialer_get_bool(nng_stream_dialer *, const char *, _Bool *)
      * }
      */
     public static FunctionDescriptor nng_stream_dialer_get_bool$descriptor() {
@@ -19366,7 +16290,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_get_bool(nng_stream_dialer *, const char *, _Bool *)
+     * int nng_stream_dialer_get_bool(nng_stream_dialer *, const char *, _Bool *)
      * }
      */
     public static MethodHandle nng_stream_dialer_get_bool$handle() {
@@ -19376,7 +16300,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_get_bool(nng_stream_dialer *, const char *, _Bool *)
+     * int nng_stream_dialer_get_bool(nng_stream_dialer *, const char *, _Bool *)
      * }
      */
     public static MemorySegment nng_stream_dialer_get_bool$address() {
@@ -19385,7 +16309,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_get_bool(nng_stream_dialer *, const char *, _Bool *)
+     * int nng_stream_dialer_get_bool(nng_stream_dialer *, const char *, _Bool *)
      * }
      */
     public static int nng_stream_dialer_get_bool(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
@@ -19418,7 +16342,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_get_int(nng_stream_dialer *, const char *, int *)
+     * int nng_stream_dialer_get_int(nng_stream_dialer *, const char *, int *)
      * }
      */
     public static FunctionDescriptor nng_stream_dialer_get_int$descriptor() {
@@ -19428,7 +16352,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_get_int(nng_stream_dialer *, const char *, int *)
+     * int nng_stream_dialer_get_int(nng_stream_dialer *, const char *, int *)
      * }
      */
     public static MethodHandle nng_stream_dialer_get_int$handle() {
@@ -19438,7 +16362,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_get_int(nng_stream_dialer *, const char *, int *)
+     * int nng_stream_dialer_get_int(nng_stream_dialer *, const char *, int *)
      * }
      */
     public static MemorySegment nng_stream_dialer_get_int$address() {
@@ -19447,7 +16371,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_get_int(nng_stream_dialer *, const char *, int *)
+     * int nng_stream_dialer_get_int(nng_stream_dialer *, const char *, int *)
      * }
      */
     public static int nng_stream_dialer_get_int(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
@@ -19480,7 +16404,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_get_ms(nng_stream_dialer *, const char *, nng_duration *)
+     * int nng_stream_dialer_get_ms(nng_stream_dialer *, const char *, nng_duration *)
      * }
      */
     public static FunctionDescriptor nng_stream_dialer_get_ms$descriptor() {
@@ -19490,7 +16414,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_get_ms(nng_stream_dialer *, const char *, nng_duration *)
+     * int nng_stream_dialer_get_ms(nng_stream_dialer *, const char *, nng_duration *)
      * }
      */
     public static MethodHandle nng_stream_dialer_get_ms$handle() {
@@ -19500,7 +16424,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_get_ms(nng_stream_dialer *, const char *, nng_duration *)
+     * int nng_stream_dialer_get_ms(nng_stream_dialer *, const char *, nng_duration *)
      * }
      */
     public static MemorySegment nng_stream_dialer_get_ms$address() {
@@ -19509,7 +16433,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_get_ms(nng_stream_dialer *, const char *, nng_duration *)
+     * int nng_stream_dialer_get_ms(nng_stream_dialer *, const char *, nng_duration *)
      * }
      */
     public static int nng_stream_dialer_get_ms(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
@@ -19542,7 +16466,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_get_size(nng_stream_dialer *, const char *, size_t *)
+     * int nng_stream_dialer_get_size(nng_stream_dialer *, const char *, size_t *)
      * }
      */
     public static FunctionDescriptor nng_stream_dialer_get_size$descriptor() {
@@ -19552,7 +16476,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_get_size(nng_stream_dialer *, const char *, size_t *)
+     * int nng_stream_dialer_get_size(nng_stream_dialer *, const char *, size_t *)
      * }
      */
     public static MethodHandle nng_stream_dialer_get_size$handle() {
@@ -19562,7 +16486,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_get_size(nng_stream_dialer *, const char *, size_t *)
+     * int nng_stream_dialer_get_size(nng_stream_dialer *, const char *, size_t *)
      * }
      */
     public static MemorySegment nng_stream_dialer_get_size$address() {
@@ -19571,7 +16495,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_get_size(nng_stream_dialer *, const char *, size_t *)
+     * int nng_stream_dialer_get_size(nng_stream_dialer *, const char *, size_t *)
      * }
      */
     public static int nng_stream_dialer_get_size(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
@@ -19604,7 +16528,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_get_uint64(nng_stream_dialer *, const char *, uint64_t *)
+     * int nng_stream_dialer_get_uint64(nng_stream_dialer *, const char *, uint64_t *)
      * }
      */
     public static FunctionDescriptor nng_stream_dialer_get_uint64$descriptor() {
@@ -19614,7 +16538,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_get_uint64(nng_stream_dialer *, const char *, uint64_t *)
+     * int nng_stream_dialer_get_uint64(nng_stream_dialer *, const char *, uint64_t *)
      * }
      */
     public static MethodHandle nng_stream_dialer_get_uint64$handle() {
@@ -19624,7 +16548,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_get_uint64(nng_stream_dialer *, const char *, uint64_t *)
+     * int nng_stream_dialer_get_uint64(nng_stream_dialer *, const char *, uint64_t *)
      * }
      */
     public static MemorySegment nng_stream_dialer_get_uint64$address() {
@@ -19633,7 +16557,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_get_uint64(nng_stream_dialer *, const char *, uint64_t *)
+     * int nng_stream_dialer_get_uint64(nng_stream_dialer *, const char *, uint64_t *)
      * }
      */
     public static int nng_stream_dialer_get_uint64(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
@@ -19666,7 +16590,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_get_string(nng_stream_dialer *, const char *, const char **)
+     * int nng_stream_dialer_get_string(nng_stream_dialer *, const char *, char **)
      * }
      */
     public static FunctionDescriptor nng_stream_dialer_get_string$descriptor() {
@@ -19676,7 +16600,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_get_string(nng_stream_dialer *, const char *, const char **)
+     * int nng_stream_dialer_get_string(nng_stream_dialer *, const char *, char **)
      * }
      */
     public static MethodHandle nng_stream_dialer_get_string$handle() {
@@ -19686,7 +16610,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_get_string(nng_stream_dialer *, const char *, const char **)
+     * int nng_stream_dialer_get_string(nng_stream_dialer *, const char *, char **)
      * }
      */
     public static MemorySegment nng_stream_dialer_get_string$address() {
@@ -19695,7 +16619,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_get_string(nng_stream_dialer *, const char *, const char **)
+     * int nng_stream_dialer_get_string(nng_stream_dialer *, const char *, char **)
      * }
      */
     public static int nng_stream_dialer_get_string(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
@@ -19703,6 +16627,130 @@ public class nng_h extends nng_h$shared {
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("nng_stream_dialer_get_string", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_stream_dialer_get_ptr {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_dialer_get_ptr");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_stream_dialer_get_ptr(nng_stream_dialer *, const char *, void **)
+     * }
+     */
+    public static FunctionDescriptor nng_stream_dialer_get_ptr$descriptor() {
+        return nng_stream_dialer_get_ptr.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_stream_dialer_get_ptr(nng_stream_dialer *, const char *, void **)
+     * }
+     */
+    public static MethodHandle nng_stream_dialer_get_ptr$handle() {
+        return nng_stream_dialer_get_ptr.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_stream_dialer_get_ptr(nng_stream_dialer *, const char *, void **)
+     * }
+     */
+    public static MemorySegment nng_stream_dialer_get_ptr$address() {
+        return nng_stream_dialer_get_ptr.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_stream_dialer_get_ptr(nng_stream_dialer *, const char *, void **)
+     * }
+     */
+    public static int nng_stream_dialer_get_ptr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_stream_dialer_get_ptr.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_stream_dialer_get_ptr", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_stream_dialer_get_addr {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_dialer_get_addr");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_stream_dialer_get_addr(nng_stream_dialer *, const char *, nng_sockaddr *)
+     * }
+     */
+    public static FunctionDescriptor nng_stream_dialer_get_addr$descriptor() {
+        return nng_stream_dialer_get_addr.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_stream_dialer_get_addr(nng_stream_dialer *, const char *, nng_sockaddr *)
+     * }
+     */
+    public static MethodHandle nng_stream_dialer_get_addr$handle() {
+        return nng_stream_dialer_get_addr.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_stream_dialer_get_addr(nng_stream_dialer *, const char *, nng_sockaddr *)
+     * }
+     */
+    public static MemorySegment nng_stream_dialer_get_addr$address() {
+        return nng_stream_dialer_get_addr.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_stream_dialer_get_addr(nng_stream_dialer *, const char *, nng_sockaddr *)
+     * }
+     */
+    public static int nng_stream_dialer_get_addr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_stream_dialer_get_addr.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_stream_dialer_get_addr", x0, x1, x2);
             }
             return (int)mh$.invokeExact(x0, x1, x2);
         } catch (Error | RuntimeException ex) {
@@ -19728,7 +16776,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_bool(nng_stream_dialer *, const char *, _Bool)
+     * int nng_stream_dialer_set_bool(nng_stream_dialer *, const char *, _Bool)
      * }
      */
     public static FunctionDescriptor nng_stream_dialer_set_bool$descriptor() {
@@ -19738,7 +16786,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_bool(nng_stream_dialer *, const char *, _Bool)
+     * int nng_stream_dialer_set_bool(nng_stream_dialer *, const char *, _Bool)
      * }
      */
     public static MethodHandle nng_stream_dialer_set_bool$handle() {
@@ -19748,7 +16796,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_bool(nng_stream_dialer *, const char *, _Bool)
+     * int nng_stream_dialer_set_bool(nng_stream_dialer *, const char *, _Bool)
      * }
      */
     public static MemorySegment nng_stream_dialer_set_bool$address() {
@@ -19757,7 +16805,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_bool(nng_stream_dialer *, const char *, _Bool)
+     * int nng_stream_dialer_set_bool(nng_stream_dialer *, const char *, _Bool)
      * }
      */
     public static int nng_stream_dialer_set_bool(MemorySegment x0, MemorySegment x1, boolean x2) {
@@ -19790,7 +16838,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_int(nng_stream_dialer *, const char *, int)
+     * int nng_stream_dialer_set_int(nng_stream_dialer *, const char *, int)
      * }
      */
     public static FunctionDescriptor nng_stream_dialer_set_int$descriptor() {
@@ -19800,7 +16848,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_int(nng_stream_dialer *, const char *, int)
+     * int nng_stream_dialer_set_int(nng_stream_dialer *, const char *, int)
      * }
      */
     public static MethodHandle nng_stream_dialer_set_int$handle() {
@@ -19810,7 +16858,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_int(nng_stream_dialer *, const char *, int)
+     * int nng_stream_dialer_set_int(nng_stream_dialer *, const char *, int)
      * }
      */
     public static MemorySegment nng_stream_dialer_set_int$address() {
@@ -19819,7 +16867,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_int(nng_stream_dialer *, const char *, int)
+     * int nng_stream_dialer_set_int(nng_stream_dialer *, const char *, int)
      * }
      */
     public static int nng_stream_dialer_set_int(MemorySegment x0, MemorySegment x1, int x2) {
@@ -19852,7 +16900,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_ms(nng_stream_dialer *, const char *, nng_duration)
+     * int nng_stream_dialer_set_ms(nng_stream_dialer *, const char *, nng_duration)
      * }
      */
     public static FunctionDescriptor nng_stream_dialer_set_ms$descriptor() {
@@ -19862,7 +16910,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_ms(nng_stream_dialer *, const char *, nng_duration)
+     * int nng_stream_dialer_set_ms(nng_stream_dialer *, const char *, nng_duration)
      * }
      */
     public static MethodHandle nng_stream_dialer_set_ms$handle() {
@@ -19872,7 +16920,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_ms(nng_stream_dialer *, const char *, nng_duration)
+     * int nng_stream_dialer_set_ms(nng_stream_dialer *, const char *, nng_duration)
      * }
      */
     public static MemorySegment nng_stream_dialer_set_ms$address() {
@@ -19881,7 +16929,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_ms(nng_stream_dialer *, const char *, nng_duration)
+     * int nng_stream_dialer_set_ms(nng_stream_dialer *, const char *, nng_duration)
      * }
      */
     public static int nng_stream_dialer_set_ms(MemorySegment x0, MemorySegment x1, int x2) {
@@ -19914,7 +16962,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_size(nng_stream_dialer *, const char *, size_t)
+     * int nng_stream_dialer_set_size(nng_stream_dialer *, const char *, size_t)
      * }
      */
     public static FunctionDescriptor nng_stream_dialer_set_size$descriptor() {
@@ -19924,7 +16972,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_size(nng_stream_dialer *, const char *, size_t)
+     * int nng_stream_dialer_set_size(nng_stream_dialer *, const char *, size_t)
      * }
      */
     public static MethodHandle nng_stream_dialer_set_size$handle() {
@@ -19934,7 +16982,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_size(nng_stream_dialer *, const char *, size_t)
+     * int nng_stream_dialer_set_size(nng_stream_dialer *, const char *, size_t)
      * }
      */
     public static MemorySegment nng_stream_dialer_set_size$address() {
@@ -19943,7 +16991,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_size(nng_stream_dialer *, const char *, size_t)
+     * int nng_stream_dialer_set_size(nng_stream_dialer *, const char *, size_t)
      * }
      */
     public static int nng_stream_dialer_set_size(MemorySegment x0, MemorySegment x1, long x2) {
@@ -19976,7 +17024,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_uint64(nng_stream_dialer *, const char *, uint64_t)
+     * int nng_stream_dialer_set_uint64(nng_stream_dialer *, const char *, uint64_t)
      * }
      */
     public static FunctionDescriptor nng_stream_dialer_set_uint64$descriptor() {
@@ -19986,7 +17034,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_uint64(nng_stream_dialer *, const char *, uint64_t)
+     * int nng_stream_dialer_set_uint64(nng_stream_dialer *, const char *, uint64_t)
      * }
      */
     public static MethodHandle nng_stream_dialer_set_uint64$handle() {
@@ -19996,7 +17044,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_uint64(nng_stream_dialer *, const char *, uint64_t)
+     * int nng_stream_dialer_set_uint64(nng_stream_dialer *, const char *, uint64_t)
      * }
      */
     public static MemorySegment nng_stream_dialer_set_uint64$address() {
@@ -20005,7 +17053,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_uint64(nng_stream_dialer *, const char *, uint64_t)
+     * int nng_stream_dialer_set_uint64(nng_stream_dialer *, const char *, uint64_t)
      * }
      */
     public static int nng_stream_dialer_set_uint64(MemorySegment x0, MemorySegment x1, long x2) {
@@ -20038,7 +17086,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_string(nng_stream_dialer *, const char *, const char *)
+     * int nng_stream_dialer_set_string(nng_stream_dialer *, const char *, const char *)
      * }
      */
     public static FunctionDescriptor nng_stream_dialer_set_string$descriptor() {
@@ -20048,7 +17096,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_string(nng_stream_dialer *, const char *, const char *)
+     * int nng_stream_dialer_set_string(nng_stream_dialer *, const char *, const char *)
      * }
      */
     public static MethodHandle nng_stream_dialer_set_string$handle() {
@@ -20058,7 +17106,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_string(nng_stream_dialer *, const char *, const char *)
+     * int nng_stream_dialer_set_string(nng_stream_dialer *, const char *, const char *)
      * }
      */
     public static MemorySegment nng_stream_dialer_set_string$address() {
@@ -20067,7 +17115,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_string(nng_stream_dialer *, const char *, const char *)
+     * int nng_stream_dialer_set_string(nng_stream_dialer *, const char *, const char *)
      * }
      */
     public static int nng_stream_dialer_set_string(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
@@ -20075,6 +17123,68 @@ public class nng_h extends nng_h$shared {
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("nng_stream_dialer_set_string", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_stream_dialer_set_ptr {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_dialer_set_ptr");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_stream_dialer_set_ptr(nng_stream_dialer *, const char *, void *)
+     * }
+     */
+    public static FunctionDescriptor nng_stream_dialer_set_ptr$descriptor() {
+        return nng_stream_dialer_set_ptr.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_stream_dialer_set_ptr(nng_stream_dialer *, const char *, void *)
+     * }
+     */
+    public static MethodHandle nng_stream_dialer_set_ptr$handle() {
+        return nng_stream_dialer_set_ptr.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_stream_dialer_set_ptr(nng_stream_dialer *, const char *, void *)
+     * }
+     */
+    public static MemorySegment nng_stream_dialer_set_ptr$address() {
+        return nng_stream_dialer_set_ptr.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_stream_dialer_set_ptr(nng_stream_dialer *, const char *, void *)
+     * }
+     */
+    public static int nng_stream_dialer_set_ptr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_stream_dialer_set_ptr.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_stream_dialer_set_ptr", x0, x1, x2);
             }
             return (int)mh$.invokeExact(x0, x1, x2);
         } catch (Error | RuntimeException ex) {
@@ -20100,7 +17210,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_addr(nng_stream_dialer *, const char *, const nng_sockaddr *)
+     * int nng_stream_dialer_set_addr(nng_stream_dialer *, const char *, const nng_sockaddr *)
      * }
      */
     public static FunctionDescriptor nng_stream_dialer_set_addr$descriptor() {
@@ -20110,7 +17220,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_addr(nng_stream_dialer *, const char *, const nng_sockaddr *)
+     * int nng_stream_dialer_set_addr(nng_stream_dialer *, const char *, const nng_sockaddr *)
      * }
      */
     public static MethodHandle nng_stream_dialer_set_addr$handle() {
@@ -20120,7 +17230,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_addr(nng_stream_dialer *, const char *, const nng_sockaddr *)
+     * int nng_stream_dialer_set_addr(nng_stream_dialer *, const char *, const nng_sockaddr *)
      * }
      */
     public static MemorySegment nng_stream_dialer_set_addr$address() {
@@ -20129,7 +17239,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_addr(nng_stream_dialer *, const char *, const nng_sockaddr *)
+     * int nng_stream_dialer_set_addr(nng_stream_dialer *, const char *, const nng_sockaddr *)
      * }
      */
     public static int nng_stream_dialer_set_addr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
@@ -20139,128 +17249,6 @@ public class nng_h extends nng_h$shared {
                 traceDowncall("nng_stream_dialer_set_addr", x0, x1, x2);
             }
             return (int)mh$.invokeExact(x0, x1, x2);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_stream_dialer_get_tls {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_dialer_get_tls");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * nng_err nng_stream_dialer_get_tls(nng_stream_dialer *, nng_tls_config **)
-     * }
-     */
-    public static FunctionDescriptor nng_stream_dialer_get_tls$descriptor() {
-        return nng_stream_dialer_get_tls.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * nng_err nng_stream_dialer_get_tls(nng_stream_dialer *, nng_tls_config **)
-     * }
-     */
-    public static MethodHandle nng_stream_dialer_get_tls$handle() {
-        return nng_stream_dialer_get_tls.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * nng_err nng_stream_dialer_get_tls(nng_stream_dialer *, nng_tls_config **)
-     * }
-     */
-    public static MemorySegment nng_stream_dialer_get_tls$address() {
-        return nng_stream_dialer_get_tls.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * nng_err nng_stream_dialer_get_tls(nng_stream_dialer *, nng_tls_config **)
-     * }
-     */
-    public static int nng_stream_dialer_get_tls(MemorySegment x0, MemorySegment x1) {
-        var mh$ = nng_stream_dialer_get_tls.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_stream_dialer_get_tls", x0, x1);
-            }
-            return (int)mh$.invokeExact(x0, x1);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_stream_dialer_set_tls {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_dialer_set_tls");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_tls(nng_stream_dialer *, nng_tls_config *)
-     * }
-     */
-    public static FunctionDescriptor nng_stream_dialer_set_tls$descriptor() {
-        return nng_stream_dialer_set_tls.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_tls(nng_stream_dialer *, nng_tls_config *)
-     * }
-     */
-    public static MethodHandle nng_stream_dialer_set_tls$handle() {
-        return nng_stream_dialer_set_tls.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_tls(nng_stream_dialer *, nng_tls_config *)
-     * }
-     */
-    public static MemorySegment nng_stream_dialer_set_tls$address() {
-        return nng_stream_dialer_set_tls.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * nng_err nng_stream_dialer_set_tls(nng_stream_dialer *, nng_tls_config *)
-     * }
-     */
-    public static int nng_stream_dialer_set_tls(MemorySegment x0, MemorySegment x1) {
-        var mh$ = nng_stream_dialer_set_tls.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_stream_dialer_set_tls", x0, x1);
-            }
-            return (int)mh$.invokeExact(x0, x1);
         } catch (Error | RuntimeException ex) {
            throw ex;
         } catch (Throwable ex$) {
@@ -20283,7 +17271,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_alloc(nng_stream_listener **, const char *)
+     * int nng_stream_listener_alloc(nng_stream_listener **, const char *)
      * }
      */
     public static FunctionDescriptor nng_stream_listener_alloc$descriptor() {
@@ -20293,7 +17281,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_alloc(nng_stream_listener **, const char *)
+     * int nng_stream_listener_alloc(nng_stream_listener **, const char *)
      * }
      */
     public static MethodHandle nng_stream_listener_alloc$handle() {
@@ -20303,7 +17291,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_alloc(nng_stream_listener **, const char *)
+     * int nng_stream_listener_alloc(nng_stream_listener **, const char *)
      * }
      */
     public static MemorySegment nng_stream_listener_alloc$address() {
@@ -20312,7 +17300,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_alloc(nng_stream_listener **, const char *)
+     * int nng_stream_listener_alloc(nng_stream_listener **, const char *)
      * }
      */
     public static int nng_stream_listener_alloc(MemorySegment x0, MemorySegment x1) {
@@ -20344,7 +17332,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_alloc_url(nng_stream_listener **, const nng_url *)
+     * int nng_stream_listener_alloc_url(nng_stream_listener **, const nng_url *)
      * }
      */
     public static FunctionDescriptor nng_stream_listener_alloc_url$descriptor() {
@@ -20354,7 +17342,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_alloc_url(nng_stream_listener **, const nng_url *)
+     * int nng_stream_listener_alloc_url(nng_stream_listener **, const nng_url *)
      * }
      */
     public static MethodHandle nng_stream_listener_alloc_url$handle() {
@@ -20364,7 +17352,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_alloc_url(nng_stream_listener **, const nng_url *)
+     * int nng_stream_listener_alloc_url(nng_stream_listener **, const nng_url *)
      * }
      */
     public static MemorySegment nng_stream_listener_alloc_url$address() {
@@ -20373,7 +17361,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_alloc_url(nng_stream_listener **, const nng_url *)
+     * int nng_stream_listener_alloc_url(nng_stream_listener **, const nng_url *)
      * }
      */
     public static int nng_stream_listener_alloc_url(MemorySegment x0, MemorySegment x1) {
@@ -20508,65 +17496,6 @@ public class nng_h extends nng_h$shared {
         }
     }
 
-    private static class nng_stream_listener_stop {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_listener_stop");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * void nng_stream_listener_stop(nng_stream_listener *)
-     * }
-     */
-    public static FunctionDescriptor nng_stream_listener_stop$descriptor() {
-        return nng_stream_listener_stop.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * void nng_stream_listener_stop(nng_stream_listener *)
-     * }
-     */
-    public static MethodHandle nng_stream_listener_stop$handle() {
-        return nng_stream_listener_stop.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * void nng_stream_listener_stop(nng_stream_listener *)
-     * }
-     */
-    public static MemorySegment nng_stream_listener_stop$address() {
-        return nng_stream_listener_stop.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * void nng_stream_listener_stop(nng_stream_listener *)
-     * }
-     */
-    public static void nng_stream_listener_stop(MemorySegment x0) {
-        var mh$ = nng_stream_listener_stop.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_stream_listener_stop", x0);
-            }
-            mh$.invokeExact(x0);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
     private static class nng_stream_listener_listen {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
             nng_h.C_INT,
@@ -20581,7 +17510,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_listen(nng_stream_listener *)
+     * int nng_stream_listener_listen(nng_stream_listener *)
      * }
      */
     public static FunctionDescriptor nng_stream_listener_listen$descriptor() {
@@ -20591,7 +17520,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_listen(nng_stream_listener *)
+     * int nng_stream_listener_listen(nng_stream_listener *)
      * }
      */
     public static MethodHandle nng_stream_listener_listen$handle() {
@@ -20601,7 +17530,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_listen(nng_stream_listener *)
+     * int nng_stream_listener_listen(nng_stream_listener *)
      * }
      */
     public static MemorySegment nng_stream_listener_listen$address() {
@@ -20610,7 +17539,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_listen(nng_stream_listener *)
+     * int nng_stream_listener_listen(nng_stream_listener *)
      * }
      */
     public static int nng_stream_listener_listen(MemorySegment x0) {
@@ -20687,6 +17616,132 @@ public class nng_h extends nng_h$shared {
         }
     }
 
+    private static class nng_stream_listener_set {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_LONG_LONG
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_listener_set");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_stream_listener_set(nng_stream_listener *, const char *, const void *, size_t)
+     * }
+     */
+    public static FunctionDescriptor nng_stream_listener_set$descriptor() {
+        return nng_stream_listener_set.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_stream_listener_set(nng_stream_listener *, const char *, const void *, size_t)
+     * }
+     */
+    public static MethodHandle nng_stream_listener_set$handle() {
+        return nng_stream_listener_set.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_stream_listener_set(nng_stream_listener *, const char *, const void *, size_t)
+     * }
+     */
+    public static MemorySegment nng_stream_listener_set$address() {
+        return nng_stream_listener_set.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_stream_listener_set(nng_stream_listener *, const char *, const void *, size_t)
+     * }
+     */
+    public static int nng_stream_listener_set(MemorySegment x0, MemorySegment x1, MemorySegment x2, long x3) {
+        var mh$ = nng_stream_listener_set.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_stream_listener_set", x0, x1, x2, x3);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2, x3);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_stream_listener_get {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_listener_get");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_stream_listener_get(nng_stream_listener *, const char *, void *, size_t *)
+     * }
+     */
+    public static FunctionDescriptor nng_stream_listener_get$descriptor() {
+        return nng_stream_listener_get.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_stream_listener_get(nng_stream_listener *, const char *, void *, size_t *)
+     * }
+     */
+    public static MethodHandle nng_stream_listener_get$handle() {
+        return nng_stream_listener_get.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_stream_listener_get(nng_stream_listener *, const char *, void *, size_t *)
+     * }
+     */
+    public static MemorySegment nng_stream_listener_get$address() {
+        return nng_stream_listener_get.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_stream_listener_get(nng_stream_listener *, const char *, void *, size_t *)
+     * }
+     */
+    public static int nng_stream_listener_get(MemorySegment x0, MemorySegment x1, MemorySegment x2, MemorySegment x3) {
+        var mh$ = nng_stream_listener_get.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_stream_listener_get", x0, x1, x2, x3);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2, x3);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
     private static class nng_stream_listener_get_bool {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
             nng_h.C_INT,
@@ -20703,7 +17758,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_get_bool(nng_stream_listener *, const char *, _Bool *)
+     * int nng_stream_listener_get_bool(nng_stream_listener *, const char *, _Bool *)
      * }
      */
     public static FunctionDescriptor nng_stream_listener_get_bool$descriptor() {
@@ -20713,7 +17768,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_get_bool(nng_stream_listener *, const char *, _Bool *)
+     * int nng_stream_listener_get_bool(nng_stream_listener *, const char *, _Bool *)
      * }
      */
     public static MethodHandle nng_stream_listener_get_bool$handle() {
@@ -20723,7 +17778,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_get_bool(nng_stream_listener *, const char *, _Bool *)
+     * int nng_stream_listener_get_bool(nng_stream_listener *, const char *, _Bool *)
      * }
      */
     public static MemorySegment nng_stream_listener_get_bool$address() {
@@ -20732,7 +17787,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_get_bool(nng_stream_listener *, const char *, _Bool *)
+     * int nng_stream_listener_get_bool(nng_stream_listener *, const char *, _Bool *)
      * }
      */
     public static int nng_stream_listener_get_bool(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
@@ -20765,7 +17820,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_get_int(nng_stream_listener *, const char *, int *)
+     * int nng_stream_listener_get_int(nng_stream_listener *, const char *, int *)
      * }
      */
     public static FunctionDescriptor nng_stream_listener_get_int$descriptor() {
@@ -20775,7 +17830,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_get_int(nng_stream_listener *, const char *, int *)
+     * int nng_stream_listener_get_int(nng_stream_listener *, const char *, int *)
      * }
      */
     public static MethodHandle nng_stream_listener_get_int$handle() {
@@ -20785,7 +17840,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_get_int(nng_stream_listener *, const char *, int *)
+     * int nng_stream_listener_get_int(nng_stream_listener *, const char *, int *)
      * }
      */
     public static MemorySegment nng_stream_listener_get_int$address() {
@@ -20794,7 +17849,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_get_int(nng_stream_listener *, const char *, int *)
+     * int nng_stream_listener_get_int(nng_stream_listener *, const char *, int *)
      * }
      */
     public static int nng_stream_listener_get_int(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
@@ -20827,7 +17882,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_get_ms(nng_stream_listener *, const char *, nng_duration *)
+     * int nng_stream_listener_get_ms(nng_stream_listener *, const char *, nng_duration *)
      * }
      */
     public static FunctionDescriptor nng_stream_listener_get_ms$descriptor() {
@@ -20837,7 +17892,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_get_ms(nng_stream_listener *, const char *, nng_duration *)
+     * int nng_stream_listener_get_ms(nng_stream_listener *, const char *, nng_duration *)
      * }
      */
     public static MethodHandle nng_stream_listener_get_ms$handle() {
@@ -20847,7 +17902,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_get_ms(nng_stream_listener *, const char *, nng_duration *)
+     * int nng_stream_listener_get_ms(nng_stream_listener *, const char *, nng_duration *)
      * }
      */
     public static MemorySegment nng_stream_listener_get_ms$address() {
@@ -20856,7 +17911,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_get_ms(nng_stream_listener *, const char *, nng_duration *)
+     * int nng_stream_listener_get_ms(nng_stream_listener *, const char *, nng_duration *)
      * }
      */
     public static int nng_stream_listener_get_ms(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
@@ -20889,7 +17944,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_get_size(nng_stream_listener *, const char *, size_t *)
+     * int nng_stream_listener_get_size(nng_stream_listener *, const char *, size_t *)
      * }
      */
     public static FunctionDescriptor nng_stream_listener_get_size$descriptor() {
@@ -20899,7 +17954,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_get_size(nng_stream_listener *, const char *, size_t *)
+     * int nng_stream_listener_get_size(nng_stream_listener *, const char *, size_t *)
      * }
      */
     public static MethodHandle nng_stream_listener_get_size$handle() {
@@ -20909,7 +17964,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_get_size(nng_stream_listener *, const char *, size_t *)
+     * int nng_stream_listener_get_size(nng_stream_listener *, const char *, size_t *)
      * }
      */
     public static MemorySegment nng_stream_listener_get_size$address() {
@@ -20918,7 +17973,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_get_size(nng_stream_listener *, const char *, size_t *)
+     * int nng_stream_listener_get_size(nng_stream_listener *, const char *, size_t *)
      * }
      */
     public static int nng_stream_listener_get_size(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
@@ -20951,7 +18006,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_get_uint64(nng_stream_listener *, const char *, uint64_t *)
+     * int nng_stream_listener_get_uint64(nng_stream_listener *, const char *, uint64_t *)
      * }
      */
     public static FunctionDescriptor nng_stream_listener_get_uint64$descriptor() {
@@ -20961,7 +18016,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_get_uint64(nng_stream_listener *, const char *, uint64_t *)
+     * int nng_stream_listener_get_uint64(nng_stream_listener *, const char *, uint64_t *)
      * }
      */
     public static MethodHandle nng_stream_listener_get_uint64$handle() {
@@ -20971,7 +18026,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_get_uint64(nng_stream_listener *, const char *, uint64_t *)
+     * int nng_stream_listener_get_uint64(nng_stream_listener *, const char *, uint64_t *)
      * }
      */
     public static MemorySegment nng_stream_listener_get_uint64$address() {
@@ -20980,7 +18035,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_get_uint64(nng_stream_listener *, const char *, uint64_t *)
+     * int nng_stream_listener_get_uint64(nng_stream_listener *, const char *, uint64_t *)
      * }
      */
     public static int nng_stream_listener_get_uint64(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
@@ -21013,7 +18068,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_get_string(nng_stream_listener *, const char *, const char **)
+     * int nng_stream_listener_get_string(nng_stream_listener *, const char *, char **)
      * }
      */
     public static FunctionDescriptor nng_stream_listener_get_string$descriptor() {
@@ -21023,7 +18078,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_get_string(nng_stream_listener *, const char *, const char **)
+     * int nng_stream_listener_get_string(nng_stream_listener *, const char *, char **)
      * }
      */
     public static MethodHandle nng_stream_listener_get_string$handle() {
@@ -21033,7 +18088,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_get_string(nng_stream_listener *, const char *, const char **)
+     * int nng_stream_listener_get_string(nng_stream_listener *, const char *, char **)
      * }
      */
     public static MemorySegment nng_stream_listener_get_string$address() {
@@ -21042,7 +18097,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_get_string(nng_stream_listener *, const char *, const char **)
+     * int nng_stream_listener_get_string(nng_stream_listener *, const char *, char **)
      * }
      */
     public static int nng_stream_listener_get_string(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
@@ -21050,6 +18105,130 @@ public class nng_h extends nng_h$shared {
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("nng_stream_listener_get_string", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_stream_listener_get_ptr {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_listener_get_ptr");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_stream_listener_get_ptr(nng_stream_listener *, const char *, void **)
+     * }
+     */
+    public static FunctionDescriptor nng_stream_listener_get_ptr$descriptor() {
+        return nng_stream_listener_get_ptr.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_stream_listener_get_ptr(nng_stream_listener *, const char *, void **)
+     * }
+     */
+    public static MethodHandle nng_stream_listener_get_ptr$handle() {
+        return nng_stream_listener_get_ptr.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_stream_listener_get_ptr(nng_stream_listener *, const char *, void **)
+     * }
+     */
+    public static MemorySegment nng_stream_listener_get_ptr$address() {
+        return nng_stream_listener_get_ptr.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_stream_listener_get_ptr(nng_stream_listener *, const char *, void **)
+     * }
+     */
+    public static int nng_stream_listener_get_ptr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_stream_listener_get_ptr.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_stream_listener_get_ptr", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_stream_listener_get_addr {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_listener_get_addr");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_stream_listener_get_addr(nng_stream_listener *, const char *, nng_sockaddr *)
+     * }
+     */
+    public static FunctionDescriptor nng_stream_listener_get_addr$descriptor() {
+        return nng_stream_listener_get_addr.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_stream_listener_get_addr(nng_stream_listener *, const char *, nng_sockaddr *)
+     * }
+     */
+    public static MethodHandle nng_stream_listener_get_addr$handle() {
+        return nng_stream_listener_get_addr.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_stream_listener_get_addr(nng_stream_listener *, const char *, nng_sockaddr *)
+     * }
+     */
+    public static MemorySegment nng_stream_listener_get_addr$address() {
+        return nng_stream_listener_get_addr.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_stream_listener_get_addr(nng_stream_listener *, const char *, nng_sockaddr *)
+     * }
+     */
+    public static int nng_stream_listener_get_addr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_stream_listener_get_addr.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_stream_listener_get_addr", x0, x1, x2);
             }
             return (int)mh$.invokeExact(x0, x1, x2);
         } catch (Error | RuntimeException ex) {
@@ -21075,7 +18254,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_bool(nng_stream_listener *, const char *, _Bool)
+     * int nng_stream_listener_set_bool(nng_stream_listener *, const char *, _Bool)
      * }
      */
     public static FunctionDescriptor nng_stream_listener_set_bool$descriptor() {
@@ -21085,7 +18264,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_bool(nng_stream_listener *, const char *, _Bool)
+     * int nng_stream_listener_set_bool(nng_stream_listener *, const char *, _Bool)
      * }
      */
     public static MethodHandle nng_stream_listener_set_bool$handle() {
@@ -21095,7 +18274,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_bool(nng_stream_listener *, const char *, _Bool)
+     * int nng_stream_listener_set_bool(nng_stream_listener *, const char *, _Bool)
      * }
      */
     public static MemorySegment nng_stream_listener_set_bool$address() {
@@ -21104,7 +18283,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_bool(nng_stream_listener *, const char *, _Bool)
+     * int nng_stream_listener_set_bool(nng_stream_listener *, const char *, _Bool)
      * }
      */
     public static int nng_stream_listener_set_bool(MemorySegment x0, MemorySegment x1, boolean x2) {
@@ -21137,7 +18316,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_int(nng_stream_listener *, const char *, int)
+     * int nng_stream_listener_set_int(nng_stream_listener *, const char *, int)
      * }
      */
     public static FunctionDescriptor nng_stream_listener_set_int$descriptor() {
@@ -21147,7 +18326,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_int(nng_stream_listener *, const char *, int)
+     * int nng_stream_listener_set_int(nng_stream_listener *, const char *, int)
      * }
      */
     public static MethodHandle nng_stream_listener_set_int$handle() {
@@ -21157,7 +18336,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_int(nng_stream_listener *, const char *, int)
+     * int nng_stream_listener_set_int(nng_stream_listener *, const char *, int)
      * }
      */
     public static MemorySegment nng_stream_listener_set_int$address() {
@@ -21166,7 +18345,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_int(nng_stream_listener *, const char *, int)
+     * int nng_stream_listener_set_int(nng_stream_listener *, const char *, int)
      * }
      */
     public static int nng_stream_listener_set_int(MemorySegment x0, MemorySegment x1, int x2) {
@@ -21199,7 +18378,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_ms(nng_stream_listener *, const char *, nng_duration)
+     * int nng_stream_listener_set_ms(nng_stream_listener *, const char *, nng_duration)
      * }
      */
     public static FunctionDescriptor nng_stream_listener_set_ms$descriptor() {
@@ -21209,7 +18388,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_ms(nng_stream_listener *, const char *, nng_duration)
+     * int nng_stream_listener_set_ms(nng_stream_listener *, const char *, nng_duration)
      * }
      */
     public static MethodHandle nng_stream_listener_set_ms$handle() {
@@ -21219,7 +18398,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_ms(nng_stream_listener *, const char *, nng_duration)
+     * int nng_stream_listener_set_ms(nng_stream_listener *, const char *, nng_duration)
      * }
      */
     public static MemorySegment nng_stream_listener_set_ms$address() {
@@ -21228,7 +18407,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_ms(nng_stream_listener *, const char *, nng_duration)
+     * int nng_stream_listener_set_ms(nng_stream_listener *, const char *, nng_duration)
      * }
      */
     public static int nng_stream_listener_set_ms(MemorySegment x0, MemorySegment x1, int x2) {
@@ -21261,7 +18440,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_size(nng_stream_listener *, const char *, size_t)
+     * int nng_stream_listener_set_size(nng_stream_listener *, const char *, size_t)
      * }
      */
     public static FunctionDescriptor nng_stream_listener_set_size$descriptor() {
@@ -21271,7 +18450,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_size(nng_stream_listener *, const char *, size_t)
+     * int nng_stream_listener_set_size(nng_stream_listener *, const char *, size_t)
      * }
      */
     public static MethodHandle nng_stream_listener_set_size$handle() {
@@ -21281,7 +18460,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_size(nng_stream_listener *, const char *, size_t)
+     * int nng_stream_listener_set_size(nng_stream_listener *, const char *, size_t)
      * }
      */
     public static MemorySegment nng_stream_listener_set_size$address() {
@@ -21290,7 +18469,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_size(nng_stream_listener *, const char *, size_t)
+     * int nng_stream_listener_set_size(nng_stream_listener *, const char *, size_t)
      * }
      */
     public static int nng_stream_listener_set_size(MemorySegment x0, MemorySegment x1, long x2) {
@@ -21323,7 +18502,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_uint64(nng_stream_listener *, const char *, uint64_t)
+     * int nng_stream_listener_set_uint64(nng_stream_listener *, const char *, uint64_t)
      * }
      */
     public static FunctionDescriptor nng_stream_listener_set_uint64$descriptor() {
@@ -21333,7 +18512,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_uint64(nng_stream_listener *, const char *, uint64_t)
+     * int nng_stream_listener_set_uint64(nng_stream_listener *, const char *, uint64_t)
      * }
      */
     public static MethodHandle nng_stream_listener_set_uint64$handle() {
@@ -21343,7 +18522,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_uint64(nng_stream_listener *, const char *, uint64_t)
+     * int nng_stream_listener_set_uint64(nng_stream_listener *, const char *, uint64_t)
      * }
      */
     public static MemorySegment nng_stream_listener_set_uint64$address() {
@@ -21352,7 +18531,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_uint64(nng_stream_listener *, const char *, uint64_t)
+     * int nng_stream_listener_set_uint64(nng_stream_listener *, const char *, uint64_t)
      * }
      */
     public static int nng_stream_listener_set_uint64(MemorySegment x0, MemorySegment x1, long x2) {
@@ -21385,7 +18564,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_string(nng_stream_listener *, const char *, const char *)
+     * int nng_stream_listener_set_string(nng_stream_listener *, const char *, const char *)
      * }
      */
     public static FunctionDescriptor nng_stream_listener_set_string$descriptor() {
@@ -21395,7 +18574,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_string(nng_stream_listener *, const char *, const char *)
+     * int nng_stream_listener_set_string(nng_stream_listener *, const char *, const char *)
      * }
      */
     public static MethodHandle nng_stream_listener_set_string$handle() {
@@ -21405,7 +18584,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_string(nng_stream_listener *, const char *, const char *)
+     * int nng_stream_listener_set_string(nng_stream_listener *, const char *, const char *)
      * }
      */
     public static MemorySegment nng_stream_listener_set_string$address() {
@@ -21414,7 +18593,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_string(nng_stream_listener *, const char *, const char *)
+     * int nng_stream_listener_set_string(nng_stream_listener *, const char *, const char *)
      * }
      */
     public static int nng_stream_listener_set_string(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
@@ -21422,6 +18601,68 @@ public class nng_h extends nng_h$shared {
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("nng_stream_listener_set_string", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_stream_listener_set_ptr {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_listener_set_ptr");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_stream_listener_set_ptr(nng_stream_listener *, const char *, void *)
+     * }
+     */
+    public static FunctionDescriptor nng_stream_listener_set_ptr$descriptor() {
+        return nng_stream_listener_set_ptr.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_stream_listener_set_ptr(nng_stream_listener *, const char *, void *)
+     * }
+     */
+    public static MethodHandle nng_stream_listener_set_ptr$handle() {
+        return nng_stream_listener_set_ptr.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_stream_listener_set_ptr(nng_stream_listener *, const char *, void *)
+     * }
+     */
+    public static MemorySegment nng_stream_listener_set_ptr$address() {
+        return nng_stream_listener_set_ptr.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_stream_listener_set_ptr(nng_stream_listener *, const char *, void *)
+     * }
+     */
+    public static int nng_stream_listener_set_ptr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_stream_listener_set_ptr.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_stream_listener_set_ptr", x0, x1, x2);
             }
             return (int)mh$.invokeExact(x0, x1, x2);
         } catch (Error | RuntimeException ex) {
@@ -21447,7 +18688,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_addr(nng_stream_listener *, const char *, const nng_sockaddr *)
+     * int nng_stream_listener_set_addr(nng_stream_listener *, const char *, const nng_sockaddr *)
      * }
      */
     public static FunctionDescriptor nng_stream_listener_set_addr$descriptor() {
@@ -21457,7 +18698,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_addr(nng_stream_listener *, const char *, const nng_sockaddr *)
+     * int nng_stream_listener_set_addr(nng_stream_listener *, const char *, const nng_sockaddr *)
      * }
      */
     public static MethodHandle nng_stream_listener_set_addr$handle() {
@@ -21467,7 +18708,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_addr(nng_stream_listener *, const char *, const nng_sockaddr *)
+     * int nng_stream_listener_set_addr(nng_stream_listener *, const char *, const nng_sockaddr *)
      * }
      */
     public static MemorySegment nng_stream_listener_set_addr$address() {
@@ -21476,7 +18717,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_addr(nng_stream_listener *, const char *, const nng_sockaddr *)
+     * int nng_stream_listener_set_addr(nng_stream_listener *, const char *, const nng_sockaddr *)
      * }
      */
     public static int nng_stream_listener_set_addr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
@@ -21486,189 +18727,6 @@ public class nng_h extends nng_h$shared {
                 traceDowncall("nng_stream_listener_set_addr", x0, x1, x2);
             }
             return (int)mh$.invokeExact(x0, x1, x2);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_stream_listener_get_tls {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_listener_get_tls");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * nng_err nng_stream_listener_get_tls(nng_stream_listener *, nng_tls_config **)
-     * }
-     */
-    public static FunctionDescriptor nng_stream_listener_get_tls$descriptor() {
-        return nng_stream_listener_get_tls.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * nng_err nng_stream_listener_get_tls(nng_stream_listener *, nng_tls_config **)
-     * }
-     */
-    public static MethodHandle nng_stream_listener_get_tls$handle() {
-        return nng_stream_listener_get_tls.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * nng_err nng_stream_listener_get_tls(nng_stream_listener *, nng_tls_config **)
-     * }
-     */
-    public static MemorySegment nng_stream_listener_get_tls$address() {
-        return nng_stream_listener_get_tls.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * nng_err nng_stream_listener_get_tls(nng_stream_listener *, nng_tls_config **)
-     * }
-     */
-    public static int nng_stream_listener_get_tls(MemorySegment x0, MemorySegment x1) {
-        var mh$ = nng_stream_listener_get_tls.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_stream_listener_get_tls", x0, x1);
-            }
-            return (int)mh$.invokeExact(x0, x1);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_stream_listener_set_tls {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_listener_set_tls");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_tls(nng_stream_listener *, nng_tls_config *)
-     * }
-     */
-    public static FunctionDescriptor nng_stream_listener_set_tls$descriptor() {
-        return nng_stream_listener_set_tls.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_tls(nng_stream_listener *, nng_tls_config *)
-     * }
-     */
-    public static MethodHandle nng_stream_listener_set_tls$handle() {
-        return nng_stream_listener_set_tls.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_tls(nng_stream_listener *, nng_tls_config *)
-     * }
-     */
-    public static MemorySegment nng_stream_listener_set_tls$address() {
-        return nng_stream_listener_set_tls.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_tls(nng_stream_listener *, nng_tls_config *)
-     * }
-     */
-    public static int nng_stream_listener_set_tls(MemorySegment x0, MemorySegment x1) {
-        var mh$ = nng_stream_listener_set_tls.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_stream_listener_set_tls", x0, x1);
-            }
-            return (int)mh$.invokeExact(x0, x1);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_stream_listener_set_security_descriptor {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_listener_set_security_descriptor");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_security_descriptor(nng_stream_listener *, void *)
-     * }
-     */
-    public static FunctionDescriptor nng_stream_listener_set_security_descriptor$descriptor() {
-        return nng_stream_listener_set_security_descriptor.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_security_descriptor(nng_stream_listener *, void *)
-     * }
-     */
-    public static MethodHandle nng_stream_listener_set_security_descriptor$handle() {
-        return nng_stream_listener_set_security_descriptor.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_security_descriptor(nng_stream_listener *, void *)
-     * }
-     */
-    public static MemorySegment nng_stream_listener_set_security_descriptor$address() {
-        return nng_stream_listener_set_security_descriptor.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * nng_err nng_stream_listener_set_security_descriptor(nng_stream_listener *, void *)
-     * }
-     */
-    public static int nng_stream_listener_set_security_descriptor(MemorySegment x0, MemorySegment x1) {
-        var mh$ = nng_stream_listener_set_security_descriptor.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_stream_listener_set_security_descriptor", x0, x1);
-            }
-            return (int)mh$.invokeExact(x0, x1);
         } catch (Error | RuntimeException ex) {
            throw ex;
         } catch (Throwable ex$) {
@@ -21730,65 +18788,6 @@ public class nng_h extends nng_h$shared {
                 traceDowncall("nng_udp_open", udpp, sa);
             }
             return (int)mh$.invokeExact(udpp, sa);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_udp_stop {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_udp_stop");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * void nng_udp_stop(nng_udp *udp)
-     * }
-     */
-    public static FunctionDescriptor nng_udp_stop$descriptor() {
-        return nng_udp_stop.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * void nng_udp_stop(nng_udp *udp)
-     * }
-     */
-    public static MethodHandle nng_udp_stop$handle() {
-        return nng_udp_stop.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * void nng_udp_stop(nng_udp *udp)
-     * }
-     */
-    public static MemorySegment nng_udp_stop$address() {
-        return nng_udp_stop.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * void nng_udp_stop(nng_udp *udp)
-     * }
-     */
-    public static void nng_udp_stop(MemorySegment udp) {
-        var mh$ = nng_udp_stop.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_udp_stop", udp);
-            }
-            mh$.invokeExact(udp);
         } catch (Error | RuntimeException ex) {
            throw ex;
         } catch (Throwable ex$) {
@@ -22098,13 +19097,16 @@ public class nng_h extends nng_h$shared {
         }
     }
 
-    private static class nng_init {
+    private static class nng_msg_getopt {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
             nng_h.C_INT,
+            nng_h.C_POINTER,
+            nng_h.C_INT,
+            nng_h.C_POINTER,
             nng_h.C_POINTER
         );
 
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_init");
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_msg_getopt");
 
         public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
     }
@@ -22112,45 +19114,45 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_init(const nng_init_params *params)
+     * int nng_msg_getopt(nng_msg *, int, void *, size_t *)
      * }
      */
-    public static FunctionDescriptor nng_init$descriptor() {
-        return nng_init.DESC;
+    public static FunctionDescriptor nng_msg_getopt$descriptor() {
+        return nng_msg_getopt.DESC;
     }
 
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_init(const nng_init_params *params)
+     * int nng_msg_getopt(nng_msg *, int, void *, size_t *)
      * }
      */
-    public static MethodHandle nng_init$handle() {
-        return nng_init.HANDLE;
+    public static MethodHandle nng_msg_getopt$handle() {
+        return nng_msg_getopt.HANDLE;
     }
 
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_init(const nng_init_params *params)
+     * int nng_msg_getopt(nng_msg *, int, void *, size_t *)
      * }
      */
-    public static MemorySegment nng_init$address() {
-        return nng_init.ADDR;
+    public static MemorySegment nng_msg_getopt$address() {
+        return nng_msg_getopt.ADDR;
     }
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_init(const nng_init_params *params)
+     * int nng_msg_getopt(nng_msg *, int, void *, size_t *)
      * }
      */
-    public static int nng_init(MemorySegment params) {
-        var mh$ = nng_init.HANDLE;
+    public static int nng_msg_getopt(MemorySegment x0, int x1, MemorySegment x2, MemorySegment x3) {
+        var mh$ = nng_msg_getopt.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_init", params);
+                traceDowncall("nng_msg_getopt", x0, x1, x2, x3);
             }
-            return (int)mh$.invokeExact(params);
+            return (int)mh$.invokeExact(x0, x1, x2, x3);
         } catch (Error | RuntimeException ex) {
            throw ex;
         } catch (Throwable ex$) {
@@ -22158,10 +19160,16 @@ public class nng_h extends nng_h$shared {
         }
     }
 
-    private static class nng_fini {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(    );
+    private static class nng_getopt {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_socket_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
 
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_fini");
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_getopt");
 
         public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
     }
@@ -22169,43 +19177,4324 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * void nng_fini()
+     * int nng_getopt(nng_socket, const char *, void *, size_t *)
      * }
      */
-    public static FunctionDescriptor nng_fini$descriptor() {
-        return nng_fini.DESC;
+    public static FunctionDescriptor nng_getopt$descriptor() {
+        return nng_getopt.DESC;
     }
 
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * void nng_fini()
+     * int nng_getopt(nng_socket, const char *, void *, size_t *)
      * }
      */
-    public static MethodHandle nng_fini$handle() {
-        return nng_fini.HANDLE;
+    public static MethodHandle nng_getopt$handle() {
+        return nng_getopt.HANDLE;
     }
 
     /**
      * Address for:
      * {@snippet lang=c :
-     * void nng_fini()
+     * int nng_getopt(nng_socket, const char *, void *, size_t *)
      * }
      */
-    public static MemorySegment nng_fini$address() {
-        return nng_fini.ADDR;
+    public static MemorySegment nng_getopt$address() {
+        return nng_getopt.ADDR;
     }
 
     /**
      * {@snippet lang=c :
-     * void nng_fini()
+     * int nng_getopt(nng_socket, const char *, void *, size_t *)
      * }
      */
-    public static void nng_fini() {
-        var mh$ = nng_fini.HANDLE;
+    public static int nng_getopt(MemorySegment x0, MemorySegment x1, MemorySegment x2, MemorySegment x3) {
+        var mh$ = nng_getopt.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_fini");
+                traceDowncall("nng_getopt", x0, x1, x2, x3);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2, x3);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_getopt_bool {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_socket_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_getopt_bool");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_getopt_bool(nng_socket, const char *, _Bool *)
+     * }
+     */
+    public static FunctionDescriptor nng_getopt_bool$descriptor() {
+        return nng_getopt_bool.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_getopt_bool(nng_socket, const char *, _Bool *)
+     * }
+     */
+    public static MethodHandle nng_getopt_bool$handle() {
+        return nng_getopt_bool.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_getopt_bool(nng_socket, const char *, _Bool *)
+     * }
+     */
+    public static MemorySegment nng_getopt_bool$address() {
+        return nng_getopt_bool.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_getopt_bool(nng_socket, const char *, _Bool *)
+     * }
+     */
+    public static int nng_getopt_bool(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_getopt_bool.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_getopt_bool", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_getopt_int {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_socket_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_getopt_int");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_getopt_int(nng_socket, const char *, int *)
+     * }
+     */
+    public static FunctionDescriptor nng_getopt_int$descriptor() {
+        return nng_getopt_int.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_getopt_int(nng_socket, const char *, int *)
+     * }
+     */
+    public static MethodHandle nng_getopt_int$handle() {
+        return nng_getopt_int.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_getopt_int(nng_socket, const char *, int *)
+     * }
+     */
+    public static MemorySegment nng_getopt_int$address() {
+        return nng_getopt_int.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_getopt_int(nng_socket, const char *, int *)
+     * }
+     */
+    public static int nng_getopt_int(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_getopt_int.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_getopt_int", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_getopt_ms {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_socket_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_getopt_ms");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_getopt_ms(nng_socket, const char *, nng_duration *)
+     * }
+     */
+    public static FunctionDescriptor nng_getopt_ms$descriptor() {
+        return nng_getopt_ms.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_getopt_ms(nng_socket, const char *, nng_duration *)
+     * }
+     */
+    public static MethodHandle nng_getopt_ms$handle() {
+        return nng_getopt_ms.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_getopt_ms(nng_socket, const char *, nng_duration *)
+     * }
+     */
+    public static MemorySegment nng_getopt_ms$address() {
+        return nng_getopt_ms.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_getopt_ms(nng_socket, const char *, nng_duration *)
+     * }
+     */
+    public static int nng_getopt_ms(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_getopt_ms.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_getopt_ms", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_getopt_size {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_socket_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_getopt_size");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_getopt_size(nng_socket, const char *, size_t *)
+     * }
+     */
+    public static FunctionDescriptor nng_getopt_size$descriptor() {
+        return nng_getopt_size.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_getopt_size(nng_socket, const char *, size_t *)
+     * }
+     */
+    public static MethodHandle nng_getopt_size$handle() {
+        return nng_getopt_size.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_getopt_size(nng_socket, const char *, size_t *)
+     * }
+     */
+    public static MemorySegment nng_getopt_size$address() {
+        return nng_getopt_size.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_getopt_size(nng_socket, const char *, size_t *)
+     * }
+     */
+    public static int nng_getopt_size(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_getopt_size.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_getopt_size", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_getopt_uint64 {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_socket_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_getopt_uint64");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_getopt_uint64(nng_socket, const char *, uint64_t *)
+     * }
+     */
+    public static FunctionDescriptor nng_getopt_uint64$descriptor() {
+        return nng_getopt_uint64.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_getopt_uint64(nng_socket, const char *, uint64_t *)
+     * }
+     */
+    public static MethodHandle nng_getopt_uint64$handle() {
+        return nng_getopt_uint64.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_getopt_uint64(nng_socket, const char *, uint64_t *)
+     * }
+     */
+    public static MemorySegment nng_getopt_uint64$address() {
+        return nng_getopt_uint64.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_getopt_uint64(nng_socket, const char *, uint64_t *)
+     * }
+     */
+    public static int nng_getopt_uint64(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_getopt_uint64.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_getopt_uint64", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_getopt_ptr {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_socket_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_getopt_ptr");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_getopt_ptr(nng_socket, const char *, void **)
+     * }
+     */
+    public static FunctionDescriptor nng_getopt_ptr$descriptor() {
+        return nng_getopt_ptr.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_getopt_ptr(nng_socket, const char *, void **)
+     * }
+     */
+    public static MethodHandle nng_getopt_ptr$handle() {
+        return nng_getopt_ptr.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_getopt_ptr(nng_socket, const char *, void **)
+     * }
+     */
+    public static MemorySegment nng_getopt_ptr$address() {
+        return nng_getopt_ptr.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_getopt_ptr(nng_socket, const char *, void **)
+     * }
+     */
+    public static int nng_getopt_ptr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_getopt_ptr.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_getopt_ptr", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_getopt_string {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_socket_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_getopt_string");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_getopt_string(nng_socket, const char *, char **)
+     * }
+     */
+    public static FunctionDescriptor nng_getopt_string$descriptor() {
+        return nng_getopt_string.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_getopt_string(nng_socket, const char *, char **)
+     * }
+     */
+    public static MethodHandle nng_getopt_string$handle() {
+        return nng_getopt_string.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_getopt_string(nng_socket, const char *, char **)
+     * }
+     */
+    public static MemorySegment nng_getopt_string$address() {
+        return nng_getopt_string.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_getopt_string(nng_socket, const char *, char **)
+     * }
+     */
+    public static int nng_getopt_string(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_getopt_string.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_getopt_string", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_setopt {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_socket_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_LONG_LONG
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_setopt");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_setopt(nng_socket, const char *, const void *, size_t)
+     * }
+     */
+    public static FunctionDescriptor nng_setopt$descriptor() {
+        return nng_setopt.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_setopt(nng_socket, const char *, const void *, size_t)
+     * }
+     */
+    public static MethodHandle nng_setopt$handle() {
+        return nng_setopt.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_setopt(nng_socket, const char *, const void *, size_t)
+     * }
+     */
+    public static MemorySegment nng_setopt$address() {
+        return nng_setopt.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_setopt(nng_socket, const char *, const void *, size_t)
+     * }
+     */
+    public static int nng_setopt(MemorySegment x0, MemorySegment x1, MemorySegment x2, long x3) {
+        var mh$ = nng_setopt.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_setopt", x0, x1, x2, x3);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2, x3);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_setopt_bool {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_socket_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_BOOL
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_setopt_bool");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_setopt_bool(nng_socket, const char *, _Bool)
+     * }
+     */
+    public static FunctionDescriptor nng_setopt_bool$descriptor() {
+        return nng_setopt_bool.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_setopt_bool(nng_socket, const char *, _Bool)
+     * }
+     */
+    public static MethodHandle nng_setopt_bool$handle() {
+        return nng_setopt_bool.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_setopt_bool(nng_socket, const char *, _Bool)
+     * }
+     */
+    public static MemorySegment nng_setopt_bool$address() {
+        return nng_setopt_bool.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_setopt_bool(nng_socket, const char *, _Bool)
+     * }
+     */
+    public static int nng_setopt_bool(MemorySegment x0, MemorySegment x1, boolean x2) {
+        var mh$ = nng_setopt_bool.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_setopt_bool", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_setopt_int {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_socket_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_INT
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_setopt_int");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_setopt_int(nng_socket, const char *, int)
+     * }
+     */
+    public static FunctionDescriptor nng_setopt_int$descriptor() {
+        return nng_setopt_int.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_setopt_int(nng_socket, const char *, int)
+     * }
+     */
+    public static MethodHandle nng_setopt_int$handle() {
+        return nng_setopt_int.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_setopt_int(nng_socket, const char *, int)
+     * }
+     */
+    public static MemorySegment nng_setopt_int$address() {
+        return nng_setopt_int.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_setopt_int(nng_socket, const char *, int)
+     * }
+     */
+    public static int nng_setopt_int(MemorySegment x0, MemorySegment x1, int x2) {
+        var mh$ = nng_setopt_int.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_setopt_int", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_setopt_ms {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_socket_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_INT
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_setopt_ms");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_setopt_ms(nng_socket, const char *, nng_duration)
+     * }
+     */
+    public static FunctionDescriptor nng_setopt_ms$descriptor() {
+        return nng_setopt_ms.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_setopt_ms(nng_socket, const char *, nng_duration)
+     * }
+     */
+    public static MethodHandle nng_setopt_ms$handle() {
+        return nng_setopt_ms.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_setopt_ms(nng_socket, const char *, nng_duration)
+     * }
+     */
+    public static MemorySegment nng_setopt_ms$address() {
+        return nng_setopt_ms.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_setopt_ms(nng_socket, const char *, nng_duration)
+     * }
+     */
+    public static int nng_setopt_ms(MemorySegment x0, MemorySegment x1, int x2) {
+        var mh$ = nng_setopt_ms.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_setopt_ms", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_setopt_size {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_socket_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_LONG_LONG
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_setopt_size");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_setopt_size(nng_socket, const char *, size_t)
+     * }
+     */
+    public static FunctionDescriptor nng_setopt_size$descriptor() {
+        return nng_setopt_size.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_setopt_size(nng_socket, const char *, size_t)
+     * }
+     */
+    public static MethodHandle nng_setopt_size$handle() {
+        return nng_setopt_size.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_setopt_size(nng_socket, const char *, size_t)
+     * }
+     */
+    public static MemorySegment nng_setopt_size$address() {
+        return nng_setopt_size.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_setopt_size(nng_socket, const char *, size_t)
+     * }
+     */
+    public static int nng_setopt_size(MemorySegment x0, MemorySegment x1, long x2) {
+        var mh$ = nng_setopt_size.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_setopt_size", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_setopt_uint64 {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_socket_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_LONG_LONG
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_setopt_uint64");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_setopt_uint64(nng_socket, const char *, uint64_t)
+     * }
+     */
+    public static FunctionDescriptor nng_setopt_uint64$descriptor() {
+        return nng_setopt_uint64.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_setopt_uint64(nng_socket, const char *, uint64_t)
+     * }
+     */
+    public static MethodHandle nng_setopt_uint64$handle() {
+        return nng_setopt_uint64.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_setopt_uint64(nng_socket, const char *, uint64_t)
+     * }
+     */
+    public static MemorySegment nng_setopt_uint64$address() {
+        return nng_setopt_uint64.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_setopt_uint64(nng_socket, const char *, uint64_t)
+     * }
+     */
+    public static int nng_setopt_uint64(MemorySegment x0, MemorySegment x1, long x2) {
+        var mh$ = nng_setopt_uint64.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_setopt_uint64", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_setopt_string {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_socket_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_setopt_string");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_setopt_string(nng_socket, const char *, const char *)
+     * }
+     */
+    public static FunctionDescriptor nng_setopt_string$descriptor() {
+        return nng_setopt_string.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_setopt_string(nng_socket, const char *, const char *)
+     * }
+     */
+    public static MethodHandle nng_setopt_string$handle() {
+        return nng_setopt_string.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_setopt_string(nng_socket, const char *, const char *)
+     * }
+     */
+    public static MemorySegment nng_setopt_string$address() {
+        return nng_setopt_string.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_setopt_string(nng_socket, const char *, const char *)
+     * }
+     */
+    public static int nng_setopt_string(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_setopt_string.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_setopt_string", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_setopt_ptr {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_socket_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_setopt_ptr");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_setopt_ptr(nng_socket, const char *, void *)
+     * }
+     */
+    public static FunctionDescriptor nng_setopt_ptr$descriptor() {
+        return nng_setopt_ptr.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_setopt_ptr(nng_socket, const char *, void *)
+     * }
+     */
+    public static MethodHandle nng_setopt_ptr$handle() {
+        return nng_setopt_ptr.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_setopt_ptr(nng_socket, const char *, void *)
+     * }
+     */
+    public static MemorySegment nng_setopt_ptr$address() {
+        return nng_setopt_ptr.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_setopt_ptr(nng_socket, const char *, void *)
+     * }
+     */
+    public static int nng_setopt_ptr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_setopt_ptr.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_setopt_ptr", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_ctx_getopt {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_ctx_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_ctx_getopt");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_ctx_getopt(nng_ctx, const char *, void *, size_t *)
+     * }
+     */
+    public static FunctionDescriptor nng_ctx_getopt$descriptor() {
+        return nng_ctx_getopt.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_ctx_getopt(nng_ctx, const char *, void *, size_t *)
+     * }
+     */
+    public static MethodHandle nng_ctx_getopt$handle() {
+        return nng_ctx_getopt.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_ctx_getopt(nng_ctx, const char *, void *, size_t *)
+     * }
+     */
+    public static MemorySegment nng_ctx_getopt$address() {
+        return nng_ctx_getopt.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_ctx_getopt(nng_ctx, const char *, void *, size_t *)
+     * }
+     */
+    public static int nng_ctx_getopt(MemorySegment x0, MemorySegment x1, MemorySegment x2, MemorySegment x3) {
+        var mh$ = nng_ctx_getopt.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_ctx_getopt", x0, x1, x2, x3);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2, x3);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_ctx_getopt_bool {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_ctx_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_ctx_getopt_bool");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_ctx_getopt_bool(nng_ctx, const char *, _Bool *)
+     * }
+     */
+    public static FunctionDescriptor nng_ctx_getopt_bool$descriptor() {
+        return nng_ctx_getopt_bool.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_ctx_getopt_bool(nng_ctx, const char *, _Bool *)
+     * }
+     */
+    public static MethodHandle nng_ctx_getopt_bool$handle() {
+        return nng_ctx_getopt_bool.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_ctx_getopt_bool(nng_ctx, const char *, _Bool *)
+     * }
+     */
+    public static MemorySegment nng_ctx_getopt_bool$address() {
+        return nng_ctx_getopt_bool.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_ctx_getopt_bool(nng_ctx, const char *, _Bool *)
+     * }
+     */
+    public static int nng_ctx_getopt_bool(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_ctx_getopt_bool.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_ctx_getopt_bool", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_ctx_getopt_int {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_ctx_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_ctx_getopt_int");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_ctx_getopt_int(nng_ctx, const char *, int *)
+     * }
+     */
+    public static FunctionDescriptor nng_ctx_getopt_int$descriptor() {
+        return nng_ctx_getopt_int.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_ctx_getopt_int(nng_ctx, const char *, int *)
+     * }
+     */
+    public static MethodHandle nng_ctx_getopt_int$handle() {
+        return nng_ctx_getopt_int.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_ctx_getopt_int(nng_ctx, const char *, int *)
+     * }
+     */
+    public static MemorySegment nng_ctx_getopt_int$address() {
+        return nng_ctx_getopt_int.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_ctx_getopt_int(nng_ctx, const char *, int *)
+     * }
+     */
+    public static int nng_ctx_getopt_int(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_ctx_getopt_int.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_ctx_getopt_int", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_ctx_getopt_ms {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_ctx_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_ctx_getopt_ms");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_ctx_getopt_ms(nng_ctx, const char *, nng_duration *)
+     * }
+     */
+    public static FunctionDescriptor nng_ctx_getopt_ms$descriptor() {
+        return nng_ctx_getopt_ms.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_ctx_getopt_ms(nng_ctx, const char *, nng_duration *)
+     * }
+     */
+    public static MethodHandle nng_ctx_getopt_ms$handle() {
+        return nng_ctx_getopt_ms.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_ctx_getopt_ms(nng_ctx, const char *, nng_duration *)
+     * }
+     */
+    public static MemorySegment nng_ctx_getopt_ms$address() {
+        return nng_ctx_getopt_ms.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_ctx_getopt_ms(nng_ctx, const char *, nng_duration *)
+     * }
+     */
+    public static int nng_ctx_getopt_ms(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_ctx_getopt_ms.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_ctx_getopt_ms", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_ctx_getopt_size {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_ctx_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_ctx_getopt_size");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_ctx_getopt_size(nng_ctx, const char *, size_t *)
+     * }
+     */
+    public static FunctionDescriptor nng_ctx_getopt_size$descriptor() {
+        return nng_ctx_getopt_size.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_ctx_getopt_size(nng_ctx, const char *, size_t *)
+     * }
+     */
+    public static MethodHandle nng_ctx_getopt_size$handle() {
+        return nng_ctx_getopt_size.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_ctx_getopt_size(nng_ctx, const char *, size_t *)
+     * }
+     */
+    public static MemorySegment nng_ctx_getopt_size$address() {
+        return nng_ctx_getopt_size.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_ctx_getopt_size(nng_ctx, const char *, size_t *)
+     * }
+     */
+    public static int nng_ctx_getopt_size(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_ctx_getopt_size.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_ctx_getopt_size", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_ctx_setopt {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_ctx_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_LONG_LONG
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_ctx_setopt");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_ctx_setopt(nng_ctx, const char *, const void *, size_t)
+     * }
+     */
+    public static FunctionDescriptor nng_ctx_setopt$descriptor() {
+        return nng_ctx_setopt.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_ctx_setopt(nng_ctx, const char *, const void *, size_t)
+     * }
+     */
+    public static MethodHandle nng_ctx_setopt$handle() {
+        return nng_ctx_setopt.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_ctx_setopt(nng_ctx, const char *, const void *, size_t)
+     * }
+     */
+    public static MemorySegment nng_ctx_setopt$address() {
+        return nng_ctx_setopt.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_ctx_setopt(nng_ctx, const char *, const void *, size_t)
+     * }
+     */
+    public static int nng_ctx_setopt(MemorySegment x0, MemorySegment x1, MemorySegment x2, long x3) {
+        var mh$ = nng_ctx_setopt.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_ctx_setopt", x0, x1, x2, x3);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2, x3);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_ctx_setopt_bool {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_ctx_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_BOOL
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_ctx_setopt_bool");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_ctx_setopt_bool(nng_ctx, const char *, _Bool)
+     * }
+     */
+    public static FunctionDescriptor nng_ctx_setopt_bool$descriptor() {
+        return nng_ctx_setopt_bool.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_ctx_setopt_bool(nng_ctx, const char *, _Bool)
+     * }
+     */
+    public static MethodHandle nng_ctx_setopt_bool$handle() {
+        return nng_ctx_setopt_bool.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_ctx_setopt_bool(nng_ctx, const char *, _Bool)
+     * }
+     */
+    public static MemorySegment nng_ctx_setopt_bool$address() {
+        return nng_ctx_setopt_bool.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_ctx_setopt_bool(nng_ctx, const char *, _Bool)
+     * }
+     */
+    public static int nng_ctx_setopt_bool(MemorySegment x0, MemorySegment x1, boolean x2) {
+        var mh$ = nng_ctx_setopt_bool.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_ctx_setopt_bool", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_ctx_setopt_int {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_ctx_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_INT
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_ctx_setopt_int");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_ctx_setopt_int(nng_ctx, const char *, int)
+     * }
+     */
+    public static FunctionDescriptor nng_ctx_setopt_int$descriptor() {
+        return nng_ctx_setopt_int.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_ctx_setopt_int(nng_ctx, const char *, int)
+     * }
+     */
+    public static MethodHandle nng_ctx_setopt_int$handle() {
+        return nng_ctx_setopt_int.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_ctx_setopt_int(nng_ctx, const char *, int)
+     * }
+     */
+    public static MemorySegment nng_ctx_setopt_int$address() {
+        return nng_ctx_setopt_int.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_ctx_setopt_int(nng_ctx, const char *, int)
+     * }
+     */
+    public static int nng_ctx_setopt_int(MemorySegment x0, MemorySegment x1, int x2) {
+        var mh$ = nng_ctx_setopt_int.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_ctx_setopt_int", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_ctx_setopt_ms {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_ctx_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_INT
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_ctx_setopt_ms");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_ctx_setopt_ms(nng_ctx, const char *, nng_duration)
+     * }
+     */
+    public static FunctionDescriptor nng_ctx_setopt_ms$descriptor() {
+        return nng_ctx_setopt_ms.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_ctx_setopt_ms(nng_ctx, const char *, nng_duration)
+     * }
+     */
+    public static MethodHandle nng_ctx_setopt_ms$handle() {
+        return nng_ctx_setopt_ms.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_ctx_setopt_ms(nng_ctx, const char *, nng_duration)
+     * }
+     */
+    public static MemorySegment nng_ctx_setopt_ms$address() {
+        return nng_ctx_setopt_ms.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_ctx_setopt_ms(nng_ctx, const char *, nng_duration)
+     * }
+     */
+    public static int nng_ctx_setopt_ms(MemorySegment x0, MemorySegment x1, int x2) {
+        var mh$ = nng_ctx_setopt_ms.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_ctx_setopt_ms", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_ctx_setopt_size {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_ctx_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_LONG_LONG
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_ctx_setopt_size");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_ctx_setopt_size(nng_ctx, const char *, size_t)
+     * }
+     */
+    public static FunctionDescriptor nng_ctx_setopt_size$descriptor() {
+        return nng_ctx_setopt_size.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_ctx_setopt_size(nng_ctx, const char *, size_t)
+     * }
+     */
+    public static MethodHandle nng_ctx_setopt_size$handle() {
+        return nng_ctx_setopt_size.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_ctx_setopt_size(nng_ctx, const char *, size_t)
+     * }
+     */
+    public static MemorySegment nng_ctx_setopt_size$address() {
+        return nng_ctx_setopt_size.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_ctx_setopt_size(nng_ctx, const char *, size_t)
+     * }
+     */
+    public static int nng_ctx_setopt_size(MemorySegment x0, MemorySegment x1, long x2) {
+        var mh$ = nng_ctx_setopt_size.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_ctx_setopt_size", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_dialer_getopt {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_dialer_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_dialer_getopt");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_dialer_getopt(nng_dialer, const char *, void *, size_t *)
+     * }
+     */
+    public static FunctionDescriptor nng_dialer_getopt$descriptor() {
+        return nng_dialer_getopt.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_dialer_getopt(nng_dialer, const char *, void *, size_t *)
+     * }
+     */
+    public static MethodHandle nng_dialer_getopt$handle() {
+        return nng_dialer_getopt.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_dialer_getopt(nng_dialer, const char *, void *, size_t *)
+     * }
+     */
+    public static MemorySegment nng_dialer_getopt$address() {
+        return nng_dialer_getopt.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_dialer_getopt(nng_dialer, const char *, void *, size_t *)
+     * }
+     */
+    public static int nng_dialer_getopt(MemorySegment x0, MemorySegment x1, MemorySegment x2, MemorySegment x3) {
+        var mh$ = nng_dialer_getopt.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_dialer_getopt", x0, x1, x2, x3);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2, x3);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_dialer_getopt_bool {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_dialer_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_dialer_getopt_bool");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_bool(nng_dialer, const char *, _Bool *)
+     * }
+     */
+    public static FunctionDescriptor nng_dialer_getopt_bool$descriptor() {
+        return nng_dialer_getopt_bool.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_bool(nng_dialer, const char *, _Bool *)
+     * }
+     */
+    public static MethodHandle nng_dialer_getopt_bool$handle() {
+        return nng_dialer_getopt_bool.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_bool(nng_dialer, const char *, _Bool *)
+     * }
+     */
+    public static MemorySegment nng_dialer_getopt_bool$address() {
+        return nng_dialer_getopt_bool.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_bool(nng_dialer, const char *, _Bool *)
+     * }
+     */
+    public static int nng_dialer_getopt_bool(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_dialer_getopt_bool.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_dialer_getopt_bool", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_dialer_getopt_int {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_dialer_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_dialer_getopt_int");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_int(nng_dialer, const char *, int *)
+     * }
+     */
+    public static FunctionDescriptor nng_dialer_getopt_int$descriptor() {
+        return nng_dialer_getopt_int.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_int(nng_dialer, const char *, int *)
+     * }
+     */
+    public static MethodHandle nng_dialer_getopt_int$handle() {
+        return nng_dialer_getopt_int.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_int(nng_dialer, const char *, int *)
+     * }
+     */
+    public static MemorySegment nng_dialer_getopt_int$address() {
+        return nng_dialer_getopt_int.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_int(nng_dialer, const char *, int *)
+     * }
+     */
+    public static int nng_dialer_getopt_int(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_dialer_getopt_int.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_dialer_getopt_int", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_dialer_getopt_ms {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_dialer_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_dialer_getopt_ms");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_ms(nng_dialer, const char *, nng_duration *)
+     * }
+     */
+    public static FunctionDescriptor nng_dialer_getopt_ms$descriptor() {
+        return nng_dialer_getopt_ms.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_ms(nng_dialer, const char *, nng_duration *)
+     * }
+     */
+    public static MethodHandle nng_dialer_getopt_ms$handle() {
+        return nng_dialer_getopt_ms.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_ms(nng_dialer, const char *, nng_duration *)
+     * }
+     */
+    public static MemorySegment nng_dialer_getopt_ms$address() {
+        return nng_dialer_getopt_ms.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_ms(nng_dialer, const char *, nng_duration *)
+     * }
+     */
+    public static int nng_dialer_getopt_ms(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_dialer_getopt_ms.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_dialer_getopt_ms", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_dialer_getopt_size {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_dialer_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_dialer_getopt_size");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_size(nng_dialer, const char *, size_t *)
+     * }
+     */
+    public static FunctionDescriptor nng_dialer_getopt_size$descriptor() {
+        return nng_dialer_getopt_size.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_size(nng_dialer, const char *, size_t *)
+     * }
+     */
+    public static MethodHandle nng_dialer_getopt_size$handle() {
+        return nng_dialer_getopt_size.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_size(nng_dialer, const char *, size_t *)
+     * }
+     */
+    public static MemorySegment nng_dialer_getopt_size$address() {
+        return nng_dialer_getopt_size.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_size(nng_dialer, const char *, size_t *)
+     * }
+     */
+    public static int nng_dialer_getopt_size(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_dialer_getopt_size.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_dialer_getopt_size", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_dialer_getopt_sockaddr {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_dialer_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_dialer_getopt_sockaddr");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_sockaddr(nng_dialer, const char *, nng_sockaddr *)
+     * }
+     */
+    public static FunctionDescriptor nng_dialer_getopt_sockaddr$descriptor() {
+        return nng_dialer_getopt_sockaddr.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_sockaddr(nng_dialer, const char *, nng_sockaddr *)
+     * }
+     */
+    public static MethodHandle nng_dialer_getopt_sockaddr$handle() {
+        return nng_dialer_getopt_sockaddr.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_sockaddr(nng_dialer, const char *, nng_sockaddr *)
+     * }
+     */
+    public static MemorySegment nng_dialer_getopt_sockaddr$address() {
+        return nng_dialer_getopt_sockaddr.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_sockaddr(nng_dialer, const char *, nng_sockaddr *)
+     * }
+     */
+    public static int nng_dialer_getopt_sockaddr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_dialer_getopt_sockaddr.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_dialer_getopt_sockaddr", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_dialer_getopt_uint64 {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_dialer_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_dialer_getopt_uint64");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_uint64(nng_dialer, const char *, uint64_t *)
+     * }
+     */
+    public static FunctionDescriptor nng_dialer_getopt_uint64$descriptor() {
+        return nng_dialer_getopt_uint64.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_uint64(nng_dialer, const char *, uint64_t *)
+     * }
+     */
+    public static MethodHandle nng_dialer_getopt_uint64$handle() {
+        return nng_dialer_getopt_uint64.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_uint64(nng_dialer, const char *, uint64_t *)
+     * }
+     */
+    public static MemorySegment nng_dialer_getopt_uint64$address() {
+        return nng_dialer_getopt_uint64.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_uint64(nng_dialer, const char *, uint64_t *)
+     * }
+     */
+    public static int nng_dialer_getopt_uint64(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_dialer_getopt_uint64.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_dialer_getopt_uint64", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_dialer_getopt_ptr {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_dialer_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_dialer_getopt_ptr");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_ptr(nng_dialer, const char *, void **)
+     * }
+     */
+    public static FunctionDescriptor nng_dialer_getopt_ptr$descriptor() {
+        return nng_dialer_getopt_ptr.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_ptr(nng_dialer, const char *, void **)
+     * }
+     */
+    public static MethodHandle nng_dialer_getopt_ptr$handle() {
+        return nng_dialer_getopt_ptr.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_ptr(nng_dialer, const char *, void **)
+     * }
+     */
+    public static MemorySegment nng_dialer_getopt_ptr$address() {
+        return nng_dialer_getopt_ptr.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_ptr(nng_dialer, const char *, void **)
+     * }
+     */
+    public static int nng_dialer_getopt_ptr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_dialer_getopt_ptr.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_dialer_getopt_ptr", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_dialer_getopt_string {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_dialer_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_dialer_getopt_string");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_string(nng_dialer, const char *, char **)
+     * }
+     */
+    public static FunctionDescriptor nng_dialer_getopt_string$descriptor() {
+        return nng_dialer_getopt_string.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_string(nng_dialer, const char *, char **)
+     * }
+     */
+    public static MethodHandle nng_dialer_getopt_string$handle() {
+        return nng_dialer_getopt_string.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_string(nng_dialer, const char *, char **)
+     * }
+     */
+    public static MemorySegment nng_dialer_getopt_string$address() {
+        return nng_dialer_getopt_string.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_dialer_getopt_string(nng_dialer, const char *, char **)
+     * }
+     */
+    public static int nng_dialer_getopt_string(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_dialer_getopt_string.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_dialer_getopt_string", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_dialer_setopt {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_dialer_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_LONG_LONG
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_dialer_setopt");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_dialer_setopt(nng_dialer, const char *, const void *, size_t)
+     * }
+     */
+    public static FunctionDescriptor nng_dialer_setopt$descriptor() {
+        return nng_dialer_setopt.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_dialer_setopt(nng_dialer, const char *, const void *, size_t)
+     * }
+     */
+    public static MethodHandle nng_dialer_setopt$handle() {
+        return nng_dialer_setopt.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_dialer_setopt(nng_dialer, const char *, const void *, size_t)
+     * }
+     */
+    public static MemorySegment nng_dialer_setopt$address() {
+        return nng_dialer_setopt.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_dialer_setopt(nng_dialer, const char *, const void *, size_t)
+     * }
+     */
+    public static int nng_dialer_setopt(MemorySegment x0, MemorySegment x1, MemorySegment x2, long x3) {
+        var mh$ = nng_dialer_setopt.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_dialer_setopt", x0, x1, x2, x3);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2, x3);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_dialer_setopt_bool {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_dialer_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_BOOL
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_dialer_setopt_bool");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_dialer_setopt_bool(nng_dialer, const char *, _Bool)
+     * }
+     */
+    public static FunctionDescriptor nng_dialer_setopt_bool$descriptor() {
+        return nng_dialer_setopt_bool.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_dialer_setopt_bool(nng_dialer, const char *, _Bool)
+     * }
+     */
+    public static MethodHandle nng_dialer_setopt_bool$handle() {
+        return nng_dialer_setopt_bool.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_dialer_setopt_bool(nng_dialer, const char *, _Bool)
+     * }
+     */
+    public static MemorySegment nng_dialer_setopt_bool$address() {
+        return nng_dialer_setopt_bool.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_dialer_setopt_bool(nng_dialer, const char *, _Bool)
+     * }
+     */
+    public static int nng_dialer_setopt_bool(MemorySegment x0, MemorySegment x1, boolean x2) {
+        var mh$ = nng_dialer_setopt_bool.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_dialer_setopt_bool", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_dialer_setopt_int {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_dialer_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_INT
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_dialer_setopt_int");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_dialer_setopt_int(nng_dialer, const char *, int)
+     * }
+     */
+    public static FunctionDescriptor nng_dialer_setopt_int$descriptor() {
+        return nng_dialer_setopt_int.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_dialer_setopt_int(nng_dialer, const char *, int)
+     * }
+     */
+    public static MethodHandle nng_dialer_setopt_int$handle() {
+        return nng_dialer_setopt_int.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_dialer_setopt_int(nng_dialer, const char *, int)
+     * }
+     */
+    public static MemorySegment nng_dialer_setopt_int$address() {
+        return nng_dialer_setopt_int.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_dialer_setopt_int(nng_dialer, const char *, int)
+     * }
+     */
+    public static int nng_dialer_setopt_int(MemorySegment x0, MemorySegment x1, int x2) {
+        var mh$ = nng_dialer_setopt_int.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_dialer_setopt_int", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_dialer_setopt_ms {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_dialer_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_INT
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_dialer_setopt_ms");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_dialer_setopt_ms(nng_dialer, const char *, nng_duration)
+     * }
+     */
+    public static FunctionDescriptor nng_dialer_setopt_ms$descriptor() {
+        return nng_dialer_setopt_ms.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_dialer_setopt_ms(nng_dialer, const char *, nng_duration)
+     * }
+     */
+    public static MethodHandle nng_dialer_setopt_ms$handle() {
+        return nng_dialer_setopt_ms.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_dialer_setopt_ms(nng_dialer, const char *, nng_duration)
+     * }
+     */
+    public static MemorySegment nng_dialer_setopt_ms$address() {
+        return nng_dialer_setopt_ms.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_dialer_setopt_ms(nng_dialer, const char *, nng_duration)
+     * }
+     */
+    public static int nng_dialer_setopt_ms(MemorySegment x0, MemorySegment x1, int x2) {
+        var mh$ = nng_dialer_setopt_ms.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_dialer_setopt_ms", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_dialer_setopt_size {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_dialer_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_LONG_LONG
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_dialer_setopt_size");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_dialer_setopt_size(nng_dialer, const char *, size_t)
+     * }
+     */
+    public static FunctionDescriptor nng_dialer_setopt_size$descriptor() {
+        return nng_dialer_setopt_size.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_dialer_setopt_size(nng_dialer, const char *, size_t)
+     * }
+     */
+    public static MethodHandle nng_dialer_setopt_size$handle() {
+        return nng_dialer_setopt_size.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_dialer_setopt_size(nng_dialer, const char *, size_t)
+     * }
+     */
+    public static MemorySegment nng_dialer_setopt_size$address() {
+        return nng_dialer_setopt_size.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_dialer_setopt_size(nng_dialer, const char *, size_t)
+     * }
+     */
+    public static int nng_dialer_setopt_size(MemorySegment x0, MemorySegment x1, long x2) {
+        var mh$ = nng_dialer_setopt_size.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_dialer_setopt_size", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_dialer_setopt_uint64 {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_dialer_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_LONG_LONG
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_dialer_setopt_uint64");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_dialer_setopt_uint64(nng_dialer, const char *, uint64_t)
+     * }
+     */
+    public static FunctionDescriptor nng_dialer_setopt_uint64$descriptor() {
+        return nng_dialer_setopt_uint64.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_dialer_setopt_uint64(nng_dialer, const char *, uint64_t)
+     * }
+     */
+    public static MethodHandle nng_dialer_setopt_uint64$handle() {
+        return nng_dialer_setopt_uint64.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_dialer_setopt_uint64(nng_dialer, const char *, uint64_t)
+     * }
+     */
+    public static MemorySegment nng_dialer_setopt_uint64$address() {
+        return nng_dialer_setopt_uint64.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_dialer_setopt_uint64(nng_dialer, const char *, uint64_t)
+     * }
+     */
+    public static int nng_dialer_setopt_uint64(MemorySegment x0, MemorySegment x1, long x2) {
+        var mh$ = nng_dialer_setopt_uint64.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_dialer_setopt_uint64", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_dialer_setopt_ptr {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_dialer_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_dialer_setopt_ptr");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_dialer_setopt_ptr(nng_dialer, const char *, void *)
+     * }
+     */
+    public static FunctionDescriptor nng_dialer_setopt_ptr$descriptor() {
+        return nng_dialer_setopt_ptr.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_dialer_setopt_ptr(nng_dialer, const char *, void *)
+     * }
+     */
+    public static MethodHandle nng_dialer_setopt_ptr$handle() {
+        return nng_dialer_setopt_ptr.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_dialer_setopt_ptr(nng_dialer, const char *, void *)
+     * }
+     */
+    public static MemorySegment nng_dialer_setopt_ptr$address() {
+        return nng_dialer_setopt_ptr.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_dialer_setopt_ptr(nng_dialer, const char *, void *)
+     * }
+     */
+    public static int nng_dialer_setopt_ptr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_dialer_setopt_ptr.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_dialer_setopt_ptr", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_dialer_setopt_string {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_dialer_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_dialer_setopt_string");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_dialer_setopt_string(nng_dialer, const char *, const char *)
+     * }
+     */
+    public static FunctionDescriptor nng_dialer_setopt_string$descriptor() {
+        return nng_dialer_setopt_string.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_dialer_setopt_string(nng_dialer, const char *, const char *)
+     * }
+     */
+    public static MethodHandle nng_dialer_setopt_string$handle() {
+        return nng_dialer_setopt_string.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_dialer_setopt_string(nng_dialer, const char *, const char *)
+     * }
+     */
+    public static MemorySegment nng_dialer_setopt_string$address() {
+        return nng_dialer_setopt_string.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_dialer_setopt_string(nng_dialer, const char *, const char *)
+     * }
+     */
+    public static int nng_dialer_setopt_string(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_dialer_setopt_string.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_dialer_setopt_string", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_listener_getopt {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_listener_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_listener_getopt");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_listener_getopt(nng_listener, const char *, void *, size_t *)
+     * }
+     */
+    public static FunctionDescriptor nng_listener_getopt$descriptor() {
+        return nng_listener_getopt.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_listener_getopt(nng_listener, const char *, void *, size_t *)
+     * }
+     */
+    public static MethodHandle nng_listener_getopt$handle() {
+        return nng_listener_getopt.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_listener_getopt(nng_listener, const char *, void *, size_t *)
+     * }
+     */
+    public static MemorySegment nng_listener_getopt$address() {
+        return nng_listener_getopt.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_listener_getopt(nng_listener, const char *, void *, size_t *)
+     * }
+     */
+    public static int nng_listener_getopt(MemorySegment x0, MemorySegment x1, MemorySegment x2, MemorySegment x3) {
+        var mh$ = nng_listener_getopt.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_listener_getopt", x0, x1, x2, x3);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2, x3);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_listener_getopt_bool {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_listener_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_listener_getopt_bool");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_listener_getopt_bool(nng_listener, const char *, _Bool *)
+     * }
+     */
+    public static FunctionDescriptor nng_listener_getopt_bool$descriptor() {
+        return nng_listener_getopt_bool.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_listener_getopt_bool(nng_listener, const char *, _Bool *)
+     * }
+     */
+    public static MethodHandle nng_listener_getopt_bool$handle() {
+        return nng_listener_getopt_bool.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_listener_getopt_bool(nng_listener, const char *, _Bool *)
+     * }
+     */
+    public static MemorySegment nng_listener_getopt_bool$address() {
+        return nng_listener_getopt_bool.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_listener_getopt_bool(nng_listener, const char *, _Bool *)
+     * }
+     */
+    public static int nng_listener_getopt_bool(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_listener_getopt_bool.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_listener_getopt_bool", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_listener_getopt_int {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_listener_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_listener_getopt_int");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_listener_getopt_int(nng_listener, const char *, int *)
+     * }
+     */
+    public static FunctionDescriptor nng_listener_getopt_int$descriptor() {
+        return nng_listener_getopt_int.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_listener_getopt_int(nng_listener, const char *, int *)
+     * }
+     */
+    public static MethodHandle nng_listener_getopt_int$handle() {
+        return nng_listener_getopt_int.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_listener_getopt_int(nng_listener, const char *, int *)
+     * }
+     */
+    public static MemorySegment nng_listener_getopt_int$address() {
+        return nng_listener_getopt_int.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_listener_getopt_int(nng_listener, const char *, int *)
+     * }
+     */
+    public static int nng_listener_getopt_int(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_listener_getopt_int.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_listener_getopt_int", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_listener_getopt_ms {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_listener_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_listener_getopt_ms");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_listener_getopt_ms(nng_listener, const char *, nng_duration *)
+     * }
+     */
+    public static FunctionDescriptor nng_listener_getopt_ms$descriptor() {
+        return nng_listener_getopt_ms.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_listener_getopt_ms(nng_listener, const char *, nng_duration *)
+     * }
+     */
+    public static MethodHandle nng_listener_getopt_ms$handle() {
+        return nng_listener_getopt_ms.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_listener_getopt_ms(nng_listener, const char *, nng_duration *)
+     * }
+     */
+    public static MemorySegment nng_listener_getopt_ms$address() {
+        return nng_listener_getopt_ms.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_listener_getopt_ms(nng_listener, const char *, nng_duration *)
+     * }
+     */
+    public static int nng_listener_getopt_ms(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_listener_getopt_ms.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_listener_getopt_ms", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_listener_getopt_size {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_listener_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_listener_getopt_size");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_listener_getopt_size(nng_listener, const char *, size_t *)
+     * }
+     */
+    public static FunctionDescriptor nng_listener_getopt_size$descriptor() {
+        return nng_listener_getopt_size.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_listener_getopt_size(nng_listener, const char *, size_t *)
+     * }
+     */
+    public static MethodHandle nng_listener_getopt_size$handle() {
+        return nng_listener_getopt_size.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_listener_getopt_size(nng_listener, const char *, size_t *)
+     * }
+     */
+    public static MemorySegment nng_listener_getopt_size$address() {
+        return nng_listener_getopt_size.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_listener_getopt_size(nng_listener, const char *, size_t *)
+     * }
+     */
+    public static int nng_listener_getopt_size(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_listener_getopt_size.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_listener_getopt_size", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_listener_getopt_sockaddr {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_listener_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_listener_getopt_sockaddr");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_listener_getopt_sockaddr(nng_listener, const char *, nng_sockaddr *)
+     * }
+     */
+    public static FunctionDescriptor nng_listener_getopt_sockaddr$descriptor() {
+        return nng_listener_getopt_sockaddr.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_listener_getopt_sockaddr(nng_listener, const char *, nng_sockaddr *)
+     * }
+     */
+    public static MethodHandle nng_listener_getopt_sockaddr$handle() {
+        return nng_listener_getopt_sockaddr.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_listener_getopt_sockaddr(nng_listener, const char *, nng_sockaddr *)
+     * }
+     */
+    public static MemorySegment nng_listener_getopt_sockaddr$address() {
+        return nng_listener_getopt_sockaddr.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_listener_getopt_sockaddr(nng_listener, const char *, nng_sockaddr *)
+     * }
+     */
+    public static int nng_listener_getopt_sockaddr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_listener_getopt_sockaddr.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_listener_getopt_sockaddr", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_listener_getopt_uint64 {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_listener_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_listener_getopt_uint64");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_listener_getopt_uint64(nng_listener, const char *, uint64_t *)
+     * }
+     */
+    public static FunctionDescriptor nng_listener_getopt_uint64$descriptor() {
+        return nng_listener_getopt_uint64.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_listener_getopt_uint64(nng_listener, const char *, uint64_t *)
+     * }
+     */
+    public static MethodHandle nng_listener_getopt_uint64$handle() {
+        return nng_listener_getopt_uint64.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_listener_getopt_uint64(nng_listener, const char *, uint64_t *)
+     * }
+     */
+    public static MemorySegment nng_listener_getopt_uint64$address() {
+        return nng_listener_getopt_uint64.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_listener_getopt_uint64(nng_listener, const char *, uint64_t *)
+     * }
+     */
+    public static int nng_listener_getopt_uint64(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_listener_getopt_uint64.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_listener_getopt_uint64", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_listener_getopt_ptr {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_listener_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_listener_getopt_ptr");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_listener_getopt_ptr(nng_listener, const char *, void **)
+     * }
+     */
+    public static FunctionDescriptor nng_listener_getopt_ptr$descriptor() {
+        return nng_listener_getopt_ptr.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_listener_getopt_ptr(nng_listener, const char *, void **)
+     * }
+     */
+    public static MethodHandle nng_listener_getopt_ptr$handle() {
+        return nng_listener_getopt_ptr.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_listener_getopt_ptr(nng_listener, const char *, void **)
+     * }
+     */
+    public static MemorySegment nng_listener_getopt_ptr$address() {
+        return nng_listener_getopt_ptr.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_listener_getopt_ptr(nng_listener, const char *, void **)
+     * }
+     */
+    public static int nng_listener_getopt_ptr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_listener_getopt_ptr.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_listener_getopt_ptr", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_listener_getopt_string {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_listener_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_listener_getopt_string");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_listener_getopt_string(nng_listener, const char *, char **)
+     * }
+     */
+    public static FunctionDescriptor nng_listener_getopt_string$descriptor() {
+        return nng_listener_getopt_string.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_listener_getopt_string(nng_listener, const char *, char **)
+     * }
+     */
+    public static MethodHandle nng_listener_getopt_string$handle() {
+        return nng_listener_getopt_string.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_listener_getopt_string(nng_listener, const char *, char **)
+     * }
+     */
+    public static MemorySegment nng_listener_getopt_string$address() {
+        return nng_listener_getopt_string.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_listener_getopt_string(nng_listener, const char *, char **)
+     * }
+     */
+    public static int nng_listener_getopt_string(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_listener_getopt_string.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_listener_getopt_string", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_listener_setopt {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_listener_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_LONG_LONG
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_listener_setopt");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_listener_setopt(nng_listener, const char *, const void *, size_t)
+     * }
+     */
+    public static FunctionDescriptor nng_listener_setopt$descriptor() {
+        return nng_listener_setopt.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_listener_setopt(nng_listener, const char *, const void *, size_t)
+     * }
+     */
+    public static MethodHandle nng_listener_setopt$handle() {
+        return nng_listener_setopt.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_listener_setopt(nng_listener, const char *, const void *, size_t)
+     * }
+     */
+    public static MemorySegment nng_listener_setopt$address() {
+        return nng_listener_setopt.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_listener_setopt(nng_listener, const char *, const void *, size_t)
+     * }
+     */
+    public static int nng_listener_setopt(MemorySegment x0, MemorySegment x1, MemorySegment x2, long x3) {
+        var mh$ = nng_listener_setopt.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_listener_setopt", x0, x1, x2, x3);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2, x3);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_listener_setopt_bool {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_listener_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_BOOL
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_listener_setopt_bool");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_listener_setopt_bool(nng_listener, const char *, _Bool)
+     * }
+     */
+    public static FunctionDescriptor nng_listener_setopt_bool$descriptor() {
+        return nng_listener_setopt_bool.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_listener_setopt_bool(nng_listener, const char *, _Bool)
+     * }
+     */
+    public static MethodHandle nng_listener_setopt_bool$handle() {
+        return nng_listener_setopt_bool.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_listener_setopt_bool(nng_listener, const char *, _Bool)
+     * }
+     */
+    public static MemorySegment nng_listener_setopt_bool$address() {
+        return nng_listener_setopt_bool.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_listener_setopt_bool(nng_listener, const char *, _Bool)
+     * }
+     */
+    public static int nng_listener_setopt_bool(MemorySegment x0, MemorySegment x1, boolean x2) {
+        var mh$ = nng_listener_setopt_bool.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_listener_setopt_bool", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_listener_setopt_int {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_listener_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_INT
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_listener_setopt_int");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_listener_setopt_int(nng_listener, const char *, int)
+     * }
+     */
+    public static FunctionDescriptor nng_listener_setopt_int$descriptor() {
+        return nng_listener_setopt_int.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_listener_setopt_int(nng_listener, const char *, int)
+     * }
+     */
+    public static MethodHandle nng_listener_setopt_int$handle() {
+        return nng_listener_setopt_int.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_listener_setopt_int(nng_listener, const char *, int)
+     * }
+     */
+    public static MemorySegment nng_listener_setopt_int$address() {
+        return nng_listener_setopt_int.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_listener_setopt_int(nng_listener, const char *, int)
+     * }
+     */
+    public static int nng_listener_setopt_int(MemorySegment x0, MemorySegment x1, int x2) {
+        var mh$ = nng_listener_setopt_int.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_listener_setopt_int", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_listener_setopt_ms {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_listener_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_INT
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_listener_setopt_ms");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_listener_setopt_ms(nng_listener, const char *, nng_duration)
+     * }
+     */
+    public static FunctionDescriptor nng_listener_setopt_ms$descriptor() {
+        return nng_listener_setopt_ms.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_listener_setopt_ms(nng_listener, const char *, nng_duration)
+     * }
+     */
+    public static MethodHandle nng_listener_setopt_ms$handle() {
+        return nng_listener_setopt_ms.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_listener_setopt_ms(nng_listener, const char *, nng_duration)
+     * }
+     */
+    public static MemorySegment nng_listener_setopt_ms$address() {
+        return nng_listener_setopt_ms.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_listener_setopt_ms(nng_listener, const char *, nng_duration)
+     * }
+     */
+    public static int nng_listener_setopt_ms(MemorySegment x0, MemorySegment x1, int x2) {
+        var mh$ = nng_listener_setopt_ms.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_listener_setopt_ms", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_listener_setopt_size {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_listener_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_LONG_LONG
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_listener_setopt_size");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_listener_setopt_size(nng_listener, const char *, size_t)
+     * }
+     */
+    public static FunctionDescriptor nng_listener_setopt_size$descriptor() {
+        return nng_listener_setopt_size.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_listener_setopt_size(nng_listener, const char *, size_t)
+     * }
+     */
+    public static MethodHandle nng_listener_setopt_size$handle() {
+        return nng_listener_setopt_size.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_listener_setopt_size(nng_listener, const char *, size_t)
+     * }
+     */
+    public static MemorySegment nng_listener_setopt_size$address() {
+        return nng_listener_setopt_size.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_listener_setopt_size(nng_listener, const char *, size_t)
+     * }
+     */
+    public static int nng_listener_setopt_size(MemorySegment x0, MemorySegment x1, long x2) {
+        var mh$ = nng_listener_setopt_size.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_listener_setopt_size", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_listener_setopt_uint64 {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_listener_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_LONG_LONG
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_listener_setopt_uint64");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_listener_setopt_uint64(nng_listener, const char *, uint64_t)
+     * }
+     */
+    public static FunctionDescriptor nng_listener_setopt_uint64$descriptor() {
+        return nng_listener_setopt_uint64.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_listener_setopt_uint64(nng_listener, const char *, uint64_t)
+     * }
+     */
+    public static MethodHandle nng_listener_setopt_uint64$handle() {
+        return nng_listener_setopt_uint64.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_listener_setopt_uint64(nng_listener, const char *, uint64_t)
+     * }
+     */
+    public static MemorySegment nng_listener_setopt_uint64$address() {
+        return nng_listener_setopt_uint64.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_listener_setopt_uint64(nng_listener, const char *, uint64_t)
+     * }
+     */
+    public static int nng_listener_setopt_uint64(MemorySegment x0, MemorySegment x1, long x2) {
+        var mh$ = nng_listener_setopt_uint64.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_listener_setopt_uint64", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_listener_setopt_ptr {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_listener_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_listener_setopt_ptr");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_listener_setopt_ptr(nng_listener, const char *, void *)
+     * }
+     */
+    public static FunctionDescriptor nng_listener_setopt_ptr$descriptor() {
+        return nng_listener_setopt_ptr.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_listener_setopt_ptr(nng_listener, const char *, void *)
+     * }
+     */
+    public static MethodHandle nng_listener_setopt_ptr$handle() {
+        return nng_listener_setopt_ptr.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_listener_setopt_ptr(nng_listener, const char *, void *)
+     * }
+     */
+    public static MemorySegment nng_listener_setopt_ptr$address() {
+        return nng_listener_setopt_ptr.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_listener_setopt_ptr(nng_listener, const char *, void *)
+     * }
+     */
+    public static int nng_listener_setopt_ptr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_listener_setopt_ptr.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_listener_setopt_ptr", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_listener_setopt_string {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_listener_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_listener_setopt_string");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_listener_setopt_string(nng_listener, const char *, const char *)
+     * }
+     */
+    public static FunctionDescriptor nng_listener_setopt_string$descriptor() {
+        return nng_listener_setopt_string.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_listener_setopt_string(nng_listener, const char *, const char *)
+     * }
+     */
+    public static MethodHandle nng_listener_setopt_string$handle() {
+        return nng_listener_setopt_string.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_listener_setopt_string(nng_listener, const char *, const char *)
+     * }
+     */
+    public static MemorySegment nng_listener_setopt_string$address() {
+        return nng_listener_setopt_string.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_listener_setopt_string(nng_listener, const char *, const char *)
+     * }
+     */
+    public static int nng_listener_setopt_string(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_listener_setopt_string.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_listener_setopt_string", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_pipe_getopt {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_pipe_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_pipe_getopt");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_pipe_getopt(nng_pipe, const char *, void *, size_t *)
+     * }
+     */
+    public static FunctionDescriptor nng_pipe_getopt$descriptor() {
+        return nng_pipe_getopt.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_pipe_getopt(nng_pipe, const char *, void *, size_t *)
+     * }
+     */
+    public static MethodHandle nng_pipe_getopt$handle() {
+        return nng_pipe_getopt.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_pipe_getopt(nng_pipe, const char *, void *, size_t *)
+     * }
+     */
+    public static MemorySegment nng_pipe_getopt$address() {
+        return nng_pipe_getopt.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_pipe_getopt(nng_pipe, const char *, void *, size_t *)
+     * }
+     */
+    public static int nng_pipe_getopt(MemorySegment x0, MemorySegment x1, MemorySegment x2, MemorySegment x3) {
+        var mh$ = nng_pipe_getopt.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_pipe_getopt", x0, x1, x2, x3);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2, x3);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_pipe_getopt_bool {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_pipe_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_pipe_getopt_bool");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_bool(nng_pipe, const char *, _Bool *)
+     * }
+     */
+    public static FunctionDescriptor nng_pipe_getopt_bool$descriptor() {
+        return nng_pipe_getopt_bool.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_bool(nng_pipe, const char *, _Bool *)
+     * }
+     */
+    public static MethodHandle nng_pipe_getopt_bool$handle() {
+        return nng_pipe_getopt_bool.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_bool(nng_pipe, const char *, _Bool *)
+     * }
+     */
+    public static MemorySegment nng_pipe_getopt_bool$address() {
+        return nng_pipe_getopt_bool.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_bool(nng_pipe, const char *, _Bool *)
+     * }
+     */
+    public static int nng_pipe_getopt_bool(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_pipe_getopt_bool.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_pipe_getopt_bool", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_pipe_getopt_int {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_pipe_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_pipe_getopt_int");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_int(nng_pipe, const char *, int *)
+     * }
+     */
+    public static FunctionDescriptor nng_pipe_getopt_int$descriptor() {
+        return nng_pipe_getopt_int.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_int(nng_pipe, const char *, int *)
+     * }
+     */
+    public static MethodHandle nng_pipe_getopt_int$handle() {
+        return nng_pipe_getopt_int.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_int(nng_pipe, const char *, int *)
+     * }
+     */
+    public static MemorySegment nng_pipe_getopt_int$address() {
+        return nng_pipe_getopt_int.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_int(nng_pipe, const char *, int *)
+     * }
+     */
+    public static int nng_pipe_getopt_int(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_pipe_getopt_int.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_pipe_getopt_int", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_pipe_getopt_ms {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_pipe_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_pipe_getopt_ms");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_ms(nng_pipe, const char *, nng_duration *)
+     * }
+     */
+    public static FunctionDescriptor nng_pipe_getopt_ms$descriptor() {
+        return nng_pipe_getopt_ms.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_ms(nng_pipe, const char *, nng_duration *)
+     * }
+     */
+    public static MethodHandle nng_pipe_getopt_ms$handle() {
+        return nng_pipe_getopt_ms.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_ms(nng_pipe, const char *, nng_duration *)
+     * }
+     */
+    public static MemorySegment nng_pipe_getopt_ms$address() {
+        return nng_pipe_getopt_ms.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_ms(nng_pipe, const char *, nng_duration *)
+     * }
+     */
+    public static int nng_pipe_getopt_ms(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_pipe_getopt_ms.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_pipe_getopt_ms", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_pipe_getopt_size {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_pipe_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_pipe_getopt_size");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_size(nng_pipe, const char *, size_t *)
+     * }
+     */
+    public static FunctionDescriptor nng_pipe_getopt_size$descriptor() {
+        return nng_pipe_getopt_size.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_size(nng_pipe, const char *, size_t *)
+     * }
+     */
+    public static MethodHandle nng_pipe_getopt_size$handle() {
+        return nng_pipe_getopt_size.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_size(nng_pipe, const char *, size_t *)
+     * }
+     */
+    public static MemorySegment nng_pipe_getopt_size$address() {
+        return nng_pipe_getopt_size.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_size(nng_pipe, const char *, size_t *)
+     * }
+     */
+    public static int nng_pipe_getopt_size(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_pipe_getopt_size.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_pipe_getopt_size", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_pipe_getopt_sockaddr {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_pipe_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_pipe_getopt_sockaddr");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_sockaddr(nng_pipe, const char *, nng_sockaddr *)
+     * }
+     */
+    public static FunctionDescriptor nng_pipe_getopt_sockaddr$descriptor() {
+        return nng_pipe_getopt_sockaddr.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_sockaddr(nng_pipe, const char *, nng_sockaddr *)
+     * }
+     */
+    public static MethodHandle nng_pipe_getopt_sockaddr$handle() {
+        return nng_pipe_getopt_sockaddr.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_sockaddr(nng_pipe, const char *, nng_sockaddr *)
+     * }
+     */
+    public static MemorySegment nng_pipe_getopt_sockaddr$address() {
+        return nng_pipe_getopt_sockaddr.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_sockaddr(nng_pipe, const char *, nng_sockaddr *)
+     * }
+     */
+    public static int nng_pipe_getopt_sockaddr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_pipe_getopt_sockaddr.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_pipe_getopt_sockaddr", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_pipe_getopt_uint64 {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_pipe_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_pipe_getopt_uint64");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_uint64(nng_pipe, const char *, uint64_t *)
+     * }
+     */
+    public static FunctionDescriptor nng_pipe_getopt_uint64$descriptor() {
+        return nng_pipe_getopt_uint64.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_uint64(nng_pipe, const char *, uint64_t *)
+     * }
+     */
+    public static MethodHandle nng_pipe_getopt_uint64$handle() {
+        return nng_pipe_getopt_uint64.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_uint64(nng_pipe, const char *, uint64_t *)
+     * }
+     */
+    public static MemorySegment nng_pipe_getopt_uint64$address() {
+        return nng_pipe_getopt_uint64.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_uint64(nng_pipe, const char *, uint64_t *)
+     * }
+     */
+    public static int nng_pipe_getopt_uint64(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_pipe_getopt_uint64.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_pipe_getopt_uint64", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_pipe_getopt_ptr {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_pipe_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_pipe_getopt_ptr");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_ptr(nng_pipe, const char *, void **)
+     * }
+     */
+    public static FunctionDescriptor nng_pipe_getopt_ptr$descriptor() {
+        return nng_pipe_getopt_ptr.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_ptr(nng_pipe, const char *, void **)
+     * }
+     */
+    public static MethodHandle nng_pipe_getopt_ptr$handle() {
+        return nng_pipe_getopt_ptr.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_ptr(nng_pipe, const char *, void **)
+     * }
+     */
+    public static MemorySegment nng_pipe_getopt_ptr$address() {
+        return nng_pipe_getopt_ptr.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_ptr(nng_pipe, const char *, void **)
+     * }
+     */
+    public static int nng_pipe_getopt_ptr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_pipe_getopt_ptr.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_pipe_getopt_ptr", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_pipe_getopt_string {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_pipe_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_pipe_getopt_string");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_string(nng_pipe, const char *, char **)
+     * }
+     */
+    public static FunctionDescriptor nng_pipe_getopt_string$descriptor() {
+        return nng_pipe_getopt_string.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_string(nng_pipe, const char *, char **)
+     * }
+     */
+    public static MethodHandle nng_pipe_getopt_string$handle() {
+        return nng_pipe_getopt_string.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_string(nng_pipe, const char *, char **)
+     * }
+     */
+    public static MemorySegment nng_pipe_getopt_string$address() {
+        return nng_pipe_getopt_string.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_pipe_getopt_string(nng_pipe, const char *, char **)
+     * }
+     */
+    public static int nng_pipe_getopt_string(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_pipe_getopt_string.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_pipe_getopt_string", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_closeall {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(    );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_closeall");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * void nng_closeall()
+     * }
+     */
+    public static FunctionDescriptor nng_closeall$descriptor() {
+        return nng_closeall.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * void nng_closeall()
+     * }
+     */
+    public static MethodHandle nng_closeall$handle() {
+        return nng_closeall.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * void nng_closeall()
+     * }
+     */
+    public static MemorySegment nng_closeall$address() {
+        return nng_closeall.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * void nng_closeall()
+     * }
+     */
+    public static void nng_closeall() {
+        var mh$ = nng_closeall.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_closeall");
             }
             mh$.invokeExact();
         } catch (Error | RuntimeException ex) {
@@ -22213,6 +23502,330 @@ public class nng_h extends nng_h$shared {
         } catch (Throwable ex$) {
            throw new AssertionError("should not reach here", ex$);
         }
+    }
+
+    private static class nng_stream_set_addr {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_stream_set_addr");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_stream_set_addr(nng_stream *, const char *, const nng_sockaddr *)
+     * }
+     */
+    public static FunctionDescriptor nng_stream_set_addr$descriptor() {
+        return nng_stream_set_addr.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_stream_set_addr(nng_stream *, const char *, const nng_sockaddr *)
+     * }
+     */
+    public static MethodHandle nng_stream_set_addr$handle() {
+        return nng_stream_set_addr.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_stream_set_addr(nng_stream *, const char *, const nng_sockaddr *)
+     * }
+     */
+    public static MemorySegment nng_stream_set_addr$address() {
+        return nng_stream_set_addr.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_stream_set_addr(nng_stream *, const char *, const nng_sockaddr *)
+     * }
+     */
+    public static int nng_stream_set_addr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_stream_set_addr.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_stream_set_addr", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_ctx_get_addr {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_ctx_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_ctx_get_addr");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_ctx_get_addr(nng_ctx, const char *, nng_sockaddr *)
+     * }
+     */
+    public static FunctionDescriptor nng_ctx_get_addr$descriptor() {
+        return nng_ctx_get_addr.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_ctx_get_addr(nng_ctx, const char *, nng_sockaddr *)
+     * }
+     */
+    public static MethodHandle nng_ctx_get_addr$handle() {
+        return nng_ctx_get_addr.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_ctx_get_addr(nng_ctx, const char *, nng_sockaddr *)
+     * }
+     */
+    public static MemorySegment nng_ctx_get_addr$address() {
+        return nng_ctx_get_addr.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_ctx_get_addr(nng_ctx, const char *, nng_sockaddr *)
+     * }
+     */
+    public static int nng_ctx_get_addr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_ctx_get_addr.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_ctx_get_addr", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_ctx_set_addr {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_ctx_s.layout(),
+            nng_h.C_POINTER,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_ctx_set_addr");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_ctx_set_addr(nng_ctx, const char *, const nng_sockaddr *)
+     * }
+     */
+    public static FunctionDescriptor nng_ctx_set_addr$descriptor() {
+        return nng_ctx_set_addr.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_ctx_set_addr(nng_ctx, const char *, const nng_sockaddr *)
+     * }
+     */
+    public static MethodHandle nng_ctx_set_addr$handle() {
+        return nng_ctx_set_addr.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_ctx_set_addr(nng_ctx, const char *, const nng_sockaddr *)
+     * }
+     */
+    public static MemorySegment nng_ctx_set_addr$address() {
+        return nng_ctx_set_addr.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_ctx_set_addr(nng_ctx, const char *, const nng_sockaddr *)
+     * }
+     */
+    public static int nng_ctx_set_addr(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
+        var mh$ = nng_ctx_set_addr.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_ctx_set_addr", x0, x1, x2);
+            }
+            return (int)mh$.invokeExact(x0, x1, x2);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    /**
+     * {@snippet lang=c :
+     * typedef int nng_init_parameter
+     * }
+     */
+    public static final OfInt nng_init_parameter = nng_h.C_INT;
+
+    private static class nng_init_set_parameter {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
+            nng_h.C_INT,
+            nng_h.C_LONG_LONG
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_init_set_parameter");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * void nng_init_set_parameter(nng_init_parameter, uint64_t)
+     * }
+     */
+    public static FunctionDescriptor nng_init_set_parameter$descriptor() {
+        return nng_init_set_parameter.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * void nng_init_set_parameter(nng_init_parameter, uint64_t)
+     * }
+     */
+    public static MethodHandle nng_init_set_parameter$handle() {
+        return nng_init_set_parameter.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * void nng_init_set_parameter(nng_init_parameter, uint64_t)
+     * }
+     */
+    public static MemorySegment nng_init_set_parameter$address() {
+        return nng_init_set_parameter.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * void nng_init_set_parameter(nng_init_parameter, uint64_t)
+     * }
+     */
+    public static void nng_init_set_parameter(int x0, long x1) {
+        var mh$ = nng_init_set_parameter.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_init_set_parameter", x0, x1);
+            }
+            mh$.invokeExact(x0, x1);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    private static final int NNG_INIT_PARAMETER_NONE = (int)0L;
+    /**
+     * {@snippet lang=c :
+     * enum <anonymous>.NNG_INIT_PARAMETER_NONE = 0
+     * }
+     */
+    public static int NNG_INIT_PARAMETER_NONE() {
+        return NNG_INIT_PARAMETER_NONE;
+    }
+    private static final int NNG_INIT_NUM_TASK_THREADS = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * enum <anonymous>.NNG_INIT_NUM_TASK_THREADS = 1
+     * }
+     */
+    public static int NNG_INIT_NUM_TASK_THREADS() {
+        return NNG_INIT_NUM_TASK_THREADS;
+    }
+    private static final int NNG_INIT_NUM_EXPIRE_THREADS = (int)2L;
+    /**
+     * {@snippet lang=c :
+     * enum <anonymous>.NNG_INIT_NUM_EXPIRE_THREADS = 2
+     * }
+     */
+    public static int NNG_INIT_NUM_EXPIRE_THREADS() {
+        return NNG_INIT_NUM_EXPIRE_THREADS;
+    }
+    private static final int NNG_INIT_NUM_POLLER_THREADS = (int)3L;
+    /**
+     * {@snippet lang=c :
+     * enum <anonymous>.NNG_INIT_NUM_POLLER_THREADS = 3
+     * }
+     */
+    public static int NNG_INIT_NUM_POLLER_THREADS() {
+        return NNG_INIT_NUM_POLLER_THREADS;
+    }
+    private static final int NNG_INIT_NUM_RESOLVER_THREADS = (int)4L;
+    /**
+     * {@snippet lang=c :
+     * enum <anonymous>.NNG_INIT_NUM_RESOLVER_THREADS = 4
+     * }
+     */
+    public static int NNG_INIT_NUM_RESOLVER_THREADS() {
+        return NNG_INIT_NUM_RESOLVER_THREADS;
+    }
+    private static final int NNG_INIT_MAX_TASK_THREADS = (int)5L;
+    /**
+     * {@snippet lang=c :
+     * enum <anonymous>.NNG_INIT_MAX_TASK_THREADS = 5
+     * }
+     */
+    public static int NNG_INIT_MAX_TASK_THREADS() {
+        return NNG_INIT_MAX_TASK_THREADS;
+    }
+    private static final int NNG_INIT_MAX_EXPIRE_THREADS = (int)6L;
+    /**
+     * {@snippet lang=c :
+     * enum <anonymous>.NNG_INIT_MAX_EXPIRE_THREADS = 6
+     * }
+     */
+    public static int NNG_INIT_MAX_EXPIRE_THREADS() {
+        return NNG_INIT_MAX_EXPIRE_THREADS;
+    }
+    private static final int NNG_INIT_MAX_POLLER_THREADS = (int)7L;
+    /**
+     * {@snippet lang=c :
+     * enum <anonymous>.NNG_INIT_MAX_POLLER_THREADS = 7
+     * }
+     */
+    public static int NNG_INIT_MAX_POLLER_THREADS() {
+        return NNG_INIT_MAX_POLLER_THREADS;
     }
     private static final int NNG_LOG_NONE = (int)0L;
     /**
@@ -23411,7 +25024,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * nng_err nng_socket_pair(int [2])
+     * int nng_socket_pair(int [2])
      * }
      */
     public static FunctionDescriptor nng_socket_pair$descriptor() {
@@ -23421,7 +25034,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * nng_err nng_socket_pair(int [2])
+     * int nng_socket_pair(int [2])
      * }
      */
     public static MethodHandle nng_socket_pair$handle() {
@@ -23431,7 +25044,7 @@ public class nng_h extends nng_h$shared {
     /**
      * Address for:
      * {@snippet lang=c :
-     * nng_err nng_socket_pair(int [2])
+     * int nng_socket_pair(int [2])
      * }
      */
     public static MemorySegment nng_socket_pair$address() {
@@ -23440,7 +25053,7 @@ public class nng_h extends nng_h$shared {
 
     /**
      * {@snippet lang=c :
-     * nng_err nng_socket_pair(int [2])
+     * int nng_socket_pair(int [2])
      * }
      */
     public static int nng_socket_pair(MemorySegment x0) {
@@ -24232,78 +25845,15 @@ public class nng_h extends nng_h$shared {
            throw new AssertionError("should not reach here", ex$);
         }
     }
-    private static final int NNG_TLS_MODE_CLIENT = (int)0L;
-    /**
-     * {@snippet lang=c :
-     * enum nng_tls_mode.NNG_TLS_MODE_CLIENT = 0
-     * }
-     */
-    public static int NNG_TLS_MODE_CLIENT() {
-        return NNG_TLS_MODE_CLIENT;
-    }
-    private static final int NNG_TLS_MODE_SERVER = (int)1L;
-    /**
-     * {@snippet lang=c :
-     * enum nng_tls_mode.NNG_TLS_MODE_SERVER = 1
-     * }
-     */
-    public static int NNG_TLS_MODE_SERVER() {
-        return NNG_TLS_MODE_SERVER;
-    }
-    private static final int NNG_TLS_AUTH_MODE_NONE = (int)0L;
-    /**
-     * {@snippet lang=c :
-     * enum nng_tls_auth_mode.NNG_TLS_AUTH_MODE_NONE = 0
-     * }
-     */
-    public static int NNG_TLS_AUTH_MODE_NONE() {
-        return NNG_TLS_AUTH_MODE_NONE;
-    }
-    private static final int NNG_TLS_AUTH_MODE_OPTIONAL = (int)1L;
-    /**
-     * {@snippet lang=c :
-     * enum nng_tls_auth_mode.NNG_TLS_AUTH_MODE_OPTIONAL = 1
-     * }
-     */
-    public static int NNG_TLS_AUTH_MODE_OPTIONAL() {
-        return NNG_TLS_AUTH_MODE_OPTIONAL;
-    }
-    private static final int NNG_TLS_AUTH_MODE_REQUIRED = (int)2L;
-    /**
-     * {@snippet lang=c :
-     * enum nng_tls_auth_mode.NNG_TLS_AUTH_MODE_REQUIRED = 2
-     * }
-     */
-    public static int NNG_TLS_AUTH_MODE_REQUIRED() {
-        return NNG_TLS_AUTH_MODE_REQUIRED;
-    }
-    private static final int NNG_TLS_1_2 = (int)771L;
-    /**
-     * {@snippet lang=c :
-     * enum nng_tls_version.NNG_TLS_1_2 = 771
-     * }
-     */
-    public static int NNG_TLS_1_2() {
-        return NNG_TLS_1_2;
-    }
-    private static final int NNG_TLS_1_3 = (int)772L;
-    /**
-     * {@snippet lang=c :
-     * enum nng_tls_version.NNG_TLS_1_3 = 772
-     * }
-     */
-    public static int NNG_TLS_1_3() {
-        return NNG_TLS_1_3;
-    }
 
-    private static class nng_tls_config_alloc {
+    private static class nng_dialer_get_url {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
             nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_INT
+            nng_dialer_s.layout(),
+            nng_h.C_POINTER
         );
 
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_tls_config_alloc");
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_dialer_get_url");
 
         public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
     }
@@ -24311,43 +25861,43 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * int nng_tls_config_alloc(nng_tls_config **, nng_tls_mode)
+     * int nng_dialer_get_url(nng_dialer, const nng_url **)
      * }
      */
-    public static FunctionDescriptor nng_tls_config_alloc$descriptor() {
-        return nng_tls_config_alloc.DESC;
+    public static FunctionDescriptor nng_dialer_get_url$descriptor() {
+        return nng_dialer_get_url.DESC;
     }
 
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * int nng_tls_config_alloc(nng_tls_config **, nng_tls_mode)
+     * int nng_dialer_get_url(nng_dialer, const nng_url **)
      * }
      */
-    public static MethodHandle nng_tls_config_alloc$handle() {
-        return nng_tls_config_alloc.HANDLE;
+    public static MethodHandle nng_dialer_get_url$handle() {
+        return nng_dialer_get_url.HANDLE;
     }
 
     /**
      * Address for:
      * {@snippet lang=c :
-     * int nng_tls_config_alloc(nng_tls_config **, nng_tls_mode)
+     * int nng_dialer_get_url(nng_dialer, const nng_url **)
      * }
      */
-    public static MemorySegment nng_tls_config_alloc$address() {
-        return nng_tls_config_alloc.ADDR;
+    public static MemorySegment nng_dialer_get_url$address() {
+        return nng_dialer_get_url.ADDR;
     }
 
     /**
      * {@snippet lang=c :
-     * int nng_tls_config_alloc(nng_tls_config **, nng_tls_mode)
+     * int nng_dialer_get_url(nng_dialer, const nng_url **)
      * }
      */
-    public static int nng_tls_config_alloc(MemorySegment x0, int x1) {
-        var mh$ = nng_tls_config_alloc.HANDLE;
+    public static int nng_dialer_get_url(MemorySegment x0, MemorySegment x1) {
+        var mh$ = nng_dialer_get_url.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_tls_config_alloc", x0, x1);
+                traceDowncall("nng_dialer_get_url", x0, x1);
             }
             return (int)mh$.invokeExact(x0, x1);
         } catch (Error | RuntimeException ex) {
@@ -24357,132 +25907,14 @@ public class nng_h extends nng_h$shared {
         }
     }
 
-    private static class nng_tls_config_hold {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_tls_config_hold");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * void nng_tls_config_hold(nng_tls_config *)
-     * }
-     */
-    public static FunctionDescriptor nng_tls_config_hold$descriptor() {
-        return nng_tls_config_hold.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * void nng_tls_config_hold(nng_tls_config *)
-     * }
-     */
-    public static MethodHandle nng_tls_config_hold$handle() {
-        return nng_tls_config_hold.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * void nng_tls_config_hold(nng_tls_config *)
-     * }
-     */
-    public static MemorySegment nng_tls_config_hold$address() {
-        return nng_tls_config_hold.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * void nng_tls_config_hold(nng_tls_config *)
-     * }
-     */
-    public static void nng_tls_config_hold(MemorySegment x0) {
-        var mh$ = nng_tls_config_hold.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_tls_config_hold", x0);
-            }
-            mh$.invokeExact(x0);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_tls_config_free {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_tls_config_free");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * void nng_tls_config_free(nng_tls_config *)
-     * }
-     */
-    public static FunctionDescriptor nng_tls_config_free$descriptor() {
-        return nng_tls_config_free.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * void nng_tls_config_free(nng_tls_config *)
-     * }
-     */
-    public static MethodHandle nng_tls_config_free$handle() {
-        return nng_tls_config_free.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * void nng_tls_config_free(nng_tls_config *)
-     * }
-     */
-    public static MemorySegment nng_tls_config_free$address() {
-        return nng_tls_config_free.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * void nng_tls_config_free(nng_tls_config *)
-     * }
-     */
-    public static void nng_tls_config_free(MemorySegment x0) {
-        var mh$ = nng_tls_config_free.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_tls_config_free", x0);
-            }
-            mh$.invokeExact(x0);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_tls_config_server_name {
+    private static class nng_listener_get_url {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
             nng_h.C_INT,
-            nng_h.C_POINTER,
+            nng_listener_s.layout(),
             nng_h.C_POINTER
         );
 
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_tls_config_server_name");
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_listener_get_url");
 
         public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
     }
@@ -24490,1998 +25922,45 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * int nng_tls_config_server_name(nng_tls_config *, const char *)
+     * int nng_listener_get_url(nng_listener, const nng_url **)
      * }
      */
-    public static FunctionDescriptor nng_tls_config_server_name$descriptor() {
-        return nng_tls_config_server_name.DESC;
+    public static FunctionDescriptor nng_listener_get_url$descriptor() {
+        return nng_listener_get_url.DESC;
     }
 
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * int nng_tls_config_server_name(nng_tls_config *, const char *)
+     * int nng_listener_get_url(nng_listener, const nng_url **)
      * }
      */
-    public static MethodHandle nng_tls_config_server_name$handle() {
-        return nng_tls_config_server_name.HANDLE;
+    public static MethodHandle nng_listener_get_url$handle() {
+        return nng_listener_get_url.HANDLE;
     }
 
     /**
      * Address for:
      * {@snippet lang=c :
-     * int nng_tls_config_server_name(nng_tls_config *, const char *)
+     * int nng_listener_get_url(nng_listener, const nng_url **)
      * }
      */
-    public static MemorySegment nng_tls_config_server_name$address() {
-        return nng_tls_config_server_name.ADDR;
+    public static MemorySegment nng_listener_get_url$address() {
+        return nng_listener_get_url.ADDR;
     }
 
     /**
      * {@snippet lang=c :
-     * int nng_tls_config_server_name(nng_tls_config *, const char *)
+     * int nng_listener_get_url(nng_listener, const nng_url **)
      * }
      */
-    public static int nng_tls_config_server_name(MemorySegment x0, MemorySegment x1) {
-        var mh$ = nng_tls_config_server_name.HANDLE;
+    public static int nng_listener_get_url(MemorySegment x0, MemorySegment x1) {
+        var mh$ = nng_listener_get_url.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_tls_config_server_name", x0, x1);
+                traceDowncall("nng_listener_get_url", x0, x1);
             }
             return (int)mh$.invokeExact(x0, x1);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_tls_config_ca_chain {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_tls_config_ca_chain");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int nng_tls_config_ca_chain(nng_tls_config *, const char *, const char *)
-     * }
-     */
-    public static FunctionDescriptor nng_tls_config_ca_chain$descriptor() {
-        return nng_tls_config_ca_chain.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int nng_tls_config_ca_chain(nng_tls_config *, const char *, const char *)
-     * }
-     */
-    public static MethodHandle nng_tls_config_ca_chain$handle() {
-        return nng_tls_config_ca_chain.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int nng_tls_config_ca_chain(nng_tls_config *, const char *, const char *)
-     * }
-     */
-    public static MemorySegment nng_tls_config_ca_chain$address() {
-        return nng_tls_config_ca_chain.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int nng_tls_config_ca_chain(nng_tls_config *, const char *, const char *)
-     * }
-     */
-    public static int nng_tls_config_ca_chain(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
-        var mh$ = nng_tls_config_ca_chain.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_tls_config_ca_chain", x0, x1, x2);
-            }
-            return (int)mh$.invokeExact(x0, x1, x2);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_tls_config_own_cert {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_tls_config_own_cert");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int nng_tls_config_own_cert(nng_tls_config *, const char *, const char *, const char *)
-     * }
-     */
-    public static FunctionDescriptor nng_tls_config_own_cert$descriptor() {
-        return nng_tls_config_own_cert.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int nng_tls_config_own_cert(nng_tls_config *, const char *, const char *, const char *)
-     * }
-     */
-    public static MethodHandle nng_tls_config_own_cert$handle() {
-        return nng_tls_config_own_cert.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int nng_tls_config_own_cert(nng_tls_config *, const char *, const char *, const char *)
-     * }
-     */
-    public static MemorySegment nng_tls_config_own_cert$address() {
-        return nng_tls_config_own_cert.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int nng_tls_config_own_cert(nng_tls_config *, const char *, const char *, const char *)
-     * }
-     */
-    public static int nng_tls_config_own_cert(MemorySegment x0, MemorySegment x1, MemorySegment x2, MemorySegment x3) {
-        var mh$ = nng_tls_config_own_cert.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_tls_config_own_cert", x0, x1, x2, x3);
-            }
-            return (int)mh$.invokeExact(x0, x1, x2, x3);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_tls_config_key {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER,
-            nng_h.C_LONG_LONG
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_tls_config_key");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int nng_tls_config_key(nng_tls_config *, const uint8_t *, size_t)
-     * }
-     */
-    public static FunctionDescriptor nng_tls_config_key$descriptor() {
-        return nng_tls_config_key.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int nng_tls_config_key(nng_tls_config *, const uint8_t *, size_t)
-     * }
-     */
-    public static MethodHandle nng_tls_config_key$handle() {
-        return nng_tls_config_key.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int nng_tls_config_key(nng_tls_config *, const uint8_t *, size_t)
-     * }
-     */
-    public static MemorySegment nng_tls_config_key$address() {
-        return nng_tls_config_key.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int nng_tls_config_key(nng_tls_config *, const uint8_t *, size_t)
-     * }
-     */
-    public static int nng_tls_config_key(MemorySegment x0, MemorySegment x1, long x2) {
-        var mh$ = nng_tls_config_key.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_tls_config_key", x0, x1, x2);
-            }
-            return (int)mh$.invokeExact(x0, x1, x2);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_tls_config_pass {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_tls_config_pass");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int nng_tls_config_pass(nng_tls_config *, const char *)
-     * }
-     */
-    public static FunctionDescriptor nng_tls_config_pass$descriptor() {
-        return nng_tls_config_pass.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int nng_tls_config_pass(nng_tls_config *, const char *)
-     * }
-     */
-    public static MethodHandle nng_tls_config_pass$handle() {
-        return nng_tls_config_pass.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int nng_tls_config_pass(nng_tls_config *, const char *)
-     * }
-     */
-    public static MemorySegment nng_tls_config_pass$address() {
-        return nng_tls_config_pass.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int nng_tls_config_pass(nng_tls_config *, const char *)
-     * }
-     */
-    public static int nng_tls_config_pass(MemorySegment x0, MemorySegment x1) {
-        var mh$ = nng_tls_config_pass.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_tls_config_pass", x0, x1);
-            }
-            return (int)mh$.invokeExact(x0, x1);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_tls_config_auth_mode {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_INT
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_tls_config_auth_mode");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int nng_tls_config_auth_mode(nng_tls_config *, nng_tls_auth_mode)
-     * }
-     */
-    public static FunctionDescriptor nng_tls_config_auth_mode$descriptor() {
-        return nng_tls_config_auth_mode.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int nng_tls_config_auth_mode(nng_tls_config *, nng_tls_auth_mode)
-     * }
-     */
-    public static MethodHandle nng_tls_config_auth_mode$handle() {
-        return nng_tls_config_auth_mode.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int nng_tls_config_auth_mode(nng_tls_config *, nng_tls_auth_mode)
-     * }
-     */
-    public static MemorySegment nng_tls_config_auth_mode$address() {
-        return nng_tls_config_auth_mode.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int nng_tls_config_auth_mode(nng_tls_config *, nng_tls_auth_mode)
-     * }
-     */
-    public static int nng_tls_config_auth_mode(MemorySegment x0, int x1) {
-        var mh$ = nng_tls_config_auth_mode.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_tls_config_auth_mode", x0, x1);
-            }
-            return (int)mh$.invokeExact(x0, x1);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_tls_config_ca_file {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_tls_config_ca_file");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int nng_tls_config_ca_file(nng_tls_config *, const char *)
-     * }
-     */
-    public static FunctionDescriptor nng_tls_config_ca_file$descriptor() {
-        return nng_tls_config_ca_file.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int nng_tls_config_ca_file(nng_tls_config *, const char *)
-     * }
-     */
-    public static MethodHandle nng_tls_config_ca_file$handle() {
-        return nng_tls_config_ca_file.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int nng_tls_config_ca_file(nng_tls_config *, const char *)
-     * }
-     */
-    public static MemorySegment nng_tls_config_ca_file$address() {
-        return nng_tls_config_ca_file.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int nng_tls_config_ca_file(nng_tls_config *, const char *)
-     * }
-     */
-    public static int nng_tls_config_ca_file(MemorySegment x0, MemorySegment x1) {
-        var mh$ = nng_tls_config_ca_file.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_tls_config_ca_file", x0, x1);
-            }
-            return (int)mh$.invokeExact(x0, x1);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_tls_config_cert_key_file {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_tls_config_cert_key_file");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int nng_tls_config_cert_key_file(nng_tls_config *, const char *, const char *)
-     * }
-     */
-    public static FunctionDescriptor nng_tls_config_cert_key_file$descriptor() {
-        return nng_tls_config_cert_key_file.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int nng_tls_config_cert_key_file(nng_tls_config *, const char *, const char *)
-     * }
-     */
-    public static MethodHandle nng_tls_config_cert_key_file$handle() {
-        return nng_tls_config_cert_key_file.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int nng_tls_config_cert_key_file(nng_tls_config *, const char *, const char *)
-     * }
-     */
-    public static MemorySegment nng_tls_config_cert_key_file$address() {
-        return nng_tls_config_cert_key_file.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int nng_tls_config_cert_key_file(nng_tls_config *, const char *, const char *)
-     * }
-     */
-    public static int nng_tls_config_cert_key_file(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
-        var mh$ = nng_tls_config_cert_key_file.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_tls_config_cert_key_file", x0, x1, x2);
-            }
-            return (int)mh$.invokeExact(x0, x1, x2);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_tls_config_psk {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER,
-            nng_h.C_LONG_LONG
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_tls_config_psk");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int nng_tls_config_psk(nng_tls_config *, const char *, const uint8_t *, size_t)
-     * }
-     */
-    public static FunctionDescriptor nng_tls_config_psk$descriptor() {
-        return nng_tls_config_psk.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int nng_tls_config_psk(nng_tls_config *, const char *, const uint8_t *, size_t)
-     * }
-     */
-    public static MethodHandle nng_tls_config_psk$handle() {
-        return nng_tls_config_psk.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int nng_tls_config_psk(nng_tls_config *, const char *, const uint8_t *, size_t)
-     * }
-     */
-    public static MemorySegment nng_tls_config_psk$address() {
-        return nng_tls_config_psk.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int nng_tls_config_psk(nng_tls_config *, const char *, const uint8_t *, size_t)
-     * }
-     */
-    public static int nng_tls_config_psk(MemorySegment x0, MemorySegment x1, MemorySegment x2, long x3) {
-        var mh$ = nng_tls_config_psk.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_tls_config_psk", x0, x1, x2, x3);
-            }
-            return (int)mh$.invokeExact(x0, x1, x2, x3);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_tls_config_version {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_INT,
-            nng_h.C_INT
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_tls_config_version");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int nng_tls_config_version(nng_tls_config *, nng_tls_version, nng_tls_version)
-     * }
-     */
-    public static FunctionDescriptor nng_tls_config_version$descriptor() {
-        return nng_tls_config_version.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int nng_tls_config_version(nng_tls_config *, nng_tls_version, nng_tls_version)
-     * }
-     */
-    public static MethodHandle nng_tls_config_version$handle() {
-        return nng_tls_config_version.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int nng_tls_config_version(nng_tls_config *, nng_tls_version, nng_tls_version)
-     * }
-     */
-    public static MemorySegment nng_tls_config_version$address() {
-        return nng_tls_config_version.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int nng_tls_config_version(nng_tls_config *, nng_tls_version, nng_tls_version)
-     * }
-     */
-    public static int nng_tls_config_version(MemorySegment x0, int x1, int x2) {
-        var mh$ = nng_tls_config_version.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_tls_config_version", x0, x1, x2);
-            }
-            return (int)mh$.invokeExact(x0, x1, x2);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_tls_engine_name {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_POINTER    );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_tls_engine_name");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * const char *nng_tls_engine_name()
-     * }
-     */
-    public static FunctionDescriptor nng_tls_engine_name$descriptor() {
-        return nng_tls_engine_name.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * const char *nng_tls_engine_name()
-     * }
-     */
-    public static MethodHandle nng_tls_engine_name$handle() {
-        return nng_tls_engine_name.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * const char *nng_tls_engine_name()
-     * }
-     */
-    public static MemorySegment nng_tls_engine_name$address() {
-        return nng_tls_engine_name.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * const char *nng_tls_engine_name()
-     * }
-     */
-    public static MemorySegment nng_tls_engine_name() {
-        var mh$ = nng_tls_engine_name.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_tls_engine_name");
-            }
-            return (MemorySegment)mh$.invokeExact();
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_tls_engine_description {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_POINTER    );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_tls_engine_description");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * const char *nng_tls_engine_description()
-     * }
-     */
-    public static FunctionDescriptor nng_tls_engine_description$descriptor() {
-        return nng_tls_engine_description.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * const char *nng_tls_engine_description()
-     * }
-     */
-    public static MethodHandle nng_tls_engine_description$handle() {
-        return nng_tls_engine_description.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * const char *nng_tls_engine_description()
-     * }
-     */
-    public static MemorySegment nng_tls_engine_description$address() {
-        return nng_tls_engine_description.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * const char *nng_tls_engine_description()
-     * }
-     */
-    public static MemorySegment nng_tls_engine_description() {
-        var mh$ = nng_tls_engine_description.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_tls_engine_description");
-            }
-            return (MemorySegment)mh$.invokeExact();
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_tls_engine_fips_mode {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_BOOL    );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_tls_engine_fips_mode");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * _Bool nng_tls_engine_fips_mode()
-     * }
-     */
-    public static FunctionDescriptor nng_tls_engine_fips_mode$descriptor() {
-        return nng_tls_engine_fips_mode.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * _Bool nng_tls_engine_fips_mode()
-     * }
-     */
-    public static MethodHandle nng_tls_engine_fips_mode$handle() {
-        return nng_tls_engine_fips_mode.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * _Bool nng_tls_engine_fips_mode()
-     * }
-     */
-    public static MemorySegment nng_tls_engine_fips_mode$address() {
-        return nng_tls_engine_fips_mode.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * _Bool nng_tls_engine_fips_mode()
-     * }
-     */
-    public static boolean nng_tls_engine_fips_mode() {
-        var mh$ = nng_tls_engine_fips_mode.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_tls_engine_fips_mode");
-            }
-            return (boolean)mh$.invokeExact();
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_tls_cert_parse_pem {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER,
-            nng_h.C_LONG_LONG
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_tls_cert_parse_pem");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_parse_pem(nng_tls_cert **, const char *, size_t)
-     * }
-     */
-    public static FunctionDescriptor nng_tls_cert_parse_pem$descriptor() {
-        return nng_tls_cert_parse_pem.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_parse_pem(nng_tls_cert **, const char *, size_t)
-     * }
-     */
-    public static MethodHandle nng_tls_cert_parse_pem$handle() {
-        return nng_tls_cert_parse_pem.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_parse_pem(nng_tls_cert **, const char *, size_t)
-     * }
-     */
-    public static MemorySegment nng_tls_cert_parse_pem$address() {
-        return nng_tls_cert_parse_pem.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_parse_pem(nng_tls_cert **, const char *, size_t)
-     * }
-     */
-    public static int nng_tls_cert_parse_pem(MemorySegment x0, MemorySegment x1, long x2) {
-        var mh$ = nng_tls_cert_parse_pem.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_tls_cert_parse_pem", x0, x1, x2);
-            }
-            return (int)mh$.invokeExact(x0, x1, x2);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_tls_cert_parse_der {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER,
-            nng_h.C_LONG_LONG
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_tls_cert_parse_der");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_parse_der(nng_tls_cert **, const uint8_t *, size_t)
-     * }
-     */
-    public static FunctionDescriptor nng_tls_cert_parse_der$descriptor() {
-        return nng_tls_cert_parse_der.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_parse_der(nng_tls_cert **, const uint8_t *, size_t)
-     * }
-     */
-    public static MethodHandle nng_tls_cert_parse_der$handle() {
-        return nng_tls_cert_parse_der.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_parse_der(nng_tls_cert **, const uint8_t *, size_t)
-     * }
-     */
-    public static MemorySegment nng_tls_cert_parse_der$address() {
-        return nng_tls_cert_parse_der.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_parse_der(nng_tls_cert **, const uint8_t *, size_t)
-     * }
-     */
-    public static int nng_tls_cert_parse_der(MemorySegment x0, MemorySegment x1, long x2) {
-        var mh$ = nng_tls_cert_parse_der.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_tls_cert_parse_der", x0, x1, x2);
-            }
-            return (int)mh$.invokeExact(x0, x1, x2);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_tls_cert_der {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
-            nng_h.C_POINTER,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_tls_cert_der");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * void nng_tls_cert_der(nng_tls_cert *cert, uint8_t *, size_t *)
-     * }
-     */
-    public static FunctionDescriptor nng_tls_cert_der$descriptor() {
-        return nng_tls_cert_der.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * void nng_tls_cert_der(nng_tls_cert *cert, uint8_t *, size_t *)
-     * }
-     */
-    public static MethodHandle nng_tls_cert_der$handle() {
-        return nng_tls_cert_der.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * void nng_tls_cert_der(nng_tls_cert *cert, uint8_t *, size_t *)
-     * }
-     */
-    public static MemorySegment nng_tls_cert_der$address() {
-        return nng_tls_cert_der.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * void nng_tls_cert_der(nng_tls_cert *cert, uint8_t *, size_t *)
-     * }
-     */
-    public static void nng_tls_cert_der(MemorySegment cert, MemorySegment x1, MemorySegment x2) {
-        var mh$ = nng_tls_cert_der.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_tls_cert_der", cert, x1, x2);
-            }
-            mh$.invokeExact(cert, x1, x2);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_tls_cert_free {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_tls_cert_free");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * void nng_tls_cert_free(nng_tls_cert *)
-     * }
-     */
-    public static FunctionDescriptor nng_tls_cert_free$descriptor() {
-        return nng_tls_cert_free.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * void nng_tls_cert_free(nng_tls_cert *)
-     * }
-     */
-    public static MethodHandle nng_tls_cert_free$handle() {
-        return nng_tls_cert_free.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * void nng_tls_cert_free(nng_tls_cert *)
-     * }
-     */
-    public static MemorySegment nng_tls_cert_free$address() {
-        return nng_tls_cert_free.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * void nng_tls_cert_free(nng_tls_cert *)
-     * }
-     */
-    public static void nng_tls_cert_free(MemorySegment x0) {
-        var mh$ = nng_tls_cert_free.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_tls_cert_free", x0);
-            }
-            mh$.invokeExact(x0);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_tls_cert_subject {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_tls_cert_subject");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_subject(nng_tls_cert *, char **)
-     * }
-     */
-    public static FunctionDescriptor nng_tls_cert_subject$descriptor() {
-        return nng_tls_cert_subject.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_subject(nng_tls_cert *, char **)
-     * }
-     */
-    public static MethodHandle nng_tls_cert_subject$handle() {
-        return nng_tls_cert_subject.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_subject(nng_tls_cert *, char **)
-     * }
-     */
-    public static MemorySegment nng_tls_cert_subject$address() {
-        return nng_tls_cert_subject.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_subject(nng_tls_cert *, char **)
-     * }
-     */
-    public static int nng_tls_cert_subject(MemorySegment x0, MemorySegment x1) {
-        var mh$ = nng_tls_cert_subject.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_tls_cert_subject", x0, x1);
-            }
-            return (int)mh$.invokeExact(x0, x1);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_tls_cert_issuer {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_tls_cert_issuer");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_issuer(nng_tls_cert *, char **)
-     * }
-     */
-    public static FunctionDescriptor nng_tls_cert_issuer$descriptor() {
-        return nng_tls_cert_issuer.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_issuer(nng_tls_cert *, char **)
-     * }
-     */
-    public static MethodHandle nng_tls_cert_issuer$handle() {
-        return nng_tls_cert_issuer.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_issuer(nng_tls_cert *, char **)
-     * }
-     */
-    public static MemorySegment nng_tls_cert_issuer$address() {
-        return nng_tls_cert_issuer.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_issuer(nng_tls_cert *, char **)
-     * }
-     */
-    public static int nng_tls_cert_issuer(MemorySegment x0, MemorySegment x1) {
-        var mh$ = nng_tls_cert_issuer.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_tls_cert_issuer", x0, x1);
-            }
-            return (int)mh$.invokeExact(x0, x1);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_tls_cert_serial_number {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_tls_cert_serial_number");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_serial_number(nng_tls_cert *, char **)
-     * }
-     */
-    public static FunctionDescriptor nng_tls_cert_serial_number$descriptor() {
-        return nng_tls_cert_serial_number.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_serial_number(nng_tls_cert *, char **)
-     * }
-     */
-    public static MethodHandle nng_tls_cert_serial_number$handle() {
-        return nng_tls_cert_serial_number.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_serial_number(nng_tls_cert *, char **)
-     * }
-     */
-    public static MemorySegment nng_tls_cert_serial_number$address() {
-        return nng_tls_cert_serial_number.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_serial_number(nng_tls_cert *, char **)
-     * }
-     */
-    public static int nng_tls_cert_serial_number(MemorySegment x0, MemorySegment x1) {
-        var mh$ = nng_tls_cert_serial_number.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_tls_cert_serial_number", x0, x1);
-            }
-            return (int)mh$.invokeExact(x0, x1);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_tls_cert_subject_cn {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_tls_cert_subject_cn");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_subject_cn(nng_tls_cert *, char **)
-     * }
-     */
-    public static FunctionDescriptor nng_tls_cert_subject_cn$descriptor() {
-        return nng_tls_cert_subject_cn.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_subject_cn(nng_tls_cert *, char **)
-     * }
-     */
-    public static MethodHandle nng_tls_cert_subject_cn$handle() {
-        return nng_tls_cert_subject_cn.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_subject_cn(nng_tls_cert *, char **)
-     * }
-     */
-    public static MemorySegment nng_tls_cert_subject_cn$address() {
-        return nng_tls_cert_subject_cn.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_subject_cn(nng_tls_cert *, char **)
-     * }
-     */
-    public static int nng_tls_cert_subject_cn(MemorySegment x0, MemorySegment x1) {
-        var mh$ = nng_tls_cert_subject_cn.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_tls_cert_subject_cn", x0, x1);
-            }
-            return (int)mh$.invokeExact(x0, x1);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_tls_cert_next_alt {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_tls_cert_next_alt");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_next_alt(nng_tls_cert *, char **)
-     * }
-     */
-    public static FunctionDescriptor nng_tls_cert_next_alt$descriptor() {
-        return nng_tls_cert_next_alt.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_next_alt(nng_tls_cert *, char **)
-     * }
-     */
-    public static MethodHandle nng_tls_cert_next_alt$handle() {
-        return nng_tls_cert_next_alt.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_next_alt(nng_tls_cert *, char **)
-     * }
-     */
-    public static MemorySegment nng_tls_cert_next_alt$address() {
-        return nng_tls_cert_next_alt.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_next_alt(nng_tls_cert *, char **)
-     * }
-     */
-    public static int nng_tls_cert_next_alt(MemorySegment x0, MemorySegment x1) {
-        var mh$ = nng_tls_cert_next_alt.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_tls_cert_next_alt", x0, x1);
-            }
-            return (int)mh$.invokeExact(x0, x1);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_tls_cert_not_before {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_tls_cert_not_before");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_not_before(nng_tls_cert *, struct tm *)
-     * }
-     */
-    public static FunctionDescriptor nng_tls_cert_not_before$descriptor() {
-        return nng_tls_cert_not_before.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_not_before(nng_tls_cert *, struct tm *)
-     * }
-     */
-    public static MethodHandle nng_tls_cert_not_before$handle() {
-        return nng_tls_cert_not_before.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_not_before(nng_tls_cert *, struct tm *)
-     * }
-     */
-    public static MemorySegment nng_tls_cert_not_before$address() {
-        return nng_tls_cert_not_before.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_not_before(nng_tls_cert *, struct tm *)
-     * }
-     */
-    public static int nng_tls_cert_not_before(MemorySegment x0, MemorySegment x1) {
-        var mh$ = nng_tls_cert_not_before.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_tls_cert_not_before", x0, x1);
-            }
-            return (int)mh$.invokeExact(x0, x1);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_tls_cert_not_after {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_tls_cert_not_after");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_not_after(nng_tls_cert *, struct tm *)
-     * }
-     */
-    public static FunctionDescriptor nng_tls_cert_not_after$descriptor() {
-        return nng_tls_cert_not_after.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_not_after(nng_tls_cert *, struct tm *)
-     * }
-     */
-    public static MethodHandle nng_tls_cert_not_after$handle() {
-        return nng_tls_cert_not_after.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_not_after(nng_tls_cert *, struct tm *)
-     * }
-     */
-    public static MemorySegment nng_tls_cert_not_after$address() {
-        return nng_tls_cert_not_after.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * nng_err nng_tls_cert_not_after(nng_tls_cert *, struct tm *)
-     * }
-     */
-    public static int nng_tls_cert_not_after(MemorySegment x0, MemorySegment x1) {
-        var mh$ = nng_tls_cert_not_after.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_tls_cert_not_after", x0, x1);
-            }
-            return (int)mh$.invokeExact(x0, x1);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_id_map_alloc {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_LONG_LONG,
-            nng_h.C_LONG_LONG,
-            nng_h.C_INT
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_id_map_alloc");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int nng_id_map_alloc(nng_id_map **map, uint64_t lo, uint64_t hi, int flags)
-     * }
-     */
-    public static FunctionDescriptor nng_id_map_alloc$descriptor() {
-        return nng_id_map_alloc.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int nng_id_map_alloc(nng_id_map **map, uint64_t lo, uint64_t hi, int flags)
-     * }
-     */
-    public static MethodHandle nng_id_map_alloc$handle() {
-        return nng_id_map_alloc.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int nng_id_map_alloc(nng_id_map **map, uint64_t lo, uint64_t hi, int flags)
-     * }
-     */
-    public static MemorySegment nng_id_map_alloc$address() {
-        return nng_id_map_alloc.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int nng_id_map_alloc(nng_id_map **map, uint64_t lo, uint64_t hi, int flags)
-     * }
-     */
-    public static int nng_id_map_alloc(MemorySegment map, long lo, long hi, int flags) {
-        var mh$ = nng_id_map_alloc.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_id_map_alloc", map, lo, hi, flags);
-            }
-            return (int)mh$.invokeExact(map, lo, hi, flags);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_id_map_free {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.ofVoid(
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_id_map_free");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * void nng_id_map_free(nng_id_map *map)
-     * }
-     */
-    public static FunctionDescriptor nng_id_map_free$descriptor() {
-        return nng_id_map_free.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * void nng_id_map_free(nng_id_map *map)
-     * }
-     */
-    public static MethodHandle nng_id_map_free$handle() {
-        return nng_id_map_free.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * void nng_id_map_free(nng_id_map *map)
-     * }
-     */
-    public static MemorySegment nng_id_map_free$address() {
-        return nng_id_map_free.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * void nng_id_map_free(nng_id_map *map)
-     * }
-     */
-    public static void nng_id_map_free(MemorySegment map) {
-        var mh$ = nng_id_map_free.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_id_map_free", map);
-            }
-            mh$.invokeExact(map);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_id_get {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_POINTER,
-            nng_h.C_POINTER,
-            nng_h.C_LONG_LONG
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_id_get");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * void *nng_id_get(nng_id_map *, uint64_t)
-     * }
-     */
-    public static FunctionDescriptor nng_id_get$descriptor() {
-        return nng_id_get.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * void *nng_id_get(nng_id_map *, uint64_t)
-     * }
-     */
-    public static MethodHandle nng_id_get$handle() {
-        return nng_id_get.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * void *nng_id_get(nng_id_map *, uint64_t)
-     * }
-     */
-    public static MemorySegment nng_id_get$address() {
-        return nng_id_get.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * void *nng_id_get(nng_id_map *, uint64_t)
-     * }
-     */
-    public static MemorySegment nng_id_get(MemorySegment x0, long x1) {
-        var mh$ = nng_id_get.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_id_get", x0, x1);
-            }
-            return (MemorySegment)mh$.invokeExact(x0, x1);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_id_set {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_LONG_LONG,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_id_set");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int nng_id_set(nng_id_map *, uint64_t, void *)
-     * }
-     */
-    public static FunctionDescriptor nng_id_set$descriptor() {
-        return nng_id_set.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int nng_id_set(nng_id_map *, uint64_t, void *)
-     * }
-     */
-    public static MethodHandle nng_id_set$handle() {
-        return nng_id_set.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int nng_id_set(nng_id_map *, uint64_t, void *)
-     * }
-     */
-    public static MemorySegment nng_id_set$address() {
-        return nng_id_set.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int nng_id_set(nng_id_map *, uint64_t, void *)
-     * }
-     */
-    public static int nng_id_set(MemorySegment x0, long x1, MemorySegment x2) {
-        var mh$ = nng_id_set.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_id_set", x0, x1, x2);
-            }
-            return (int)mh$.invokeExact(x0, x1, x2);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_id_alloc {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_id_alloc");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int nng_id_alloc(nng_id_map *, uint64_t *, void *)
-     * }
-     */
-    public static FunctionDescriptor nng_id_alloc$descriptor() {
-        return nng_id_alloc.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int nng_id_alloc(nng_id_map *, uint64_t *, void *)
-     * }
-     */
-    public static MethodHandle nng_id_alloc$handle() {
-        return nng_id_alloc.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int nng_id_alloc(nng_id_map *, uint64_t *, void *)
-     * }
-     */
-    public static MemorySegment nng_id_alloc$address() {
-        return nng_id_alloc.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int nng_id_alloc(nng_id_map *, uint64_t *, void *)
-     * }
-     */
-    public static int nng_id_alloc(MemorySegment x0, MemorySegment x1, MemorySegment x2) {
-        var mh$ = nng_id_alloc.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_id_alloc", x0, x1, x2);
-            }
-            return (int)mh$.invokeExact(x0, x1, x2);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_id_remove {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER,
-            nng_h.C_LONG_LONG
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_id_remove");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int nng_id_remove(nng_id_map *, uint64_t)
-     * }
-     */
-    public static FunctionDescriptor nng_id_remove$descriptor() {
-        return nng_id_remove.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int nng_id_remove(nng_id_map *, uint64_t)
-     * }
-     */
-    public static MethodHandle nng_id_remove$handle() {
-        return nng_id_remove.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int nng_id_remove(nng_id_map *, uint64_t)
-     * }
-     */
-    public static MemorySegment nng_id_remove$address() {
-        return nng_id_remove.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int nng_id_remove(nng_id_map *, uint64_t)
-     * }
-     */
-    public static int nng_id_remove(MemorySegment x0, long x1) {
-        var mh$ = nng_id_remove.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_id_remove", x0, x1);
-            }
-            return (int)mh$.invokeExact(x0, x1);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_id_visit {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_BOOL,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_id_visit");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * _Bool nng_id_visit(nng_id_map *, uint64_t *, void **, uint32_t *)
-     * }
-     */
-    public static FunctionDescriptor nng_id_visit$descriptor() {
-        return nng_id_visit.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * _Bool nng_id_visit(nng_id_map *, uint64_t *, void **, uint32_t *)
-     * }
-     */
-    public static MethodHandle nng_id_visit$handle() {
-        return nng_id_visit.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * _Bool nng_id_visit(nng_id_map *, uint64_t *, void **, uint32_t *)
-     * }
-     */
-    public static MemorySegment nng_id_visit$address() {
-        return nng_id_visit.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * _Bool nng_id_visit(nng_id_map *, uint64_t *, void **, uint32_t *)
-     * }
-     */
-    public static boolean nng_id_visit(MemorySegment x0, MemorySegment x1, MemorySegment x2, MemorySegment x3) {
-        var mh$ = nng_id_visit.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_id_visit", x0, x1, x2, x3);
-            }
-            return (boolean)mh$.invokeExact(x0, x1, x2, x3);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_bus0_open {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_bus0_open");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int nng_bus0_open(nng_socket *)
-     * }
-     */
-    public static FunctionDescriptor nng_bus0_open$descriptor() {
-        return nng_bus0_open.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int nng_bus0_open(nng_socket *)
-     * }
-     */
-    public static MethodHandle nng_bus0_open$handle() {
-        return nng_bus0_open.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int nng_bus0_open(nng_socket *)
-     * }
-     */
-    public static MemorySegment nng_bus0_open$address() {
-        return nng_bus0_open.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int nng_bus0_open(nng_socket *)
-     * }
-     */
-    public static int nng_bus0_open(MemorySegment x0) {
-        var mh$ = nng_bus0_open.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_bus0_open", x0);
-            }
-            return (int)mh$.invokeExact(x0);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_bus0_open_raw {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_bus0_open_raw");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int nng_bus0_open_raw(nng_socket *)
-     * }
-     */
-    public static FunctionDescriptor nng_bus0_open_raw$descriptor() {
-        return nng_bus0_open_raw.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int nng_bus0_open_raw(nng_socket *)
-     * }
-     */
-    public static MethodHandle nng_bus0_open_raw$handle() {
-        return nng_bus0_open_raw.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int nng_bus0_open_raw(nng_socket *)
-     * }
-     */
-    public static MemorySegment nng_bus0_open_raw$address() {
-        return nng_bus0_open_raw.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int nng_bus0_open_raw(nng_socket *)
-     * }
-     */
-    public static int nng_bus0_open_raw(MemorySegment x0) {
-        var mh$ = nng_bus0_open_raw.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_bus0_open_raw", x0);
-            }
-            return (int)mh$.invokeExact(x0);
         } catch (Error | RuntimeException ex) {
            throw ex;
         } catch (Throwable ex$) {
@@ -26780,246 +26259,6 @@ public class nng_h extends nng_h$shared {
         try {
             if (TRACE_DOWNCALLS) {
                 traceDowncall("nng_pair1_open_poly", x0);
-            }
-            return (int)mh$.invokeExact(x0);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_pull0_open {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_pull0_open");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int nng_pull0_open(nng_socket *)
-     * }
-     */
-    public static FunctionDescriptor nng_pull0_open$descriptor() {
-        return nng_pull0_open.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int nng_pull0_open(nng_socket *)
-     * }
-     */
-    public static MethodHandle nng_pull0_open$handle() {
-        return nng_pull0_open.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int nng_pull0_open(nng_socket *)
-     * }
-     */
-    public static MemorySegment nng_pull0_open$address() {
-        return nng_pull0_open.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int nng_pull0_open(nng_socket *)
-     * }
-     */
-    public static int nng_pull0_open(MemorySegment x0) {
-        var mh$ = nng_pull0_open.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_pull0_open", x0);
-            }
-            return (int)mh$.invokeExact(x0);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_pull0_open_raw {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_pull0_open_raw");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int nng_pull0_open_raw(nng_socket *)
-     * }
-     */
-    public static FunctionDescriptor nng_pull0_open_raw$descriptor() {
-        return nng_pull0_open_raw.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int nng_pull0_open_raw(nng_socket *)
-     * }
-     */
-    public static MethodHandle nng_pull0_open_raw$handle() {
-        return nng_pull0_open_raw.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int nng_pull0_open_raw(nng_socket *)
-     * }
-     */
-    public static MemorySegment nng_pull0_open_raw$address() {
-        return nng_pull0_open_raw.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int nng_pull0_open_raw(nng_socket *)
-     * }
-     */
-    public static int nng_pull0_open_raw(MemorySegment x0) {
-        var mh$ = nng_pull0_open_raw.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_pull0_open_raw", x0);
-            }
-            return (int)mh$.invokeExact(x0);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_push0_open {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_push0_open");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int nng_push0_open(nng_socket *)
-     * }
-     */
-    public static FunctionDescriptor nng_push0_open$descriptor() {
-        return nng_push0_open.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int nng_push0_open(nng_socket *)
-     * }
-     */
-    public static MethodHandle nng_push0_open$handle() {
-        return nng_push0_open.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int nng_push0_open(nng_socket *)
-     * }
-     */
-    public static MemorySegment nng_push0_open$address() {
-        return nng_push0_open.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int nng_push0_open(nng_socket *)
-     * }
-     */
-    public static int nng_push0_open(MemorySegment x0) {
-        var mh$ = nng_push0_open.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_push0_open", x0);
-            }
-            return (int)mh$.invokeExact(x0);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_push0_open_raw {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_push0_open_raw");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int nng_push0_open_raw(nng_socket *)
-     * }
-     */
-    public static FunctionDescriptor nng_push0_open_raw$descriptor() {
-        return nng_push0_open_raw.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int nng_push0_open_raw(nng_socket *)
-     * }
-     */
-    public static MethodHandle nng_push0_open_raw$handle() {
-        return nng_push0_open_raw.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int nng_push0_open_raw(nng_socket *)
-     * }
-     */
-    public static MemorySegment nng_push0_open_raw$address() {
-        return nng_push0_open_raw.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int nng_push0_open_raw(nng_socket *)
-     * }
-     */
-    public static int nng_push0_open_raw(MemorySegment x0) {
-        var mh$ = nng_push0_open_raw.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_push0_open_raw", x0);
             }
             return (int)mh$.invokeExact(x0);
         } catch (Error | RuntimeException ex) {
@@ -27517,13 +26756,13 @@ public class nng_h extends nng_h$shared {
         }
     }
 
-    private static class nng_rep0_open {
+    private static class nng_push0_open {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
             nng_h.C_INT,
             nng_h.C_POINTER
         );
 
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_rep0_open");
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_push0_open");
 
         public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
     }
@@ -27531,43 +26770,43 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * int nng_rep0_open(nng_socket *)
+     * int nng_push0_open(nng_socket *)
      * }
      */
-    public static FunctionDescriptor nng_rep0_open$descriptor() {
-        return nng_rep0_open.DESC;
+    public static FunctionDescriptor nng_push0_open$descriptor() {
+        return nng_push0_open.DESC;
     }
 
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * int nng_rep0_open(nng_socket *)
+     * int nng_push0_open(nng_socket *)
      * }
      */
-    public static MethodHandle nng_rep0_open$handle() {
-        return nng_rep0_open.HANDLE;
+    public static MethodHandle nng_push0_open$handle() {
+        return nng_push0_open.HANDLE;
     }
 
     /**
      * Address for:
      * {@snippet lang=c :
-     * int nng_rep0_open(nng_socket *)
+     * int nng_push0_open(nng_socket *)
      * }
      */
-    public static MemorySegment nng_rep0_open$address() {
-        return nng_rep0_open.ADDR;
+    public static MemorySegment nng_push0_open$address() {
+        return nng_push0_open.ADDR;
     }
 
     /**
      * {@snippet lang=c :
-     * int nng_rep0_open(nng_socket *)
+     * int nng_push0_open(nng_socket *)
      * }
      */
-    public static int nng_rep0_open(MemorySegment x0) {
-        var mh$ = nng_rep0_open.HANDLE;
+    public static int nng_push0_open(MemorySegment x0) {
+        var mh$ = nng_push0_open.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_rep0_open", x0);
+                traceDowncall("nng_push0_open", x0);
             }
             return (int)mh$.invokeExact(x0);
         } catch (Error | RuntimeException ex) {
@@ -27577,13 +26816,13 @@ public class nng_h extends nng_h$shared {
         }
     }
 
-    private static class nng_rep0_open_raw {
+    private static class nng_push0_open_raw {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
             nng_h.C_INT,
             nng_h.C_POINTER
         );
 
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_rep0_open_raw");
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_push0_open_raw");
 
         public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
     }
@@ -27591,43 +26830,163 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * int nng_rep0_open_raw(nng_socket *)
+     * int nng_push0_open_raw(nng_socket *)
      * }
      */
-    public static FunctionDescriptor nng_rep0_open_raw$descriptor() {
-        return nng_rep0_open_raw.DESC;
+    public static FunctionDescriptor nng_push0_open_raw$descriptor() {
+        return nng_push0_open_raw.DESC;
     }
 
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * int nng_rep0_open_raw(nng_socket *)
+     * int nng_push0_open_raw(nng_socket *)
      * }
      */
-    public static MethodHandle nng_rep0_open_raw$handle() {
-        return nng_rep0_open_raw.HANDLE;
+    public static MethodHandle nng_push0_open_raw$handle() {
+        return nng_push0_open_raw.HANDLE;
     }
 
     /**
      * Address for:
      * {@snippet lang=c :
-     * int nng_rep0_open_raw(nng_socket *)
+     * int nng_push0_open_raw(nng_socket *)
      * }
      */
-    public static MemorySegment nng_rep0_open_raw$address() {
-        return nng_rep0_open_raw.ADDR;
+    public static MemorySegment nng_push0_open_raw$address() {
+        return nng_push0_open_raw.ADDR;
     }
 
     /**
      * {@snippet lang=c :
-     * int nng_rep0_open_raw(nng_socket *)
+     * int nng_push0_open_raw(nng_socket *)
      * }
      */
-    public static int nng_rep0_open_raw(MemorySegment x0) {
-        var mh$ = nng_rep0_open_raw.HANDLE;
+    public static int nng_push0_open_raw(MemorySegment x0) {
+        var mh$ = nng_push0_open_raw.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_rep0_open_raw", x0);
+                traceDowncall("nng_push0_open_raw", x0);
+            }
+            return (int)mh$.invokeExact(x0);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_pull0_open {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_pull0_open");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_pull0_open(nng_socket *)
+     * }
+     */
+    public static FunctionDescriptor nng_pull0_open$descriptor() {
+        return nng_pull0_open.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_pull0_open(nng_socket *)
+     * }
+     */
+    public static MethodHandle nng_pull0_open$handle() {
+        return nng_pull0_open.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_pull0_open(nng_socket *)
+     * }
+     */
+    public static MemorySegment nng_pull0_open$address() {
+        return nng_pull0_open.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_pull0_open(nng_socket *)
+     * }
+     */
+    public static int nng_pull0_open(MemorySegment x0) {
+        var mh$ = nng_pull0_open.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_pull0_open", x0);
+            }
+            return (int)mh$.invokeExact(x0);
+        } catch (Error | RuntimeException ex) {
+           throw ex;
+        } catch (Throwable ex$) {
+           throw new AssertionError("should not reach here", ex$);
+        }
+    }
+
+    private static class nng_pull0_open_raw {
+        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
+            nng_h.C_INT,
+            nng_h.C_POINTER
+        );
+
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_pull0_open_raw");
+
+        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
+    }
+
+    /**
+     * Function descriptor for:
+     * {@snippet lang=c :
+     * int nng_pull0_open_raw(nng_socket *)
+     * }
+     */
+    public static FunctionDescriptor nng_pull0_open_raw$descriptor() {
+        return nng_pull0_open_raw.DESC;
+    }
+
+    /**
+     * Downcall method handle for:
+     * {@snippet lang=c :
+     * int nng_pull0_open_raw(nng_socket *)
+     * }
+     */
+    public static MethodHandle nng_pull0_open_raw$handle() {
+        return nng_pull0_open_raw.HANDLE;
+    }
+
+    /**
+     * Address for:
+     * {@snippet lang=c :
+     * int nng_pull0_open_raw(nng_socket *)
+     * }
+     */
+    public static MemorySegment nng_pull0_open_raw$address() {
+        return nng_pull0_open_raw.ADDR;
+    }
+
+    /**
+     * {@snippet lang=c :
+     * int nng_pull0_open_raw(nng_socket *)
+     * }
+     */
+    public static int nng_pull0_open_raw(MemorySegment x0) {
+        var mh$ = nng_pull0_open_raw.HANDLE;
+        try {
+            if (TRACE_DOWNCALLS) {
+                traceDowncall("nng_pull0_open_raw", x0);
             }
             return (int)mh$.invokeExact(x0);
         } catch (Error | RuntimeException ex) {
@@ -27757,13 +27116,13 @@ public class nng_h extends nng_h$shared {
         }
     }
 
-    private static class nng_respondent0_open {
+    private static class nng_rep0_open {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
             nng_h.C_INT,
             nng_h.C_POINTER
         );
 
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_respondent0_open");
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_rep0_open");
 
         public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
     }
@@ -27771,43 +27130,43 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * int nng_respondent0_open(nng_socket *)
+     * int nng_rep0_open(nng_socket *)
      * }
      */
-    public static FunctionDescriptor nng_respondent0_open$descriptor() {
-        return nng_respondent0_open.DESC;
+    public static FunctionDescriptor nng_rep0_open$descriptor() {
+        return nng_rep0_open.DESC;
     }
 
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * int nng_respondent0_open(nng_socket *)
+     * int nng_rep0_open(nng_socket *)
      * }
      */
-    public static MethodHandle nng_respondent0_open$handle() {
-        return nng_respondent0_open.HANDLE;
+    public static MethodHandle nng_rep0_open$handle() {
+        return nng_rep0_open.HANDLE;
     }
 
     /**
      * Address for:
      * {@snippet lang=c :
-     * int nng_respondent0_open(nng_socket *)
+     * int nng_rep0_open(nng_socket *)
      * }
      */
-    public static MemorySegment nng_respondent0_open$address() {
-        return nng_respondent0_open.ADDR;
+    public static MemorySegment nng_rep0_open$address() {
+        return nng_rep0_open.ADDR;
     }
 
     /**
      * {@snippet lang=c :
-     * int nng_respondent0_open(nng_socket *)
+     * int nng_rep0_open(nng_socket *)
      * }
      */
-    public static int nng_respondent0_open(MemorySegment x0) {
-        var mh$ = nng_respondent0_open.HANDLE;
+    public static int nng_rep0_open(MemorySegment x0) {
+        var mh$ = nng_rep0_open.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_respondent0_open", x0);
+                traceDowncall("nng_rep0_open", x0);
             }
             return (int)mh$.invokeExact(x0);
         } catch (Error | RuntimeException ex) {
@@ -27817,13 +27176,13 @@ public class nng_h extends nng_h$shared {
         }
     }
 
-    private static class nng_respondent0_open_raw {
+    private static class nng_rep0_open_raw {
         public static final FunctionDescriptor DESC = FunctionDescriptor.of(
             nng_h.C_INT,
             nng_h.C_POINTER
         );
 
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_respondent0_open_raw");
+        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_rep0_open_raw");
 
         public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
     }
@@ -27831,163 +27190,43 @@ public class nng_h extends nng_h$shared {
     /**
      * Function descriptor for:
      * {@snippet lang=c :
-     * int nng_respondent0_open_raw(nng_socket *)
+     * int nng_rep0_open_raw(nng_socket *)
      * }
      */
-    public static FunctionDescriptor nng_respondent0_open_raw$descriptor() {
-        return nng_respondent0_open_raw.DESC;
+    public static FunctionDescriptor nng_rep0_open_raw$descriptor() {
+        return nng_rep0_open_raw.DESC;
     }
 
     /**
      * Downcall method handle for:
      * {@snippet lang=c :
-     * int nng_respondent0_open_raw(nng_socket *)
+     * int nng_rep0_open_raw(nng_socket *)
      * }
      */
-    public static MethodHandle nng_respondent0_open_raw$handle() {
-        return nng_respondent0_open_raw.HANDLE;
+    public static MethodHandle nng_rep0_open_raw$handle() {
+        return nng_rep0_open_raw.HANDLE;
     }
 
     /**
      * Address for:
      * {@snippet lang=c :
-     * int nng_respondent0_open_raw(nng_socket *)
+     * int nng_rep0_open_raw(nng_socket *)
      * }
      */
-    public static MemorySegment nng_respondent0_open_raw$address() {
-        return nng_respondent0_open_raw.ADDR;
+    public static MemorySegment nng_rep0_open_raw$address() {
+        return nng_rep0_open_raw.ADDR;
     }
 
     /**
      * {@snippet lang=c :
-     * int nng_respondent0_open_raw(nng_socket *)
+     * int nng_rep0_open_raw(nng_socket *)
      * }
      */
-    public static int nng_respondent0_open_raw(MemorySegment x0) {
-        var mh$ = nng_respondent0_open_raw.HANDLE;
+    public static int nng_rep0_open_raw(MemorySegment x0) {
+        var mh$ = nng_rep0_open_raw.HANDLE;
         try {
             if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_respondent0_open_raw", x0);
-            }
-            return (int)mh$.invokeExact(x0);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_surveyor0_open {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_surveyor0_open");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int nng_surveyor0_open(nng_socket *)
-     * }
-     */
-    public static FunctionDescriptor nng_surveyor0_open$descriptor() {
-        return nng_surveyor0_open.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int nng_surveyor0_open(nng_socket *)
-     * }
-     */
-    public static MethodHandle nng_surveyor0_open$handle() {
-        return nng_surveyor0_open.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int nng_surveyor0_open(nng_socket *)
-     * }
-     */
-    public static MemorySegment nng_surveyor0_open$address() {
-        return nng_surveyor0_open.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int nng_surveyor0_open(nng_socket *)
-     * }
-     */
-    public static int nng_surveyor0_open(MemorySegment x0) {
-        var mh$ = nng_surveyor0_open.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_surveyor0_open", x0);
-            }
-            return (int)mh$.invokeExact(x0);
-        } catch (Error | RuntimeException ex) {
-           throw ex;
-        } catch (Throwable ex$) {
-           throw new AssertionError("should not reach here", ex$);
-        }
-    }
-
-    private static class nng_surveyor0_open_raw {
-        public static final FunctionDescriptor DESC = FunctionDescriptor.of(
-            nng_h.C_INT,
-            nng_h.C_POINTER
-        );
-
-        public static final MemorySegment ADDR = SYMBOL_LOOKUP.findOrThrow("nng_surveyor0_open_raw");
-
-        public static final MethodHandle HANDLE = Linker.nativeLinker().downcallHandle(ADDR, DESC);
-    }
-
-    /**
-     * Function descriptor for:
-     * {@snippet lang=c :
-     * int nng_surveyor0_open_raw(nng_socket *)
-     * }
-     */
-    public static FunctionDescriptor nng_surveyor0_open_raw$descriptor() {
-        return nng_surveyor0_open_raw.DESC;
-    }
-
-    /**
-     * Downcall method handle for:
-     * {@snippet lang=c :
-     * int nng_surveyor0_open_raw(nng_socket *)
-     * }
-     */
-    public static MethodHandle nng_surveyor0_open_raw$handle() {
-        return nng_surveyor0_open_raw.HANDLE;
-    }
-
-    /**
-     * Address for:
-     * {@snippet lang=c :
-     * int nng_surveyor0_open_raw(nng_socket *)
-     * }
-     */
-    public static MemorySegment nng_surveyor0_open_raw$address() {
-        return nng_surveyor0_open_raw.ADDR;
-    }
-
-    /**
-     * {@snippet lang=c :
-     * int nng_surveyor0_open_raw(nng_socket *)
-     * }
-     */
-    public static int nng_surveyor0_open_raw(MemorySegment x0) {
-        var mh$ = nng_surveyor0_open_raw.HANDLE;
-        try {
-            if (TRACE_DOWNCALLS) {
-                traceDowncall("nng_surveyor0_open_raw", x0);
+                traceDowncall("nng_rep0_open_raw", x0);
             }
             return (int)mh$.invokeExact(x0);
         } catch (Error | RuntimeException ex) {
@@ -28437,90 +27676,15 @@ public class nng_h extends nng_h$shared {
     public static int SIG_ATOMIC_MAX() {
         return SIG_ATOMIC_MAX;
     }
-    private static final int _UCRT_DISABLED_WARNINGS = (int)4324L;
     /**
      * {@snippet lang=c :
-     * #define _UCRT_DISABLED_WARNINGS 4324
-     * }
-     */
-    public static int _UCRT_DISABLED_WARNINGS() {
-        return _UCRT_DISABLED_WARNINGS;
-    }
-    private static final long _TRUNCATE = -1L;
-    /**
-     * {@snippet lang=c :
-     * #define _TRUNCATE -1
-     * }
-     */
-    public static long _TRUNCATE() {
-        return _TRUNCATE;
-    }
-    private static final long _CRT_SIZE_MAX = -1L;
-    /**
-     * {@snippet lang=c :
-     * #define _CRT_SIZE_MAX -1
-     * }
-     */
-    public static long _CRT_SIZE_MAX() {
-        return _CRT_SIZE_MAX;
-    }
-    /**
-     * {@snippet lang=c :
-     * #define __FILEW__ "j"
-     * }
-     */
-    public static MemorySegment __FILEW__() {
-        class Holder {
-            static final MemorySegment __FILEW__
-                = nng_h.LIBRARY_ARENA.allocateFrom("j");
-        }
-        return Holder.__FILEW__;
-    }
-    private static final int __STDC_SECURE_LIB__ = (int)200411L;
-    /**
-     * {@snippet lang=c :
-     * #define __STDC_SECURE_LIB__ 200411
-     * }
-     */
-    public static int __STDC_SECURE_LIB__() {
-        return __STDC_SECURE_LIB__;
-    }
-    private static final int __GOT_SECURE_LIB__ = (int)200411L;
-    /**
-     * {@snippet lang=c :
-     * #define __GOT_SECURE_LIB__ 200411
-     * }
-     */
-    public static int __GOT_SECURE_LIB__() {
-        return __GOT_SECURE_LIB__;
-    }
-    private static final int CLOCKS_PER_SEC = (int)1000L;
-    /**
-     * {@snippet lang=c :
-     * #define CLOCKS_PER_SEC 1000
-     * }
-     */
-    public static int CLOCKS_PER_SEC() {
-        return CLOCKS_PER_SEC;
-    }
-    private static final int CLK_TCK = (int)1000L;
-    /**
-     * {@snippet lang=c :
-     * #define CLK_TCK 1000
-     * }
-     */
-    public static int CLK_TCK() {
-        return CLK_TCK;
-    }
-    /**
-     * {@snippet lang=c :
-     * #define NNG_RELEASE_SUFFIX "dev"
+     * #define NNG_RELEASE_SUFFIX ""
      * }
      */
     public static MemorySegment NNG_RELEASE_SUFFIX() {
         class Holder {
             static final MemorySegment NNG_RELEASE_SUFFIX
-                = nng_h.LIBRARY_ARENA.allocateFrom("dev");
+                = nng_h.LIBRARY_ARENA.allocateFrom("");
         }
         return Holder.NNG_RELEASE_SUFFIX;
     }
@@ -28569,6 +27733,15 @@ public class nng_h extends nng_h$shared {
     public static int NNG_MAXADDRSTRLEN() {
         return NNG_MAXADDRSTRLEN;
     }
+    private static final int NNG_FLAG_ALLOC = (int)1L;
+    /**
+     * {@snippet lang=c :
+     * #define NNG_FLAG_ALLOC 1
+     * }
+     */
+    public static int NNG_FLAG_ALLOC() {
+        return NNG_FLAG_ALLOC;
+    }
     private static final int NNG_FLAG_NONBLOCK = (int)2L;
     /**
      * {@snippet lang=c :
@@ -28577,6 +27750,78 @@ public class nng_h extends nng_h$shared {
      */
     public static int NNG_FLAG_NONBLOCK() {
         return NNG_FLAG_NONBLOCK;
+    }
+    /**
+     * {@snippet lang=c :
+     * #define NNG_OPT_SOCKNAME "socket-name"
+     * }
+     */
+    public static MemorySegment NNG_OPT_SOCKNAME() {
+        class Holder {
+            static final MemorySegment NNG_OPT_SOCKNAME
+                = nng_h.LIBRARY_ARENA.allocateFrom("socket-name");
+        }
+        return Holder.NNG_OPT_SOCKNAME;
+    }
+    /**
+     * {@snippet lang=c :
+     * #define NNG_OPT_RAW "raw"
+     * }
+     */
+    public static MemorySegment NNG_OPT_RAW() {
+        class Holder {
+            static final MemorySegment NNG_OPT_RAW
+                = nng_h.LIBRARY_ARENA.allocateFrom("raw");
+        }
+        return Holder.NNG_OPT_RAW;
+    }
+    /**
+     * {@snippet lang=c :
+     * #define NNG_OPT_PROTO "protocol"
+     * }
+     */
+    public static MemorySegment NNG_OPT_PROTO() {
+        class Holder {
+            static final MemorySegment NNG_OPT_PROTO
+                = nng_h.LIBRARY_ARENA.allocateFrom("protocol");
+        }
+        return Holder.NNG_OPT_PROTO;
+    }
+    /**
+     * {@snippet lang=c :
+     * #define NNG_OPT_PROTONAME "protocol-name"
+     * }
+     */
+    public static MemorySegment NNG_OPT_PROTONAME() {
+        class Holder {
+            static final MemorySegment NNG_OPT_PROTONAME
+                = nng_h.LIBRARY_ARENA.allocateFrom("protocol-name");
+        }
+        return Holder.NNG_OPT_PROTONAME;
+    }
+    /**
+     * {@snippet lang=c :
+     * #define NNG_OPT_PEER "peer"
+     * }
+     */
+    public static MemorySegment NNG_OPT_PEER() {
+        class Holder {
+            static final MemorySegment NNG_OPT_PEER
+                = nng_h.LIBRARY_ARENA.allocateFrom("peer");
+        }
+        return Holder.NNG_OPT_PEER;
+    }
+    /**
+     * {@snippet lang=c :
+     * #define NNG_OPT_PEERNAME "peer-name"
+     * }
+     */
+    public static MemorySegment NNG_OPT_PEERNAME() {
+        class Holder {
+            static final MemorySegment NNG_OPT_PEERNAME
+                = nng_h.LIBRARY_ARENA.allocateFrom("peer-name");
+        }
+        return Holder.NNG_OPT_PEERNAME;
     }
     /**
      * {@snippet lang=c :
@@ -28601,6 +27846,30 @@ public class nng_h extends nng_h$shared {
                 = nng_h.LIBRARY_ARENA.allocateFrom("send-buffer");
         }
         return Holder.NNG_OPT_SENDBUF;
+    }
+    /**
+     * {@snippet lang=c :
+     * #define NNG_OPT_RECVFD "recv-fd"
+     * }
+     */
+    public static MemorySegment NNG_OPT_RECVFD() {
+        class Holder {
+            static final MemorySegment NNG_OPT_RECVFD
+                = nng_h.LIBRARY_ARENA.allocateFrom("recv-fd");
+        }
+        return Holder.NNG_OPT_RECVFD;
+    }
+    /**
+     * {@snippet lang=c :
+     * #define NNG_OPT_SENDFD "send-fd"
+     * }
+     */
+    public static MemorySegment NNG_OPT_SENDFD() {
+        class Holder {
+            static final MemorySegment NNG_OPT_SENDFD
+                = nng_h.LIBRARY_ARENA.allocateFrom("send-fd");
+        }
+        return Holder.NNG_OPT_SENDFD;
     }
     /**
      * {@snippet lang=c :
@@ -28637,6 +27906,30 @@ public class nng_h extends nng_h$shared {
                 = nng_h.LIBRARY_ARENA.allocateFrom("local-address");
         }
         return Holder.NNG_OPT_LOCADDR;
+    }
+    /**
+     * {@snippet lang=c :
+     * #define NNG_OPT_REMADDR "remote-address"
+     * }
+     */
+    public static MemorySegment NNG_OPT_REMADDR() {
+        class Holder {
+            static final MemorySegment NNG_OPT_REMADDR
+                = nng_h.LIBRARY_ARENA.allocateFrom("remote-address");
+        }
+        return Holder.NNG_OPT_REMADDR;
+    }
+    /**
+     * {@snippet lang=c :
+     * #define NNG_OPT_URL "url"
+     * }
+     */
+    public static MemorySegment NNG_OPT_URL() {
+        class Holder {
+            static final MemorySegment NNG_OPT_URL
+                = nng_h.LIBRARY_ARENA.allocateFrom("url");
+        }
+        return Holder.NNG_OPT_URL;
     }
     /**
      * {@snippet lang=c :
@@ -28688,6 +27981,66 @@ public class nng_h extends nng_h$shared {
     }
     /**
      * {@snippet lang=c :
+     * #define NNG_OPT_TLS_CONFIG "tls-config"
+     * }
+     */
+    public static MemorySegment NNG_OPT_TLS_CONFIG() {
+        class Holder {
+            static final MemorySegment NNG_OPT_TLS_CONFIG
+                = nng_h.LIBRARY_ARENA.allocateFrom("tls-config");
+        }
+        return Holder.NNG_OPT_TLS_CONFIG;
+    }
+    /**
+     * {@snippet lang=c :
+     * #define NNG_OPT_TLS_AUTH_MODE "tls-authmode"
+     * }
+     */
+    public static MemorySegment NNG_OPT_TLS_AUTH_MODE() {
+        class Holder {
+            static final MemorySegment NNG_OPT_TLS_AUTH_MODE
+                = nng_h.LIBRARY_ARENA.allocateFrom("tls-authmode");
+        }
+        return Holder.NNG_OPT_TLS_AUTH_MODE;
+    }
+    /**
+     * {@snippet lang=c :
+     * #define NNG_OPT_TLS_CERT_KEY_FILE "tls-cert-key-file"
+     * }
+     */
+    public static MemorySegment NNG_OPT_TLS_CERT_KEY_FILE() {
+        class Holder {
+            static final MemorySegment NNG_OPT_TLS_CERT_KEY_FILE
+                = nng_h.LIBRARY_ARENA.allocateFrom("tls-cert-key-file");
+        }
+        return Holder.NNG_OPT_TLS_CERT_KEY_FILE;
+    }
+    /**
+     * {@snippet lang=c :
+     * #define NNG_OPT_TLS_CA_FILE "tls-ca-file"
+     * }
+     */
+    public static MemorySegment NNG_OPT_TLS_CA_FILE() {
+        class Holder {
+            static final MemorySegment NNG_OPT_TLS_CA_FILE
+                = nng_h.LIBRARY_ARENA.allocateFrom("tls-ca-file");
+        }
+        return Holder.NNG_OPT_TLS_CA_FILE;
+    }
+    /**
+     * {@snippet lang=c :
+     * #define NNG_OPT_TLS_SERVER_NAME "tls-server-name"
+     * }
+     */
+    public static MemorySegment NNG_OPT_TLS_SERVER_NAME() {
+        class Holder {
+            static final MemorySegment NNG_OPT_TLS_SERVER_NAME
+                = nng_h.LIBRARY_ARENA.allocateFrom("tls-server-name");
+        }
+        return Holder.NNG_OPT_TLS_SERVER_NAME;
+    }
+    /**
+     * {@snippet lang=c :
      * #define NNG_OPT_TLS_VERIFIED "tls-verified"
      * }
      */
@@ -28709,6 +28062,18 @@ public class nng_h extends nng_h$shared {
                 = nng_h.LIBRARY_ARENA.allocateFrom("tls-peer-cn");
         }
         return Holder.NNG_OPT_TLS_PEER_CN;
+    }
+    /**
+     * {@snippet lang=c :
+     * #define NNG_OPT_TLS_PEER_ALT_NAMES "tls-peer-alt-names"
+     * }
+     */
+    public static MemorySegment NNG_OPT_TLS_PEER_ALT_NAMES() {
+        class Holder {
+            static final MemorySegment NNG_OPT_TLS_PEER_ALT_NAMES
+                = nng_h.LIBRARY_ARENA.allocateFrom("tls-peer-alt-names");
+        }
+        return Holder.NNG_OPT_TLS_PEER_ALT_NAMES;
     }
     /**
      * {@snippet lang=c :
@@ -28736,63 +28101,27 @@ public class nng_h extends nng_h$shared {
     }
     /**
      * {@snippet lang=c :
-     * #define NNG_OPT_BOUND_PORT "bound-port"
+     * #define NNG_OPT_TCP_BOUND_PORT "tcp-bound-port"
      * }
      */
-    public static MemorySegment NNG_OPT_BOUND_PORT() {
+    public static MemorySegment NNG_OPT_TCP_BOUND_PORT() {
         class Holder {
-            static final MemorySegment NNG_OPT_BOUND_PORT
-                = nng_h.LIBRARY_ARENA.allocateFrom("bound-port");
+            static final MemorySegment NNG_OPT_TCP_BOUND_PORT
+                = nng_h.LIBRARY_ARENA.allocateFrom("tcp-bound-port");
         }
-        return Holder.NNG_OPT_BOUND_PORT;
+        return Holder.NNG_OPT_TCP_BOUND_PORT;
     }
     /**
      * {@snippet lang=c :
-     * #define NNG_OPT_UDP_COPY_MAX "udp:copy-max"
+     * #define NNG_OPT_IPC_SECURITY_DESCRIPTOR "ipc:security-descriptor"
      * }
      */
-    public static MemorySegment NNG_OPT_UDP_COPY_MAX() {
+    public static MemorySegment NNG_OPT_IPC_SECURITY_DESCRIPTOR() {
         class Holder {
-            static final MemorySegment NNG_OPT_UDP_COPY_MAX
-                = nng_h.LIBRARY_ARENA.allocateFrom("udp:copy-max");
+            static final MemorySegment NNG_OPT_IPC_SECURITY_DESCRIPTOR
+                = nng_h.LIBRARY_ARENA.allocateFrom("ipc:security-descriptor");
         }
-        return Holder.NNG_OPT_UDP_COPY_MAX;
-    }
-    /**
-     * {@snippet lang=c :
-     * #define NNG_OPT_UDP_CONN_RETRY "udp:conn-retry"
-     * }
-     */
-    public static MemorySegment NNG_OPT_UDP_CONN_RETRY() {
-        class Holder {
-            static final MemorySegment NNG_OPT_UDP_CONN_RETRY
-                = nng_h.LIBRARY_ARENA.allocateFrom("udp:conn-retry");
-        }
-        return Holder.NNG_OPT_UDP_CONN_RETRY;
-    }
-    /**
-     * {@snippet lang=c :
-     * #define NNG_OPT_UDP_CONN_EXPIRE "udp:conn-expire"
-     * }
-     */
-    public static MemorySegment NNG_OPT_UDP_CONN_EXPIRE() {
-        class Holder {
-            static final MemorySegment NNG_OPT_UDP_CONN_EXPIRE
-                = nng_h.LIBRARY_ARENA.allocateFrom("udp:conn-expire");
-        }
-        return Holder.NNG_OPT_UDP_CONN_EXPIRE;
-    }
-    /**
-     * {@snippet lang=c :
-     * #define NNG_OPT_UDP_MAX_PEERS "udp:max-peers"
-     * }
-     */
-    public static MemorySegment NNG_OPT_UDP_MAX_PEERS() {
-        class Holder {
-            static final MemorySegment NNG_OPT_UDP_MAX_PEERS
-                = nng_h.LIBRARY_ARENA.allocateFrom("udp:max-peers");
-        }
-        return Holder.NNG_OPT_UDP_MAX_PEERS;
+        return Holder.NNG_OPT_IPC_SECURITY_DESCRIPTOR;
     }
     /**
      * {@snippet lang=c :
@@ -28904,63 +28233,51 @@ public class nng_h extends nng_h$shared {
     }
     /**
      * {@snippet lang=c :
-     * #define NNG_OPT_WS_HEADER "ws:header:"
+     * #define NNG_OPT_WS_REQUEST_HEADERS "ws:request-headers"
      * }
      */
-    public static MemorySegment NNG_OPT_WS_HEADER() {
+    public static MemorySegment NNG_OPT_WS_REQUEST_HEADERS() {
         class Holder {
-            static final MemorySegment NNG_OPT_WS_HEADER
-                = nng_h.LIBRARY_ARENA.allocateFrom("ws:header:");
+            static final MemorySegment NNG_OPT_WS_REQUEST_HEADERS
+                = nng_h.LIBRARY_ARENA.allocateFrom("ws:request-headers");
         }
-        return Holder.NNG_OPT_WS_HEADER;
+        return Holder.NNG_OPT_WS_REQUEST_HEADERS;
     }
     /**
      * {@snippet lang=c :
-     * #define NNG_OPT_WS_HEADER_NEXT "ws:hdr-next"
+     * #define NNG_OPT_WS_RESPONSE_HEADERS "ws:response-headers"
      * }
      */
-    public static MemorySegment NNG_OPT_WS_HEADER_NEXT() {
+    public static MemorySegment NNG_OPT_WS_RESPONSE_HEADERS() {
         class Holder {
-            static final MemorySegment NNG_OPT_WS_HEADER_NEXT
-                = nng_h.LIBRARY_ARENA.allocateFrom("ws:hdr-next");
+            static final MemorySegment NNG_OPT_WS_RESPONSE_HEADERS
+                = nng_h.LIBRARY_ARENA.allocateFrom("ws:response-headers");
         }
-        return Holder.NNG_OPT_WS_HEADER_NEXT;
+        return Holder.NNG_OPT_WS_RESPONSE_HEADERS;
     }
     /**
      * {@snippet lang=c :
-     * #define NNG_OPT_WS_HEADER_RESET "ws:hdr-reset"
+     * #define NNG_OPT_WS_RESPONSE_HEADER "ws:response-header:"
      * }
      */
-    public static MemorySegment NNG_OPT_WS_HEADER_RESET() {
+    public static MemorySegment NNG_OPT_WS_RESPONSE_HEADER() {
         class Holder {
-            static final MemorySegment NNG_OPT_WS_HEADER_RESET
-                = nng_h.LIBRARY_ARENA.allocateFrom("ws:hdr-reset");
+            static final MemorySegment NNG_OPT_WS_RESPONSE_HEADER
+                = nng_h.LIBRARY_ARENA.allocateFrom("ws:response-header:");
         }
-        return Holder.NNG_OPT_WS_HEADER_RESET;
+        return Holder.NNG_OPT_WS_RESPONSE_HEADER;
     }
     /**
      * {@snippet lang=c :
-     * #define NNG_OPT_WS_HEADER_KEY "ws:hdr-key"
+     * #define NNG_OPT_WS_REQUEST_HEADER "ws:request-header:"
      * }
      */
-    public static MemorySegment NNG_OPT_WS_HEADER_KEY() {
+    public static MemorySegment NNG_OPT_WS_REQUEST_HEADER() {
         class Holder {
-            static final MemorySegment NNG_OPT_WS_HEADER_KEY
-                = nng_h.LIBRARY_ARENA.allocateFrom("ws:hdr-key");
+            static final MemorySegment NNG_OPT_WS_REQUEST_HEADER
+                = nng_h.LIBRARY_ARENA.allocateFrom("ws:request-header:");
         }
-        return Holder.NNG_OPT_WS_HEADER_KEY;
-    }
-    /**
-     * {@snippet lang=c :
-     * #define NNG_OPT_WS_HEADER_VALUE "ws:hdr-val"
-     * }
-     */
-    public static MemorySegment NNG_OPT_WS_HEADER_VALUE() {
-        class Holder {
-            static final MemorySegment NNG_OPT_WS_HEADER_VALUE
-                = nng_h.LIBRARY_ARENA.allocateFrom("ws:hdr-val");
-        }
-        return Holder.NNG_OPT_WS_HEADER_VALUE;
+        return Holder.NNG_OPT_WS_REQUEST_HEADER;
     }
     /**
      * {@snippet lang=c :
@@ -29048,18 +28365,6 @@ public class nng_h extends nng_h$shared {
     }
     /**
      * {@snippet lang=c :
-     * #define NNG_OPT_LISTEN_FD "listen-fd"
-     * }
-     */
-    public static MemorySegment NNG_OPT_LISTEN_FD() {
-        class Holder {
-            static final MemorySegment NNG_OPT_LISTEN_FD
-                = nng_h.LIBRARY_ARENA.allocateFrom("listen-fd");
-        }
-        return Holder.NNG_OPT_LISTEN_FD;
-    }
-    /**
-     * {@snippet lang=c :
      * #define NNG_OPT_PAIR1_POLY "pair1:polyamorous"
      * }
      */
@@ -29072,6 +28377,54 @@ public class nng_h extends nng_h$shared {
     }
     /**
      * {@snippet lang=c :
+     * #define NNG_PAIR1_SELF_NAME "pair1"
+     * }
+     */
+    public static MemorySegment NNG_PAIR1_SELF_NAME() {
+        class Holder {
+            static final MemorySegment NNG_PAIR1_SELF_NAME
+                = nng_h.LIBRARY_ARENA.allocateFrom("pair1");
+        }
+        return Holder.NNG_PAIR1_SELF_NAME;
+    }
+    /**
+     * {@snippet lang=c :
+     * #define NNG_PAIR1_PEER_NAME "pair1"
+     * }
+     */
+    public static MemorySegment NNG_PAIR1_PEER_NAME() {
+        class Holder {
+            static final MemorySegment NNG_PAIR1_PEER_NAME
+                = nng_h.LIBRARY_ARENA.allocateFrom("pair1");
+        }
+        return Holder.NNG_PAIR1_PEER_NAME;
+    }
+    /**
+     * {@snippet lang=c :
+     * #define NNG_OPT_SUB_SUBSCRIBE "sub:subscribe"
+     * }
+     */
+    public static MemorySegment NNG_OPT_SUB_SUBSCRIBE() {
+        class Holder {
+            static final MemorySegment NNG_OPT_SUB_SUBSCRIBE
+                = nng_h.LIBRARY_ARENA.allocateFrom("sub:subscribe");
+        }
+        return Holder.NNG_OPT_SUB_SUBSCRIBE;
+    }
+    /**
+     * {@snippet lang=c :
+     * #define NNG_OPT_SUB_UNSUBSCRIBE "sub:unsubscribe"
+     * }
+     */
+    public static MemorySegment NNG_OPT_SUB_UNSUBSCRIBE() {
+        class Holder {
+            static final MemorySegment NNG_OPT_SUB_UNSUBSCRIBE
+                = nng_h.LIBRARY_ARENA.allocateFrom("sub:unsubscribe");
+        }
+        return Holder.NNG_OPT_SUB_UNSUBSCRIBE;
+    }
+    /**
+     * {@snippet lang=c :
      * #define NNG_OPT_SUB_PREFNEW "sub:prefnew"
      * }
      */
@@ -29081,6 +28434,30 @@ public class nng_h extends nng_h$shared {
                 = nng_h.LIBRARY_ARENA.allocateFrom("sub:prefnew");
         }
         return Holder.NNG_OPT_SUB_PREFNEW;
+    }
+    /**
+     * {@snippet lang=c :
+     * #define NNG_REQ0_SELF_NAME "req"
+     * }
+     */
+    public static MemorySegment NNG_REQ0_SELF_NAME() {
+        class Holder {
+            static final MemorySegment NNG_REQ0_SELF_NAME
+                = nng_h.LIBRARY_ARENA.allocateFrom("req");
+        }
+        return Holder.NNG_REQ0_SELF_NAME;
+    }
+    /**
+     * {@snippet lang=c :
+     * #define NNG_REQ0_PEER_NAME "rep"
+     * }
+     */
+    public static MemorySegment NNG_REQ0_PEER_NAME() {
+        class Holder {
+            static final MemorySegment NNG_REQ0_PEER_NAME
+                = nng_h.LIBRARY_ARENA.allocateFrom("rep");
+        }
+        return Holder.NNG_REQ0_PEER_NAME;
     }
     /**
      * {@snippet lang=c :
@@ -29108,15 +28485,27 @@ public class nng_h extends nng_h$shared {
     }
     /**
      * {@snippet lang=c :
-     * #define NNG_OPT_SURVEYOR_SURVEYTIME "surveyor:survey-time"
+     * #define NNG_REP0_SELF_NAME "rep"
      * }
      */
-    public static MemorySegment NNG_OPT_SURVEYOR_SURVEYTIME() {
+    public static MemorySegment NNG_REP0_SELF_NAME() {
         class Holder {
-            static final MemorySegment NNG_OPT_SURVEYOR_SURVEYTIME
-                = nng_h.LIBRARY_ARENA.allocateFrom("surveyor:survey-time");
+            static final MemorySegment NNG_REP0_SELF_NAME
+                = nng_h.LIBRARY_ARENA.allocateFrom("rep");
         }
-        return Holder.NNG_OPT_SURVEYOR_SURVEYTIME;
+        return Holder.NNG_REP0_SELF_NAME;
+    }
+    /**
+     * {@snippet lang=c :
+     * #define NNG_REP0_PEER_NAME "req"
+     * }
+     */
+    public static MemorySegment NNG_REP0_PEER_NAME() {
+        class Holder {
+            static final MemorySegment NNG_REP0_PEER_NAME
+                = nng_h.LIBRARY_ARENA.allocateFrom("req");
+        }
+        return Holder.NNG_REP0_PEER_NAME;
     }
 }
 

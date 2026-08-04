@@ -20,6 +20,7 @@ import static java.lang.foreign.MemoryLayout.PathElement.*;
  *     nng_sockaddr_inproc s_inproc;
  *     nng_sockaddr_in6 s_in6;
  *     nng_sockaddr_in s_in;
+ *     nng_sockaddr_zt s_zt;
  *     nng_sockaddr_abstract s_abstract;
  *     nng_sockaddr_storage s_storage;
  * }
@@ -37,6 +38,7 @@ public class nng_sockaddr {
         nng_sockaddr_inproc.layout().withName("s_inproc"),
         nng_sockaddr_in6.layout().withName("s_in6"),
         nng_sockaddr_in.layout().withName("s_in"),
+        nng_sockaddr_zt.layout().withName("s_zt"),
         nng_sockaddr_abstract.layout().withName("s_abstract"),
         nng_sockaddr_storage.layout().withName("s_storage")
     ).withName("nng_sockaddr");
@@ -266,6 +268,50 @@ public class nng_sockaddr {
      */
     public static void s_in(MemorySegment union, MemorySegment fieldValue) {
         MemorySegment.copy(fieldValue, 0L, union, s_in$OFFSET, s_in$LAYOUT.byteSize());
+    }
+
+    private static final GroupLayout s_zt$LAYOUT = (GroupLayout)$LAYOUT.select(groupElement("s_zt"));
+
+    /**
+     * Layout for field:
+     * {@snippet lang=c :
+     * nng_sockaddr_zt s_zt
+     * }
+     */
+    public static final GroupLayout s_zt$layout() {
+        return s_zt$LAYOUT;
+    }
+
+    private static final long s_zt$OFFSET = $LAYOUT.byteOffset(groupElement("s_zt"));
+
+    /**
+     * Offset for field:
+     * {@snippet lang=c :
+     * nng_sockaddr_zt s_zt
+     * }
+     */
+    public static final long s_zt$offset() {
+        return s_zt$OFFSET;
+    }
+
+    /**
+     * Getter for field:
+     * {@snippet lang=c :
+     * nng_sockaddr_zt s_zt
+     * }
+     */
+    public static MemorySegment s_zt(MemorySegment union) {
+        return union.asSlice(s_zt$OFFSET, s_zt$LAYOUT.byteSize());
+    }
+
+    /**
+     * Setter for field:
+     * {@snippet lang=c :
+     * nng_sockaddr_zt s_zt
+     * }
+     */
+    public static void s_zt(MemorySegment union, MemorySegment fieldValue) {
+        MemorySegment.copy(fieldValue, 0L, union, s_zt$OFFSET, s_zt$LAYOUT.byteSize());
     }
 
     private static final GroupLayout s_abstract$LAYOUT = (GroupLayout)$LAYOUT.select(groupElement("s_abstract"));

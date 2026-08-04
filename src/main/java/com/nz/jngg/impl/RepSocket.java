@@ -1,5 +1,6 @@
-package com.nz.jngg;
+package com.nz.jngg.impl;
 
+import com.nz.jngg.AbstractNngSocket;
 import com.nz.jngg.utils.Nng;
 import com.nz.jnng.nng_h;
 

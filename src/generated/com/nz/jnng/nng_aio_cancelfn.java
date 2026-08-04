@@ -14,7 +14,7 @@ import static java.lang.foreign.MemoryLayout.PathElement.*;
 
 /**
  * {@snippet lang=c :
- * typedef void (*nng_aio_cancelfn)(nng_aio *, void *, nng_err)
+ * typedef void (*nng_aio_cancelfn)(nng_aio *, void *, int)
  * }
  */
 public final class nng_aio_cancelfn {

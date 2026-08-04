@@ -14,26 +14,28 @@ import static java.lang.foreign.MemoryLayout.PathElement.*;
 
 /**
  * {@snippet lang=c :
- * struct nng_sockaddr_in6 {
+ * struct nng_sockaddr_zt {
  *     uint16_t sa_family;
- *     uint16_t sa_port;
- *     uint8_t sa_addr[16];
- *     uint32_t sa_scope;
+ *     uint64_t sa_nwid;
+ *     uint64_t sa_nodeid;
+ *     uint32_t sa_port;
  * }
  * }
  */
-public class nng_sockaddr_in6 {
+public class nng_sockaddr_zt {
 
-    nng_sockaddr_in6() {
+    nng_sockaddr_zt() {
         // Should not be called directly
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         nng_h.C_SHORT.withName("sa_family"),
-        nng_h.C_SHORT.withName("sa_port"),
-        MemoryLayout.sequenceLayout(16, nng_h.C_CHAR).withName("sa_addr"),
-        nng_h.C_INT.withName("sa_scope")
-    ).withName("nng_sockaddr_in6");
+        MemoryLayout.paddingLayout(6),
+        nng_h.C_LONG_LONG.withName("sa_nwid"),
+        nng_h.C_LONG_LONG.withName("sa_nodeid"),
+        nng_h.C_INT.withName("sa_port"),
+        MemoryLayout.paddingLayout(4)
+    ).withName("nng_sockaddr_zt");
 
     /**
      * The layout of this struct
@@ -86,15 +88,103 @@ public class nng_sockaddr_in6 {
         struct.set(sa_family$LAYOUT, sa_family$OFFSET, fieldValue);
     }
 
-    private static final OfShort sa_port$LAYOUT = (OfShort)$LAYOUT.select(groupElement("sa_port"));
+    private static final OfLong sa_nwid$LAYOUT = (OfLong)$LAYOUT.select(groupElement("sa_nwid"));
 
     /**
      * Layout for field:
      * {@snippet lang=c :
-     * uint16_t sa_port
+     * uint64_t sa_nwid
      * }
      */
-    public static final OfShort sa_port$layout() {
+    public static final OfLong sa_nwid$layout() {
+        return sa_nwid$LAYOUT;
+    }
+
+    private static final long sa_nwid$OFFSET = $LAYOUT.byteOffset(groupElement("sa_nwid"));
+
+    /**
+     * Offset for field:
+     * {@snippet lang=c :
+     * uint64_t sa_nwid
+     * }
+     */
+    public static final long sa_nwid$offset() {
+        return sa_nwid$OFFSET;
+    }
+
+    /**
+     * Getter for field:
+     * {@snippet lang=c :
+     * uint64_t sa_nwid
+     * }
+     */
+    public static long sa_nwid(MemorySegment struct) {
+        return struct.get(sa_nwid$LAYOUT, sa_nwid$OFFSET);
+    }
+
+    /**
+     * Setter for field:
+     * {@snippet lang=c :
+     * uint64_t sa_nwid
+     * }
+     */
+    public static void sa_nwid(MemorySegment struct, long fieldValue) {
+        struct.set(sa_nwid$LAYOUT, sa_nwid$OFFSET, fieldValue);
+    }
+
+    private static final OfLong sa_nodeid$LAYOUT = (OfLong)$LAYOUT.select(groupElement("sa_nodeid"));
+
+    /**
+     * Layout for field:
+     * {@snippet lang=c :
+     * uint64_t sa_nodeid
+     * }
+     */
+    public static final OfLong sa_nodeid$layout() {
+        return sa_nodeid$LAYOUT;
+    }
+
+    private static final long sa_nodeid$OFFSET = $LAYOUT.byteOffset(groupElement("sa_nodeid"));
+
+    /**
+     * Offset for field:
+     * {@snippet lang=c :
+     * uint64_t sa_nodeid
+     * }
+     */
+    public static final long sa_nodeid$offset() {
+        return sa_nodeid$OFFSET;
+    }
+
+    /**
+     * Getter for field:
+     * {@snippet lang=c :
+     * uint64_t sa_nodeid
+     * }
+     */
+    public static long sa_nodeid(MemorySegment struct) {
+        return struct.get(sa_nodeid$LAYOUT, sa_nodeid$OFFSET);
+    }
+
+    /**
+     * Setter for field:
+     * {@snippet lang=c :
+     * uint64_t sa_nodeid
+     * }
+     */
+    public static void sa_nodeid(MemorySegment struct, long fieldValue) {
+        struct.set(sa_nodeid$LAYOUT, sa_nodeid$OFFSET, fieldValue);
+    }
+
+    private static final OfInt sa_port$LAYOUT = (OfInt)$LAYOUT.select(groupElement("sa_port"));
+
+    /**
+     * Layout for field:
+     * {@snippet lang=c :
+     * uint32_t sa_port
+     * }
+     */
+    public static final OfInt sa_port$layout() {
         return sa_port$LAYOUT;
     }
 
@@ -103,7 +193,7 @@ public class nng_sockaddr_in6 {
     /**
      * Offset for field:
      * {@snippet lang=c :
-     * uint16_t sa_port
+     * uint32_t sa_port
      * }
      */
     public static final long sa_port$offset() {
@@ -113,142 +203,21 @@ public class nng_sockaddr_in6 {
     /**
      * Getter for field:
      * {@snippet lang=c :
-     * uint16_t sa_port
+     * uint32_t sa_port
      * }
      */
-    public static short sa_port(MemorySegment struct) {
+    public static int sa_port(MemorySegment struct) {
         return struct.get(sa_port$LAYOUT, sa_port$OFFSET);
     }
 
     /**
      * Setter for field:
      * {@snippet lang=c :
-     * uint16_t sa_port
+     * uint32_t sa_port
      * }
      */
-    public static void sa_port(MemorySegment struct, short fieldValue) {
+    public static void sa_port(MemorySegment struct, int fieldValue) {
         struct.set(sa_port$LAYOUT, sa_port$OFFSET, fieldValue);
-    }
-
-    private static final SequenceLayout sa_addr$LAYOUT = (SequenceLayout)$LAYOUT.select(groupElement("sa_addr"));
-
-    /**
-     * Layout for field:
-     * {@snippet lang=c :
-     * uint8_t sa_addr[16]
-     * }
-     */
-    public static final SequenceLayout sa_addr$layout() {
-        return sa_addr$LAYOUT;
-    }
-
-    private static final long sa_addr$OFFSET = $LAYOUT.byteOffset(groupElement("sa_addr"));
-
-    /**
-     * Offset for field:
-     * {@snippet lang=c :
-     * uint8_t sa_addr[16]
-     * }
-     */
-    public static final long sa_addr$offset() {
-        return sa_addr$OFFSET;
-    }
-
-    /**
-     * Getter for field:
-     * {@snippet lang=c :
-     * uint8_t sa_addr[16]
-     * }
-     */
-    public static MemorySegment sa_addr(MemorySegment struct) {
-        return struct.asSlice(sa_addr$OFFSET, sa_addr$LAYOUT.byteSize());
-    }
-
-    /**
-     * Setter for field:
-     * {@snippet lang=c :
-     * uint8_t sa_addr[16]
-     * }
-     */
-    public static void sa_addr(MemorySegment struct, MemorySegment fieldValue) {
-        MemorySegment.copy(fieldValue, 0L, struct, sa_addr$OFFSET, sa_addr$LAYOUT.byteSize());
-    }
-
-    private static long[] sa_addr$DIMS = { 16 };
-
-    /**
-     * Dimensions for array field:
-     * {@snippet lang=c :
-     * uint8_t sa_addr[16]
-     * }
-     */
-    public static long[] sa_addr$dimensions() {
-        return sa_addr$DIMS;
-    }
-    private static final VarHandle sa_addr$ELEM_HANDLE = sa_addr$LAYOUT.varHandle(sequenceElement());
-
-    /**
-     * Indexed getter for field:
-     * {@snippet lang=c :
-     * uint8_t sa_addr[16]
-     * }
-     */
-    public static byte sa_addr(MemorySegment struct, long index0) {
-        return (byte)sa_addr$ELEM_HANDLE.get(struct, sa_addr$OFFSET, index0);
-    }
-
-    /**
-     * Indexed setter for field:
-     * {@snippet lang=c :
-     * uint8_t sa_addr[16]
-     * }
-     */
-    public static void sa_addr(MemorySegment struct, long index0, byte fieldValue) {
-        sa_addr$ELEM_HANDLE.set(struct, sa_addr$OFFSET, index0, fieldValue);
-    }
-
-    private static final OfInt sa_scope$LAYOUT = (OfInt)$LAYOUT.select(groupElement("sa_scope"));
-
-    /**
-     * Layout for field:
-     * {@snippet lang=c :
-     * uint32_t sa_scope
-     * }
-     */
-    public static final OfInt sa_scope$layout() {
-        return sa_scope$LAYOUT;
-    }
-
-    private static final long sa_scope$OFFSET = $LAYOUT.byteOffset(groupElement("sa_scope"));
-
-    /**
-     * Offset for field:
-     * {@snippet lang=c :
-     * uint32_t sa_scope
-     * }
-     */
-    public static final long sa_scope$offset() {
-        return sa_scope$OFFSET;
-    }
-
-    /**
-     * Getter for field:
-     * {@snippet lang=c :
-     * uint32_t sa_scope
-     * }
-     */
-    public static int sa_scope(MemorySegment struct) {
-        return struct.get(sa_scope$LAYOUT, sa_scope$OFFSET);
-    }
-
-    /**
-     * Setter for field:
-     * {@snippet lang=c :
-     * uint32_t sa_scope
-     * }
-     */
-    public static void sa_scope(MemorySegment struct, int fieldValue) {
-        struct.set(sa_scope$LAYOUT, sa_scope$OFFSET, fieldValue);
     }
 
     /**
