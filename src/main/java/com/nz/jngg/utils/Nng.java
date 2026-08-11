@@ -8,8 +8,12 @@ public class Nng {
         NativeLibraryLoader.load();
     }
 
+    public static boolean isOk(int rc) {
+        return rc == NngErrorCode.OK;
+    }
+
     public static void check(int rc) {
-        if (rc != 0) {
+        if (rc != NngErrorCode.OK) {
             throw new NngException(rc);
         }
     }

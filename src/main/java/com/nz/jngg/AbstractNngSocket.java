@@ -21,41 +21,51 @@ public abstract class AbstractNngSocket implements INngSocket {
         open(socket);
     }
 
-    protected abstract void open(MemorySegment socket);
+    protected abstract int open(MemorySegment socket);
 
     @Override
-    public void listen(String address) {
+    public int listen(String address) {
         try (Arena arena = Arena.ofConfined()) {
             MemorySegment addr = arena.allocateFrom(address);
-            Nng.check(nng_h.nng_listen(socket, addr, MemorySegment.NULL, 0));
+
+            return nng_h.nng_listen(
+                    socket,
+                    addr,
+                    MemorySegment.NULL,
+                    0
+            );
+        }
+    }
+
+    public int dial(String address) {
+        try (Arena arena = Arena.ofConfined()) {
+            MemorySegment addr = arena.allocateFrom(address);
+            return nng_h.nng_dial(
+                    socket,
+                    addr,
+                    MemorySegment.NULL,
+                    0
+            );
         }
     }
 
     @Override
-    public void dial(String address) {
-        try (Arena arena = Arena.ofConfined()) {
-            MemorySegment addr = arena.allocateFrom(address);
-            Nng.check(nng_h.nng_dial(socket, addr, MemorySegment.NULL, 0));
-        }
-    }
-
-    @Override
-    public void send(byte[] payload) {
+    public int send(byte[] payload) {
         try (Arena local = Arena.ofConfined()) {
+
             MemorySegment msgPtr = local.allocate(ValueLayout.ADDRESS);
             Nng.check(nng_h.nng_msg_alloc(msgPtr, 0));
             MemorySegment msg = msgPtr.get(ValueLayout.ADDRESS, 0);
-            try {
-                MemorySegment data = local.allocateFrom(ValueLayout.JAVA_BYTE, payload);
-                Nng.check(nng_h.nng_msg_append(msg, data, payload.length));
-                Nng.check(nng_h.nng_sendmsg(socket, msg, 0));
-            // ownership transféré à NNG
+
+            MemorySegment data = local.allocateFrom(ValueLayout.JAVA_BYTE, payload);
+            Nng.check(nng_h.nng_msg_append(msg, data, payload.length));
+
+            int result = nng_h.nng_sendmsg(socket, msg, 0);
+            if (result == 0) {
+                // NNG owns the message from now on.
                 msg = MemorySegment.NULL;
-            } finally {
-                if (!msg.equals(MemorySegment.NULL)) {
-                    nng_h.nng_msg_free(msg);
-                }
             }
+            return result;
         }
     }
 

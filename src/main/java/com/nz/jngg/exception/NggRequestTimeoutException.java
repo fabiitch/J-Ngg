@@ -1,4 +1,4 @@
-package com.nz.jngg;
+package com.nz.jngg.exception;
 
 public final class NggRequestTimeoutException extends RuntimeException {
     public NggRequestTimeoutException() {

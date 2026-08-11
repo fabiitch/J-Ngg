@@ -9,7 +9,7 @@ import java.lang.foreign.MemorySegment;
 public final class Pair1Socket extends AbstractNngSocket {
 
     @Override
-    protected void open(MemorySegment socket) {
-        Nng.check(nng_h.nng_pair1_open(socket));
+    protected int open(MemorySegment socket) {
+       return nng_h.nng_pair1_open(socket);
     }
 }

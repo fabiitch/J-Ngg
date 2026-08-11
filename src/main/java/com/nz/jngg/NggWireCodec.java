@@ -1,5 +1,8 @@
 package com.nz.jngg;
 
+import com.nz.jngg.message.NggHeader;
+import com.nz.jngg.message.NggMessage;
+
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 

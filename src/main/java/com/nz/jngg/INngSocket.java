@@ -4,15 +4,15 @@ import java.nio.charset.StandardCharsets;
 
 public interface INngSocket extends AutoCloseable {
 
-    void listen(String address);
+    int listen(String address);
 
-    void dial(String address);
+    int dial(String address);
 
-    void send(byte[] payload);
+    int send(byte[] payload);
 
     byte[] receive();
 
-    default void send(String data) {
+    default int send(String data) {
         send(data.getBytes(StandardCharsets.UTF_8));
     }
 

@@ -1,4 +1,4 @@
-package com.nz.jngg;
+package com.nz.jngg.message;
 
 /** Header written before every application payload. */
 public record NggHeader(int payloadLength, short messageType, long requestId) {

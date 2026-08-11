@@ -1,4 +1,4 @@
-import com.nz.jngg.NggMessage;
+import com.nz.jngg.message.NggMessage;
 import com.nz.jngg.NggRequestClient;
 import com.nz.jngg.NggRequestServer;
 import com.nz.jngg.NngSocketConfig;
