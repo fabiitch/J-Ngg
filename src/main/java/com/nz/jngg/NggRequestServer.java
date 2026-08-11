@@ -1,6 +1,7 @@
 package com.nz.jngg;
 
 import com.nz.jngg.impl.RepSocket;
+import com.nz.jngg.message.NggMessage;
 import com.nz.jngg.utils.Nng;
 import com.nz.jnng.nng_h;
 

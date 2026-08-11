@@ -1,6 +1,8 @@
 package com.nz.jngg;
 
+import com.nz.jngg.exception.TooManyPendingRequestsException;
 import com.nz.jngg.impl.Pair1Socket;
+import com.nz.jngg.message.NggMessage;
 import com.nz.jngg.utils.Nng;
 import com.nz.jnng.nng_h;
 

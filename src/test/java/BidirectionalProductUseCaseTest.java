@@ -1,4 +1,4 @@
-import com.nz.jngg.NggMessage;
+import com.nz.jngg.message.NggMessage;
 import com.nz.jngg.NggPeerChannel;
 import com.nz.jngg.NngSocketConfig;
 import lombok.extern.slf4j.Slf4j;

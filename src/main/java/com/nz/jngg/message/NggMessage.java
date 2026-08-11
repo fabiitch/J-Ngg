@@ -1,4 +1,4 @@
-package com.nz.jngg;
+package com.nz.jngg.message;
 
 import java.util.Arrays;
 import java.util.Objects;
