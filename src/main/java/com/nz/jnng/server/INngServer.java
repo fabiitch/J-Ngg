@@ -8,7 +8,7 @@ import com.nz.jnng.channel.*;
  * Each channel uses a specific NNG messaging pattern.
  * The server side is responsible for listening on the underlying endpoint.
  */
-public interface INngServer {
+public interface INngServer extends AutoCloseable {
 
     /**
      * Creates a bidirectional one-to-one channel using the PAIR pattern.
@@ -77,4 +77,7 @@ public interface INngServer {
      * @return the reply channel
      */
     ReplyChannel rep(String channel);
+
+    @Override
+    void close();
 }
