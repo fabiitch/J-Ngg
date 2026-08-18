@@ -1,8 +1,8 @@
 package com.nz.jnng.socket;
 
+import com.nz.jnng.Subscription;
 import com.nz.jnng.constants.NngFlags;
-import com.nz.jnng.message.NngReceiveResult;
-import com.nz.jnng.message.NngNativeReceiveResult;
+import com.nz.jnng.nng_pipe_cb;
 import com.nz.jnng.nng_h;
 import com.nz.jnng.nng_socket;
 import com.nz.jnng.utils.Nng;
@@ -15,8 +15,11 @@ import java.lang.foreign.ValueLayout;
 import java.time.Duration;
 import java.util.Objects;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.Optional;
+import java.util.function.Consumer;
 
 public abstract class AbstractNngSocket implements INngSocket {
 
@@ -25,6 +28,9 @@ public abstract class AbstractNngSocket implements INngSocket {
     protected final MemorySegment socket;
     private final NngSocketConfig config;
     private final AtomicBoolean closed = new AtomicBoolean();
+    private final AtomicInteger activeConnections = new AtomicInteger();
+    private final CopyOnWriteArrayList<Consumer<SocketConnectionEvent>> connectionListeners =
+            new CopyOnWriteArrayList<>();
 
     protected AbstractNngSocket() {
         this(NngSocketConfig.defaults());
@@ -42,6 +48,7 @@ public abstract class AbstractNngSocket implements INngSocket {
         }
         try {
             configure();
+            registerPipeNotifications();
         } catch (Throwable error) {
             nng_h.nng_socket_close(socket);
             arena.close();
@@ -85,16 +92,6 @@ public abstract class AbstractNngSocket implements INngSocket {
     @Override
     public int trySend(byte[] payload) {
         return send(payload, NngFlags.NONBLOCK);
-    }
-
-    @Override
-    public int send(NativeMessage message) {
-        Objects.requireNonNull(message, "message");
-        int rc = nng_h.nng_sendmsg(socket, message.handle(), NngFlags.NONE);
-        if (rc == NngErrorCode.OK) {
-            message.transferredToNng();
-        }
-        return rc;
     }
 
     @Override
@@ -161,77 +158,6 @@ public abstract class AbstractNngSocket implements INngSocket {
     }
 
     @Override
-    public NngReceiveResult receive() {
-        return copy(receiveNative(NngFlags.NONE));
-    }
-
-    @Override
-    public synchronized NngReceiveResult receive(Duration timeout) {
-        Objects.requireNonNull(timeout, "timeout");
-        if (timeout.isNegative()) {
-            throw new IllegalArgumentException("timeout must be >= 0");
-        }
-        if (timeout.isZero()) {
-            NngReceiveResult result = copy(receiveNative(NngFlags.NONBLOCK));
-            return result.code() == NngErrorCode.EAGAIN
-                    ? new NngReceiveResult(NngErrorCode.ETIMEDOUT, null)
-                    : result;
-        }
-
-        long timeoutMillis = Math.max(1, timeout.toMillis());
-        if (timeoutMillis > Integer.MAX_VALUE) {
-            throw new IllegalArgumentException("timeout must be <= "
-                    + Integer.MAX_VALUE + " ms");
-        }
-
-        try (Arena local = Arena.ofConfined()) {
-            MemorySegment previousTimeout = local.allocate(ValueLayout.JAVA_INT);
-            int rc = nng_h.nng_socket_get_ms(
-                    socket,
-                    nng_h.NNG_OPT_RECVTIMEO(),
-                    previousTimeout
-            );
-            if (rc != NngErrorCode.OK) {
-                return new NngReceiveResult(rc, null);
-            }
-
-            rc = nng_h.nng_socket_set_ms(
-                    socket,
-                    nng_h.NNG_OPT_RECVTIMEO(),
-                    (int) timeoutMillis
-            );
-            if (rc != NngErrorCode.OK) {
-                return new NngReceiveResult(rc, null);
-            }
-
-            try {
-                return copy(receiveNative(NngFlags.NONE));
-            } finally {
-                nng_h.nng_socket_set_ms(
-                        socket,
-                        nng_h.NNG_OPT_RECVTIMEO(),
-                        previousTimeout.get(ValueLayout.JAVA_INT, 0)
-                );
-            }
-        }
-    }
-
-    @Override
-    public NngReceiveResult tryReceive() {
-        return copy(receiveNative(NngFlags.NONBLOCK));
-    }
-
-    @Override
-    public NngNativeReceiveResult receiveNative() {
-        return receiveNative(NngFlags.NONE);
-    }
-
-    @Override
-    public NngNativeReceiveResult tryReceiveNative() {
-        return receiveNative(NngFlags.NONBLOCK);
-    }
-
-    @Override
     public CompletableFuture<NativeMessage> receiveNativeAsync() {
         ensureOpen();
         return NngAio.receive(socket, config.receiveTimeout());
@@ -247,39 +173,32 @@ public abstract class AbstractNngSocket implements INngSocket {
         return NngAio.receive(socket, Optional.of(timeout));
     }
 
-    private NngNativeReceiveResult receiveNative(int flags) {
+    @Override
+    public Subscription onConnectionChanged(Consumer<SocketConnectionEvent> listener) {
         ensureOpen();
-        try (Arena arena = Arena.ofConfined()) {
-            MemorySegment msgPtr = arena.allocate(ValueLayout.ADDRESS);
+        Objects.requireNonNull(listener, "listener");
+        connectionListeners.add(listener);
+        return new Subscription() {
+            private final AtomicBoolean active = new AtomicBoolean(true);
 
-            int rc = nng_h.nng_recvmsg(
-                    socket,
-                    msgPtr,
-                    flags
-            );
-
-            if (rc != NngErrorCode.OK) {
-                return new NngNativeReceiveResult(rc, null);
+            @Override
+            public void close() {
+                if (active.compareAndSet(true, false)) {
+                    connectionListeners.remove(listener);
+                }
             }
 
-            MemorySegment msg =
-                    msgPtr.get(ValueLayout.ADDRESS, 0);
-            return new NngNativeReceiveResult(NngErrorCode.OK, NativeMessage.adopt(msg));
-        }
-    }
-
-    private static NngReceiveResult copy(NngNativeReceiveResult result) {
-        if (!result.isSuccess()) {
-            return new NngReceiveResult(result.code(), null);
-        }
-        try (NativeMessage message = result.message()) {
-            return new NngReceiveResult(NngErrorCode.OK, message.toByteArray());
-        }
+            @Override
+            public boolean isActive() {
+                return active.get() && !closed.get();
+            }
+        };
     }
 
     @Override
     public void close() {
         if (closed.compareAndSet(false, true)) {
+            connectionListeners.clear();
             int rc = nng_h.nng_socket_close(socket);
             arena.close();
             if (rc != NngErrorCode.OK && rc != NngErrorCode.ECLOSED) {
@@ -305,6 +224,48 @@ public abstract class AbstractNngSocket implements INngSocket {
                 socket, nng_h.NNG_OPT_RECONNMAXT(), config.reconnectMaxMillis()));
         Nng.check(nng_h.nng_socket_set_size(
                 socket, nng_h.NNG_OPT_RECVMAXSZ(), config.maxReceiveSize()));
+    }
+
+    private void registerPipeNotifications() {
+        MemorySegment callback = nng_pipe_cb.allocate(this::handlePipeEvent, arena);
+        Nng.check(nng_h.nng_pipe_notify(
+                socket,
+                nng_h.NNG_PIPE_EV_ADD_POST(),
+                callback,
+                MemorySegment.NULL
+        ));
+        Nng.check(nng_h.nng_pipe_notify(
+                socket,
+                nng_h.NNG_PIPE_EV_REM_POST(),
+                callback,
+                MemorySegment.NULL
+        ));
+    }
+
+    /** Called under an NNG socket lock: listeners must only enqueue lightweight work. */
+    private void handlePipeEvent(MemorySegment ignoredPipe, int event, MemorySegment ignoredArg) {
+        try {
+            int count;
+            if (event == nng_h.NNG_PIPE_EV_ADD_POST()) {
+                count = activeConnections.incrementAndGet();
+            } else if (event == nng_h.NNG_PIPE_EV_REM_POST()) {
+                count = activeConnections.updateAndGet(current -> Math.max(0, current - 1));
+            } else {
+                return;
+            }
+            SocketConnectionEvent connectionEvent = new SocketConnectionEvent(count);
+            NngCallbackBridge.execute(() -> {
+                for (Consumer<SocketConnectionEvent> listener : connectionListeners) {
+                    try {
+                        listener.accept(connectionEvent);
+                    } catch (Throwable ignored) {
+                        // A low-level listener cannot stop pipe event delivery.
+                    }
+                }
+            });
+        } catch (Throwable ignored) {
+            // Exceptions must never cross the native upcall boundary.
+        }
     }
 
 }

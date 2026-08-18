@@ -1,3 +1,7 @@
+# J-NNG
+
+[Documentation technique couche par couche](doc/nggDoc.md)
+
 ### init 
 git clone https://github.com/nanomsg/nng.git
 cd nng
@@ -31,65 +35,47 @@ nng.h
 
 ## Application API
 
-Application payload serialization is supplied by the application (for example,
-by a shared Protobuf project). J-NNG owns only the stable wire envelope.
+The NNG pattern remains explicit while sockets, Panama, AIO and dispatch stay
+internal. A channel can carry several application message types, each identified
+by a stable wire id and encoded by the application (for example with Protobuf).
 
 ```java
-MessageType<Data> DATA = new MessageType<>(100, Data.class, dataCodec);
-MessageRegistry messages = MessageRegistry.builder().register(DATA).build();
-
-NngTopology<Exe> topology = NngTopology.<Exe>builder()
-        .link(Exe.AGENT, Exe.OVERLAY, "ipc://agent-overlay")
-        .build();
-
-try (NngService<Exe> service = NngService.open(Exe.AGENT, topology, messages)) {
-    Subscription subscription = service.on(
-            Exe.OVERLAY,
-            Data.class,
-            this::handleData
+try (Jnng jnng = new Jnng()) {
+    PairChannel overlay = jnng.pair(
+            ChannelConfiguration.dial("ipc://agent-overlay").build()
     );
 
-    service.sendTo(Exe.OVERLAY, new Data(...));
-    service.sendToAsync(Exe.OVERLAY, new Data(...));
+    overlay.registerMessage(
+            100,
+            Data.class,
+            dataCodec,
+            this::handleData
+    );
+    overlay.registerMessage(101, Status.class, statusCodec, this::handleStatus);
+    overlay.onConnectionChanged(event -> log.info("{}", event));
+    overlay.onError(this::handleCommunicationError);
+
+    overlay.open();
+    overlay.send(new Data(...));
+    overlay.sendAsync(new Status(...));
 }
 ```
 
-The first endpoint passed to `link` listens; the second endpoint dials and
-reconnects asynchronously. Each process uses one Java dispatcher by default,
-not one Java thread per socket.
-
-For a zero-copy receive hot path, register a native handler. Its payload segment
-is valid only during the callback:
+`Jnng` exposes all patterns directly:
 
 ```java
-service.onNativeMessage(Exe.OVERLAY, 100, message -> {
-    MemorySegment payload = message.payload();
-    // Read directly while the callback is active.
-});
+jnng.pair(configuration);
+jnng.pub(configuration);
+jnng.sub(configuration);
+jnng.push(configuration);
+jnng.pull(configuration);
+jnng.req(configuration);
+jnng.rep(configuration);
 ```
 
-Socket behavior is configured once and propagated through every layer:
+The default instance owns one shared daemon dispatcher, not one Java thread per
+channel. Socket behavior is configured through `NngSocketConfig`; receives use
+NNG AIO and dialers reconnect automatically.
 
-```java
-NngSocketConfig socketConfig = NngSocketConfig.defaults()
-        .withSendTimeout(Duration.ofSeconds(5))
-        .withRequestTimeout(Duration.ofSeconds(10))
-        .withReconnect(Duration.ofMillis(100), Duration.ofSeconds(1))
-        .withMaxReceiveSize(32L * 1024 * 1024);
-
-NngService<Exe> service = NngService.builder(Exe.AGENT, topology, messages)
-        .socketConfig(socketConfig)
-        .build();
-```
-
-The default send and request timeout is 30 seconds. Streaming receives are
-infinite by default, reconnect backoff ranges from 100 ms to 1 second, and the
-maximum accepted message size is 16 MiB. Blocking receive methods can also take
-a per-call `Duration`.
-
-## Low-level Server / Client API
-
-All NNG patterns remain available below `NngService` through `NngServer` and
-`NngClient`: `pair`, `pub/sub`, `push/pull`, and `req/rep`. Channels provide
-blocking, non-blocking and AIO-backed asynchronous methods according to the
-operations supported by their NNG protocol.
+See [the layer-by-layer technical documentation](doc/nggDoc.md) for lifecycle,
+multi-message dispatch, connection events, request timeouts and the wire format.
