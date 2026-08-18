@@ -1,10 +1,10 @@
 package com.nz.jnng.socket;
 
-import com.nz.jnng.message.NngReceiveResult;
-import com.nz.jnng.message.NngNativeReceiveResult;
+import com.nz.jnng.Subscription;
 
 import java.time.Duration;
 import java.util.concurrent.CompletableFuture;
+import java.util.function.Consumer;
 
 public interface INngSocket extends AutoCloseable {
 
@@ -16,25 +16,15 @@ public interface INngSocket extends AutoCloseable {
 
     int trySend(byte[] payload);
 
-    int send(NativeMessage message);
-
     CompletableFuture<Void> sendAsync(byte[] payload);
 
     NngSocketConfig config();
 
-    NngReceiveResult receive();
-
-    NngReceiveResult receive(Duration timeout);
-
-    NngReceiveResult tryReceive();
-
-    NngNativeReceiveResult receiveNative();
-
-    NngNativeReceiveResult tryReceiveNative();
-
     CompletableFuture<NativeMessage> receiveNativeAsync();
 
     CompletableFuture<NativeMessage> receiveNativeAsync(Duration timeout);
+
+    Subscription onConnectionChanged(Consumer<SocketConnectionEvent> listener);
 
     @Override
     void close();
