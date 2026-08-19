@@ -1,8 +1,8 @@
-package com.nz.jnng.neww;
+package com.nz.jnng.service;
 
 import com.nz.jnng.Subscription;
-import com.nz.jnng.neww.codec.ChannelMessageCodec;
-import com.nz.jnng.neww.listener.ChannelMessageListener;
+import com.nz.jnng.service.codec.ChannelMessageCodec;
+import com.nz.jnng.service.listener.ChannelMessageListener;
 
 import java.util.HashMap;
 import java.util.Map;

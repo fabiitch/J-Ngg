@@ -1,4 +1,4 @@
-package com.nz.jnng.neww.listener;
+package com.nz.jnng.service.listener;
 
 /** Snapshot emitted when the number of active NNG pipes changes. */
 public record ChannelConnectionEvent(

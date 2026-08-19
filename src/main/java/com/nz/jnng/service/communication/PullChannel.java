@@ -1,7 +1,7 @@
-package com.nz.jnng.neww.communication;
+package com.nz.jnng.service.communication;
 
-import com.nz.jnng.neww.AbstractReceivingChannel;
-import com.nz.jnng.neww.ChannelConfiguration;
+import com.nz.jnng.service.AbstractReceivingChannel;
+import com.nz.jnng.service.ChannelConfiguration;
 import com.nz.jnng.socket.impl.PullSocket;
 
 import java.util.concurrent.Executor;

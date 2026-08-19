@@ -1,4 +1,4 @@
-package com.nz.jnng.neww.listener;
+package com.nz.jnng.service.listener;
 
 @FunctionalInterface
 public interface ChannelMessageListener<T> {
