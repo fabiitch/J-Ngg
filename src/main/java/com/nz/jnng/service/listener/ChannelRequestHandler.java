@@ -1,4 +1,4 @@
-package com.nz.jnng.neww.listener;
+package com.nz.jnng.service.listener;
 
 /** Handles one REP request type and returns a registered response message. */
 @FunctionalInterface

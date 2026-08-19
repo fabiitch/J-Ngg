@@ -1,7 +1,7 @@
-package com.nz.jnng.neww.communication;
+package com.nz.jnng.service.communication;
 
-import com.nz.jnng.neww.AbstractChannel;
-import com.nz.jnng.neww.ChannelConfiguration;
+import com.nz.jnng.service.AbstractChannel;
+import com.nz.jnng.service.ChannelConfiguration;
 import com.nz.jnng.socket.impl.PushSocket;
 
 import java.util.concurrent.CompletableFuture;

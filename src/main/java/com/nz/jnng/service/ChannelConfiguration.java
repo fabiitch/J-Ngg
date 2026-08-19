@@ -1,4 +1,4 @@
-package com.nz.jnng.neww;
+package com.nz.jnng.service;
 
 import com.nz.jnng.ConnectionMode;
 import com.nz.jnng.socket.NngSocketConfig;

@@ -1,16 +1,16 @@
-package com.nz.jnng.neww;
+package com.nz.jnng.service;
 
 import com.nz.jnng.Subscription;
 import com.nz.jnng.exception.NggRequestTimeoutException;
-import com.nz.jnng.neww.codec.ChannelMessageCodec;
-import com.nz.jnng.neww.communication.PairChannel;
-import com.nz.jnng.neww.communication.PubChannel;
-import com.nz.jnng.neww.communication.PullChannel;
-import com.nz.jnng.neww.communication.PushChannel;
-import com.nz.jnng.neww.communication.RepChannel;
-import com.nz.jnng.neww.communication.ReqChannel;
-import com.nz.jnng.neww.communication.SubChannel;
-import com.nz.jnng.neww.listener.ChannelConnectionState;
+import com.nz.jnng.service.codec.ChannelMessageCodec;
+import com.nz.jnng.service.communication.PairChannel;
+import com.nz.jnng.service.communication.PubChannel;
+import com.nz.jnng.service.communication.PullChannel;
+import com.nz.jnng.service.communication.PushChannel;
+import com.nz.jnng.service.communication.RepChannel;
+import com.nz.jnng.service.communication.ReqChannel;
+import com.nz.jnng.service.communication.SubChannel;
+import com.nz.jnng.service.listener.ChannelConnectionState;
 import com.nz.jnng.socket.NngSocketConfig;
 import org.junit.jupiter.api.Test;
 

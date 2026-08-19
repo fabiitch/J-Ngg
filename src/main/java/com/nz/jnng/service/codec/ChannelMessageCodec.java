@@ -1,4 +1,4 @@
-package com.nz.jnng.neww.codec;
+package com.nz.jnng.service.codec;
 
 /** Encodes and decodes one application message type. */
 public interface ChannelMessageCodec<T> {

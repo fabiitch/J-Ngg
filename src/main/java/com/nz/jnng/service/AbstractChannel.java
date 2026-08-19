@@ -1,14 +1,14 @@
-package com.nz.jnng.neww;
+package com.nz.jnng.service;
 
 import com.nz.jnng.ConnectionMode;
 import com.nz.jnng.Subscription;
 import com.nz.jnng.constants.NngErrorCode;
 import com.nz.jnng.exception.NngException;
-import com.nz.jnng.neww.codec.ChannelMessageCodec;
-import com.nz.jnng.neww.listener.ChannelConnectionEvent;
-import com.nz.jnng.neww.listener.ChannelConnectionListener;
-import com.nz.jnng.neww.listener.ChannelConnectionState;
-import com.nz.jnng.neww.listener.ChannelMessageListener;
+import com.nz.jnng.service.codec.ChannelMessageCodec;
+import com.nz.jnng.service.listener.ChannelConnectionEvent;
+import com.nz.jnng.service.listener.ChannelConnectionListener;
+import com.nz.jnng.service.listener.ChannelConnectionState;
+import com.nz.jnng.service.listener.ChannelMessageListener;
 import com.nz.jnng.socket.INngSocket;
 import com.nz.jnng.socket.NativeMessage;
 import com.nz.jnng.socket.NngCallbackBridge;
