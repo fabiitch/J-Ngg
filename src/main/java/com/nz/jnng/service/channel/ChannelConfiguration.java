@@ -1,4 +1,4 @@
-package com.nz.jnng.service;
+package com.nz.jnng.service.channel;
 
 import com.nz.jnng.ConnectionMode;
 import com.nz.jnng.socket.NngSocketConfig;
@@ -9,15 +9,26 @@ import java.util.Objects;
 public record ChannelConfiguration(
         String address,
         ConnectionMode connectionMode,
-        NngSocketConfig socketConfig
+        NngSocketConfig socketConfig,
+        ChannelQueuePolicy queuePolicy
 ) {
     public ChannelConfiguration {
         Objects.requireNonNull(address, "address");
         Objects.requireNonNull(connectionMode, "connectionMode");
         Objects.requireNonNull(socketConfig, "socketConfig");
+        Objects.requireNonNull(queuePolicy, "queuePolicy");
         if (address.isBlank()) {
             throw new IllegalArgumentException("address must not be blank");
         }
+    }
+
+    /** Backward-compatible constructor using the default bounded queue policy. */
+    public ChannelConfiguration(
+            String address,
+            ConnectionMode connectionMode,
+            NngSocketConfig socketConfig
+    ) {
+        this(address, connectionMode, socketConfig, ChannelQueuePolicy.defaults());
     }
 
     public static Builder listen(String address) {
@@ -32,6 +43,7 @@ public record ChannelConfiguration(
         private final String address;
         private final ConnectionMode connectionMode;
         private NngSocketConfig socketConfig = NngSocketConfig.defaults();
+        private ChannelQueuePolicy queuePolicy = ChannelQueuePolicy.defaults();
 
         private Builder(String address, ConnectionMode connectionMode) {
             this.address = Objects.requireNonNull(address, "address");
@@ -43,8 +55,13 @@ public record ChannelConfiguration(
             return this;
         }
 
+        public Builder queuePolicy(ChannelQueuePolicy queuePolicy) {
+            this.queuePolicy = Objects.requireNonNull(queuePolicy, "queuePolicy");
+            return this;
+        }
+
         public ChannelConfiguration build() {
-            return new ChannelConfiguration(address, connectionMode, socketConfig);
+            return new ChannelConfiguration(address, connectionMode, socketConfig, queuePolicy);
         }
     }
 }

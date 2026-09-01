@@ -2,6 +2,9 @@ package com.nz.jnng.service;
 
 import com.nz.jnng.Subscription;
 import com.nz.jnng.exception.NggRequestTimeoutException;
+import com.nz.jnng.service.channel.AbstractChannel;
+import com.nz.jnng.service.channel.ChannelConfiguration;
+import com.nz.jnng.service.channel.ChannelQueuePolicy;
 import com.nz.jnng.service.codec.ChannelMessageCodec;
 import com.nz.jnng.service.communication.PairChannel;
 import com.nz.jnng.service.communication.PubChannel;
@@ -17,7 +20,11 @@ import org.junit.jupiter.api.Test;
 import java.nio.charset.StandardCharsets;
 import java.time.Duration;
 import java.util.UUID;
+import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicReference;
 
@@ -164,6 +171,59 @@ class JnngApplicationTest {
             assertThrows(IllegalStateException.class, rep::open);
             assertThrows(IllegalStateException.class, () ->
                     req.registerMessage(300, Data.class, dataCodec()));
+        }
+    }
+
+    @Test
+    void dropsNewestMessageWhenApplicationQueueIsFull() throws Exception {
+        String address = address("bounded-queue");
+        ConcurrentLinkedQueue<Runnable> applicationTasks = new ConcurrentLinkedQueue<>();
+
+        try (Jnng receiver = new Jnng(task -> applicationTasks.add(task));
+             Jnng sender = new Jnng()) {
+            PairChannel incoming = receiver.pair(ChannelConfiguration.listen(address)
+                    .queuePolicy(ChannelQueuePolicy.dropNewest(1))
+                    .build());
+            PairChannel outgoing = sender.pair(ChannelConfiguration.dial(address).build());
+            incoming.registerMessage(DATA_ID, Data.class, dataCodec(), ignored -> { });
+            outgoing.registerMessage(DATA_ID, Data.class, dataCodec());
+            incoming.open();
+            outgoing.open();
+
+            // The first callback intentionally remains queued; later messages must be dropped.
+            Thread.sleep(100);
+            for (int index = 0; index < 8; index++) {
+                outgoing.send(new Data("frame-" + index));
+            }
+
+            long deadline = System.nanoTime() + TimeUnit.SECONDS.toNanos(3);
+            while (incoming.droppedMessages() == 0 && System.nanoTime() < deadline) {
+                Thread.sleep(10);
+            }
+            assertTrue(incoming.droppedMessages() > 0);
+        }
+    }
+
+    @Test
+    void blockingRequestCanRunOnTheApplicationDispatcher() throws Exception {
+        String address = address("req-dispatcher");
+        ExecutorService clientDispatcher = Executors.newSingleThreadExecutor();
+        try (Jnng server = new Jnng(); Jnng client = new Jnng(clientDispatcher)) {
+            RepChannel rep = server.rep(ChannelConfiguration.listen(address).build());
+            ReqChannel req = client.req(ChannelConfiguration.dial(address).build());
+            rep.registerMessage(PONG_ID, Pong.class, pongCodec());
+            rep.registerRequest(PING_ID, Ping.class, pingCodec(),
+                    ping -> new Pong("reply:" + ping.value()));
+            req.registerMessage(PING_ID, Ping.class, pingCodec());
+            req.registerMessage(PONG_ID, Pong.class, pongCodec());
+            rep.open();
+            req.open();
+
+            Future<Pong> response = clientDispatcher.submit(
+                    () -> req.request(new Ping("same-thread"), Pong.class));
+            assertEquals(new Pong("reply:same-thread"), response.get(3, TimeUnit.SECONDS));
+        } finally {
+            clientDispatcher.shutdownNow();
         }
     }
 

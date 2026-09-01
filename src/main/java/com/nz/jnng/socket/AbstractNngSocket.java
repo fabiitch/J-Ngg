@@ -11,7 +11,6 @@ import lombok.Getter;
 
 import java.lang.foreign.Arena;
 import java.lang.foreign.MemorySegment;
-import java.lang.foreign.ValueLayout;
 import java.time.Duration;
 import java.util.Objects;
 import java.util.concurrent.CompletableFuture;
@@ -27,6 +26,7 @@ public abstract class AbstractNngSocket implements INngSocket {
     @Getter
     protected final MemorySegment socket;
     private final NngSocketConfig config;
+    private final NngAio.Receiver receiver;
     private final AtomicBoolean closed = new AtomicBoolean();
     private final AtomicInteger activeConnections = new AtomicInteger();
     private final CopyOnWriteArrayList<Consumer<SocketConnectionEvent>> connectionListeners =
@@ -46,20 +46,25 @@ public abstract class AbstractNngSocket implements INngSocket {
             arena.close();
             throw new com.nz.jnng.exception.NngException(rc);
         }
+        NngAio.Receiver initializedReceiver;
         try {
             configure();
             registerPipeNotifications();
+            initializedReceiver = NngAio.receiver(socket);
         } catch (Throwable error) {
             nng_h.nng_socket_close(socket);
             arena.close();
             throw error;
         }
+        this.receiver = initializedReceiver;
     }
 
     protected abstract int open(MemorySegment socket);
 
     @Override
     public int listen(String address) {
+        ensureOpen();
+        Objects.requireNonNull(address, "address");
         try (Arena arena = Arena.ofConfined()) {
             MemorySegment addr = arena.allocateFrom(address);
 
@@ -73,6 +78,8 @@ public abstract class AbstractNngSocket implements INngSocket {
     }
 
     public int dial(String address) {
+        ensureOpen();
+        Objects.requireNonNull(address, "address");
         try (Arena arena = Arena.ofConfined()) {
             MemorySegment addr = arena.allocateFrom(address);
             return nng_h.nng_dial(
@@ -106,61 +113,22 @@ public abstract class AbstractNngSocket implements INngSocket {
     }
 
     private int send(byte[] payload, int flags) {
-        try (Arena local = Arena.ofConfined()) {
-            MemorySegment msgPtr =
-                    local.allocate(ValueLayout.ADDRESS);
-
-            int rc = nng_h.nng_msg_alloc(msgPtr, 0);
-
-            if (rc != NngErrorCode.OK) {
-                return rc;
-            }
-
-            MemorySegment msg =
-                    msgPtr.get(ValueLayout.ADDRESS, 0);
-
-            try {
-                MemorySegment data =
-                        local.allocateFrom(
-                                ValueLayout.JAVA_BYTE,
-                                payload
-                        );
-
-                rc = nng_h.nng_msg_append(
-                        msg,
-                        data,
-                        payload.length
-                );
-
-                if (rc != NngErrorCode.OK) {
-                    return rc;
-                }
-
-                rc = nng_h.nng_sendmsg(
-                        socket,
-                        msg,
-                        flags
-                );
-
-                if (rc == NngErrorCode.OK) {
-                    // Ownership transferred to NNG.
-                    msg = MemorySegment.NULL;
-                }
-
-                return rc;
-
-            } finally {
-                if (!msg.equals(MemorySegment.NULL)) {
-                    nng_h.nng_msg_free(msg);
-                }
-            }
+        ensureOpen();
+        Objects.requireNonNull(payload, "payload");
+        NativeMessage message = NativeMessage.copyOf(payload);
+        int rc = nng_h.nng_sendmsg(socket, message.handle(), flags);
+        if (rc == NngErrorCode.OK) {
+            message.transferredToNng();
+        } else {
+            message.close();
         }
+        return rc;
     }
 
     @Override
     public CompletableFuture<NativeMessage> receiveNativeAsync() {
         ensureOpen();
-        return NngAio.receive(socket, config.receiveTimeout());
+        return receiver.receive(config.receiveTimeout());
     }
 
     @Override
@@ -170,7 +138,7 @@ public abstract class AbstractNngSocket implements INngSocket {
         if (timeout.isZero() || timeout.isNegative()) {
             throw new IllegalArgumentException("timeout must be > 0");
         }
-        return NngAio.receive(socket, Optional.of(timeout));
+        return receiver.receive(Optional.of(timeout));
     }
 
     @Override
@@ -199,6 +167,7 @@ public abstract class AbstractNngSocket implements INngSocket {
     public void close() {
         if (closed.compareAndSet(false, true)) {
             connectionListeners.clear();
+            receiver.close();
             int rc = nng_h.nng_socket_close(socket);
             arena.close();
             if (rc != NngErrorCode.OK && rc != NngErrorCode.ECLOSED) {

@@ -1,4 +1,4 @@
-package com.nz.jnng.service;
+package com.nz.jnng.service.channel;
 
 import com.nz.jnng.Subscription;
 import com.nz.jnng.service.codec.ChannelMessageCodec;

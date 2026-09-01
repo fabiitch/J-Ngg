@@ -32,6 +32,28 @@ try (Jnng jnng = new Jnng()) {
 }
 ```
 
+Le constructeur par défaut configure les pools natifs globaux de NNG pour une
+topologie IPC locale peu consommatrice : 2 threads de tâches, 1 thread de
+timeouts, 1 poller I/O et 1 resolver.
+
+```java
+NngRuntimeConfig nativeThreads = NngRuntimeConfig.builder()
+        .taskThreads(2)
+        .expireThreads(1)
+        .pollerThreads(1)
+        .resolverThreads(1)
+        .build();
+
+try (Jnng jnng = new Jnng(nativeThreads)) {
+    // création des channels
+}
+```
+
+Ces pools appartiennent au processus et non à une instance ou une socket. La
+première création de `Jnng` fixe donc leur configuration. Les instances
+suivantes doivent fournir les mêmes valeurs; une configuration contradictoire
+est refusée avant la création de tout executor ou socket.
+
 Un executor applicatif peut être partagé explicitement :
 
 ```java
@@ -39,6 +61,9 @@ try (Jnng jnng = new Jnng(applicationExecutor)) {
     // Jnng ne ferme pas un executor fourni par l'application.
 }
 ```
+
+Les deux paramètres peuvent être combinés avec
+`new Jnng(nativeThreads, applicationExecutor)`.
 
 Fermer `Jnng` ferme tous les channels en ordre inverse de leur création. Fermer
 un channel manuellement est également autorisé. Toutes les fermetures sont
@@ -56,6 +81,7 @@ ChannelConfiguration server = ChannelConfiguration
                 .withSendTimeout(Duration.ofSeconds(5))
                 .withRequestTimeout(Duration.ofSeconds(4))
                 .withReconnect(Duration.ofMillis(100), Duration.ofSeconds(1)))
+        .queuePolicy(ChannelQueuePolicy.dropNewest(256))
         .build();
 
 ChannelConfiguration client = ChannelConfiguration
@@ -65,6 +91,13 @@ ChannelConfiguration client = ChannelConfiguration
 
 `LISTEN` possède l'endpoint. `DIAL` initie une connexion non bloquante et NNG
 réessaie automatiquement selon la configuration de reconnexion.
+
+La queue de dispatch de chaque channel récepteur est bornée à 256 messages par
+défaut. `dropNewest(n)` conserve les messages déjà acceptés et ferme
+immédiatement le nouveau `nng_msg` quand `n` traitements attendent déjà. Le
+compteur `channel.droppedMessages()` permet de superviser ces pertes. Cette
+limite concerne `PAIR`, `SUB` et `PULL`; `REP` impose déjà naturellement une
+seule requête en vol.
 
 ## Registry multi-message
 
@@ -269,15 +302,21 @@ les nombres sont big-endian.
 | 24 | 4 | longueur du payload |
 | 28 | N | payload applicatif |
 
-Les exécutables natifs doivent reproduire ce contrat. Pour `REP`, la corrélation
-de la réponse contient l'identifiant de la requête.
+Les exécutables natifs doivent reproduire ce contrat. La version reçue est
+validée strictement. Pour `REP`, la corrélation de la réponse contient
+l'identifiant de la requête et `REQ` vérifie cette valeur avant le décodage.
 
 ## Threads et AIO
 
 - aucune boucle de réception ne bloque un thread Java;
-- chaque channel réarme une réception via `nng_recv_aio`;
-- les callbacks Panama copient la trame puis déposent le décodage et le listener
-  sur l'executor de `Jnng`;
+- chaque socket alloue un AIO de réception, puis le réutilise à chaque
+  réarmement de `nng_recv_aio`;
+- le callback Panama transfère immédiatement le travail au bridge Java; celui-ci
+  lit le header directement dans le `MemorySegment` natif et ne copie que le
+  payload avant de déposer le listener sur l'executor de `Jnng`;
+- les complétions transport restent indépendantes du dispatcher métier; un
+  appel `REQ` bloquant peut donc être effectué depuis ce dispatcher sans
+  interblocage;
 - l'instance par défaut utilise un seul dispatcher Java partagé par tous les
   channels;
 - fournir un executor concurrent autorise des handlers simultanés et abandonne
@@ -310,6 +349,8 @@ concrets.
 - `PUB/SUB`;
 - `PUSH/PULL`;
 - `REQ/REP` bloquant;
+- un `REQ` bloquant depuis l'unique dispatcher applicatif;
+- le rejet `DROP_NEWEST` lorsque la queue applicative est pleine;
 - les timeouts;
 - les règles de lifecycle.
 

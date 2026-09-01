@@ -2,8 +2,8 @@ package com.nz.jnng.service.communication;
 
 import com.nz.jnng.exception.NggRequestTimeoutException;
 import com.nz.jnng.exception.TooManyPendingRequestsException;
-import com.nz.jnng.service.AbstractChannel;
-import com.nz.jnng.service.ChannelConfiguration;
+import com.nz.jnng.service.channel.AbstractChannel;
+import com.nz.jnng.service.channel.ChannelConfiguration;
 import com.nz.jnng.socket.NativeMessage;
 import com.nz.jnng.socket.impl.ReqSocket;
 
@@ -60,8 +60,10 @@ public final class ReqChannel extends AbstractChannel {
         }
 
         CompletableFuture<NativeMessage> receive;
+        SentMessage requestSend;
         try {
-            receive = sendMessageAsync(request)
+            requestSend = sendMessageTrackedAsync(request);
+            receive = requestSend.completion()
                     .thenCompose(ignored -> timeout == null
                             ? socket().receiveNativeAsync()
                             : socket().receiveNativeAsync(timeout));
@@ -71,7 +73,8 @@ public final class ReqChannel extends AbstractChannel {
         }
 
         CompletableFuture<R> result = dispatchCompletion(receive)
-                .thenApply(message -> decodeNativeMessage(message, responseType))
+                .thenApply(message -> decodeResponse(
+                        message, responseType, requestSend.messageId()))
                 .handle((response, error) -> {
                     if (error == null) return response;
                     Throwable cause = unwrap(error);
@@ -82,6 +85,14 @@ public final class ReqChannel extends AbstractChannel {
                 })
                 .whenComplete((ignored, error) -> requestInFlight.set(false));
         return result;
+    }
+
+    private <R> R decodeResponse(
+            NativeMessage message,
+            Class<R> responseType,
+            long expectedCorrelationId
+    ) {
+        return decodeNativeMessage(message, responseType, expectedCorrelationId);
     }
 
     private static <T> T join(CompletableFuture<T> future) {

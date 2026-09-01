@@ -1,4 +1,4 @@
-package com.nz.jnng.service;
+package com.nz.jnng.service.channel;
 
 import java.util.Objects;
 

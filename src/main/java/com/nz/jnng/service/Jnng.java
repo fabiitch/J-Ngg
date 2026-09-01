@@ -7,7 +7,11 @@ import com.nz.jnng.service.communication.PushChannel;
 import com.nz.jnng.service.communication.RepChannel;
 import com.nz.jnng.service.communication.ReqChannel;
 import com.nz.jnng.service.communication.SubChannel;
+import com.nz.jnng.service.channel.AbstractChannel;
+import com.nz.jnng.service.channel.ChannelConfiguration;
 import com.nz.jnng.socket.NngCallbackBridge;
+import com.nz.jnng.socket.NngRuntimeConfig;
+import com.nz.jnng.utils.Nng;
 
 import java.util.List;
 import java.util.Objects;
@@ -20,6 +24,7 @@ import java.util.function.BiFunction;
 
 /** Owner and factory for all application channels in one process. */
 public final class Jnng implements AutoCloseable {
+    private final NngRuntimeConfig runtimeConfig;
     private final Executor dispatcherExecutor;
     private final ExecutorService ownedExecutor;
     private final List<AbstractChannel> channels = new CopyOnWriteArrayList<>();
@@ -27,6 +32,13 @@ public final class Jnng implements AutoCloseable {
 
     /** Creates a JNNG instance with one shared daemon dispatcher thread. */
     public Jnng() {
+        this(NngRuntimeConfig.defaults());
+    }
+
+    /** Creates a JNNG instance and configures the process-wide native NNG pools. */
+    public Jnng(NngRuntimeConfig runtimeConfig) {
+        this.runtimeConfig = Objects.requireNonNull(runtimeConfig, "runtimeConfig");
+        Nng.initialize(this.runtimeConfig);
         ownedExecutor = Executors.newSingleThreadExecutor(runnable ->
                 Thread.ofPlatform().daemon(true).name("jnng-dispatcher").unstarted(runnable));
         dispatcherExecutor = ownedExecutor;
@@ -34,8 +46,19 @@ public final class Jnng implements AutoCloseable {
 
     /** Uses an application-owned executor for every channel callback. */
     public Jnng(Executor executor) {
+        this(NngRuntimeConfig.defaults(), executor);
+    }
+
+    /** Configures NNG pools and uses an application-owned callback executor. */
+    public Jnng(NngRuntimeConfig runtimeConfig, Executor executor) {
+        this.runtimeConfig = Objects.requireNonNull(runtimeConfig, "runtimeConfig");
+        Nng.initialize(this.runtimeConfig);
         dispatcherExecutor = Objects.requireNonNull(executor, "executor");
         ownedExecutor = null;
+    }
+
+    public NngRuntimeConfig runtimeConfig() {
+        return runtimeConfig;
     }
 
     public PairChannel pair(ChannelConfiguration configuration) {

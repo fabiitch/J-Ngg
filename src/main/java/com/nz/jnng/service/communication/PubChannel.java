@@ -1,7 +1,7 @@
 package com.nz.jnng.service.communication;
 
-import com.nz.jnng.service.AbstractChannel;
-import com.nz.jnng.service.ChannelConfiguration;
+import com.nz.jnng.service.channel.AbstractChannel;
+import com.nz.jnng.service.channel.ChannelConfiguration;
 import com.nz.jnng.socket.impl.PubSocket;
 
 import java.util.concurrent.CompletableFuture;

@@ -15,11 +15,12 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
-/** Shared Panama upcall used by all one-shot NNG AIO operations. */
+/** Shared Panama upcall for one-shot sends and reusable receive AIOs. */
 final class NngAio {
 
     private static final Arena CALLBACK_ARENA = Arena.ofAuto();
-    private static final ConcurrentMap<Long, Operation<?>> OPERATIONS = new ConcurrentHashMap<>();
+    private static final ConcurrentMap<Long, CallbackTarget> CALLBACK_TARGETS =
+            new ConcurrentHashMap<>();
     private static final MemorySegment CALLBACK = nng_aio_alloc$x0.allocate(
             NngAio::complete,
             CALLBACK_ARENA
@@ -40,13 +41,8 @@ final class NngAio {
         return operation.future;
     }
 
-    static CompletableFuture<NativeMessage> receive(
-            MemorySegment socket,
-            Optional<Duration> timeout
-    ) {
-        ReceiveOperation operation = new ReceiveOperation(socket, timeoutMillis(timeout));
-        operation.start();
-        return operation.future;
+    static Receiver receiver(MemorySegment socket) {
+        return new Receiver(socket);
     }
 
     private static int timeoutMillis(Optional<Duration> timeout) {
@@ -54,13 +50,17 @@ final class NngAio {
     }
 
     private static void complete(MemorySegment token) {
-        Operation<?> operation = OPERATIONS.remove(token.address());
-        if (operation != null) {
-            operation.completeFromNative();
+        CallbackTarget target = CALLBACK_TARGETS.get(token.address());
+        if (target != null) {
+            target.completeFromNative();
         }
     }
 
-    private abstract static class Operation<T> {
+    private interface CallbackTarget {
+        void completeFromNative();
+    }
+
+    private abstract static class Operation<T> implements CallbackTarget {
         final MemorySegment socket;
         final Arena arena = Arena.ofShared();
         final MemorySegment token = arena.allocate(1);
@@ -75,10 +75,10 @@ final class NngAio {
         }
 
         final void allocateAio() {
-            OPERATIONS.put(token.address(), this);
+            CALLBACK_TARGETS.put(token.address(), this);
             int rc = nng_h.nng_aio_alloc(aioPointer, CALLBACK, token);
             if (rc != NngErrorCode.OK) {
-                OPERATIONS.remove(token.address(), this);
+                CALLBACK_TARGETS.remove(token.address(), this);
                 arena.close();
                 throw new NngException(rc);
             }
@@ -95,7 +95,8 @@ final class NngAio {
 
         abstract void complete(int result);
 
-        final void completeFromNative() {
+        public final void completeFromNative() {
+            CALLBACK_TARGETS.remove(token.address(), this);
             int result = nng_h.nng_aio_result(aio);
             try {
                 complete(result);
@@ -141,27 +142,99 @@ final class NngAio {
         }
     }
 
-    private static final class ReceiveOperation extends Operation<NativeMessage> {
+    /** One native AIO reused by every sequential receive on a socket. */
+    static final class Receiver implements CallbackTarget, AutoCloseable {
+        private final MemorySegment socket;
+        private final Arena arena = Arena.ofShared();
+        private final MemorySegment token = arena.allocate(1);
+        private final MemorySegment aio;
+        private ReceiveFuture current;
+        private boolean closed;
 
-        ReceiveOperation(MemorySegment socket, int timeoutMillis) {
-            super(socket, timeoutMillis);
-        }
-
-        @Override
-        void start() {
-            allocateAio();
-            nng_h.nng_recv_aio(socket, aio);
-        }
-
-        @Override
-        void complete(int result) {
-            if (result == NngErrorCode.OK) {
-                MemorySegment message = nng_h.nng_aio_get_msg(aio);
-                nng_h.nng_aio_set_msg(aio, MemorySegment.NULL);
-                future.complete(NativeMessage.adopt(message));
-            } else {
-                future.completeExceptionally(new NngException(result));
+        private Receiver(MemorySegment socket) {
+            this.socket = socket;
+            MemorySegment aioPointer = arena.allocate(ValueLayout.ADDRESS);
+            int rc = nng_h.nng_aio_alloc(aioPointer, CALLBACK, token);
+            if (rc != NngErrorCode.OK) {
+                arena.close();
+                throw new NngException(rc);
             }
+            aio = aioPointer.get(ValueLayout.ADDRESS, 0);
+            CALLBACK_TARGETS.put(token.address(), this);
+        }
+
+        synchronized CompletableFuture<NativeMessage> receive(Optional<Duration> timeout) {
+            if (closed) {
+                return CompletableFuture.failedFuture(
+                        new IllegalStateException("Receive AIO is closed"));
+            }
+            if (current != null) {
+                return CompletableFuture.failedFuture(
+                        new IllegalStateException("A receive operation is already in flight"));
+            }
+            ReceiveFuture future = new ReceiveFuture(this);
+            current = future;
+            nng_h.nng_aio_set_timeout(aio, timeoutMillis(timeout));
+            nng_h.nng_recv_aio(socket, aio);
+            return future;
+        }
+
+        @Override
+        public void completeFromNative() {
+            ReceiveFuture future;
+            synchronized (this) {
+                future = current;
+                current = null;
+            }
+            if (future == null) return;
+
+            try {
+                int result = nng_h.nng_aio_result(aio);
+                if (result == NngErrorCode.OK) {
+                    MemorySegment message = nng_h.nng_aio_get_msg(aio);
+                    nng_h.nng_aio_set_msg(aio, MemorySegment.NULL);
+                    future.complete(NativeMessage.adopt(message));
+                } else {
+                    future.completeExceptionally(new NngException(result));
+                }
+            } catch (Throwable error) {
+                future.completeExceptionally(error);
+            }
+        }
+
+        private void cancel(ReceiveFuture future) {
+            synchronized (this) {
+                if (current != future || closed) return;
+            }
+            nng_h.nng_aio_cancel(aio);
+        }
+
+        @Override
+        public void close() {
+            synchronized (this) {
+                if (closed) return;
+                closed = true;
+            }
+            // stop waits for an active callback; never hold this object's monitor here.
+            nng_h.nng_aio_stop(aio);
+            CALLBACK_TARGETS.remove(token.address(), this);
+            nng_h.nng_aio_free(aio);
+            arena.close();
+        }
+    }
+
+    private static final class ReceiveFuture extends CompletableFuture<NativeMessage> {
+        private final Receiver receiver;
+
+        private ReceiveFuture(Receiver receiver) {
+            this.receiver = receiver;
+        }
+
+        @Override
+        public boolean cancel(boolean mayInterruptIfRunning) {
+            boolean cancelled = super.cancel(mayInterruptIfRunning);
+            if (cancelled) receiver.cancel(this);
+            return cancelled;
         }
     }
 }

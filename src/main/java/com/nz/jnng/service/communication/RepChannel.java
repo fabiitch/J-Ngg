@@ -1,8 +1,8 @@
 package com.nz.jnng.service.communication;
 
 import com.nz.jnng.Subscription;
-import com.nz.jnng.service.AbstractChannel;
-import com.nz.jnng.service.ChannelConfiguration;
+import com.nz.jnng.service.channel.AbstractChannel;
+import com.nz.jnng.service.channel.ChannelConfiguration;
 import com.nz.jnng.service.codec.ChannelMessageCodec;
 import com.nz.jnng.service.listener.ChannelRequestHandler;
 import com.nz.jnng.socket.NativeMessage;
@@ -69,7 +69,10 @@ public final class RepChannel extends AbstractChannel {
                 armReceive();
                 return;
             }
-            execute(() -> decodeHandleAndReply(message));
+            execute(() -> {
+                if (isOpen()) decodeHandleAndReply(message);
+                else message.close();
+            }, message::close);
         });
     }
 

@@ -1,7 +1,7 @@
 package com.nz.jnng.service.communication;
 
-import com.nz.jnng.service.AbstractReceivingChannel;
-import com.nz.jnng.service.ChannelConfiguration;
+import com.nz.jnng.service.channel.AbstractReceivingChannel;
+import com.nz.jnng.service.channel.ChannelConfiguration;
 import com.nz.jnng.socket.INngSocket;
 import com.nz.jnng.socket.impl.SubSocket;
 

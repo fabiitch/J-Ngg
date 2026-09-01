@@ -1,4 +1,4 @@
-package com.nz.jnng.service;
+package com.nz.jnng.service.channel;
 
 import com.nz.jnng.ConnectionMode;
 import com.nz.jnng.Subscription;
@@ -174,6 +174,11 @@ public abstract class AbstractChannel implements AutoCloseable {
         return sendEnvelopeAsync(encodeMessage(message));
     }
 
+    protected final SentMessage sendMessageTrackedAsync(Object message) {
+        WireEnvelope envelope = encodeMessage(message);
+        return new SentMessage(envelope.messageId(), sendEnvelopeAsync(envelope));
+    }
+
     protected final CompletableFuture<Void> sendMessageAsync(
             Object message,
             long correlationId
@@ -197,7 +202,7 @@ public abstract class AbstractChannel implements AutoCloseable {
 
     protected final WireEnvelope decodeEnvelope(NativeMessage message) {
         try (message) {
-            return WireProtocol.decode(message.toByteArray());
+            return WireProtocol.decode(message);
         }
     }
 
@@ -214,24 +219,46 @@ public abstract class AbstractChannel implements AutoCloseable {
         return decodeMessage(decodeEnvelope(message), expectedType);
     }
 
+    protected final <T> T decodeNativeMessage(
+            NativeMessage message,
+            Class<T> expectedType,
+            long expectedCorrelationId
+    ) {
+        WireEnvelope envelope = decodeEnvelope(message);
+        if (envelope.correlationId() != expectedCorrelationId) {
+            throw new IllegalArgumentException("Response correlation id "
+                    + envelope.correlationId() + " does not match request "
+                    + expectedCorrelationId);
+        }
+        return decodeMessage(envelope, expectedType);
+    }
+
     protected final INngSocket socket() {
         ensureOpen();
         return socket;
     }
 
     protected final void execute(Runnable task) {
-        NngCallbackBridge.execute(() -> {
-            try {
-                dispatcherExecutor.execute(task);
-            } catch (RejectedExecutionException error) {
-                if (lifecycle.get() != Lifecycle.CLOSED) reportErrorDirect(error);
-            }
-        });
+        execute(task, () -> { });
+    }
+
+    protected final void execute(Runnable task, Runnable onRejected) {
+        NngCallbackBridge.execute(() -> dispatchToApplication(task, onRejected));
+    }
+
+    /** Called by receive processing that is already safely outside the native callback. */
+    protected final void dispatchToApplication(Runnable task, Runnable onRejected) {
+        try {
+            dispatcherExecutor.execute(task);
+        } catch (RejectedExecutionException error) {
+            onRejected.run();
+            if (lifecycle.get() != Lifecycle.CLOSED) reportErrorDirect(error);
+        }
     }
 
     protected final <T> CompletableFuture<T> dispatchCompletion(CompletableFuture<T> source) {
         CompletableFuture<T> dispatched = new CompletableFuture<>();
-        source.whenComplete((value, error) -> execute(() -> {
+        source.whenComplete((value, error) -> NngCallbackBridge.execute(() -> {
             if (error == null) dispatched.complete(value);
             else dispatched.completeExceptionally(unwrap(error));
         }));
@@ -343,6 +370,9 @@ public abstract class AbstractChannel implements AutoCloseable {
     }
 
     protected record ReceivedMessage(Object message, long messageId) {
+    }
+
+    protected record SentMessage(long messageId, CompletableFuture<Void> completion) {
     }
 
     private final class ListenerSubscription implements Subscription {
