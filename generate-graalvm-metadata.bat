@@ -25,7 +25,7 @@ set "GRAALVM_HOME=%GRAALVM_JDK%"
 set "PATH=%GRAALVM_JDK%\bin;%PATH%"
 
 pushd "%~dp0"
-call "%~dp0gradlew.bat" --no-daemon clean graalvmMetadataApp -Pagent
+call "%~dp0gradlew.bat" --no-daemon refreshGraalVmMetadata
 set "EXIT_CODE=%ERRORLEVEL%"
 if not "%EXIT_CODE%"=="0" (
     popd
@@ -33,7 +33,7 @@ if not "%EXIT_CODE%"=="0" (
     exit /b %EXIT_CODE%
 )
 
-set "METADATA_FILE=%CD%\build\native\agent-output\reachability-metadata.json"
+set "METADATA_FILE=%CD%\src\main\resources\META-INF\native-image\com.nz.jnng\J-NNG\reachability-metadata.json"
 if not exist "%METADATA_FILE%" (
     popd
     echo ERROR: The tracing agent did not create reachability-metadata.json.
@@ -41,7 +41,7 @@ if not exist "%METADATA_FILE%" (
 )
 
 echo.
-echo GraalVM metadata generated at:
+echo GraalVM metadata generated and installed at:
 echo %METADATA_FILE%
 popd
 exit /b 0

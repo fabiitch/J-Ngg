@@ -1,0 +1,641 @@
+{
+  "reflection": [
+    {
+      "type": "com.nz.jnng.graalvm.GraalVmNativeMetadataApp",
+      "jniAccessible": true,
+      "methods": [
+        {
+          "name": "main",
+          "parameterTypes": [
+            "java.lang.String[]"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "com.nz.jnng.nng_aio_alloc$x0$Function",
+      "methods": [
+        {
+          "name": "apply",
+          "parameterTypes": [
+            "java.lang.foreign.MemorySegment"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "com.nz.jnng.nng_pipe_cb$Function",
+      "methods": [
+        {
+          "name": "apply",
+          "parameterTypes": [
+            "java.lang.foreign.MemorySegment",
+            "int",
+            "java.lang.foreign.MemorySegment"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "java.lang.Boolean",
+      "jniAccessible": true,
+      "methods": [
+        {
+          "name": "getBoolean",
+          "parameterTypes": [
+            "java.lang.String"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "java.lang.ClassLoader",
+      "jniAccessible": true,
+      "methods": [
+        {
+          "name": "getResource",
+          "parameterTypes": [
+            "java.lang.String"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "java.lang.Package",
+      "jniAccessible": true,
+      "methods": [
+        {
+          "name": "getPackage",
+          "parameterTypes": [
+            "java.lang.String"
+          ]
+        },
+        {
+          "name": "getSpecificationVersion",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "java.lang.String[]"
+    },
+    {
+      "type": "java.lang.Throwable",
+      "jniAccessible": true,
+      "methods": [
+        {
+          "name": "toString",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "java.net.URL",
+      "jniAccessible": true,
+      "methods": [
+        {
+          "name": "toExternalForm",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "sun.launcher.LauncherHelper",
+      "jniAccessible": true,
+      "fields": [
+        {
+          "name": "isStaticMain"
+        },
+        {
+          "name": "noArgMain"
+        }
+      ],
+      "methods": [
+        {
+          "name": "checkAndLoadMain",
+          "parameterTypes": [
+            "boolean",
+            "int",
+            "java.lang.String"
+          ]
+        },
+        {
+          "name": "getApplicationClass",
+          "parameterTypes": []
+        },
+        {
+          "name": "makePlatformString",
+          "parameterTypes": [
+            "boolean",
+            "byte[]"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "sun.security.provider.DRBG",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "java.security.SecureRandomParameters"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "sun.security.provider.SHA",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "sun.security.provider.SHA2$SHA256",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "glob": "com/nz/jnng/ConnectionMode.class"
+    },
+    {
+      "glob": "com/nz/jnng/Subscription.class"
+    },
+    {
+      "glob": "com/nz/jnng/exception/NggRequestTimeoutException.class"
+    },
+    {
+      "glob": "com/nz/jnng/exception/NngException.class"
+    },
+    {
+      "glob": "com/nz/jnng/exception/TooManyPendingRequestsException.class"
+    },
+    {
+      "glob": "com/nz/jnng/graalvm/GraalVmNativeMetadataApp$1.class"
+    },
+    {
+      "glob": "com/nz/jnng/graalvm/GraalVmNativeMetadataApp$2.class"
+    },
+    {
+      "glob": "com/nz/jnng/graalvm/GraalVmNativeMetadataApp$Message.class"
+    },
+    {
+      "glob": "com/nz/jnng/graalvm/GraalVmNativeMetadataApp$Request.class"
+    },
+    {
+      "glob": "com/nz/jnng/graalvm/GraalVmNativeMetadataApp.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_aio_alloc$x0$Function.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_aio_alloc$x0.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$12Holder.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$13Holder.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$18Holder.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$19Holder.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$20Holder.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_aio_alloc.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_aio_cancel.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_aio_free.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_aio_get_msg.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_aio_reap.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_aio_result.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_aio_set_msg.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_aio_set_timeout.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_aio_stop.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_dial.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_init_set_parameter.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_listen.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_msg_alloc.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_msg_body.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_msg_free.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_msg_len.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_pair1_open.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_pipe_notify.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_pub0_open.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_pull0_open.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_push0_open.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_recv_aio.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_rep0_open.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_req0_open.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_send_aio.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_sendmsg.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_socket_close.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_socket_set_ms.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_socket_set_size.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_strerror.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_sub0_open.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_sub0_socket_subscribe.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$nng_sub0_socket_unsubscribe.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h$shared.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_h.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_pipe_cb$Function.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_pipe_cb.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_pipe_s.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_socket.class"
+    },
+    {
+      "glob": "com/nz/jnng/nng_socket_s.class"
+    },
+    {
+      "glob": "com/nz/jnng/service/Jnng.class"
+    },
+    {
+      "glob": "com/nz/jnng/service/channel/AbstractChannel$Lifecycle.class"
+    },
+    {
+      "glob": "com/nz/jnng/service/channel/AbstractChannel$ListenerSubscription.class"
+    },
+    {
+      "glob": "com/nz/jnng/service/channel/AbstractChannel$ReceivedMessage.class"
+    },
+    {
+      "glob": "com/nz/jnng/service/channel/AbstractChannel$SentMessage.class"
+    },
+    {
+      "glob": "com/nz/jnng/service/channel/AbstractChannel.class"
+    },
+    {
+      "glob": "com/nz/jnng/service/channel/AbstractReceivingChannel.class"
+    },
+    {
+      "glob": "com/nz/jnng/service/channel/ChannelConfiguration$Builder.class"
+    },
+    {
+      "glob": "com/nz/jnng/service/channel/ChannelConfiguration.class"
+    },
+    {
+      "glob": "com/nz/jnng/service/channel/ChannelQueuePolicy$OverflowStrategy.class"
+    },
+    {
+      "glob": "com/nz/jnng/service/channel/ChannelQueuePolicy.class"
+    },
+    {
+      "glob": "com/nz/jnng/service/channel/MessageDispatcher$ListenerSubscription.class"
+    },
+    {
+      "glob": "com/nz/jnng/service/channel/MessageDispatcher$Registration.class"
+    },
+    {
+      "glob": "com/nz/jnng/service/channel/MessageDispatcher.class"
+    },
+    {
+      "glob": "com/nz/jnng/service/channel/WireEnvelope.class"
+    },
+    {
+      "glob": "com/nz/jnng/service/channel/WireProtocol.class"
+    },
+    {
+      "glob": "com/nz/jnng/service/codec/ChannelMessageCodec.class"
+    },
+    {
+      "glob": "com/nz/jnng/service/communication/PairChannel.class"
+    },
+    {
+      "glob": "com/nz/jnng/service/communication/PubChannel.class"
+    },
+    {
+      "glob": "com/nz/jnng/service/communication/PullChannel.class"
+    },
+    {
+      "glob": "com/nz/jnng/service/communication/PushChannel.class"
+    },
+    {
+      "glob": "com/nz/jnng/service/communication/RepChannel$HandlerRegistration.class"
+    },
+    {
+      "glob": "com/nz/jnng/service/communication/RepChannel.class"
+    },
+    {
+      "glob": "com/nz/jnng/service/communication/ReqChannel.class"
+    },
+    {
+      "glob": "com/nz/jnng/service/communication/SubChannel.class"
+    },
+    {
+      "glob": "com/nz/jnng/service/listener/ChannelConnectionEvent.class"
+    },
+    {
+      "glob": "com/nz/jnng/service/listener/ChannelConnectionListener.class"
+    },
+    {
+      "glob": "com/nz/jnng/service/listener/ChannelConnectionState.class"
+    },
+    {
+      "glob": "com/nz/jnng/service/listener/ChannelMessageListener.class"
+    },
+    {
+      "glob": "com/nz/jnng/service/listener/ChannelRequestHandler.class"
+    },
+    {
+      "glob": "com/nz/jnng/socket/AbstractNngSocket$1.class"
+    },
+    {
+      "glob": "com/nz/jnng/socket/AbstractNngSocket.class"
+    },
+    {
+      "glob": "com/nz/jnng/socket/INngSocket.class"
+    },
+    {
+      "glob": "com/nz/jnng/socket/NativeMessage.class"
+    },
+    {
+      "glob": "com/nz/jnng/socket/NngAio$CallbackTarget.class"
+    },
+    {
+      "glob": "com/nz/jnng/socket/NngAio$Operation.class"
+    },
+    {
+      "glob": "com/nz/jnng/socket/NngAio$ReceiveFuture.class"
+    },
+    {
+      "glob": "com/nz/jnng/socket/NngAio$Receiver.class"
+    },
+    {
+      "glob": "com/nz/jnng/socket/NngAio$SendOperation.class"
+    },
+    {
+      "glob": "com/nz/jnng/socket/NngAio.class"
+    },
+    {
+      "glob": "com/nz/jnng/socket/NngCallbackBridge.class"
+    },
+    {
+      "glob": "com/nz/jnng/socket/NngRuntimeConfig.class"
+    },
+    {
+      "glob": "com/nz/jnng/socket/NngSocketConfig.class"
+    },
+    {
+      "glob": "com/nz/jnng/socket/SocketConnectionEvent.class"
+    },
+    {
+      "glob": "com/nz/jnng/socket/impl/Pair1Socket.class"
+    },
+    {
+      "glob": "com/nz/jnng/socket/impl/PubSocket.class"
+    },
+    {
+      "glob": "com/nz/jnng/socket/impl/PullSocket.class"
+    },
+    {
+      "glob": "com/nz/jnng/socket/impl/PushSocket.class"
+    },
+    {
+      "glob": "com/nz/jnng/socket/impl/RepSocket.class"
+    },
+    {
+      "glob": "com/nz/jnng/socket/impl/ReqSocket.class"
+    },
+    {
+      "glob": "com/nz/jnng/socket/impl/SubSocket.class"
+    },
+    {
+      "glob": "com/nz/jnng/utils/NativeLibraryLoader.class"
+    },
+    {
+      "glob": "com/nz/jnng/utils/Nng.class"
+    },
+    {
+      "glob": "dll/windows-x86_64/nng.dll"
+    }
+  ],
+  "foreign": {
+    "upcalls": [
+      {
+        "returnType": "void",
+        "parameterTypes": [
+          "struct(jint)",
+          "jint",
+          "void*"
+        ]
+      },
+      {
+        "returnType": "void",
+        "parameterTypes": [
+          "void*"
+        ]
+      }
+    ],
+    "downcalls": [
+      {
+        "returnType": "jint",
+        "parameterTypes": [
+          "struct(jint)"
+        ]
+      },
+      {
+        "returnType": "jint",
+        "parameterTypes": [
+          "struct(jint)",
+          "void*",
+          "void*",
+          "jint"
+        ]
+      },
+      {
+        "returnType": "jint",
+        "parameterTypes": [
+          "void*",
+          "void*",
+          "void*"
+        ]
+      },
+      {
+        "returnType": "void",
+        "parameterTypes": [
+          "void*",
+          "void*"
+        ]
+      },
+      {
+        "returnType": "void",
+        "parameterTypes": [
+          "struct(jint)",
+          "jint",
+          "void*"
+        ]
+      },
+      {
+        "returnType": "jint",
+        "parameterTypes": [
+          "struct(jint)",
+          "jint",
+          "void*",
+          "void*"
+        ]
+      },
+      {
+        "returnType": "void*",
+        "parameterTypes": [
+          "void*"
+        ]
+      },
+      {
+        "returnType": "jlong",
+        "parameterTypes": [
+          "void*"
+        ]
+      },
+      {
+        "returnType": "void",
+        "parameterTypes": [
+          "void*",
+          "jint"
+        ]
+      },
+      {
+        "returnType": "void",
+        "parameterTypes": [
+          "void*"
+        ]
+      },
+      {
+        "returnType": "jint",
+        "parameterTypes": [
+          "struct(jint)",
+          "void*",
+          "jint"
+        ]
+      },
+      {
+        "returnType": "jint",
+        "parameterTypes": [
+          "struct(jint)",
+          "void*",
+          "jlong"
+        ]
+      },
+      {
+        "returnType": "jint",
+        "parameterTypes": [
+          "void*",
+          "jlong"
+        ]
+      },
+      {
+        "returnType": "void*",
+        "parameterTypes": [
+          "jint"
+        ]
+      },
+      {
+        "returnType": "jint",
+        "parameterTypes": [
+          "void*"
+        ]
+      },
+      {
+        "returnType": "void",
+        "parameterTypes": [
+          "jint",
+          "jlong"
+        ]
+      },
+      {
+        "returnType": "void",
+        "parameterTypes": [
+          "struct(jint)",
+          "void*"
+        ]
+      }
+    ]
+  }
+}

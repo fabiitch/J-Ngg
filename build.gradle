@@ -53,20 +53,114 @@ test {
     jvmArgs '--enable-native-access=ALL-UNNAMED'
 }
 
+def graalVmMetadataOutputDirectory = layout.buildDirectory.dir('native/agent-output')
+def bundledGraalVmMetadataDirectory = layout.projectDirectory.dir(
+        'src/main/resources/META-INF/native-image/com.nz.jnng/J-NNG'
+)
+def bundledGraalVmMetadataFile = bundledGraalVmMetadataDirectory.file(
+        'reachability-metadata.json'
+)
+
+def nativeImageAgentCandidates = [
+        'bin/native-image-agent.dll',
+        'lib/native-image-agent.dll',
+        'lib/libnative-image-agent.so',
+        'lib/libnative-image-agent.dylib',
+]
+
+def resolveGraalVmHome = {
+    String configuredHome = providers.environmentVariable('GRAALVM_HOME').orNull
+    File home = configuredHome == null || configuredHome.isBlank()
+            ? file(System.getProperty('java.home'))
+            : file(configuredHome)
+    home.toPath().toAbsolutePath().normalize().toFile()
+}
+
+def resolveNativeImageAgent = { File home ->
+    File agent = nativeImageAgentCandidates
+            .collect { relativePath -> new File(home, relativePath) }
+            .find { candidate -> candidate.isFile() }
+    if (agent == null) {
+        throw new GradleException(
+                "native-image-agent not found under ${home}. " +
+                        "Set GRAALVM_HOME to a GraalVM JDK 25 installation."
+        )
+    }
+    agent
+}
+
+def java25Launcher = javaToolchains.launcherFor {
+    languageVersion = JavaLanguageVersion.of(25)
+}
+
 tasks.register('graalvmMetadataApp', JavaExec) {
     group = 'verification'
-    description = 'Exercises every native NNG call used by J-Nng for GraalVM metadata collection.'
+    description = 'Exercises every native NNG call used by J-Nng.'
     dependsOn testClasses
+    javaLauncher.set(java25Launcher)
     classpath = sourceSets.test.runtimeClasspath
     mainClass = 'com.nz.jnng.graalvm.GraalVmNativeMetadataApp'
     jvmArgs '--enable-native-access=ALL-UNNAMED'
+}
 
-    if (providers.gradleProperty('agent').isPresent()) {
-        def metadataDirectory = layout.buildDirectory.dir('native/agent-output')
-        doFirst {
-            delete metadataDirectory
-            metadataDirectory.get().asFile.mkdirs()
+tasks.register('generateGraalVmMetadata', Exec) {
+    group = 'verification'
+    description = 'Generates GraalVM reachability metadata with native-image-agent.'
+    dependsOn testClasses
+    outputs.file(graalVmMetadataOutputDirectory.map {
+        it.file('reachability-metadata.json')
+    })
+    outputs.upToDateWhen { false }
+
+    doFirst {
+        File graalVmHome = resolveGraalVmHome()
+        File javaExecutable = java25Launcher.get().executablePath.asFile
+        File nativeImageAgent = resolveNativeImageAgent(graalVmHome)
+        File metadataDirectory = graalVmMetadataOutputDirectory.get().asFile
+
+        delete metadataDirectory
+        metadataDirectory.mkdirs()
+
+        commandLine(
+                javaExecutable.absolutePath,
+                '--enable-native-access=ALL-UNNAMED',
+                "-agentpath:${nativeImageAgent.absolutePath}=config-output-dir=${metadataDirectory.absolutePath}",
+                '-cp',
+                sourceSets.test.runtimeClasspath.asPath,
+                'com.nz.jnng.graalvm.GraalVmNativeMetadataApp'
+        )
+
+        logger.lifecycle("Using Java executable: ${javaExecutable}")
+        logger.lifecycle("Using GraalVM home for native-image-agent: ${graalVmHome}")
+        logger.lifecycle("Writing GraalVM metadata to: ${metadataDirectory}")
+    }
+
+    doLast {
+        File metadataFile = graalVmMetadataOutputDirectory.get()
+                .file('reachability-metadata.json')
+                .asFile
+        if (!metadataFile.isFile()) {
+            throw new GradleException("GraalVM metadata was not generated: ${metadataFile}")
         }
-        jvmArgs "-agentlib:native-image-agent=config-output-dir=${metadataDirectory.get().asFile.absolutePath}"
+    }
+}
+
+tasks.register('refreshGraalVmMetadata', Copy) {
+    group = 'verification'
+    description = 'Generates and installs bundled GraalVM reachability metadata.'
+    dependsOn tasks.named('generateGraalVmMetadata')
+
+    from(graalVmMetadataOutputDirectory.map {
+        it.file('reachability-metadata.json')
+    })
+    into bundledGraalVmMetadataDirectory
+
+    doLast {
+        if (!bundledGraalVmMetadataFile.asFile.isFile()) {
+            throw new GradleException(
+                    "Bundled GraalVM metadata was not written: ${bundledGraalVmMetadataFile.asFile}"
+            )
+        }
+        logger.lifecycle("Updated bundled GraalVM metadata: ${bundledGraalVmMetadataFile.asFile}")
     }
 }
