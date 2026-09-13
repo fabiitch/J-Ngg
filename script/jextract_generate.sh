@@ -8,7 +8,7 @@ OUT_DIR="${OUT_DIR:-src/generated}"
 "$JEXTRACT_BIN" \
   --header-class-name nng_h \
   -I "$NNG_INCLUDE_DIR" \
-  --target-package com.nz.jnng \
+  --target-package com.fabiitch.jnng \
   --output "$OUT_DIR" \
   "$NNG_INCLUDE_DIR/nng.h" \
   "$NNG_INCLUDE_DIR/protocol/pair0/pair.h" \

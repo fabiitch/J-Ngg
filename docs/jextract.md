@@ -9,7 +9,7 @@ Use this only when upgrading NNG headers or changing the native surface.
 - NNG source checkout, for example `nanomsg/nng` tag `v1.12.0`.
 - jextract compatible with the Java version used by the project.
 - Output directory: `src/generated`.
-- Target package: `com.nz.jnng`.
+- Target package: `com.fabiitch.jnng`.
 
 ## Build NNG
 

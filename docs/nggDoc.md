@@ -297,7 +297,7 @@ Move long business work to an application executor.
 
 ## Internal Socket Layer
 
-Classes under `com.nz.jnng.socket` are internal. They handle:
+Classes under `com.fabiitch.jnng.socket` are internal. They handle:
 
 - native socket open/close;
 - `listen` and `dial`;

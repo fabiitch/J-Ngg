@@ -2,8 +2,10 @@ plugins {
     id 'java-library'
 }
 
-group = 'com.nz.jnng'
+group = 'com.fabiitch'
 version = '1.0-SNAPSHOT'
+
+base { archivesName = 'J-Nng' }
 
 sourceSets {
     main {
@@ -55,7 +57,7 @@ test {
 
 def graalVmMetadataOutputDirectory = layout.buildDirectory.dir('native/agent-output')
 def bundledGraalVmMetadataDirectory = layout.projectDirectory.dir(
-        'src/main/resources/META-INF/native-image/com.nz.jnng/J-NNG'
+        'src/main/resources/META-INF/native-image/com.fabiitch.jnng/J-NNG'
 )
 def bundledGraalVmMetadataFile = bundledGraalVmMetadataDirectory.file(
         'reachability-metadata.json'
@@ -99,7 +101,7 @@ tasks.register('graalvmMetadataApp', JavaExec) {
     dependsOn testClasses
     javaLauncher.set(java25Launcher)
     classpath = sourceSets.test.runtimeClasspath
-    mainClass = 'com.nz.jnng.graalvm.GraalVmNativeMetadataApp'
+    mainClass = 'com.fabiitch.jnng.graalvm.GraalVmNativeMetadataApp'
     jvmArgs '--enable-native-access=ALL-UNNAMED'
 }
 
@@ -127,7 +129,7 @@ tasks.register('generateGraalVmMetadata', Exec) {
                 "-agentpath:${nativeImageAgent.absolutePath}=config-output-dir=${metadataDirectory.absolutePath}",
                 '-cp',
                 sourceSets.test.runtimeClasspath.asPath,
-                'com.nz.jnng.graalvm.GraalVmNativeMetadataApp'
+                'com.fabiitch.jnng.graalvm.GraalVmNativeMetadataApp'
         )
 
         logger.lifecycle("Using Java executable: ${javaExecutable}")

@@ -1,0 +1,7 @@
+package com.fabiitch.jnng.exception;
+
+public final class TooManyPendingRequestsException extends RuntimeException {
+    public TooManyPendingRequestsException(int maximum) {
+        super("Maximum pending requests reached for this peer: " + maximum);
+    }
+}

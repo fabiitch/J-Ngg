@@ -1,0 +1,641 @@
+{
+  "reflection": [
+    {
+      "type": "com.fabiitch.jnng.graalvm.GraalVmNativeMetadataApp",
+      "jniAccessible": true,
+      "methods": [
+        {
+          "name": "main",
+          "parameterTypes": [
+            "java.lang.String[]"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "com.fabiitch.jnng.nng_aio_alloc$x0$Function",
+      "methods": [
+        {
+          "name": "apply",
+          "parameterTypes": [
+            "java.lang.foreign.MemorySegment"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "com.fabiitch.jnng.nng_pipe_cb$Function",
+      "methods": [
+        {
+          "name": "apply",
+          "parameterTypes": [
+            "java.lang.foreign.MemorySegment",
+            "int",
+            "java.lang.foreign.MemorySegment"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "java.lang.Boolean",
+      "jniAccessible": true,
+      "methods": [
+        {
+          "name": "getBoolean",
+          "parameterTypes": [
+            "java.lang.String"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "java.lang.ClassLoader",
+      "jniAccessible": true,
+      "methods": [
+        {
+          "name": "getResource",
+          "parameterTypes": [
+            "java.lang.String"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "java.lang.Package",
+      "jniAccessible": true,
+      "methods": [
+        {
+          "name": "getPackage",
+          "parameterTypes": [
+            "java.lang.String"
+          ]
+        },
+        {
+          "name": "getSpecificationVersion",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "java.lang.String[]"
+    },
+    {
+      "type": "java.lang.Throwable",
+      "jniAccessible": true,
+      "methods": [
+        {
+          "name": "toString",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "java.net.URL",
+      "jniAccessible": true,
+      "methods": [
+        {
+          "name": "toExternalForm",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "sun.launcher.LauncherHelper",
+      "jniAccessible": true,
+      "fields": [
+        {
+          "name": "isStaticMain"
+        },
+        {
+          "name": "noArgMain"
+        }
+      ],
+      "methods": [
+        {
+          "name": "checkAndLoadMain",
+          "parameterTypes": [
+            "boolean",
+            "int",
+            "java.lang.String"
+          ]
+        },
+        {
+          "name": "getApplicationClass",
+          "parameterTypes": []
+        },
+        {
+          "name": "makePlatformString",
+          "parameterTypes": [
+            "boolean",
+            "byte[]"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "sun.security.provider.DRBG",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "java.security.SecureRandomParameters"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "sun.security.provider.SHA",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "sun.security.provider.SHA2$SHA256",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "glob": "com/fabiitch/jnng/ConnectionMode.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/Subscription.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/exception/NggRequestTimeoutException.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/exception/NngException.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/exception/TooManyPendingRequestsException.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/graalvm/GraalVmNativeMetadataApp$1.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/graalvm/GraalVmNativeMetadataApp$2.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/graalvm/GraalVmNativeMetadataApp$Message.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/graalvm/GraalVmNativeMetadataApp$Request.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/graalvm/GraalVmNativeMetadataApp.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_aio_alloc$x0$Function.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_aio_alloc$x0.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$12Holder.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$13Holder.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$18Holder.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$19Holder.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$20Holder.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_aio_alloc.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_aio_cancel.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_aio_free.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_aio_get_msg.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_aio_reap.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_aio_result.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_aio_set_msg.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_aio_set_timeout.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_aio_stop.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_dial.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_init_set_parameter.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_listen.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_msg_alloc.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_msg_body.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_msg_free.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_msg_len.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_pair1_open.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_pipe_notify.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_pub0_open.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_pull0_open.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_push0_open.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_recv_aio.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_rep0_open.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_req0_open.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_send_aio.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_sendmsg.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_socket_close.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_socket_set_ms.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_socket_set_size.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_strerror.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_sub0_open.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_sub0_socket_subscribe.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$nng_sub0_socket_unsubscribe.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h$shared.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_h.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_pipe_cb$Function.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_pipe_cb.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_pipe_s.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_socket.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/nng_socket_s.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/service/Jnng.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/service/channel/AbstractChannel$Lifecycle.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/service/channel/AbstractChannel$ListenerSubscription.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/service/channel/AbstractChannel$ReceivedMessage.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/service/channel/AbstractChannel$SentMessage.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/service/channel/AbstractChannel.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/service/channel/AbstractReceivingChannel.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/service/channel/ChannelConfiguration$Builder.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/service/channel/ChannelConfiguration.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/service/channel/ChannelQueuePolicy$OverflowStrategy.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/service/channel/ChannelQueuePolicy.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/service/channel/MessageDispatcher$ListenerSubscription.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/service/channel/MessageDispatcher$Registration.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/service/channel/MessageDispatcher.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/service/channel/WireEnvelope.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/service/channel/WireProtocol.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/service/codec/ChannelMessageCodec.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/service/communication/PairChannel.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/service/communication/PubChannel.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/service/communication/PullChannel.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/service/communication/PushChannel.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/service/communication/RepChannel$HandlerRegistration.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/service/communication/RepChannel.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/service/communication/ReqChannel.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/service/communication/SubChannel.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/service/listener/ChannelConnectionEvent.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/service/listener/ChannelConnectionListener.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/service/listener/ChannelConnectionState.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/service/listener/ChannelMessageListener.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/service/listener/ChannelRequestHandler.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/socket/AbstractNngSocket$1.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/socket/AbstractNngSocket.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/socket/INngSocket.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/socket/NativeMessage.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/socket/NngAio$CallbackTarget.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/socket/NngAio$Operation.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/socket/NngAio$ReceiveFuture.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/socket/NngAio$Receiver.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/socket/NngAio$SendOperation.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/socket/NngAio.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/socket/NngCallbackBridge.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/socket/NngRuntimeConfig.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/socket/NngSocketConfig.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/socket/SocketConnectionEvent.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/socket/impl/Pair1Socket.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/socket/impl/PubSocket.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/socket/impl/PullSocket.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/socket/impl/PushSocket.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/socket/impl/RepSocket.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/socket/impl/ReqSocket.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/socket/impl/SubSocket.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/utils/NativeLibraryLoader.class"
+    },
+    {
+      "glob": "com/fabiitch/jnng/utils/Nng.class"
+    },
+    {
+      "glob": "dll/windows-x86_64/nng.dll"
+    }
+  ],
+  "foreign": {
+    "upcalls": [
+      {
+        "returnType": "void",
+        "parameterTypes": [
+          "struct(jint)",
+          "jint",
+          "void*"
+        ]
+      },
+      {
+        "returnType": "void",
+        "parameterTypes": [
+          "void*"
+        ]
+      }
+    ],
+    "downcalls": [
+      {
+        "returnType": "jint",
+        "parameterTypes": [
+          "struct(jint)"
+        ]
+      },
+      {
+        "returnType": "jint",
+        "parameterTypes": [
+          "struct(jint)",
+          "void*",
+          "void*",
+          "jint"
+        ]
+      },
+      {
+        "returnType": "jint",
+        "parameterTypes": [
+          "void*",
+          "void*",
+          "void*"
+        ]
+      },
+      {
+        "returnType": "void",
+        "parameterTypes": [
+          "void*",
+          "void*"
+        ]
+      },
+      {
+        "returnType": "void",
+        "parameterTypes": [
+          "struct(jint)",
+          "jint",
+          "void*"
+        ]
+      },
+      {
+        "returnType": "jint",
+        "parameterTypes": [
+          "struct(jint)",
+          "jint",
+          "void*",
+          "void*"
+        ]
+      },
+      {
+        "returnType": "void*",
+        "parameterTypes": [
+          "void*"
+        ]
+      },
+      {
+        "returnType": "jlong",
+        "parameterTypes": [
+          "void*"
+        ]
+      },
+      {
+        "returnType": "void",
+        "parameterTypes": [
+          "void*",
+          "jint"
+        ]
+      },
+      {
+        "returnType": "void",
+        "parameterTypes": [
+          "void*"
+        ]
+      },
+      {
+        "returnType": "jint",
+        "parameterTypes": [
+          "struct(jint)",
+          "void*",
+          "jint"
+        ]
+      },
+      {
+        "returnType": "jint",
+        "parameterTypes": [
+          "struct(jint)",
+          "void*",
+          "jlong"
+        ]
+      },
+      {
+        "returnType": "jint",
+        "parameterTypes": [
+          "void*",
+          "jlong"
+        ]
+      },
+      {
+        "returnType": "void*",
+        "parameterTypes": [
+          "jint"
+        ]
+      },
+      {
+        "returnType": "jint",
+        "parameterTypes": [
+          "void*"
+        ]
+      },
+      {
+        "returnType": "void",
+        "parameterTypes": [
+          "jint",
+          "jlong"
+        ]
+      },
+      {
+        "returnType": "void",
+        "parameterTypes": [
+          "struct(jint)",
+          "void*"
+        ]
+      }
+    ]
+  }
+}

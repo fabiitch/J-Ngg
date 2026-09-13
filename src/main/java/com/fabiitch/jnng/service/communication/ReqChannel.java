@@ -1,0 +1,107 @@
+package com.fabiitch.jnng.service.communication;
+
+import com.fabiitch.jnng.exception.NggRequestTimeoutException;
+import com.fabiitch.jnng.exception.TooManyPendingRequestsException;
+import com.fabiitch.jnng.service.channel.AbstractChannel;
+import com.fabiitch.jnng.service.channel.ChannelConfiguration;
+import com.fabiitch.jnng.socket.NativeMessage;
+import com.fabiitch.jnng.socket.impl.ReqSocket;
+
+import java.time.Duration;
+import java.util.Objects;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.CompletionException;
+import java.util.concurrent.Executor;
+import java.util.concurrent.atomic.AtomicBoolean;
+
+/** Typed one-at-a-time REQ channel. */
+public final class ReqChannel extends AbstractChannel {
+    private final AtomicBoolean requestInFlight = new AtomicBoolean();
+
+    public ReqChannel(ChannelConfiguration configuration, Executor executor) {
+        super(configuration, executor, () -> new ReqSocket(configuration.socketConfig()));
+    }
+
+    public <R> R request(Object request, Class<R> responseType) {
+        return join(requestAsync(request, responseType));
+    }
+
+    public <R> R request(Object request, Class<R> responseType, Duration timeout) {
+        return join(requestAsync(request, responseType, timeout));
+    }
+
+    public <R> CompletableFuture<R> requestAsync(Object request, Class<R> responseType) {
+        Duration timeout = configuration().socketConfig().requestTimeout().orElse(null);
+        return requestAsyncInternal(request, responseType, timeout);
+    }
+
+    public <R> CompletableFuture<R> requestAsync(
+            Object request,
+            Class<R> responseType,
+            Duration timeout
+    ) {
+        Objects.requireNonNull(timeout, "timeout");
+        if (timeout.isZero() || timeout.isNegative()) {
+            throw new IllegalArgumentException("timeout must be > 0");
+        }
+        return requestAsyncInternal(request, responseType, timeout);
+    }
+
+    private <R> CompletableFuture<R> requestAsyncInternal(
+            Object request,
+            Class<R> responseType,
+            Duration timeout
+    ) {
+        Objects.requireNonNull(request, "request");
+        Objects.requireNonNull(responseType, "responseType");
+        ensureOpen();
+        if (!requestInFlight.compareAndSet(false, true)) {
+            return CompletableFuture.failedFuture(new TooManyPendingRequestsException(1));
+        }
+
+        CompletableFuture<NativeMessage> receive;
+        SentMessage requestSend;
+        try {
+            requestSend = sendMessageTrackedAsync(request);
+            receive = requestSend.completion()
+                    .thenCompose(ignored -> timeout == null
+                            ? socket().receiveNativeAsync()
+                            : socket().receiveNativeAsync(timeout));
+        } catch (Throwable error) {
+            requestInFlight.set(false);
+            return CompletableFuture.failedFuture(error);
+        }
+
+        CompletableFuture<R> result = dispatchCompletion(receive)
+                .thenApply(message -> decodeResponse(
+                        message, responseType, requestSend.messageId()))
+                .handle((response, error) -> {
+                    if (error == null) return response;
+                    Throwable cause = unwrap(error);
+                    if (isTimeoutError(cause)) {
+                        throw new CompletionException(new NggRequestTimeoutException());
+                    }
+                    throw new CompletionException(cause);
+                })
+                .whenComplete((ignored, error) -> requestInFlight.set(false));
+        return result;
+    }
+
+    private <R> R decodeResponse(
+            NativeMessage message,
+            Class<R> responseType,
+            long expectedCorrelationId
+    ) {
+        return decodeNativeMessage(message, responseType, expectedCorrelationId);
+    }
+
+    private static <T> T join(CompletableFuture<T> future) {
+        try {
+            return future.join();
+        } catch (CompletionException error) {
+            Throwable cause = error.getCause();
+            if (cause instanceof RuntimeException runtime) throw runtime;
+            throw error;
+        }
+    }
+}

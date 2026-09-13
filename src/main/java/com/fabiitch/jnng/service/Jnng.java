@@ -1,0 +1,119 @@
+package com.fabiitch.jnng.service;
+
+import com.fabiitch.jnng.service.communication.PairChannel;
+import com.fabiitch.jnng.service.communication.PubChannel;
+import com.fabiitch.jnng.service.communication.PullChannel;
+import com.fabiitch.jnng.service.communication.PushChannel;
+import com.fabiitch.jnng.service.communication.RepChannel;
+import com.fabiitch.jnng.service.communication.ReqChannel;
+import com.fabiitch.jnng.service.communication.SubChannel;
+import com.fabiitch.jnng.service.channel.AbstractChannel;
+import com.fabiitch.jnng.service.channel.ChannelConfiguration;
+import com.fabiitch.jnng.socket.NngCallbackBridge;
+import com.fabiitch.jnng.socket.NngRuntimeConfig;
+import com.fabiitch.jnng.utils.Nng;
+
+import java.util.List;
+import java.util.Objects;
+import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.Executor;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.function.BiFunction;
+
+/** Owner and factory for all application channels in one process. */
+public final class Jnng implements AutoCloseable {
+    private final NngRuntimeConfig runtimeConfig;
+    private final Executor dispatcherExecutor;
+    private final ExecutorService ownedExecutor;
+    private final List<AbstractChannel> channels = new CopyOnWriteArrayList<>();
+    private final AtomicBoolean closed = new AtomicBoolean();
+
+    /** Creates a JNNG instance with one shared daemon dispatcher thread. */
+    public Jnng() {
+        this(NngRuntimeConfig.defaults());
+    }
+
+    /** Creates a JNNG instance and configures the process-wide native NNG pools. */
+    public Jnng(NngRuntimeConfig runtimeConfig) {
+        this.runtimeConfig = Objects.requireNonNull(runtimeConfig, "runtimeConfig");
+        Nng.initialize(this.runtimeConfig);
+        ownedExecutor = Executors.newSingleThreadExecutor(runnable ->
+                Thread.ofPlatform().daemon(true).name("jnng-dispatcher").unstarted(runnable));
+        dispatcherExecutor = ownedExecutor;
+    }
+
+    /** Uses an application-owned executor for every channel callback. */
+    public Jnng(Executor executor) {
+        this(NngRuntimeConfig.defaults(), executor);
+    }
+
+    /** Configures NNG pools and uses an application-owned callback executor. */
+    public Jnng(NngRuntimeConfig runtimeConfig, Executor executor) {
+        this.runtimeConfig = Objects.requireNonNull(runtimeConfig, "runtimeConfig");
+        Nng.initialize(this.runtimeConfig);
+        dispatcherExecutor = Objects.requireNonNull(executor, "executor");
+        ownedExecutor = null;
+    }
+
+    public NngRuntimeConfig runtimeConfig() {
+        return runtimeConfig;
+    }
+
+    public PairChannel pair(ChannelConfiguration configuration) {
+        return create(configuration, PairChannel::new);
+    }
+
+    public PubChannel pub(ChannelConfiguration configuration) {
+        return create(configuration, PubChannel::new);
+    }
+
+    public SubChannel sub(ChannelConfiguration configuration) {
+        return create(configuration, SubChannel::new);
+    }
+
+    public PushChannel push(ChannelConfiguration configuration) {
+        return create(configuration, PushChannel::new);
+    }
+
+    public PullChannel pull(ChannelConfiguration configuration) {
+        return create(configuration, PullChannel::new);
+    }
+
+    public ReqChannel req(ChannelConfiguration configuration) {
+        return create(configuration, ReqChannel::new);
+    }
+
+    public RepChannel rep(ChannelConfiguration configuration) {
+        return create(configuration, RepChannel::new);
+    }
+
+    private <C extends AbstractChannel> C create(
+            ChannelConfiguration configuration,
+            BiFunction<ChannelConfiguration, Executor, C> factory
+    ) {
+        if (closed.get()) throw new IllegalStateException("Jnng is closed");
+        C channel = factory.apply(Objects.requireNonNull(configuration, "configuration"),
+                dispatcherExecutor);
+        channels.add(channel);
+        return channel;
+    }
+
+    @Override
+    public void close() {
+        if (!closed.compareAndSet(false, true)) return;
+        RuntimeException failure = null;
+        for (int index = channels.size() - 1; index >= 0; index--) {
+            try {
+                channels.get(index).close();
+            } catch (RuntimeException error) {
+                if (failure == null) failure = error;
+                else failure.addSuppressed(error);
+            }
+        }
+        channels.clear();
+        if (ownedExecutor != null) NngCallbackBridge.execute(ownedExecutor::shutdown);
+        if (failure != null) throw failure;
+    }
+}

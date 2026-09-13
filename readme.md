@@ -17,7 +17,7 @@ framing, dispatch and native message ownership.
 ```java
 try (Jnng jnng = new Jnng()) {
     PairChannel overlay = jnng.pair(
-            ChannelConfiguration.dial("ipc://agent-overlay").build()
+            ChannelConfiguration.dial("ipc://your_ipc").build()
     );
 
     overlay.registerMessage(

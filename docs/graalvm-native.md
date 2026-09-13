@@ -6,7 +6,7 @@ metadata for these calls and for the bundled `nng.dll` resource.
 Bundled metadata lives here:
 
 ```text
-src/main/resources/META-INF/native-image/com.nz.jnng/J-NNG/reachability-metadata.json
+src/main/resources/META-INF/native-image/com.fabiitch.jnng/J-NNG/reachability-metadata.json
 ```
 
 ## When to Regenerate
@@ -52,7 +52,7 @@ build/native/agent-output/reachability-metadata.json
 Bundled output:
 
 ```text
-src/main/resources/META-INF/native-image/com.nz.jnng/J-NNG/reachability-metadata.json
+src/main/resources/META-INF/native-image/com.fabiitch.jnng/J-NNG/reachability-metadata.json
 ```
 
 The compatibility script calls the same Gradle task:
@@ -68,7 +68,7 @@ installation.
 
 ## Scenario Coverage
 
-`com.nz.jnng.graalvm.GraalVmNativeMetadataApp` is a test-only app. It exercises:
+`com.fabiitch.jnng.graalvm.GraalVmNativeMetadataApp` is a test-only app. It exercises:
 
 - `PAIR`, `PUB`, `SUB`, `PUSH`, `PULL`, `REQ`, `REP`;
 - sync, non-blocking and async paths;
