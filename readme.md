@@ -12,6 +12,30 @@ framing, dispatch and native message ownership.
 - Java: JDK 25 with native access enabled.
 - Supported patterns: `PAIR`, `PUB/SUB`, `PUSH/PULL`, `REQ/REP`.
 
+## Maven dependency
+
+Publish the library to Maven local from this repository:
+
+```powershell
+.\gradlew.bat publishToMavenLocal
+```
+
+Consumers use the published artifact instead of importing this Gradle project:
+
+```groovy
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+dependencies {
+    implementation 'com.fabiitch:J-Nng:1.0-SNAPSHOT'
+}
+```
+
+Republish after changing the Java sources, generated bindings or bundled DLL.
+Publication packages the existing native runtime; it does not rebuild NNG itself.
+JVM consumers must enable `--enable-native-access=ALL-UNNAMED`.
+
 ## Quick Start
 
 ```java

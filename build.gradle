@@ -1,5 +1,6 @@
 plugins {
     id 'java-library'
+    id 'maven-publish'
 }
 
 group = 'com.fabiitch'
@@ -164,5 +165,11 @@ tasks.register('refreshGraalVmMetadata', Copy) {
             )
         }
         logger.lifecycle("Updated bundled GraalVM metadata: ${bundledGraalVmMetadataFile.asFile}")
+    }
+}
+
+publishing {
+    publications {
+        library(MavenPublication) { from components.java }
     }
 }
